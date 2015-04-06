@@ -2,6 +2,7 @@
 Modele pour projet type
 
 ## Description 
+Ce projet est un modèle qui servira de base pour tout autre type de projet. 
 
 ## Porteurs du projet
 
