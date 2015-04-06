@@ -1,14 +1,30 @@
 # git_projet
-Modele pour projet type
+Modèle de repo pour projet type
 
 ## Description 
-Ce projet est un modèle qui servira de base pour tout autre type de projet. 
+Ce projet est un modèle de repo github qui servira de base pour tout autre type de projet. 
+
+## Contenu de ce projet
+Ce projet contient tous les documents et codes utiles/utilisés pour ce projet. Un projet type contient tout ou partie parmi : 
+* Documentations du projet
+* Ressources externes utiles : copie pages web consultées, fiches techniques utilisées, etc.
+* Schémas SVG (mécanique, plan électronique, etc..)
+* Images
+* Fichiers pièces 3D : scad, STL, gcode
+* 
+
+## Licence du projet
+* Codes : GPLv3
+* Documentations du projet : CC BY SA
+* Documentations et ressources externes : Licences propres à chaque document / ressource.
+ 
 
 ## Porteurs du projet
+* Nom Prénom
 
 ## Utiliser ce projet
 
-L'utilisation de ce projet est très simple : vous clonez le projet sur votre ordinateur à l'aide du lien fournit sur la page github ou bien vous téléchargez l'archive *.zip du projet : vous disposez ainsi sur votre ordinateur de l'intégralité des ressources du projet. 
+L'utilisation de ce projet est très simple : vous clonez le projet sur votre ordinateur à l'aide du lien fournit sur la page github ou bien vous téléchargez l'archive *.zip du projet. Vous disposez ainsi sur votre ordinateur de l'intégralité des ressources du projet. 
 
 ## Pour participer au développement de ce projet :
 Vous disposez de plusieurs façons pour participer au développement de ce projet : 
