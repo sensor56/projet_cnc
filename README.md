@@ -11,7 +11,7 @@ Ce projet contient tous les documents et codes utiles/utilisés pour ce projet. 
 * Schémas SVG (mécanique, plan électronique, etc..)
 * Images
 * Fichiers pièces 3D : scad, STL, gcode
-* 
+* Codes Arduino, Pyduino, Python, interfaces PyQt, webapps, ...
 
 ## Licence du projet
 * Codes : GPLv3
