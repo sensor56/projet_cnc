@@ -7,7 +7,7 @@ Modele pour projet type
 
 ## Utiliser ce projet
 
-L'utilisation de projet est très simple : vous cloner le projet sur votre ordinateur à l'aide du lien fournit sur la page github ou bien vous téléchargez l'archive *.zip du projet : vous disposez ainsi sur votre PC de l'intégralité des ressources du projet. 
+L'utilisation de ce projet est très simple : vous clonez le projet sur votre ordinateur à l'aide du lien fournit sur la page github ou bien vous téléchargez l'archive *.zip du projet : vous disposez ainsi sur votre ordinateur de l'intégralité des ressources du projet. 
 
 ## Pour participer au développement de ce projet :
 Vous disposez de plusieurs façons pour participer au développement de ce projet : 
@@ -18,7 +18,7 @@ Vous disposez ainsi de toutes les ressources du projet et vous pouvez y apporter
 Si vous souhaitez fournir une contribution au projet, envoyez simplement par mail vos extraits de code ou documents aux porteurs du projet qui décideront ou non de les intégrer dans le projet lui-même. 
 
 ### Forker le projet vers votre compte Github et faire un pull-request de vos modifs
-Vous pouvez copier l'intégralité de ce projet à l'aide du <fork> sur la page github du projet.
+Vous pouvez copier l'intégralité de ce projet à l'aide du bouton fork sur la page github du projet.
 Vous disposez ainsi de l'intégralité du projet sur votre compte que vous pouvez modifier à loisir, etc...
 Une fois que vous avez une modification à suggérer, vous pouvez faire un pull-request.
  
