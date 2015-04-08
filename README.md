@@ -46,3 +46,8 @@ Une fois que vous avez une modification à suggérer, vous pouvez faire un pull-
 Vous pouvez également devenir collaborateur du projet et avoir ainsi le droit de pusher directement sur le compte github du projet. 
 Par contre, ceci n'est possible que si vous êtes habitués à l'utilisation de Github et que vos contributions soient considérées comme significatives aux yeux des porteurs du projet. 
 
+## Utiliser ce projet avec git 
+
+Si vous ne disposez pas de git sur votre système Gnu/Linux, l'installer avec la commande : 
+```sudo apt-get install git```
+```git clone https://github.com/sensor56/projet_cnc.git```
