@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2015-04-04T16:09:38.651727071</meta:creation-date><meta:generator>LibreOffice/4.2.5.2$Linux_x86 LibreOffice_project/420m0$Build-2</meta:generator><dc:date>2015-04-08T11:49:22.760991109</dc:date><meta:editing-duration>PT24M23S</meta:editing-duration><meta:editing-cycles>14</meta:editing-cycles><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="14" meta:word-count="202" meta:character-count="1181" meta:non-whitespace-character-count="986"/></office:meta>
+ <office:meta><meta:creation-date>2015-02-17T23:45:26.565611654</meta:creation-date><meta:generator>LibreOffice/4.2.5.2$Linux_x86 LibreOffice_project/420m0$Build-2</meta:generator><dc:date>2015-04-08T12:04:50.074514607</dc:date><meta:editing-duration>PT54M31S</meta:editing-duration><meta:editing-cycles>10</meta:editing-cycles><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="21" meta:word-count="222" meta:character-count="1226" meta:non-whitespace-character-count="1016"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="int">0</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="int">2566</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="int">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="int">32757</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="int">21936</config:config-item>
@@ -13,12 +13,12 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="int">13682</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="int">2925</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="int">7583</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="int">21745</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="int">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="int">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="int">2566</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="int">32755</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="int">21934</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="int">24500</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -55,9 +55,9 @@
    <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
    <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
    <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="RsidRoot" config:type="int">1265847</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">57381</config:config-item>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">1808178</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">463404</config:config-item>
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
@@ -109,13 +109,14 @@
  </office:settings>
  <office:scripts>
   <office:script script:language="ooo:Basic">
-   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
   </office:script>
  </office:scripts>
  <office:font-face-decls>
   <style:font-face style:name="FreeSans1" svg:font-family="FreeSans" style:font-family-generic="swiss"/>
   <style:font-face style:name="Liberation Serif" svg:font-family="&apos;Liberation Serif&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
-  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-adornments="ExtraLight" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Droid Sans Fallback" svg:font-family="&apos;Droid Sans Fallback&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="FreeSans" svg:font-family="FreeSans" style:font-family-generic="system" style:font-pitch="variable"/>
@@ -180,20 +181,11 @@
    <style:paragraph-properties fo:margin-top="0.247cm" fo:margin-bottom="0.212cm" style:contextual-spacing="false"/>
    <style:text-properties fo:color="#808080" fo:font-size="14pt" fo:font-weight="bold" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="console" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="text">
-   <style:paragraph-properties fo:background-color="#ffffcc">
-    <style:background-image/>
-   </style:paragraph-properties>
-   <style:text-properties fo:color="#0000ff" style:font-name="DejaVu Sans" fo:font-family="&apos;DejaVu Sans&apos;" style:font-style-name="ExtraLight" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="10pt" fo:font-weight="normal" style:font-size-asian="10.5pt"/>
-  </style:style>
   <style:style style:name="Internet_20_link" style:display-name="Internet link" style:family="text">
    <style:text-properties fo:color="#000080" fo:language="zxx" fo:country="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="Visited_20_Internet_20_Link" style:display-name="Visited Internet Link" style:family="text">
    <style:text-properties fo:color="#800000" fo:language="zxx" fo:country="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
-  </style:style>
-  <style:style style:name="Graphics" style:family="graphic">
-   <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" style:wrap="dynamic" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph" style:horizontal-pos="center" style:horizontal-rel="paragraph"/>
   </style:style>
   <text:outline-style style:name="Outline">
    <text:outline-level-style text:level="1" style:num-format="">
@@ -253,79 +245,25 @@
  </office:styles>
  <office:automatic-styles>
   <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="001350b7" officeooo:paragraph-rsid="001350b7"/>
+   <style:text-properties officeooo:rsid="00029989" officeooo:paragraph-rsid="00029989"/>
   </style:style>
-  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="0014a206" officeooo:paragraph-rsid="0014a206"/>
+  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="00029989" officeooo:paragraph-rsid="00029989"/>
   </style:style>
-  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="00169e64" officeooo:paragraph-rsid="0014a206"/>
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="00029989" officeooo:paragraph-rsid="00029989"/>
   </style:style>
-  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="001868f5" officeooo:paragraph-rsid="001868f5"/>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="0007122c" officeooo:paragraph-rsid="0007122c"/>
   </style:style>
-  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="0020f0e9" officeooo:paragraph-rsid="0019deb6"/>
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="0007122c" officeooo:paragraph-rsid="0007122c"/>
   </style:style>
-  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="001350b7" officeooo:paragraph-rsid="001350b7"/>
-  </style:style>
-  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0014a206" officeooo:paragraph-rsid="0014a206"/>
-  </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00169e64" officeooo:paragraph-rsid="00169e64"/>
-  </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0019deb6" officeooo:paragraph-rsid="0019deb6"/>
-  </style:style>
-  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="001e897f" officeooo:paragraph-rsid="0019deb6"/>
-  </style:style>
-  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0020f0e9" officeooo:paragraph-rsid="0019deb6"/>
-  </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="001868f5" officeooo:paragraph-rsid="001868f5"/>
-  </style:style>
-  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="001a5f72" officeooo:paragraph-rsid="001a5f72"/>
-  </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:rsid="001868f5" officeooo:paragraph-rsid="001868f5"/>
-  </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:rsid="0019deb6" officeooo:paragraph-rsid="0019deb6"/>
-  </style:style>
-  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="console">
-   <style:text-properties officeooo:paragraph-rsid="001868f5"/>
-  </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="console">
-   <style:text-properties officeooo:rsid="0020f0e9" officeooo:paragraph-rsid="0019deb6"/>
-  </style:style>
-  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="console">
-   <style:text-properties officeooo:paragraph-rsid="0019deb6"/>
-  </style:style>
-  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="001a5f72" officeooo:paragraph-rsid="001a5f72"/>
-  </style:style>
-  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="001b9732" officeooo:paragraph-rsid="001b9732"/>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="0007122c" officeooo:paragraph-rsid="0007122c"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
-   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="T2" style:family="text">
-   <style:text-properties fo:color="#ff3300" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="T3" style:family="text">
-   <style:text-properties fo:color="#ff0000" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="T4" style:family="text">
-   <style:text-properties officeooo:rsid="0019deb6"/>
-  </style:style>
-  <style:style style:name="T5" style:family="text">
-   <style:text-properties style:text-line-through-style="solid" style:text-line-through-type="single" style:font-size-asian="10.5pt"/>
+   <style:text-properties style:text-line-through-style="solid" style:text-line-through-type="single"/>
   </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="21.59cm" fo:page-height="27.94cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
@@ -339,32 +277,40 @@
   <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
  </office:master-styles>
  <office:body>
-  <office:text>
+  <office:text text:use-soft-page-breaks="true">
    <text:sequence-decls>
     <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
    </text:sequence-decls>
-   <text:h text:style-name="P13" text:outline-level="1">Historique du projet</text:h>
-   <text:p text:style-name="P3"/>
-   <text:h text:style-name="Heading_20_2" text:outline-level="2">&gt; 17/03/2015 : </text:h>
-   <text:p text:style-name="P20">&gt;&gt; ajout fonction G04 au décodeur GCode</text:p>
-   <text:p text:style-name="P20">&gt;&gt; reprise séquence SVG (Inkscape) &gt; Génération G-Code (Pycam) &gt; Mise au propre manuelle &gt; envoi manuel vers Arduino</text:p>
-   <text:p text:style-name="P20">&gt;&gt; test sur CNC CB : dessin d&apos;un carré 100x100</text:p>
-   <text:p text:style-name="P20"/>
-   <text:h text:style-name="Heading_20_2" text:outline-level="2">&gt; 30/03/2015 : </text:h>
-   <text:p text:style-name="P20">&gt;&gt; test interpréteur GCode suite modif pour supporter code *.ngc produit par PyCam</text:p>
-   <text:p text:style-name="P20">&gt;&gt; test de l&apos;interface PyQt</text:p>
-   <text:p text:style-name="P20">&gt;&gt; test <text:s/>de l&apos;impression d&apos;un carré 10x10 avec succès en 2 passes</text:p>
-   <text:p text:style-name="P20">&gt;&gt; test impression cercle &quot;hors matière&quot; : problème &quot;hachage&quot; de l&apos;envoi des chaînes série</text:p>
-   <text:p text:style-name="P20"/>
-   <text:h text:style-name="Heading_20_2" text:outline-level="2">&gt; 07/04/2015 : </text:h>
-   <text:p text:style-name="P20">Suite amélioration des délais de la comm&apos; série entre interface PyQt et Décodeur GCode Arduino</text:p>
-   <text:p text:style-name="P20">&gt;&gt; test impression d&apos;un cercle à partir gcode généré avec PyCam : obligé de passer par STL pour avoir plusieurs passes. Résultat OK à 80 % avec (très) bonne précision de la taille. Par contre, rognage latéral <text:s/>de la pièce du à priori à problème réglage des marges. </text:p>
-   <text:p text:style-name="P20">&gt;&gt; test impression d&apos;un Triskell à partir SVG en mode gravure : première passe nickel... ! 2ème passe contrôlée en manuel, nickel aussi sauf arrêt au 2/3 en raison mauvaise réception d&apos;un &lt;ok&gt; sur le port série. Rattrapage en manuel sans difficulté particulière... et premier Triskel obtenu. </text:p>
-   <text:p text:style-name="P20"/>
-   <text:p text:style-name="P20"/>
+   <text:h text:style-name="P5" text:outline-level="1">TODO projet CNC</text:h>
+   <text:p text:style-name="P4"/>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">Microfirmware décodeur GCode Arduino : </text:h>
+   <text:p text:style-name="P4">&gt; <text:span text:style-name="T1">améliorer réception série : rendre plus fluide pour les ordres multiples</text:span></text:p>
+   <text:p text:style-name="P4">&gt; calage du 0 à l&apos;aide endstops sur les 3 axes </text:p>
+   <text:p text:style-name="P4">&gt; calage de la surface par plaque métallique (0 du Z)</text:p>
+   <text:p text:style-name="P4">&gt; <text:s/>gérer mode absolu / relatif (absolu par défaut, ce qui est le cas du GCode généré)</text:p>
+   <text:p text:style-name="P4">&gt; ajouter G ?? pour home X, Y et Z avec RAZ position interne <text:s/></text:p>
+   <text:p text:style-name="P4">&gt; ajouter G02 support des arcs</text:p>
+   <text:p text:style-name="P4">&gt; ajouter Gxx perso pour Bézier, etc... voire même primitives simples (cercle, carré...) et/ou programmable façon openscad... pour plusieurs passes, etc...</text:p>
+   <text:p text:style-name="P4"/>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">Interface PyQt d&apos;envoi du G-Code </text:h>
+   <text:p text:style-name="P4">&gt; ajouter un bouton « pass » ou « ok » pour valider manuellement la poursuite de l&apos;impression en cas de souci sur réception (variable de classe modifiée par appui bouton, testée dans le while qui permet sortir si True et RAZ false une fois sorti while)</text:p>
+   <text:p text:style-name="P4">&gt; ajouter bouton « STOP » sur le même principe pour stopper et sortir de l&apos;impression en cours </text:p>
+   <text:p text:style-name="P4">&gt; prévoir bouton pour faire home &gt;, home Y et home Z</text:p>
+   <text:p text:style-name="P4">&gt; faire un *.deb une fois fignolé... </text:p>
+   <text:p text:style-name="P4"/>
+   <text:h text:style-name="P6" text:outline-level="2">Génération G-Code</text:h>
+   <text:p text:style-name="P4">&gt; Documenter l&apos;utilisation PyCam</text:p>
+   <text:p text:style-name="P4"/>
+   <text:h text:style-name="P6" text:outline-level="2">Machine CNC « façon reprap »</text:h>
+   <text:p text:style-name="P4">&gt; valider les choix mécaniques</text:p>
+   <text:p text:style-name="P4">&gt; petite fraiseuse ? </text:p>
+   <text:p text:style-name="P4"/>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:soft-page-break/>Machine CNC « façon industriel »</text:h>
+   <text:p text:style-name="P4">&gt; valider choix mécanique + fraiseuse</text:p>
+   <text:p text:style-name="P4"/>
   </office:text>
  </office:body>
 </office:document>
