@@ -48,6 +48,22 @@ Par contre, ceci n'est possible que si vous êtes habitués à l'utilisation de 
 
 ## Utiliser ce projet avec git 
 
-Si vous ne disposez pas de git sur votre système Gnu/Linux, l'installer avec la commande : 
-```sudo apt-get install git```
-```git clone https://github.com/sensor56/projet_cnc.git```
+Si vous ne disposez pas de git sur votre système Gnu/Linux, l'installer avec la commande :   
+```sudo apt-get install git```   
+Une fois fait, se placer dans le répertoire où vous voulez travailler et saisir la commande :   
+```git clone https://github.com/sensor56/nomduprojet.git```   
+
+Voilà, vous disposez de l'ensemble du projet et vous pouvez commencer à travailler en local. 
+
+Pour plus de confort, il est utile que le système soit correctement configuré pour lancer l'application adéquate selon le type de fichier, à savoir :
+* IDE Arduino pour les .ino
+* LibreOffice pour les .odt
+* Openscad pour les .scad
+* Inskape pour les .svg
+* Meshlab pour les .stl
+* Geany pour les .py
+* Firefox ou Iceweasel pour les .html
+* etc.
+
+De cette façon, un simple clic sur les liens contenus dans les documentations permettra de lancer directement le logiciel adéquat pour les différents types de fichiers. 
+
