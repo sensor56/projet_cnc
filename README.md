@@ -36,7 +36,7 @@ Vous disposez de plusieurs façons pour participer au développement de ce proje
 Si vous n'êtes pas habitués à l'usage de Github, vous pouvez simplement cloner le projet à l'aide du lien fourni sur la page Github. 
 Vous disposez ainsi de toutes les ressources du projet et vous pouvez y apporter vos propres modifications. 
 Si vous souhaitez fournir une contribution au projet, envoyez simplement par mail vos extraits de code ou documents aux porteurs du projet qui décideront ou non de les intégrer dans le projet lui-même. 
-
+Pour que les modifications que vous avez apportées à un document soit facilement visualisable, avant de commencer à apporter vos corrections, activer l'enregistrement des modifications dans Libre Office via le menu Edition > Modifications > Enregistrer
 ### Forker le projet vers votre compte Github et faire un pull-request de vos modifs
 Vous pouvez copier l'intégralité de ce projet à l'aide du bouton fork sur la page github du projet.
 Vous disposez ainsi de l'intégralité du projet sur votre compte que vous pouvez modifier à loisir, etc...

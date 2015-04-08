@@ -1,0 +1,3356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/e053b1d91d" type="text/javascript"></script><script src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","trackUserAction","finished","traceEvent","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],G9z0Bl:[function(n,e){function t(){var n=v.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(d,function(e,t){e in n||(n[e]=t)}),v.proto="https"===l.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=v.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",l=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-536.min.js"},v=e.exports={offset:i(),origin:l,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script>
+<title>CNC Shield for Arduino Kit (GRBL Compatible) | HackSpark, tout ce
+ dont vous avez besoin pour l'électronique et le hardware libre.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="&lt;div class=&quot;container active&quot;&gt;
+&lt;div id=&quot;productDescription&quot; class=&quot;content biggerText&quot;&gt;
+&lt;div id=&quot;productDescriptionBox&quot;&gt;
+&lt;div id=&quot;productDescriptionHeading&quot;&gt;
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;GRBL 0.8c compatible. (Open source firmware that ">
+<meta name="keywords" content="DIY, Electronics, Arduino, MSP430, STM32, RGB, Matrix, LED, SERVO, Hobby, freeduino">
+<meta name="robots" content="INDEX,FOLLOW">
+<link rel="icon" href="https://hackspark.fr/media/favicon/default/favicon64.png" type="image/x-icon">
+<link rel="shortcut icon" href="https://hackspark.fr/media/favicon/default/favicon64.png" type="image/x-icon">
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'https://hackspark.fr/js/blank.html';
+    var BLANK_IMG = 'https://hackspark.fr/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/calendar-win2k-1.css">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/styles.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/widgets.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/itemslider.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/generic-nav.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/brands.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/ultra-slideshow.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/itemgrid.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/accordion.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/ultra-megamenu.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/wide.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/autocomplete.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/j2t-rewardpoints.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/styles-infortis.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/generic-cck.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/dropdown.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/icons.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/tabs.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/icons-theme.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/icons-social.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/common.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/design_fr.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/override-components.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/override-modules.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/override-theme.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/grid12.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/grid_fr.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/layout_fr.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/custom.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/cloud-zoom.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/colorbox.css" media="all">
+<link rel="stylesheet" type="text/css" href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/print.css" media="print">
+<script type="text/javascript" src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/351ad278aae6e4715c894878d189d83a.js"></script>
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="https://hackspark.fr/skin/frontend/ultimo/default/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="https://hackspark.fr/media/js/0284519fe65473b9682a3a0f6a35c7d0.js"></script>
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="https://hackspark.fr/skin/frontend/ultimo/default/css/styles-ie7.css" media="all" />
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" type="text/css" href="https://hackspark.fr/skin/frontend/ultimo/default/css/styles-ie8.css" media="all" />
+<![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+var infortisTheme = {}; infortisTheme.responsive = true; infortisTheme.maxBreak = 1280;
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.hackspark.fr';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = [];
+//]]>
+</script>
+<!-- BEGIN GOOGLE ANALYTICS CODEs -->
+<script type="text/javascript">
+//<![CDATA[
+    var _gaq = _gaq || [];
+    
+_gaq.push(['_setAccount', 'UA-190355-12']);
+
+_gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+<style type="text/css">
+								.footer-container
+	{
+		background-image: url(https://hackspark.fr/media/wysiwyg/infortis/ultimo/_patterns/default/8.png);
+	}
+		</style><script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"HTML tags are not allowed":"Les balises HTML ne sont pas autoris\u00e9es","Please select an option.":"S\u00e9lectionnez une option","This is a required field.":"Ce champ est obligatoire.","Please enter a valid number in this field.":"Veuillez saisir un nombre valide.","The value is not within the specified range.":"La valeur n'est pas dans la plage sp\u00e9cifi\u00e9e.","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"Seuls les chiffres sont autoris\u00e9s dans ce champ. \u00c9vitez les espaces ou autres caract\u00e8res tels que les points ou les virgules.","Please use letters only (a-z or A-Z) in this field.":"Veuillez utiliser uniquement des lettres (a-z ou A-Z) dans ce champ.","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Veuillez utiliser uniquement des lettres (a-z), des chiffres (0-9) ou underscore (_) dans ce champ, en commen\u00e7ant par une lettre.","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"Veuillez utiliser uniquement des lettres (a-z) ou des chiffres (0-9) dans ce champ. Les espaces et autres caract\u00e8res ne sont pas autoris\u00e9s.","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"Veuillez utiliser uniquement des lettres (a-z), des chiffres (0-9), des espaces ou des di\u00e8ses (#) dans ce champ.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Veuillez saisir un num\u00e9ro de t\u00e9l\u00e9phone valide.","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"Veuillez saisir un num\u00e9ro de fax valide. Par exemple 0123456789.","Please enter a valid date.":"Veuillez saisir une date valide.","Please enter a valid email address. For example johndoe@domain.com.":"Veuillez saisir une adresse email valide. Par exemple prenom.nom@domaine.com","Please use only visible characters and spaces.":"Veuillez utiliser uniquement des caract\u00e8res visibles et des espaces.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Veuillez saisir au moins 6 caract\u00e8res. Les espaces en d\u00e9but ou en fin de cha\u00eene seront ignor\u00e9s.","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"Veuillez saisir au moins 7 caract\u00e8res. Le mot de passe doit contenir \u00e0 la fois des caract\u00e8res num\u00e9riques et alphab\u00e9tiques.","Please make sure your passwords match.":"V\u00e9rifiez que vos mots de passe concordent.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"Veuillez saisir une URL valide. Le protocole est obligatire (http:\/\/, https:\/\/ ou ftp:\/\/)","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Veuillez saisir une URL valide. Par exemple http:\/\/www.exemple.com ou www.exemple.com","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"Veuillez saisir une URL valide. Par exemple \"page-exemple\", \"page-exemple.html\" ou \"niveau\/page-exemple\".","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"Veuillez saisir un identifiant XML valide. Par exemple, quelquechose_1, bloc5, id-4.","Please enter a valid social security number. For example 123-45-6789.":"Veuillez saisir un num\u00e9ro de s\u00e9curit\u00e9 sociale valide. Par exemple 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Veuillez saisir un code postal valide. Par exemple 92100.","Please enter a valid zip code.":"Veuillez saisir un code postal valide.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Veuillez utiliser ce format de date : jj\/mm\/aaaa. Par exemple, 21\/12\/2012 pour le 21 D\u00e9cembre 2012.","Please enter a valid $ amount. For example $100.00.":"Veuillez saisir un montant valide. Par exemple 100.00 \u20ac.","Please select one of the above options.":"Veuillez choisir une des options ci-dessus.","Please select one of the options.":"Veuillez choisir une des options.","Please select State\/Province.":"Veuillez choisir un \u00e9tat\/province.","Please enter a number greater than 0 in this field.":"Veuillez saisir un nombre sup\u00e9rieur \u00e0 0 dans ce champ.","Please enter a number 0 or greater in this field.":"Veuillez saisir un nombre sup\u00e9rieur ou \u00e9gal \u00e0 0 dans ce champ.","Please enter a valid credit card number.":"Veuillez saisir un num\u00e9ro de carte bancaire valide.","Credit card number does not match credit card type.":"Le num\u00e9ro de carte ne correspond pas au type de carte.","Card type does not match credit card number.":"Le type de carte ne correspond pas au num\u00e9ro de carte.","Incorrect credit card expiration date.":"Mauvaise date d'expiration de carte de cr\u00e9dit.","Please enter a valid credit card verification number.":"Veuillez saisir un num\u00e9ro de v\u00e9rification de carte bancaire valide.","Please use only letters (a-z or A-Z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Utilisez uniquement des lettres (a-z ou A-Z), des chiffres (0-9) ou des underscores (_) dans ce champ. Le premier caract\u00e8re doit \u00eatre une lettre.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"Veuillez saisir une longueur CSS valide. Par exemple 100px ou 77pt ou 20 em ou .5ex ou 50%.","Text length does not satisfy specified text range.":"La longueur du texte ne satisfait pas la plage de texte sp\u00e9cifi\u00e9e.","Please enter a number lower than 100.":"Veuillez saisir un nombre inf\u00e9rieur \u00e0 100.","Please select a file":"S\u00e9lectionnez un fichier","Please enter issue number or start date for switch\/solo card type.":"Veuillez saisir le num\u00e9ro de probl\u00e8me ou une date de d\u00e9but pour le type de carte switch\/solo.","Please wait, loading...":"Veuillez patienter, chargement en cours...","This date is a required value.":"Cette date est obligatoire.","Please enter a valid day (1-%d).":"Veuillez saisir un jour valide (1-%d).","Please enter a valid month (1-12).":"Veuillez saisir un mois valide (1-12).","Please enter a valid year (1900-%d).":"Veuillez saisir une ann\u00e9e valide (1900-%d).","Please enter a valid full date":"Veuillez saisir une date compl\u00e8te valide.","Please enter a valid date between %s and %s":"Veuillez saisir une date valide entre %s et %s","Please enter a valid date equal to or greater than %s":"Veuillez saisir une date valide sup\u00e9rieure ou \u00e9gale \u00e0 %s","Please enter a valid date less than or equal to %s":"Veuillez saisir une date valide inf\u00e9rieure ou \u00e9gale \u00e0 %s","Complete":"Termin\u00e9e","Add Products":"Ajouter des produits","Please choose to register or to checkout as a guest":"Choisissez de vous enregistrer ou de passer votre commande en tant qu'invit\u00e9","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"Vous ne pouvez pas continuer votre commande car aucun mode de livraison n'est disponible pour votre adresse.","Please specify payment method.":"Choisissez un mode de paiement.","Your order cannot be completed at this time as there is no payment methods available for it.":"Vous ne pouvez pas continuer votre commande car aucun mode de paiement n'est disponible.","Insert Widget...":"Ins\u00e9rer un widget..."});
+        //]]></script><!-- Begin: www.iperceptions.com --> <script type="text/javascript"> ;(function (w, d, s, l) { var r = 100, js, fjs = d.getElementsByTagName(s)[0], id = "IPerceptionsJS", a = "async", b = "defer",go = function() { if(d.getElementById(id)) { return; } js = d.createElement(s);js.src = w.location.protocol + "//ips-invite.iperceptions.com/webValidator.aspx?sdfc=ea9c99f0-113289-c22f9d8a-8e28-496b-a601-e0399437f7a7&lID=2&source=91787"; js.id = id; js.type = "text/javascript"; js[a] = a; js[b] = b; fjs.parentNode.insertBefore(js, fjs); }; if(r < Math.floor(Math.random() * 100)) { d.cookie = "IPE_S_113289=0;Path=/;" } else if(!(/(^|;)\s*IPE(_S_)?113289=/.test(d.cookie))){ if (w.addEventListener) { w.addEventListener(l, go, false); } else if (w.attachEvent) { w.attachEvent("on" + l, go); } } })(window, document, "script", "load");</script><!-- End: www.iperceptions.com -->
+
+
+	<link href="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/css.css" rel="stylesheet" type="text/css">
+</head>
+<body class=" catalog-product-view catalog-product-view product-ramps-1-4-5x-stepper-motor-driver-mount-shield-for-arduino ">
+<div id="root-wrapper">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>Javascript est désactivé dans votre navigateur.</strong><br />
+                    Javascript doit être activé dans votre navigateur pour utiliser toutes les fonctionnalités de ce site.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="header-container" id="top">
+<div class="header-container2">
+<div class="header-container3">
+
+    <div class="header-top-container">
+        <div class="header-top header container clearer stretched">
+            <div class="grid-full">
+
+                                    <div class="block_header_top_left item item-left"><div class="hide-below-768"><span class="icon i-telephone no-bg-color"></span>+33 (0) 1 46 59 17 37</div></div>
+                                                <div class="item item-left hide-below-960">
+                    <p class="welcome-msg">Bonjour ! Nous sommes basés à
+ Paris (Boutique au 16, rue Alexandre Dumas), proposons une expédition 
+rapide partout en France et en Europe. </p>
+                </div>
+                
+                                
+	
+    <div class="dropdown currency-switcher item item-right">
+        <div class="dropdown-toggle cover">
+            <div>
+                <div class="label hide-below-768">Devise:</div>
+                <div class="value">EUR</div>
+                <span class="caret">&nbsp;</span>
+            </div>
+        </div>
+        <ul class="dropdown-menu left-hand"><li><a href="https://hackspark.fr/fr/directory/currency/switch/currency/USD/uenc/aHR0cHM6Ly9oYWNrc3BhcmsuZnIvZnIvcmFtcHMtMS00LTV4LXN0ZXBwZXItbW90b3ItZHJpdmVyLW1vdW50LXNoaWVsZC1mb3ItYXJkdWluby5odG1s/">USD - dollar des États-Unis</a></li><li class="current">EUR - euro</li><li><a href="https://hackspark.fr/fr/directory/currency/switch/currency/GBP/uenc/aHR0cHM6Ly9oYWNrc3BhcmsuZnIvZnIvcmFtcHMtMS00LTV4LXN0ZXBwZXItbW90b3ItZHJpdmVyLW1vdW50LXNoaWVsZC1mb3ItYXJkdWluby5odG1s/">GBP - livre sterling</a></li></ul>    </div>
+                	
+    <div class="dropdown lang-switcher item item-right">
+        <div class="dropdown-toggle cover">
+            <div>
+            	<div class="label dropdown-icon flag" style="background-image:url(https://hackspark.fr/skin/frontend/ultimo/default/images/flags/fr.png)">&nbsp;</div>
+                                <div class="value">Français</div>
+                <span class="caret">&nbsp;</span>
+            </div>
+        </div>
+        <ul style="display: none;" class="dropdown-menu left-hand"><li><a href="https://hackspark.fr/en/ramps-1-4-5x-stepper-motor-driver-mount-shield-for-arduino.html?___from_store=fr"><span class="label dropdown-icon" style="background-image:url(https://hackspark.fr/skin/frontend/ultimo/default/images/flags/en.png);">&nbsp;</span>Anglais</a></li><li class="current"><span class="label dropdown-icon" style="background-image:url(https://hackspark.fr/skin/frontend/ultimo/default/images/flags/fr.png);">&nbsp;</span>Français</li></ul>    </div>
+                
+            </div> <!-- end: grid-full -->
+                    </div> <!-- end: header-top -->
+    </div> <!-- end: header-top-container -->
+
+    <div class="header-primary-container">
+        <div class="header-primary header container stretched">
+            <div class="grid-full">
+
+                <div class="header-main v-grid-container">
+
+                    <div class="logo-wrapper v-grid grid12-4">
+                                            <a href="https://hackspark.fr/fr/" title="HackSpark, Hacking your world!" class="logo"><strong>HackSpark, Hacking your world!</strong><img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/logo3d_hackspark_small.png" alt="HackSpark, Hacking your world!"></a>
+                                        </div>
+
+                                        <div class="search-wrapper-centered clearer v-grid grid12-4  search-wrapper search-wrapper-mobile">
+                        <form id="search_mini_form" action="https://hackspark.fr/fr/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <label for="search">Rechercher :</label>
+        <input autocomplete="off" id="search" name="q" value="Rechercher..." class="input-text" maxlength="128" type="text">
+        <button type="submit" title="Chercher" class="button"><span><span>Chercher</span></span></button>
+        <div style="display: none;" id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Rechercher...');
+            searchForm.initAutocomplete('https://hackspark.fr/fr/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+                    </div>
+                    
+                    <div class="user-menu clearer v-grid grid12-4">
+
+                        
+                        
+                        
+<div id="mini-cart" class="dropdown is-empty">
+
+    <div class="dropdown-toggle cover" title="Votre panier est vide.">
+    <div class="feature-icon-hover">
+    
+    	<span class="first close-to-text icon i-cart force-no-bg-color">&nbsp;</span>
+        <div class="hide-below-960">Panier</div>
+		        	<div class="empty"><span class="price">0,00&nbsp;€</span></div>
+                <span class="caret">&nbsp;</span>
+
+	</div> <!-- end: dropdown-toggle > div -->
+    </div> <!-- end: dropdown-toggle -->
+    
+            	<div style="display: none;" class="dropdown-menu left-hand block">
+        	<div class="block-content-inner">
+
+				                <div class="empty">Votre panier est vide.</div>
+
+            </div> <!-- end: block-content-inner -->
+		</div> <!-- end: dropdown-menu -->
+    
+</div> <!-- end: mini-cart -->
+
+
+                        <div class="line-break-after"></div>
+                                                
+                        
+                        
+<div id="quick-compare" class="dropdown quick-compare is-empty">
+
+    <div class="dropdown-toggle cover" title="Vous n'avez pas d'articles à comparer.">
+    	<div class="feature-icon-hover">
+        	<span class="first close-to-text icon i-compare force-no-bg-color">&nbsp;</span>
+	        <div class="hide-below-1280">Comparer</div>
+			            	<div class="amount">(0)</div>
+			            <span class="caret">&nbsp;</span>
+        </div>
+    </div>
+    <div style="display: none;" class="dropdown-menu left-hand">
+            <div class="empty">Vous n'avez pas d'articles à comparer.</div>
+        </div><!-- end: dropdown-menu -->
+
+</div>
+
+                        
+                                                
+                        
+                        <div class="top-links links-wrapper-separators-left">
+
+                                
+<ul class="links">
+            
+			
+            <li class="first"><a href="https://hackspark.fr/fr/customer/account/" title="Mon compte">Mon compte</a></li>
+                                <li><a href="https://hackspark.fr/fr/wishlist/" title="Coups de cœur">Coups de cœur</a></li>
+                    
+			
+            <li><a href="https://hackspark.fr/fr/blog/" title="Blog" class="top-link-blog">Blog</a></li>
+                    
+			
+            <li><a href="https://hackspark.fr/fr/customer/account/login/" title="Connexion">Connexion</a></li>
+                    
+			
+            <li class=" last" id="link-sign-up"><a href="https://hackspark.fr/fr/customer/account/create/" title="S'inscrire">S'inscrire</a></li>
+            </ul>
+                        </div> <!-- end: top-links -->
+
+                        
+                        
+                    </div> <!-- end: user-menu -->
+                    
+                </div> <!-- end: v-grid-container -->
+
+            </div> <!-- end: grid-full -->
+        </div> <!-- end: header-primary -->
+    </div> <!-- end: header-primary-container -->
+
+    <div class="nav-container">
+        <div class="nav container clearer stretched show-bg">
+            
+    
+
+
+    
+    
+        <div style="display: none;" id="mobnav" class="grid-full">
+            <a id="mobnav-trigger" href="">
+                <span class="trigger-icon"><span class="line"></span><span class="line"></span><span class="line"></span></span>
+                <span>Menu</span>
+            </a>
+        </div>
+
+        <ul class="accordion vertnav vertnav-top grid-full">
+        
+                                        <li class="level0 nav-1 level-top first parent">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement.html" class="level-top">
+<span>Outils de dev.</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level0">
+<li class="level1 nav-1-1 first parent">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/arduino.html">
+<span>Arduino</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-1-1-1 first">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/arduino/accessoires.html">
+<span>Accessoires</span>
+</a>
+</li><li class="level2 nav-1-1-2">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/arduino/cartes-additionnelles-carte-filles-ou-shields.html">
+<span>Cartes additionnelles (carte filles ou shields)</span>
+</a>
+</li><li class="level2 nav-1-1-3">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/arduino/main-boards.html">
+<span>Cartes principales</span>
+</a>
+</li><li class="level2 nav-1-1-4 last">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/arduino/cartes-officielles.html">
+<span>Cartes officielles</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-1-2 parent">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/msp430.html">
+<span>MSP430</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-1-2-5 first">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/msp430/dev-boards.html">
+<span>Development Boards</span>
+</a>
+</li><li class="level2 nav-1-2-6 last">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/msp430/booster-packs-shields.html">
+<span>Booster Packs (Shields)</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-1-3 parent">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/stm32.html">
+<span>STM32</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-1-3-7 first">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/stm32/stm32-discovery.html">
+<span>Discovery</span>
+</a>
+</li><li class="level2 nav-1-3-8">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/stm32/stm32-nucleo.html">
+<span>Nucleo</span>
+</a>
+</li><li class="level2 nav-1-3-9 last">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/stm32/stm32-autres.html">
+<span>Autres</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-1-4">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/stm8.html">
+<span>STM8</span>
+</a>
+</li><li class="level1 nav-1-5 parent">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux.html">
+<span>Linux</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-1-5-10 first">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/raspberry-pi.html">
+<span>Raspberry Pi</span>
+</a>
+</li><li class="level2 nav-1-5-11">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/cubieboard.html">
+<span>CubieBoard</span>
+</a>
+</li><li class="level2 nav-1-5-12">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/beagleboards.html">
+<span>BeagleBoards</span>
+</a>
+</li><li class="level2 nav-1-5-13">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/pcduino.html">
+<span>PCDuino</span>
+</a>
+</li><li class="level2 nav-1-5-14">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/arduino.html">
+<span>Arduino</span>
+</a>
+</li><li class="level2 nav-1-5-15">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/radxa-rock.html">
+<span>Radxa Rock</span>
+</a>
+</li><li class="level2 nav-1-5-16 last">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/firefly.html">
+<span>FireFly</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-1-6">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/c2000.html">
+<span>C2000</span>
+</a>
+</li><li class="level1 nav-1-7">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/tiva-arm.html">
+<span>Tiva ARM</span>
+</a>
+</li><li class="level1 nav-1-8">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/kinetis.html">
+<span>Kinetis ARM</span>
+</a>
+</li><li class="level1 nav-1-9">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/mbed.html">
+<span>MBed</span>
+</a>
+</li><li class="level1 nav-1-10">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/programmers.html">
+<span>Programmers</span>
+</a>
+</li><li class="level1 nav-1-11">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/scripting-node-js-lua-python.html">
+<span>Scripting (Node JS, LUA, Python...)</span>
+</a>
+</li><li class="level1 nav-1-12 last">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/esp8266.html">
+<span>ESP8266</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level0 nav-2 level-top parent">
+<a href="https://hackspark.fr/fr/affichage.html" class="level-top">
+<span>Affichage</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level0">
+<li class="level1 nav-2-1 first parent">
+<a href="https://hackspark.fr/fr/affichage/lcd.html">
+<span>LCD</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-2-1-1 first">
+<a href="https://hackspark.fr/fr/affichage/lcd/character-lcd.html">
+<span>Character LCD</span>
+</a>
+</li><li class="level2 nav-2-1-2">
+<a href="https://hackspark.fr/fr/affichage/lcd/graphic-lcd.html">
+<span>Graphic LCD</span>
+</a>
+</li><li class="level2 nav-2-1-3">
+<a href="https://hackspark.fr/fr/affichage/lcd/tft-lcd.html">
+<span>TFT LCD</span>
+</a>
+</li><li class="level2 nav-2-1-4 last">
+<a href="https://hackspark.fr/fr/affichage/lcd/oled.html">
+<span>Oled</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-2-2">
+<a href="https://hackspark.fr/fr/affichage/affichages-a-led-del.html">
+<span>Affichages à LED (DEL)</span>
+</a>
+</li><li class="level1 nav-2-3">
+<a href="https://hackspark.fr/fr/affichage/leds.html">
+<span>LEDs</span>
+</a>
+</li><li class="level1 nav-2-4">
+<a href="https://hackspark.fr/fr/affichage/e-ink-e-paper.html">
+<span>E-Ink &amp; E-Paper</span>
+</a>
+</li><li class="level1 nav-2-5 last">
+<a href="https://hackspark.fr/fr/affichage/vfds.html">
+<span>VFDs</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level0 nav-3 level-top parent">
+<a href="https://hackspark.fr/fr/composants.html" class="level-top">
+<span>Composants</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level0">
+<li class="level1 nav-3-1 first parent">
+<a href="https://hackspark.fr/fr/composants/interface-homme-machine.html">
+<span>Interface Homme-Machine</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-3-1-1 first last">
+<a href="https://hackspark.fr/fr/composants/interface-homme-machine/boutons-et-interrupteurs.html">
+<span>Boutons et interrupteurs</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-3-2">
+<a href="https://hackspark.fr/fr/composants/connecteurs-et-fils.html">
+<span>Connecteurs et Fils</span>
+</a>
+</li><li class="level1 nav-3-3 parent">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique.html">
+<span>Bases de l'électronique</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-3-3-2 first">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/switches.html">
+<span>Commutateurs (switchs)</span>
+</a>
+</li><li class="level2 nav-3-3-3">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/relais.html">
+<span>Relais</span>
+</a>
+</li><li class="level2 nav-3-3-4">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/autres.html">
+<span>Autres</span>
+</a>
+</li><li class="level2 nav-3-3-5">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/diodes.html">
+<span>Diodes</span>
+</a>
+</li><li class="level2 nav-3-3-6">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/resistances.html">
+<span>Résistances</span>
+</a>
+</li><li class="level2 nav-3-3-7 last">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/mosfets-transistors.html">
+<span>MOSFETs &amp; Transistors</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-3-4">
+<a href="https://hackspark.fr/fr/composants/circuits-imprimes-pcb.html">
+<span>Circuits imprimés (PCB)</span>
+</a>
+</li><li class="level1 nav-3-5">
+<a href="https://hackspark.fr/fr/composants/breakout-boards.html">
+<span>Break-out Boards</span>
+</a>
+</li><li class="level1 nav-3-6 parent">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics.html">
+<span>Circuits intégrés (Chips, puces, ICs)</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-3-6-8 first">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics/simple-and-common.html">
+<span>Simple and common</span>
+</a>
+</li><li class="level2 nav-3-6-9">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics/power.html">
+<span>Power</span>
+</a>
+</li><li class="level2 nav-3-6-10">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics/sensing.html">
+<span>Sensing</span>
+</a>
+</li><li class="level2 nav-3-6-11">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics/communication.html">
+<span>Communication</span>
+</a>
+</li><li class="level2 nav-3-6-12 last">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics/shift-registers-power-and-logic.html">
+<span>Shift-Registers (power and logic)</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-3-7 parent">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil.html">
+<span>Connectivité sans fil</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-3-7-13 first">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/bluetooth.html">
+<span>Bluetooth</span>
+</a>
+</li><li class="level2 nav-3-7-14">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/wifi.html">
+<span>WiFi</span>
+</a>
+</li><li class="level2 nav-3-7-15 parent">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/rf.html">
+<span>RF</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level2">
+<li class="level3 nav-3-7-15-1 first">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/rf/2-4ghz.html">
+<span>2.4Ghz</span>
+</a>
+</li><li class="level3 nav-3-7-15-2 last">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/rf/433mhz.html">
+<span>433Mhz</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level2 nav-3-7-16">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/rfid.html">
+<span>RFID</span>
+</a>
+</li><li class="level2 nav-3-7-17">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/nfc.html">
+<span>NFC</span>
+</a>
+</li><li class="level2 nav-3-7-18">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/gsm-reseaux-mobiles.html">
+<span>GSM / Réseaux mobiles</span>
+</a>
+</li><li class="level2 nav-3-7-19 last">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/gps.html">
+<span>GPS</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-3-8 parent">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs.html">
+<span>Moteur et servo-moteurs</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-3-8-20 first">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs/stepper.html">
+<span>Stepper</span>
+</a>
+</li><li class="level2 nav-3-8-21">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs/servos.html">
+<span>Servos</span>
+</a>
+</li><li class="level2 nav-3-8-22">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs/dc-motors.html">
+<span>DC Motors</span>
+</a>
+</li><li class="level2 nav-3-8-23">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs/water-valves-pumps.html">
+<span>Water (valves, pumps...)</span>
+</a>
+</li><li class="level2 nav-3-8-24 last">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs/drivers.html">
+<span>Drivers</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-3-9 parent">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie.html">
+<span>Puissance et Energie</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-3-9-25 first">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie/collecte-d-energie.html">
+<span>Collecte d'énergie</span>
+</a>
+</li><li class="level2 nav-3-9-26">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie/gestion-de-l-energie.html">
+<span>Gestion de l'énergie</span>
+</a>
+</li><li class="level2 nav-3-9-27">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie/stockage-batteries.html">
+<span>Stockage &amp; Batteries</span>
+</a>
+</li><li class="level2 nav-3-9-28">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie/modules-d-alimentation.html">
+<span>Modules d'Alimentation</span>
+</a>
+</li><li class="level2 nav-3-9-29 last">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie/connecteurs.html">
+<span>Connecteurs</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-3-10 parent">
+<a href="https://hackspark.fr/fr/composants/senseurs.html">
+<span>Senseurs</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-3-10-30 first">
+<a href="https://hackspark.fr/fr/composants/senseurs/poids-et-hauteur.html">
+<span>Poids et hauteur</span>
+</a>
+</li><li class="level2 nav-3-10-31">
+<a href="https://hackspark.fr/fr/composants/senseurs/inertiel.html">
+<span>Inertiel</span>
+</a>
+</li><li class="level2 nav-3-10-32">
+<a href="https://hackspark.fr/fr/composants/senseurs/gaz-volatile.html">
+<span>Gaz / Volatile</span>
+</a>
+</li><li class="level2 nav-3-10-33">
+<a href="https://hackspark.fr/fr/composants/senseurs/others.html">
+<span>Autres</span>
+</a>
+</li><li class="level2 nav-3-10-34">
+<a href="https://hackspark.fr/fr/composants/senseurs/distance.html">
+<span>Distance</span>
+</a>
+</li><li class="level2 nav-3-10-35">
+<a href="https://hackspark.fr/fr/composants/senseurs/picture-cameras.html">
+<span>Image (Cameras)</span>
+</a>
+</li><li class="level2 nav-3-10-36">
+<a href="https://hackspark.fr/fr/composants/senseurs/lumiere-et-couleur.html">
+<span>Lumière et couleur</span>
+</a>
+</li><li class="level2 nav-3-10-37 last">
+<a href="https://hackspark.fr/fr/composants/senseurs/corps-humain-body-sensors.html">
+<span>Corps Humain (Body sensors)</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-3-11">
+<a href="https://hackspark.fr/fr/composants/grove.html">
+<span>Grove</span>
+</a>
+</li><li class="level1 nav-3-12 parent">
+<a href="https://hackspark.fr/fr/composants/leds.html">
+<span>LEDs &amp; Lampes</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-3-12-38 first">
+<a href="https://hackspark.fr/fr/composants/leds/visible.html">
+<span>Visible</span>
+</a>
+</li><li class="level2 nav-3-12-39">
+<a href="https://hackspark.fr/fr/composants/leds/laser.html">
+<span>Laser</span>
+</a>
+</li><li class="level2 nav-3-12-40">
+<a href="https://hackspark.fr/fr/composants/leds/eclairage.html">
+<span>Éclairage</span>
+</a>
+</li><li class="level2 nav-3-12-41 last">
+<a href="https://hackspark.fr/fr/composants/leds/el.html">
+<span>EL</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-3-13">
+<a href="https://hackspark.fr/fr/composants/domotique.html">
+<span>Domotique</span>
+</a>
+</li><li class="level1 nav-3-14 parent">
+<a href="https://hackspark.fr/fr/composants/reseau.html">
+<span>Réseau</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-3-14-42 first">
+<a href="https://hackspark.fr/fr/composants/reseau/ethernet.html">
+<span>Ethernet</span>
+</a>
+</li><li class="level2 nav-3-14-43">
+<a href="https://hackspark.fr/fr/composants/reseau/wifi.html">
+<span>Wifi</span>
+</a>
+</li><li class="level2 nav-3-14-44 last">
+<a href="https://hackspark.fr/fr/composants/reseau/dmx.html">
+<span>DMX</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-3-15">
+<a href="https://hackspark.fr/fr/composants/son.html">
+<span>Son</span>
+</a>
+</li><li class="level1 nav-3-16 last parent">
+<a href="https://hackspark.fr/fr/composants/autres.html">
+<span>Autres</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-3-16-45 first last">
+<a href="https://hackspark.fr/fr/composants/autres/modules-de-peltier.html">
+<span>Modules de Peltier</span>
+</a>
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li><li class="level0 nav-4 level-top parent">
+<a href="https://hackspark.fr/fr/prototypage.html" class="level-top">
+<span>Prototypage</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level0">
+<li class="level1 nav-4-1 first">
+<a href="https://hackspark.fr/fr/prototypage/platines-d-essai-breadboards.html">
+<span>Platines d'essai (breadboards)</span>
+</a>
+</li><li class="level1 nav-4-2">
+<a href="https://hackspark.fr/fr/prototypage/circuits-imprimes-de-prototypage.html">
+<span>Circuits imprimés de prototypage</span>
+</a>
+</li><li class="level1 nav-4-3">
+<a href="https://hackspark.fr/fr/prototypage/prototype-enclosures.html">
+<span>Boîtiers pour prototypes</span>
+</a>
+</li><li class="level1 nav-4-4">
+<a href="https://hackspark.fr/fr/prototypage/kits-de-composants-et-pour-debutants.html">
+<span>Kits (de composants, pour débutants, etc.)</span>
+</a>
+</li><li class="level1 nav-4-5 last parent">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques.html">
+<span>Éléments mécaniques</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-4-5-1 first">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques/engrenages.html">
+<span>Engrenages</span>
+</a>
+</li><li class="level2 nav-4-5-2">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques/multi-usages.html">
+<span>Multi-usages</span>
+</a>
+</li><li class="level2 nav-4-5-3">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques/imprimantes-3d.html">
+<span>Imprimantes 3d</span>
+</a>
+</li><li class="level2 nav-4-5-4">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques/cnc.html">
+<span>CNC</span>
+</a>
+</li><li class="level2 nav-4-5-5 last">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques/usage-robotique.html">
+<span>Usage Robotique</span>
+</a>
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li><li class="level0 nav-5 level-top parent">
+<a href="https://hackspark.fr/fr/robotique.html" class="level-top">
+<span>Robotique</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level0">
+<li class="level1 nav-5-1 first">
+<a href="https://hackspark.fr/fr/robotique/moteur-et-servo-moteurs.html">
+<span>Moteur et servo-moteurs</span>
+</a>
+</li><li class="level1 nav-5-2">
+<a href="https://hackspark.fr/fr/robotique/kits.html">
+<span>Kits</span>
+</a>
+</li><li class="level1 nav-5-3">
+<a href="https://hackspark.fr/fr/robotique/electronic-drivers.html">
+<span>Drivers électroniques (de moteurs, etc.)</span>
+</a>
+</li><li class="level1 nav-5-4">
+<a href="https://hackspark.fr/fr/robotique/accessories.html">
+<span>Accessoires</span>
+</a>
+</li><li class="level1 nav-5-5">
+<a href="https://hackspark.fr/fr/robotique/imu-inertial-mesurement-unit.html">
+<span>Capteurs à inertie (IMUs)</span>
+</a>
+</li><li class="level1 nav-5-6 last">
+<a href="https://hackspark.fr/fr/robotique/elements-mecaniques.html">
+<span>Éléments mécaniques</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level0 nav-6 level-top last parent">
+<a href="https://hackspark.fr/fr/outils.html" class="level-top">
+<span>Outils</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level0">
+<li class="level1 nav-6-1 first">
+<a href="https://hackspark.fr/fr/outils/outils-essentiels.html">
+<span>Outils essentiels</span>
+</a>
+</li><li class="level1 nav-6-2">
+<a href="https://hackspark.fr/fr/outils/smt-smd-tools.html">
+<span>Outils pour le montage de surface (CMS)</span>
+</a>
+</li><li class="level1 nav-6-3">
+<a href="https://hackspark.fr/fr/outils/boitiers.html">
+<span>Boitiers</span>
+</a>
+</li><li class="level1 nav-6-4 parent">
+<a href="https://hackspark.fr/fr/outils/mesures.html">
+<span>Mesures</span>
+</a>
+<span class="opener">&nbsp;</span>
+
+<ul style="display: none;" class="level1">
+<li class="level2 nav-6-4-1 first">
+<a href="https://hackspark.fr/fr/outils/mesures/oscilloscopes.html">
+<span>Oscilloscopes</span>
+</a>
+</li><li class="level2 nav-6-4-2">
+<a href="https://hackspark.fr/fr/outils/mesures/multimetres.html">
+<span>Multimètres</span>
+</a>
+</li><li class="level2 nav-6-4-3 last">
+<a href="https://hackspark.fr/fr/outils/mesures/digital-logic.html">
+<span>Digital / Logic</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-6-5">
+<a href="https://hackspark.fr/fr/outils/outils-pour-cables-et-fils.html">
+<span>Outils pour Cables et Fils</span>
+</a>
+</li><li class="level1 nav-6-6">
+<a href="https://hackspark.fr/fr/outils/soudure.html">
+<span>Soudure</span>
+</a>
+</li><li class="level1 nav-6-7">
+<a href="https://hackspark.fr/fr/outils/outils-d-atelier.html">
+<span>Outils d'Atelier</span>
+</a>
+</li><li class="level1 nav-6-8 last">
+<a href="https://hackspark.fr/fr/outils/visserie.html">
+<span>Visserie</span>
+</a>
+</li>
+</ul>
+
+</li>                        
+                        
+        </ul>
+
+    
+
+
+    
+    
+        <ul id="nav" class="grid-full wide">
+        
+                        
+                                                        <li id="nav-home" class=" level0 level-top">
+                    <a class="level-top feature feature-icon-hover" href="https://hackspark.fr/fr/"><span>Accueil</span></a>
+                </li>
+                        
+                                        <li class="level0 nav-7 level-top first parent">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement.html" class="level-top">
+<span>Outils de dev.</span><span class="caret">&nbsp;</span>
+</a>
+<div class="level0-wrapper dropdown-6col"><div class="level0-wrapper2">
+<div class="nav-block nav-block-center grid12-12 itemgrid itemgrid-6col">
+<ul class="level0">
+<li class="level1 nav-7-1 first parent item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/arduino.html">
+<span>Arduino</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-7-1-1 first">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/arduino/accessoires.html">
+<span>Accessoires</span>
+</a>
+</li><li class="level2 nav-7-1-2">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/arduino/cartes-additionnelles-carte-filles-ou-shields.html">
+<span>Cartes additionnelles (carte filles ou shields)</span>
+</a>
+</li><li class="level2 nav-7-1-3">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/arduino/main-boards.html">
+<span>Cartes principales</span>
+</a>
+</li><li class="level2 nav-7-1-4 last">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/arduino/cartes-officielles.html">
+<span>Cartes officielles</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-7-2 parent item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/msp430.html">
+<span>MSP430</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-7-2-5 first">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/msp430/dev-boards.html">
+<span>Development Boards</span>
+</a>
+</li><li class="level2 nav-7-2-6 last">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/msp430/booster-packs-shields.html">
+<span>Booster Packs (Shields)</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-7-3 parent item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/stm32.html">
+<span>STM32</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-7-3-7 first">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/stm32/stm32-discovery.html">
+<span>Discovery</span>
+</a>
+</li><li class="level2 nav-7-3-8">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/stm32/stm32-nucleo.html">
+<span>Nucleo</span>
+</a>
+</li><li class="level2 nav-7-3-9 last">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/stm32/stm32-autres.html">
+<span>Autres</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-7-4 item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/stm8.html">
+<span>STM8</span>
+</a>
+</li><li class="level1 nav-7-5 parent item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux.html">
+<span>Linux</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-7-5-10 first">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/raspberry-pi.html">
+<span>Raspberry Pi</span>
+</a>
+</li><li class="level2 nav-7-5-11">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/cubieboard.html">
+<span>CubieBoard</span>
+</a>
+</li><li class="level2 nav-7-5-12">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/beagleboards.html">
+<span>BeagleBoards</span>
+</a>
+</li><li class="level2 nav-7-5-13">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/pcduino.html">
+<span>PCDuino</span>
+</a>
+</li><li class="level2 nav-7-5-14">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/arduino.html">
+<span>Arduino</span>
+</a>
+</li><li class="level2 nav-7-5-15">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/radxa-rock.html">
+<span>Radxa Rock</span>
+</a>
+</li><li class="level2 nav-7-5-16 last">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/linux/firefly.html">
+<span>FireFly</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-7-6 item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/c2000.html">
+<span>C2000</span>
+</a>
+</li><li class="level1 nav-7-7 item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/tiva-arm.html">
+<span>Tiva ARM</span>
+</a>
+</li><li class="level1 nav-7-8 item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/kinetis.html">
+<span>Kinetis ARM</span>
+</a>
+</li><li class="level1 nav-7-9 item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/mbed.html">
+<span>MBed</span>
+</a>
+</li><li class="level1 nav-7-10 item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/programmers.html">
+<span>Programmers</span>
+</a>
+</li><li class="level1 nav-7-11 item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/scripting-node-js-lua-python.html">
+<span>Scripting (Node JS, LUA, Python...)</span>
+</a>
+</li><li class="level1 nav-7-12 last item">
+<a href="https://hackspark.fr/fr/plateformes-de-developpement/esp8266.html">
+<span>ESP8266</span>
+</a>
+</li>
+</ul>
+</div>
+</div></div>
+</li><li class="level0 nav-8 level-top parent">
+<a href="https://hackspark.fr/fr/affichage.html" class="level-top">
+<span>Affichage</span><span class="caret">&nbsp;</span>
+</a>
+<div class="level0-wrapper dropdown-6col"><div class="level0-wrapper2">
+<div class="nav-block nav-block-center grid12-12 itemgrid itemgrid-6col">
+<ul class="level0">
+<li class="level1 nav-8-1 first parent item">
+<a href="https://hackspark.fr/fr/affichage/lcd.html">
+<span>LCD</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-8-1-1 first">
+<a href="https://hackspark.fr/fr/affichage/lcd/character-lcd.html">
+<span>Character LCD</span>
+</a>
+</li><li class="level2 nav-8-1-2">
+<a href="https://hackspark.fr/fr/affichage/lcd/graphic-lcd.html">
+<span>Graphic LCD</span>
+</a>
+</li><li class="level2 nav-8-1-3">
+<a href="https://hackspark.fr/fr/affichage/lcd/tft-lcd.html">
+<span>TFT LCD</span>
+</a>
+</li><li class="level2 nav-8-1-4 last">
+<a href="https://hackspark.fr/fr/affichage/lcd/oled.html">
+<span>Oled</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-8-2 item">
+<a href="https://hackspark.fr/fr/affichage/affichages-a-led-del.html">
+<span>Affichages à LED (DEL)</span>
+</a>
+</li><li class="level1 nav-8-3 item">
+<a href="https://hackspark.fr/fr/affichage/leds.html">
+<span>LEDs</span>
+</a>
+</li><li class="level1 nav-8-4 item">
+<a href="https://hackspark.fr/fr/affichage/e-ink-e-paper.html">
+<span>E-Ink &amp; E-Paper</span>
+</a>
+</li><li class="level1 nav-8-5 last item">
+<a href="https://hackspark.fr/fr/affichage/vfds.html">
+<span>VFDs</span>
+</a>
+</li>
+</ul>
+</div>
+</div></div>
+</li><li class="level0 nav-9 level-top parent">
+<a href="https://hackspark.fr/fr/composants.html" class="level-top">
+<span>Composants</span><span class="caret">&nbsp;</span>
+</a>
+<div class="level0-wrapper dropdown-6col"><div class="level0-wrapper2">
+<div class="nav-block nav-block-center grid12-12 itemgrid itemgrid-6col">
+<ul class="level0">
+<li class="level1 nav-9-1 first parent item">
+<a href="https://hackspark.fr/fr/composants/interface-homme-machine.html">
+<span>Interface Homme-Machine</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-9-1-1 first last">
+<a href="https://hackspark.fr/fr/composants/interface-homme-machine/boutons-et-interrupteurs.html">
+<span>Boutons et interrupteurs</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-9-2 item">
+<a href="https://hackspark.fr/fr/composants/connecteurs-et-fils.html">
+<span>Connecteurs et Fils</span>
+</a>
+</li><li class="level1 nav-9-3 parent item">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique.html">
+<span>Bases de l'électronique</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-9-3-2 first">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/switches.html">
+<span>Commutateurs (switchs)</span>
+</a>
+</li><li class="level2 nav-9-3-3">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/relais.html">
+<span>Relais</span>
+</a>
+</li><li class="level2 nav-9-3-4">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/autres.html">
+<span>Autres</span>
+</a>
+</li><li class="level2 nav-9-3-5">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/diodes.html">
+<span>Diodes</span>
+</a>
+</li><li class="level2 nav-9-3-6">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/resistances.html">
+<span>Résistances</span>
+</a>
+</li><li class="level2 nav-9-3-7 last">
+<a href="https://hackspark.fr/fr/composants/bases-de-l-electronique/mosfets-transistors.html">
+<span>MOSFETs &amp; Transistors</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-9-4 item">
+<a href="https://hackspark.fr/fr/composants/circuits-imprimes-pcb.html">
+<span>Circuits imprimés (PCB)</span>
+</a>
+</li><li class="level1 nav-9-5 item">
+<a href="https://hackspark.fr/fr/composants/breakout-boards.html">
+<span>Break-out Boards</span>
+</a>
+</li><li class="level1 nav-9-6 parent item">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics.html">
+<span>Circuits intégrés (Chips, puces, ICs)</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-9-6-8 first">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics/simple-and-common.html">
+<span>Simple and common</span>
+</a>
+</li><li class="level2 nav-9-6-9">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics/power.html">
+<span>Power</span>
+</a>
+</li><li class="level2 nav-9-6-10">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics/sensing.html">
+<span>Sensing</span>
+</a>
+</li><li class="level2 nav-9-6-11">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics/communication.html">
+<span>Communication</span>
+</a>
+</li><li class="level2 nav-9-6-12 last">
+<a href="https://hackspark.fr/fr/composants/circuits-integres-chips-puces-ics/shift-registers-power-and-logic.html">
+<span>Shift-Registers (power and logic)</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-9-7 parent item">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil.html">
+<span>Connectivité sans fil</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-9-7-13 first">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/bluetooth.html">
+<span>Bluetooth</span>
+</a>
+</li><li class="level2 nav-9-7-14">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/wifi.html">
+<span>WiFi</span>
+</a>
+</li><li class="level2 nav-9-7-15 parent">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/rf.html">
+<span>RF</span>
+</a>
+
+<ul class="level2">
+<li class="level3 nav-9-7-15-1 first">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/rf/2-4ghz.html">
+<span>2.4Ghz</span>
+</a>
+</li><li class="level3 nav-9-7-15-2 last">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/rf/433mhz.html">
+<span>433Mhz</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level2 nav-9-7-16">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/rfid.html">
+<span>RFID</span>
+</a>
+</li><li class="level2 nav-9-7-17">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/nfc.html">
+<span>NFC</span>
+</a>
+</li><li class="level2 nav-9-7-18">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/gsm-reseaux-mobiles.html">
+<span>GSM / Réseaux mobiles</span>
+</a>
+</li><li class="level2 nav-9-7-19 last">
+<a href="https://hackspark.fr/fr/composants/connectivite-sans-fil/gps.html">
+<span>GPS</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-9-8 parent item">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs.html">
+<span>Moteur et servo-moteurs</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-9-8-20 first">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs/stepper.html">
+<span>Stepper</span>
+</a>
+</li><li class="level2 nav-9-8-21">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs/servos.html">
+<span>Servos</span>
+</a>
+</li><li class="level2 nav-9-8-22">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs/dc-motors.html">
+<span>DC Motors</span>
+</a>
+</li><li class="level2 nav-9-8-23">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs/water-valves-pumps.html">
+<span>Water (valves, pumps...)</span>
+</a>
+</li><li class="level2 nav-9-8-24 last">
+<a href="https://hackspark.fr/fr/composants/moteur-et-servo-moteurs/drivers.html">
+<span>Drivers</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-9-9 parent item">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie.html">
+<span>Puissance et Energie</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-9-9-25 first">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie/collecte-d-energie.html">
+<span>Collecte d'énergie</span>
+</a>
+</li><li class="level2 nav-9-9-26">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie/gestion-de-l-energie.html">
+<span>Gestion de l'énergie</span>
+</a>
+</li><li class="level2 nav-9-9-27">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie/stockage-batteries.html">
+<span>Stockage &amp; Batteries</span>
+</a>
+</li><li class="level2 nav-9-9-28">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie/modules-d-alimentation.html">
+<span>Modules d'Alimentation</span>
+</a>
+</li><li class="level2 nav-9-9-29 last">
+<a href="https://hackspark.fr/fr/composants/puissance-et-energie/connecteurs.html">
+<span>Connecteurs</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-9-10 parent item">
+<a href="https://hackspark.fr/fr/composants/senseurs.html">
+<span>Senseurs</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-9-10-30 first">
+<a href="https://hackspark.fr/fr/composants/senseurs/poids-et-hauteur.html">
+<span>Poids et hauteur</span>
+</a>
+</li><li class="level2 nav-9-10-31">
+<a href="https://hackspark.fr/fr/composants/senseurs/inertiel.html">
+<span>Inertiel</span>
+</a>
+</li><li class="level2 nav-9-10-32">
+<a href="https://hackspark.fr/fr/composants/senseurs/gaz-volatile.html">
+<span>Gaz / Volatile</span>
+</a>
+</li><li class="level2 nav-9-10-33">
+<a href="https://hackspark.fr/fr/composants/senseurs/others.html">
+<span>Autres</span>
+</a>
+</li><li class="level2 nav-9-10-34">
+<a href="https://hackspark.fr/fr/composants/senseurs/distance.html">
+<span>Distance</span>
+</a>
+</li><li class="level2 nav-9-10-35">
+<a href="https://hackspark.fr/fr/composants/senseurs/picture-cameras.html">
+<span>Image (Cameras)</span>
+</a>
+</li><li class="level2 nav-9-10-36">
+<a href="https://hackspark.fr/fr/composants/senseurs/lumiere-et-couleur.html">
+<span>Lumière et couleur</span>
+</a>
+</li><li class="level2 nav-9-10-37 last">
+<a href="https://hackspark.fr/fr/composants/senseurs/corps-humain-body-sensors.html">
+<span>Corps Humain (Body sensors)</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-9-11 item">
+<a href="https://hackspark.fr/fr/composants/grove.html">
+<span>Grove</span>
+</a>
+</li><li class="level1 nav-9-12 parent item">
+<a href="https://hackspark.fr/fr/composants/leds.html">
+<span>LEDs &amp; Lampes</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-9-12-38 first">
+<a href="https://hackspark.fr/fr/composants/leds/visible.html">
+<span>Visible</span>
+</a>
+</li><li class="level2 nav-9-12-39">
+<a href="https://hackspark.fr/fr/composants/leds/laser.html">
+<span>Laser</span>
+</a>
+</li><li class="level2 nav-9-12-40">
+<a href="https://hackspark.fr/fr/composants/leds/eclairage.html">
+<span>Éclairage</span>
+</a>
+</li><li class="level2 nav-9-12-41 last">
+<a href="https://hackspark.fr/fr/composants/leds/el.html">
+<span>EL</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-9-13 item">
+<a href="https://hackspark.fr/fr/composants/domotique.html">
+<span>Domotique</span>
+</a>
+</li><li class="level1 nav-9-14 parent item">
+<a href="https://hackspark.fr/fr/composants/reseau.html">
+<span>Réseau</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-9-14-42 first">
+<a href="https://hackspark.fr/fr/composants/reseau/ethernet.html">
+<span>Ethernet</span>
+</a>
+</li><li class="level2 nav-9-14-43">
+<a href="https://hackspark.fr/fr/composants/reseau/wifi.html">
+<span>Wifi</span>
+</a>
+</li><li class="level2 nav-9-14-44 last">
+<a href="https://hackspark.fr/fr/composants/reseau/dmx.html">
+<span>DMX</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-9-15 item">
+<a href="https://hackspark.fr/fr/composants/son.html">
+<span>Son</span>
+</a>
+</li><li class="level1 nav-9-16 last parent item">
+<a href="https://hackspark.fr/fr/composants/autres.html">
+<span>Autres</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-9-16-45 first last">
+<a href="https://hackspark.fr/fr/composants/autres/modules-de-peltier.html">
+<span>Modules de Peltier</span>
+</a>
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+</div></div>
+</li><li class="level0 nav-10 level-top parent">
+<a href="https://hackspark.fr/fr/prototypage.html" class="level-top">
+<span>Prototypage</span><span class="caret">&nbsp;</span>
+</a>
+<div class="level0-wrapper dropdown-6col"><div class="level0-wrapper2">
+<div class="nav-block nav-block-center grid12-12 itemgrid itemgrid-6col">
+<ul class="level0">
+<li class="level1 nav-10-1 first item">
+<a href="https://hackspark.fr/fr/prototypage/platines-d-essai-breadboards.html">
+<span>Platines d'essai (breadboards)</span>
+</a>
+</li><li class="level1 nav-10-2 item">
+<a href="https://hackspark.fr/fr/prototypage/circuits-imprimes-de-prototypage.html">
+<span>Circuits imprimés de prototypage</span>
+</a>
+</li><li class="level1 nav-10-3 item">
+<a href="https://hackspark.fr/fr/prototypage/prototype-enclosures.html">
+<span>Boîtiers pour prototypes</span>
+</a>
+</li><li class="level1 nav-10-4 item">
+<a href="https://hackspark.fr/fr/prototypage/kits-de-composants-et-pour-debutants.html">
+<span>Kits (de composants, pour débutants, etc.)</span>
+</a>
+</li><li class="level1 nav-10-5 last parent item">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques.html">
+<span>Éléments mécaniques</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-10-5-1 first">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques/engrenages.html">
+<span>Engrenages</span>
+</a>
+</li><li class="level2 nav-10-5-2">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques/multi-usages.html">
+<span>Multi-usages</span>
+</a>
+</li><li class="level2 nav-10-5-3">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques/imprimantes-3d.html">
+<span>Imprimantes 3d</span>
+</a>
+</li><li class="level2 nav-10-5-4">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques/cnc.html">
+<span>CNC</span>
+</a>
+</li><li class="level2 nav-10-5-5 last">
+<a href="https://hackspark.fr/fr/prototypage/elements-mecaniques/usage-robotique.html">
+<span>Usage Robotique</span>
+</a>
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+</div></div>
+</li><li class="level0 nav-11 level-top parent">
+<a href="https://hackspark.fr/fr/robotique.html" class="level-top">
+<span>Robotique</span><span class="caret">&nbsp;</span>
+</a>
+<div class="level0-wrapper dropdown-6col"><div class="level0-wrapper2">
+<div class="nav-block nav-block-center grid12-12 itemgrid itemgrid-6col">
+<ul class="level0">
+<li class="level1 nav-11-1 first item">
+<a href="https://hackspark.fr/fr/robotique/moteur-et-servo-moteurs.html">
+<span>Moteur et servo-moteurs</span>
+</a>
+</li><li class="level1 nav-11-2 item">
+<a href="https://hackspark.fr/fr/robotique/kits.html">
+<span>Kits</span>
+</a>
+</li><li class="level1 nav-11-3 item">
+<a href="https://hackspark.fr/fr/robotique/electronic-drivers.html">
+<span>Drivers électroniques (de moteurs, etc.)</span>
+</a>
+</li><li class="level1 nav-11-4 item">
+<a href="https://hackspark.fr/fr/robotique/accessories.html">
+<span>Accessoires</span>
+</a>
+</li><li class="level1 nav-11-5 item">
+<a href="https://hackspark.fr/fr/robotique/imu-inertial-mesurement-unit.html">
+<span>Capteurs à inertie (IMUs)</span>
+</a>
+</li><li class="level1 nav-11-6 last item">
+<a href="https://hackspark.fr/fr/robotique/elements-mecaniques.html">
+<span>Éléments mécaniques</span>
+</a>
+</li>
+</ul>
+</div>
+</div></div>
+</li><li class="level0 nav-12 level-top last parent">
+<a href="https://hackspark.fr/fr/outils.html" class="level-top">
+<span>Outils</span><span class="caret">&nbsp;</span>
+</a>
+<div class="level0-wrapper dropdown-6col"><div class="level0-wrapper2">
+<div class="nav-block nav-block-center grid12-12 itemgrid itemgrid-6col">
+<ul class="level0">
+<li class="level1 nav-12-1 first item">
+<a href="https://hackspark.fr/fr/outils/outils-essentiels.html">
+<span>Outils essentiels</span>
+</a>
+</li><li class="level1 nav-12-2 item">
+<a href="https://hackspark.fr/fr/outils/smt-smd-tools.html">
+<span>Outils pour le montage de surface (CMS)</span>
+</a>
+</li><li class="level1 nav-12-3 item">
+<a href="https://hackspark.fr/fr/outils/boitiers.html">
+<span>Boitiers</span>
+</a>
+</li><li class="level1 nav-12-4 parent item">
+<a href="https://hackspark.fr/fr/outils/mesures.html">
+<span>Mesures</span>
+</a>
+
+<ul class="level1">
+<li class="level2 nav-12-4-1 first">
+<a href="https://hackspark.fr/fr/outils/mesures/oscilloscopes.html">
+<span>Oscilloscopes</span>
+</a>
+</li><li class="level2 nav-12-4-2">
+<a href="https://hackspark.fr/fr/outils/mesures/multimetres.html">
+<span>Multimètres</span>
+</a>
+</li><li class="level2 nav-12-4-3 last">
+<a href="https://hackspark.fr/fr/outils/mesures/digital-logic.html">
+<span>Digital / Logic</span>
+</a>
+</li>
+</ul>
+
+</li><li class="level1 nav-12-5 item">
+<a href="https://hackspark.fr/fr/outils/outils-pour-cables-et-fils.html">
+<span>Outils pour Cables et Fils</span>
+</a>
+</li><li class="level1 nav-12-6 item">
+<a href="https://hackspark.fr/fr/outils/soudure.html">
+<span>Soudure</span>
+</a>
+</li><li class="level1 nav-12-7 item">
+<a href="https://hackspark.fr/fr/outils/outils-d-atelier.html">
+<span>Outils d'Atelier</span>
+</a>
+</li><li class="level1 nav-12-8 last item">
+<a href="https://hackspark.fr/fr/outils/visserie.html">
+<span>Visserie</span>
+</a>
+</li>
+</ul>
+</div>
+</div></div>
+</li>                    
+                                    
+                                    
+        </ul>
+
+    
+
+
+    
+    
+        <script type="text/javascript">
+        //<![CDATA[
+
+                        
+                                        var activateMobileMenu = function()
+                    {
+                        if (jQuery(window).width() < 960)
+                        {
+                            jQuery('#mobnav').show();
+                            jQuery('.vertnav-top').addClass('mobile');
+                            jQuery('#nav').addClass('mobile');
+                        }
+                        else
+                        {
+                            jQuery('#nav').removeClass('mobile');
+                            jQuery('.vertnav-top').removeClass('mobile');
+                            jQuery('#mobnav').hide();
+                        }
+                    }
+                    activateMobileMenu();
+                    jQuery(window).resize(activateMobileMenu);
+        
+                
+                                jQuery('#mobnav-trigger').toggle(function() {
+                    jQuery('.vertnav-top').addClass('show');
+                    jQuery(this).addClass('active');
+                }, function() {
+                    jQuery('.vertnav-top').removeClass('show');
+                    jQuery(this).removeClass('active');
+                });
+                
+        //]]>
+        </script>
+
+    
+
+
+    
+    
+        <script type="text/javascript">
+        //<![CDATA[
+
+            jQuery(function($) {
+                $("#nav > li").hover(function() {
+                    var el = $(this).find(".level0-wrapper");
+                    el.hide();
+                    el.css("left", "0");
+                    el.stop(true, true).delay(150).fadeIn(300, "easeOutCubic");
+                }, function() {
+                    $(this).find(".level0-wrapper").stop(true, true).delay(300).fadeOut(300, "easeInCubic");
+                });
+            });
+
+            var isTouchDevice = ('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0);
+            jQuery(window).on("load", function() {
+
+                if (isTouchDevice)
+                {
+                    jQuery('#nav a.level-top').click(function(e) {
+                        $t = jQuery(this);
+                        $parent = $t.parent();
+                        if ($parent.hasClass('parent'))
+                        {
+                            if ( !$t.hasClass('menu-ready'))
+                            {                    
+                                jQuery('#nav a.level-top').removeClass('menu-ready');
+                                $t.addClass('menu-ready');
+                                return false;
+                            }
+                            else
+                            {
+                                $t.removeClass('menu-ready');
+                            }
+                        }
+                    });
+                }
+
+            }); //end: on load
+
+        //]]>
+        </script>
+
+    
+        </div> <!-- end: nav -->
+    </div> <!-- end: nav-container -->
+
+</div> <!-- end: header-container3 -->
+</div> <!-- end: header-container2 -->
+</div> <!-- end: header-container -->
+        <div class="main-container col1-layout">
+            <div class="main-before-top-container"></div>
+            <div class="main container show-bg">
+                <div class="grid-full breadcrumbs">
+    <ul>
+                    <li class="home">
+                            <a href="https://hackspark.fr/fr/" title="Aller à la page d'accueil">Accueil</a>
+                                        <span>/ </span>
+                        </li>
+                    <li class="product">
+                            <strong>CNC Shield for Arduino Kit (GRBL Compatible)</strong>
+                                    </li>
+            </ul>
+</div>
+                <div class="preface grid-full in-col1"></div>
+                <div class="col-main grid-full in-col1">
+                                        <script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice([]);
+</script>
+<div id="messages_product_view"></div>
+<div class="product-view">
+
+    <form action="https://hackspark.fr/fr/checkout/cart/add/uenc/aHR0cHM6Ly9oYWNrc3BhcmsuZnIvZnIvcmFtcHMtMS00LTV4LXN0ZXBwZXItbW90b3ItZHJpdmVyLW1vdW50LXNoaWVsZC1mb3ItYXJkdWluby5odG1s/product/870/form_key/53ktTNpOWF64fgVa/" method="post" id="product_addtocart_form">
+
+    	<input name="form_key" value="53ktTNpOWF64fgVa" type="hidden">
+        <div class="no-display">
+            <input name="product" value="870" type="hidden">
+            <input name="related_product" id="related-products-field" value="" type="hidden">
+        </div>
+        
+    	
+        <div class="product-img-column grid12-4">
+            
+
+
+
+<div class="img-box img-box-style1">
+
+
+        
+                
+        <p class="product-image zoom-inside" style="max-width: 363px;">
+        
+            <div id="wrap" style="top:0px;z-index:99;position:relative;"><a style="position: relative; display: block;" href="https://hackspark.fr/media/catalog/product/cache/1/image/650x/6244465d93851bfb41b9f76e241a8d6d/1/3/13995381480.jpg" class="cloud-zoom" id="zoom1" rel="position:'inside',showTitle:false,lensOpacity:0.5,smoothMove:3,zoomWidth:427,zoomHeight:275,adjustX:0,adjustY:0">
+                <img style="display: block;" src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/13995381480_002.jpg" alt="CNC Shield for Arduino Kit (GRBL Compatible)" title="CNC Shield for Arduino Kit (GRBL Compatible)">
+            </a><div class="mousetrap" style="background:#fff;opacity:0;filter:alpha(opacity=0);z-index:99;position:absolute;width:363px;height:242px;left:0px;top:0px;"></div></div>
+            
+                                            <a id="zoom-btn" class="lightbox-group zoom-btn-small cboxElement" href="https://hackspark.fr/media/catalog/product/cache/1/image/650x/6244465d93851bfb41b9f76e241a8d6d/1/3/13995381480.jpg" title="CNC Shield for Arduino Kit (GRBL Compatible)">Zoom</a>
+                
+                    </p>
+    
+    
+
+
+
+
+        <div class="more-images slider-arrows3 itemslider-thumbnails count-4">
+        <div style="opacity: 1; display: block;" id="itemslider-zoom" class="thumbnails slides owl-carousel owl-theme">
+        
+                        
+                                            <div class="owl-wrapper-outer"><div style="width: 632px; left: 0px; display: block; transition: all 600ms ease 0s; transform: translate3d(0px, 0px, 0px);" class="owl-wrapper"><div style="width: 79px;" class="owl-item"><div class="item">
+                    <a href="https://hackspark.fr/media/catalog/product/cache/1/image/650x/6244465d93851bfb41b9f76e241a8d6d/1/3/13995381480.jpg" class="cloud-zoom-gallery lightbox-group" title="" rel="useZoom:'zoom1', smallImage: 'https://hackspark.fr/media/catalog/product/cache/1/image/363x/6244465d93851bfb41b9f76e241a8d6d/1/3/13995381480.jpg'">
+                                                    <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/13995381480.jpg" style="display: inline;" class="lazyOwl" alt="">
+                                            </a>
+                </div></div><div style="width: 79px;" class="owl-item"><div class="item">
+                    <a href="https://hackspark.fr/media/catalog/product/cache/1/image/650x/6244465d93851bfb41b9f76e241a8d6d/1/3/13995381482.jpg" class="cloud-zoom-gallery lightbox-group cboxElement" title="" rel="useZoom:'zoom1', smallImage: 'https://hackspark.fr/media/catalog/product/cache/1/image/363x/6244465d93851bfb41b9f76e241a8d6d/1/3/13995381482.jpg'">
+                                                    <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/13995381482.jpg" style="display: inline;" class="lazyOwl" alt="">
+                                            </a>
+                </div></div><div style="width: 79px;" class="owl-item"><div class="item">
+                    <a href="https://hackspark.fr/media/catalog/product/cache/1/image/650x/6244465d93851bfb41b9f76e241a8d6d/1/3/13995381481.jpg" class="cloud-zoom-gallery lightbox-group cboxElement" title="" rel="useZoom:'zoom1', smallImage: 'https://hackspark.fr/media/catalog/product/cache/1/image/363x/6244465d93851bfb41b9f76e241a8d6d/1/3/13995381481.jpg'">
+                                                    <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/13995381481.jpg" style="display: inline;" class="lazyOwl" alt="">
+                                            </a>
+                </div></div><div style="width: 79px;" class="owl-item"><div class="item">
+                    <a href="https://hackspark.fr/media/catalog/product/cache/1/image/650x/6244465d93851bfb41b9f76e241a8d6d/1/3/13995381483.jpg" class="cloud-zoom-gallery lightbox-group cboxElement" title="" rel="useZoom:'zoom1', smallImage: 'https://hackspark.fr/media/catalog/product/cache/1/image/363x/6244465d93851bfb41b9f76e241a8d6d/1/3/13995381483.jpg'">
+                                                    <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/13995381483.jpg" style="display: inline;" class="lazyOwl" alt="">
+                                            </a>
+                </div></div></div></div>
+                                            
+                                            
+                                            
+                    
+                <div style="display: none;" class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev">prev</div><div class="owl-next">next</div></div></div></div>
+    </div> <!-- end: more-images -->
+</div> <!-- end: img-box -->
+
+
+
+		<script type="text/javascript">
+        jQuery(function($) {
+            
+            $(".lightbox-group").colorbox({
+			                rel:		'lightbox-group',
+			                opacity:	0.5,
+                speed:		300,
+                current:	'{current} / {total}'
+				, maxWidth:'95%', maxHeight:'95%'			});
+			
+			//Product thumbnails
+							$(".cloud-zoom-gallery").first().removeClass("cboxElement");
+						
+			$(".cloud-zoom-gallery").click(function() {
+				$("#zoom-btn").attr('href', $(this).attr('href'));
+				$("#zoom-btn").attr('title', $(this).attr('title'));
+			
+									$(".cloud-zoom-gallery").each(function() {
+						$(this).addClass("cboxElement");
+					});
+					$(this).removeClass("cboxElement");
+							});
+            
+        });
+    </script>
+
+<script type="text/javascript">
+//<![CDATA[
+
+    jQuery(function($) {
+
+        var t; $(window).resize(function() { clearTimeout(t); t = setTimeout(function() { $(".more-images .cloud-zoom-gallery").first().click(); }, 200); });
+
+            var owl = $('#itemslider-zoom');
+        owl.owlCarousel({
+
+            mouseDrag: false,
+
+                    lazyLoad: true,
+        
+                    itemsCustom: [ [0, 1], [219, 2], [299, 3], [459, 4],           [747, 3], [1259, 4] ],
+            responsiveRefreshRate: 50,
+        
+                    slideSpeed: 200,
+        
+        
+                    autoPlay: 5000,
+        
+            stopOnHover: true,
+
+                    rewindNav: true,
+            rewindSpeed: 600,
+        
+            pagination: false,
+            navigation: true
+
+        }); //end: owl
+    
+    });
+//]]>
+</script>
+                    </div>
+        
+        <div class="product-shop grid12-5">
+
+            <div class="product-name">
+                <h1>CNC Shield for Arduino Kit (GRBL Compatible)</h1>
+            </div>
+            
+                <p class="no-rating"><a id="goto-reviews-form" href="#review-form">Soyez le premier à commenter ce produit</a></p>
+            
+                            <div class="short-description">
+                    <div class="std">The Arduino CNC Shield makes it 
+easy to get your CNC projects up and running in a few hours. It uses 
+opensource firmware on Arduino to control 4 stepper motors using 4x 
+A4988 or DRV8825 with this shield and an Arduino you can build all kinds
+ of robotics or CNC projects including CNC routers, laser cutters and 
+even pick&amp;place machines.<br><br><br>
+This is the KIT version, you will have to solder the components yourself (hence the very low price :-))</div>
+                </div>
+            
+            
+                        
+                        
+            <div class="product-type-data">
+
+
+                        
+    <div class="price-box">
+                                                                <span class="price-excluding-tax">
+                    <span class="label">HT :</span>
+                    <span class="price" id="price-excluding-tax-870">
+                                                    6,67&nbsp;€                                            </span>
+                </span>
+                <span class="price-including-tax">
+                    <span class="label">TTC :</span>
+                    <span class="price" id="price-including-tax-870">
+                        8,00&nbsp;€                    </span>
+                </span>
+                        
+        </div>
+
+</div>
+            
+            
+
+                                                <div class="add-to-box">
+                        
+
+<p class="j2t-loyalty-points inline-points">Ce produit vous rapporte <span id="j2t-pts">8</span> point(s) fidélité.</p><script type="text/javascript">
+//<![CDATA[
+
+    var json_tier_prices = [];
+    
+    function getTierPriceCorrection(qty, default_points){
+        //j2t_math_points
+        qty = (qty) ? qty : 1;
+        var return_value = default_points;
+        if(json_tier_prices.length > 0){
+            for (var k=0; k < json_tier_prices.length; k++) {
+                if (qty >= json_tier_prices[k]['price_qty']){
+                    return_value = json_tier_prices[k]['productTierPoints'];
+                }
+            }
+        }
+        return return_value;
+    }
+    
+    function checkJ2tPoints(){
+        var points = $('j2t-pts').innerHTML;
+        if (points > 0){
+            $$('.j2t-loyalty-points').invoke('show');
+        } else {
+            $$('.j2t-loyalty-points').invoke('hide');
+        }
+        modifyJ2tEquivalence($('j2t-pts').innerHTML);
+        checkJ2tCloneText();
+    }
+    
+    function checkJ2tCloneText(){
+        if ($('j2t-points-clone') && $$(".j2t-loyalty-points").length > 0){
+            $('j2t-points-clone').style.display = $$(".j2t-loyalty-points")[0].style.display;
+            var text_clone = $$(".j2t-loyalty-points")[0].innerHTML;
+            text_clone = text_clone.replace("j2t-pts", "j2t-pts-clone");
+            text_clone = text_clone.replace("j2t-point-equivalence", "j2t-point-equivalence-clone");
+            $('j2t-points-clone').innerHTML = text_clone;
+        }
+    }
+    
+    Number.prototype.j2tFormatMoney = function(c, d, t){
+        var n = this, c = isNaN(c = Math.abs(c)) ? 2 : c, d = d == undefined ? "," : d, t = t == undefined ? "." : t, s = n < 0 ? "-" : "", i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", j = (j = i.length) > 3 ? j % 3 : 0;
+        return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+    };
+    
+    
+        var j2t_mil_sep = " ";
+    
+    var j2t_dec_sep = ",";
+    
+    var j2t_convert_template = (12345.23).j2tFormatMoney(2, j2t_dec_sep, j2t_mil_sep);
+    
+    var j2t_point_currency_base = "1";
+    //var j2t_point_currency_currency = "1,00 €";
+    var j2t_point_currency = "1,00 €";
+    j2t_point_currency = j2t_point_currency.replace((1.00).j2tFormatMoney(2, j2t_dec_sep, j2t_mil_sep), "__MONEY__");
+    
+    var j2t_point_default_point_unit_base = "0,02 €";
+    var j2t_point_default_point_unit = 0.02;
+    j2t_point_default_point_unit = (j2t_point_default_point_unit) ? j2t_point_default_point_unit : 1;
+    var j2t_point_equivalence_txt = "1111 points = 2222.";
+    
+    function modifyJ2tEquivalence(current_points) {
+        
+        if ($$(".j2t-point-equivalence").length > 0){
+            
+            var money_equivalence = current_points * j2t_point_default_point_unit * j2t_point_currency_base;
+            money_equivalence = Math.round(money_equivalence * 100)/100;
+            money_equivalence = j2t_point_currency.replace("__MONEY__", (money_equivalence).j2tFormatMoney(2, j2t_dec_sep, j2t_mil_sep));
+            //alert(j2t_point_currency);
+            var return_value = j2t_point_equivalence_txt.replace("1111", current_points);
+            return_value = return_value.replace("2222", money_equivalence);
+            $$(".j2t-point-equivalence")[0].innerHTML = return_value;
+        }
+        
+    }
+//]]>    
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+    var j2t_points = 8;
+    var j2t_options = 0;
+
+    var j2t_product_id = 870;
+    document.observe("dom:loaded", function() {
+        
+        
+
+        if ($('qty')){
+            //Event.observe($('qty'), 'keyup', function(){ if (!isNaN($('qty').value)) {$('j2t-pts').innerHTML = j2t_math_points($('qty').value, j2t_points, true); } checkJ2tPoints();});
+            Event.observe($('qty'), 'keyup', function(){ processPointsSelects() });
+        }
+        
+        var product_settings   = $$('.super-attribute-select');
+        
+        processPointsSelects = function () {
+            if (product_settings.length > 0){
+                var concat_val = '';
+                j2t_points = 0;
+                var dont_process_it = false;
+                $$('.super-attribute-select').each(function(el){
+                    if(el.value == ''){
+                        dont_process_it = true;
+                    }
+                    if (concat_val != ''){
+                        concat_val += '|'+el.value;
+                    } else {
+                        concat_val = el.value;
+                    }
+                });
+                if (!dont_process_it && concat_val != ''){
+                    //load points in ajax according to attributes
+                    var used_qty = 0;
+                    if ($('qty')){
+                        used_qty = $('qty').value;
+                    }
+                    used_qty = (used_qty <= 0 || used_qty == "" || isNaN(used_qty)) ? 1 : used_qty;
+                    if (json_credit[concat_val] != undefined){
+                        j2t_points = json_credit[concat_val];
+                        if (json_credit[concat_val+'|tierPrice'] != undefined){
+                            var tierprices = json_credit[concat_val+'|tierPrice'];
+                            if(tierprices.length > 0){
+                                for (var k=0; k < tierprices.length; k++) {
+                                    if (used_qty >= tierprices[k]['price_qty']){
+                                        j2t_points = tierprices[k]['productTierPoints'];
+                                    }
+                                }
+                            }
+                        }
+                        $('j2t-pts').innerHTML = j2t_math_points(used_qty, j2t_points, false);
+                        checkJ2tPoints();
+                    }
+                } else {
+                    //if (!isNaN($('qty').value)) {$('j2t-pts').innerHTML = j2t_math_points($('qty').value, j2t_points, true); } checkJ2tPoints();
+                }
+            } else {
+                var test_qty = 0;
+                if ($('qty')){
+                    test_qty = $('qty').value;
+                }                
+                if (!isNaN(test_qty)) {$('j2t-pts').innerHTML = j2t_math_points(test_qty, j2t_points, true); } checkJ2tPoints();
+            }
+        }
+
+        
+        if (product_settings.length > 0){
+                product_settings.each(function(element){
+                Event.observe(element, 'change', function() {
+                    if (element.value != ''){
+                        processPointsSelects();
+                    }
+                });
+            });
+            var json_credit = [];
+        }
+        
+            });
+
+    function j2t_math_points(qty, pts_changed, tierprice_verification){
+        if (tierprice_verification){
+            pts_changed = getTierPriceCorrection(qty, pts_changed);
+        }
+        var val_return = 0;
+        if (isNaN(parseFloat(qty))) {
+            qty = 1;
+        }
+        if(qty > 0){
+            val_return = (pts_changed + j2t_options) * qty;
+        } else if(pts_changed > 0) {
+            val_return = pts_changed + j2t_options;
+        }//only options 
+        else if(j2t_options > 0) {
+            val_return = j2t_options;
+        }
+        
+        return Math.ceil(val_return);
+    }
+//]]>
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+    var json_option_credit = [];
+    
+    function calculateOptionsPrice(){
+        j2t_options = reloadCreditOption();
+        var test_qty = 0;
+        if ($('qty')){
+            test_qty = $('qty').value;
+        }
+        if (typeof(json_credit_bundle) != 'undefined'){
+            var bundle_pts = j2t_points_bundle();
+            $('j2t-pts').innerHTML = j2t_math_points(test_qty, j2t_points + bundle_pts, true);
+        } else {
+            $('j2t-pts').innerHTML = j2t_math_points(test_qty, j2t_points, true);
+        }
+        checkJ2tPoints();
+    }
+    
+    
+    document.observe("dom:loaded", function() {
+        option_select   = $$('.product-custom-option');
+
+        if (option_select.length > 0){
+            option_select.each(function(element){
+                Event.observe(element, 'change', function() {
+                    calculateOptionsPrice();
+                });
+            });
+        }
+        calculateOptionsPrice();
+    });
+
+    
+
+    function reloadCreditOption(){
+        var optionPts = 0;
+
+
+        
+        return optionPts;
+    }
+    
+    checkJ2tCloneText();
+
+    
+//]]>
+</script>
+
+
+	<div class="add-to-cart v-centered-content">
+    	<button type="button" title="Ajouter au panier" class="button btn-cart v-center" onclick="productAddToCartForm.submit(this)"><span><span>Ajouter au panier</span></span></button>
+					<div class="qty-wrapper v-center">
+				<label for="qty">Qté :</label>
+				<input name="qty" id="qty" maxlength="12" value="0" title="Qté" class="input-text qty" type="text">
+			</div>
+			</div>
+	<div class="paypal-wrapper"></div>
+                    </div>
+                                            
+                        
+                            <div class="action-box clearer">
+					<ul class="add-to-links addto-gaps-right">
+
+	<li>
+        <a class="feature feature-icon-hover first v-centered-content" href="https://hackspark.fr/fr/wishlist/index/add/product/870/form_key/53ktTNpOWF64fgVa/" onclick="productAddToCartForm.submitLight(this, this.href); return false;" title="Ajouter à la liste d'envies">
+			<span class="v-center">
+				<span class="icon i-wishlist-bw icon-color-productview"></span>
+			</span>
+            <span class="v-center">Ajouter à la liste d'envies</span>
+		</a>
+	</li>
+
+
+	<li>
+        <a class="feature feature-icon-hover first v-centered-content" href="https://hackspark.fr/fr/catalog/product_compare/add/product/870/uenc/aHR0cHM6Ly9oYWNrc3BhcmsuZnIvZnIvcmFtcHMtMS00LTV4LXN0ZXBwZXItbW90b3ItZHJpdmVyLW1vdW50LXNoaWVsZC1mb3ItYXJkdWluby5odG1s/form_key/53ktTNpOWF64fgVa/" title="Ajouter au comparateur">
+			<span class="v-center">
+				<span class="icon i-compare-bw icon-color-productview"></span>
+			</span>
+            <span class="v-center">Ajouter au comparateur</span>
+		</a>
+	</li>
+
+
+	<li>
+    	<a class="feature feature-icon-hover first v-centered-content" href="https://hackspark.fr/fr/sendfriend/product/send/id/870/" title="Envoyer à un ami">
+			<span class="v-center">
+				<span class="icon i-recommend-bw icon-color-productview"></span>
+			</span>
+			<span class="v-center">Envoyer à un ami</span>
+		</a>
+	</li>
+
+</ul>				</div>
+                        
+            
+                        
+            
+        </div> <!-- end: product-shop -->
+        
+                    <div class="product-secondary-column grid12-3 custom-sidebar-right">
+            	<div class="inner">
+
+																<div class="margin-bottom">			</div>
+                                        
+                                        
+                                            <div class="feature-wrapper top-border block_product_secondary_bottom"><div class="feature indent first">
+<div class="icon"><img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/one.png" alt=""></div>
+<p class="no-margin ">Tous nos produits sont livrés depuis Paris.</p>
+</div>
+<!--<div class="feature indent">
+<div class="icon"><img src="https://hackspark.fr/media/wysiwyg/infortis/ultimo/icons/two.png" alt="" /></div>
+<p class="no-margin ">Livraison gratuite à partir de 30 euros d'achats depuis la France et 50 euros depuis le reste de l'Europe.</p>
+</div>-->
+<div class="feature indent">
+<div class="icon"><img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/two.png" alt=""></div>
+<p class="no-margin ">Un doute sur votre achat ? Retournez-nous le produit sous 7 jours et nous vous remboursons.</p>
+</div>
+<div class="feature indent">
+<div class="icon"><img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/three.png" alt=""></div>
+<p class="no-margin ">Nous choisissons et testons minutieusement les produits que nous vendons pour vous proposer uniquement le meilleur.</p>
+</div>
+<div class="feature indent last">
+<div class="icon"><img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/phone.png" alt=""></div>
+<p class="no-margin ">On connait nos produits, donc si vous avez une question n'hésitez-pas !<br>
+Appelez-nous au +33 (0) 1 43 73 15 54 (de 10h à 19h heure de Paris du Lundi au Vendredi inclus)</p>
+</div></div>
+                                        
+                                        
+                    
+				</div>
+            </div> <!-- end: product-secondary-column -->
+        
+        
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var productAddToCartForm = new VarienForm('product_addtocart_form');
+        productAddToCartForm.submit = function(button, url) {
+            if (this.validator.validate()) {
+                var form = this.form;
+                var oldUrl = form.action;
+
+                if (url) {
+                   form.action = url;
+                }
+                var e = null;
+                try {
+                    this.form.submit();
+                } catch (e) {
+                }
+                this.form.action = oldUrl;
+                if (e) {
+                    throw e;
+                }
+
+                if (button && button != 'undefined') {
+                    button.disabled = true;
+                }
+            }
+        }.bind(productAddToCartForm);
+
+        productAddToCartForm.submitLight = function(button, url){
+            if(this.validator) {
+                var nv = Validation.methods;
+                delete Validation.methods['required-entry'];
+                delete Validation.methods['validate-one-required'];
+                delete Validation.methods['validate-one-required-by-name'];
+                if (this.validator.validate()) {
+                    if (url) {
+                        this.form.action = url;
+                    }
+                    this.form.submit();
+                }
+                Object.extend(Validation.methods, nv);
+            }
+        }.bind(productAddToCartForm);
+    //]]>
+    </script>
+    
+	<div class="box-additional box-tabs grid12-9">
+    	<div id="product-tabs" class="gen-tabs gen-tabs-style1">
+
+		        <ul class="tabs clearer">
+							                	<li id="tab-description"><a class="current" href="#">Description du produit</a></li>
+                            				            				                	<li id="tab-additional"><a href="#">Informations complémentaires</a></li>
+                            				                	<li id="tab-tabreviews"><a href="#">Commentaires</a></li>
+                            				                	<li id="tab-product.tags"><a href="#">Mots clés du produit</a></li>
+                                                </ul>
+        <div class="tabs-panels"><h2 class="acctab" id="acctab-description">Description du produit</h2><div style="display: block;" class="panel">    <h2>Détails</h2>
+    <div class="std">
+        <div class="container active">
+<div id="productDescription" class="content biggerText">
+<div id="productDescriptionBox">
+<div id="productDescriptionHeading">
+<h3>Features</h3>
+</div>
+<div>
+<ul>
+<li>GRBL 0.8c compatible. (Open source firmware that runs on an Arduino UNO that turns G-code commands into stepper signals <a style="color: #0000ff;" href="https://github.com/grbl/grbl">https://github.com/grbl/grbl</a>)</li>
+<li>4-Axis support (X, Y, Z , A-Can duplicate X,Y,Z or do a full 4th axis with custom firmware using pins D12 and D13)</li>
+<li>2 x End stops for each axis (6 in total)</li>
+<li>Spindle enable and direction</li>
+<li>Coolant enable</li>
+<li>Uses removable Pololu A4988 compatible stepper drivers. (A4988, DRV8825 and others)</li>
+<li>Jumpers to set the Micro-Stepping for the stepper drivers. (Some drivers like the DRV8825 can do up to 1/32 micro-stepping )</li>
+<li>Compact design.</li>
+<li>Stepper Motors can be connected with 4 pin molex connectors.</li>
+<li>Runs on 12-36V DC. (At the moment only the Pololu DRV8825 drivers 
+can handle up to 36V so please consider the operation voltage when 
+powering the board.)</li>
+</ul>
+</div>
+<div id="productDescriptionHeading">
+<h3>Useful Links</h3>
+</div>
+<div>
+<ul>
+<li><a style="color: #0000ff;" href="http://blog.protoneer.co.nz/arduino-cnc-shield/">Detailed Introduction and User Manual</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>    </div>
+</div><h2 class="acctab" id="acctab-additional">Informations complémentaires</h2><div style="display: none;" class="panel">    <h2>Informations complémentaires</h2>
+    <table class="data-table" id="product-attribute-specs-table">
+        <colgroup><col width="25%">
+        <col>
+        </colgroup><tbody>
+                    <tr class="first odd">
+                <th class="label">Compatibilité avec les cartes</th>
+                <td class="data last">Arduino clones, Arduino Due, 
+Arduino Duemilanove, Arduino Leonardo, Arduino mega, Arduino Micro, 
+Arduino Mini, Arduino Nano, Arduino Pro, Arduino Uno</td>
+            </tr>
+                    <tr class="even">
+                <th class="label">Fabricant</th>
+                <td class="data last">Non</td>
+            </tr>
+                    <tr class="odd">
+                <th class="label">Couleur</th>
+                <td class="data last">Rouge</td>
+            </tr>
+                    <tr class="last even">
+                <th class="label">Voltage</th>
+                <td class="data last">5v</td>
+            </tr>
+                </tbody>
+    </table>
+    <script type="text/javascript">decorateTable('product-attribute-specs-table')</script>
+</div><h2 class="acctab" id="acctab-tabreviews">Commentaires</h2><div style="display: none;" class="panel">
+<div class="box-collateral box-reviews" id="customer-reviews">
+        <div class="form-add">
+    <h2>Rédigez votre propre commentaire</h2>
+        <form action="https://hackspark.fr/fr/review/product/post/id/870/" method="post" id="review-form">
+        <input name="form_key" value="53ktTNpOWF64fgVa" type="hidden">
+        <fieldset>
+                        <h3>Vous commentez : <span>CNC Shield for Arduino Kit (GRBL Compatible)</span></h3>
+                            <h4>Quelle note donneriez-vous à ce produit ? <em class="required">*</em></h4>
+                <span id="input-message-box"></span>
+                <table class="data-table" id="product-review-table">
+                    <colgroup><col>
+                    <col width="1">
+                    <col width="1">
+                    <col width="1">
+                    <col width="1">
+                    <col width="1">
+                    </colgroup><thead>
+                        <tr class="first last">
+                            <th>&nbsp;</th>
+                            <th><span class="nobr">1 étoile</span></th>
+                            <th><span class="nobr">2 étoiles</span></th>
+                            <th><span class="nobr">3 étoiles</span></th>
+                            <th><span class="nobr">4 étoiles</span></th>
+                            <th><span class="nobr">5 étoiles</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                            <tr class="first odd">
+                            <th>Qualité</th>
+                                                    <td class="value"><input name="ratings[1]" id="Qualité_1" value="1" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[1]" id="Qualité_2" value="2" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[1]" id="Qualité_3" value="3" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[1]" id="Qualité_4" value="4" class="radio" type="radio"></td>
+                                                    <td class="value last"><input name="ratings[1]" id="Qualité_5" value="5" class="radio" type="radio"></td>
+                                                </tr>
+                                            <tr class="even">
+                            <th>Utilité</th>
+                                                    <td class="value"><input name="ratings[5]" id="Utilité_1" value="21" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[5]" id="Utilité_2" value="22" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[5]" id="Utilité_3" value="23" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[5]" id="Utilité_4" value="24" class="radio" type="radio"></td>
+                                                    <td class="value last"><input name="ratings[5]" id="Utilité_5" value="25" class="radio" type="radio"></td>
+                                                </tr>
+                                            <tr class="odd">
+                            <th>Documentation</th>
+                                                    <td class="value"><input name="ratings[4]" id="Documentation_1" value="16" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[4]" id="Documentation_2" value="17" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[4]" id="Documentation_3" value="18" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[4]" id="Documentation_4" value="19" class="radio" type="radio"></td>
+                                                    <td class="value last"><input name="ratings[4]" id="Documentation_5" value="20" class="radio" type="radio"></td>
+                                                </tr>
+                                            <tr class="last even">
+                            <th>Prix</th>
+                                                    <td class="value"><input name="ratings[3]" id="Prix_1" value="11" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[3]" id="Prix_2" value="12" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[3]" id="Prix_3" value="13" class="radio" type="radio"></td>
+                                                    <td class="value"><input name="ratings[3]" id="Prix_4" value="14" class="radio" type="radio"></td>
+                                                    <td class="value last"><input name="ratings[3]" id="Prix_5" value="15" class="radio" type="radio"></td>
+                                                </tr>
+                                        </tbody>
+                </table>
+                <input name="validate_rating" class="validate-rating" value="" type="hidden">
+                <script type="text/javascript">decorateTable('product-review-table')</script>
+                            <ul class="form-list">
+                    <li>
+                        <label for="nickname_field" class="required"><em>*</em>Pseudo</label>
+                        <div class="input-box">
+                            <input name="nickname" id="nickname_field" class="input-text required-entry" type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <label for="summary_field" class="required"><em>*</em>Résumé de votre commentaire</label>
+                        <div class="input-box">
+                            <input name="title" id="summary_field" class="input-text required-entry" type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <label for="review_field" class="required"><em>*</em>Commentaire</label>
+                        <div class="input-box">
+                            <textarea name="detail" id="review_field" cols="5" rows="3" class="required-entry"></textarea>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="buttons-set">
+                <button type="submit" title="Poster le commentaire" class="button"><span><span>Poster le commentaire</span></span></button>
+            </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var dataForm = new VarienForm('review-form');
+        Validation.addAllThese(
+        [
+               ['validate-rating', 'Sélectionnez une notation de chaque parmi les suivantes', function(v) {
+                    var trs = $('product-review-table').select('tr');
+                    var inputs;
+                    var error = 1;
+
+                    for( var j=0; j < trs.length; j++ ) {
+                        var tr = trs[j];
+                        if( j > 0 ) {
+                            inputs = tr.select('input');
+
+                            for( i in inputs ) {
+                                if( inputs[i].checked == true ) {
+                                    error = 0;
+                                }
+                            }
+
+                            if( error == 1 ) {
+                                return false;
+                            } else {
+                                error = 1;
+                            }
+                        }
+                    }
+                    return true;
+                }]
+        ]
+        );
+    //]]>
+    </script>
+    </div>
+</div>
+</div><h2 class="acctab" id="acctab-product.tags">Mots clés du produit</h2><div style="display: none;" class="panel"><div class="box-collateral box-tags">
+    <h2>Mots clés du produit</h2>
+            <form id="addTagForm" action="https://hackspark.fr/fr/tag/index/save/product/870/uenc/aHR0cHM6Ly9oYWNrc3BhcmsuZnIvZnIvcmFtcHMtMS00LTV4LXN0ZXBwZXItbW90b3ItZHJpdmVyLW1vdW50LXNoaWVsZC1mb3ItYXJkdWluby5odG1s/" method="get">
+        <div class="form-add">
+            <label for="productTagName">Ajouter vos mots clés :</label>
+            <div class="input-box">
+                <input class="input-text required-entry" name="productTagName" id="productTagName" type="text">
+            </div>
+            <button type="button" title="Ajouter des mots clés" class="button" onclick="submitTagForm()">
+                <span>
+                    <span>Ajouter des mots clés</span>
+                </span>
+            </button>
+        </div>
+    </form>
+    <p class="note">Utilisez un espace pour séparer les mots clés. Utilisez l'apostrophe (') pour rédiger une phrase.</p>
+    <script type="text/javascript">
+    //<![CDATA[
+        var addTagFormJs = new VarienForm('addTagForm');
+        function submitTagForm(){
+            if(addTagFormJs.validator.validate()) {
+                addTagFormJs.form.submit();
+            }
+        }
+    //]]>
+    </script>
+</div>
+</div></div>
+        
+	</div>
+	<script type="text/javascript">
+		jQuery(function($){var p=$(window).width()>=0x3C0;if($(window).width()>=0x3C0){$(".gen-tabs > .tabs").tabs(".tabs-panels .panel")}else{$(".gen-tabs").addClass("accor");$(".tabs-panels").tabs(".tabs-panels .panel",{tabs:'.acctab',effect:'slide'})}var t;$(window).resize(function(){clearTimeout(t);t=setTimeout(function(){if($(window).width()<0x3C0){if(p){var a=$(".tabs").data("tabs");var b=a.getIndex();a.destroy();$(".gen-tabs").addClass("accor");$(".tabs-panels").tabs(".tabs-panels .panel",{tabs:'.acctab',effect:'slide',initialIndex:b})}p=false}else{if(!p){var a=$(".tabs-panels").data("tabs");var b=a.getIndex();a.destroy();$(".gen-tabs").removeClass("accor");$(".gen-tabs > .tabs").tabs(".tabs-panels .panel",{initialIndex:b})}p=true}},500)})});
+    </script>
+				<script type="text/javascript">
+		//<![CDATA[
+			jQuery(function($){$("#goto-reviews, #goto-reviews-form").click(function(){if($("#product-tabs").hasClass("accor")){$("#product-tabs .tabs-panels").data("tabs").click($(".tabs-panels .acctab").index($("#acctab-tabreviews")))}else{$("#product-tabs .tabs").data("tabs").click($("#tab-tabreviews").index())}})});
+		//]]>
+		</script>
+        
+            	</div> <!-- end: box-tabs -->
+    
+    
+    
+    		<div class="box-additional box-sidebar custom-sidebar-right grid12-3">
+			<div class="inner"><div class="block block-related block-related-thumbnails">
+    <h3 class="section-title padding-right">Liés</h3>
+    <div class="itemslider-wrapper itemslider-related-wrapper slider-arrows1 slider-arrows1-pos-top-right slider-pagination1">
+        <div style="opacity: 1; display: block;" id="itemslider-related-multi" class="itemslider  owl-carousel owl-theme">
+                                    <div class="owl-wrapper-outer"><div style="width: 530px; left: 0px; display: block; transition: all 600ms ease 0s; transform: translate3d(0px, 0px, 0px);" class="owl-wrapper"><div style="width: 265px;" class="owl-item"><div class="item">
+                    <ul class="clearer">
+            
+            <li class="product">
+                <a class="product-image" href="https://hackspark.fr/fr/a4988-stepper-motor-driver-with-heat-sink-widely-used-for-3d-printers-and-reprap.html" title="Driver de moteur avec dissipateur thermique A4988 (utile pour imprimantes 3d, reprap, cnc, etc.)">
+                    <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/pololuhs.jpg" alt="Driver de moteur avec dissipateur thermique A4988 (utile pour imprimantes 3d, reprap, cnc, etc.)">
+                </a>
+                <div class="product-details">
+                    <h3 class="product-name"><a href="https://hackspark.fr/fr/a4988-stepper-motor-driver-with-heat-sink-widely-used-for-3d-printers-and-reprap.html" title="Driver de moteur avec dissipateur thermique A4988 (utile pour imprimantes 3d, reprap, cnc, etc.)">Driver de moteur avec dissipateur thermique A4988 (utile pour imprimantes 3d, reprap, cnc, etc.)</a></h3>
+                    
+                                        
+                    
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Prix normal :</span>
+                <span class="price" id="old-price-410-related">
+                    9,83&nbsp;€                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Special Price</span>
+                    <span class="price-excluding-tax">
+                        <span class="label">HT :</span>
+                        <span class="price" id="price-excluding-tax-410-related">
+                            6,25&nbsp;€                        </span>
+                    </span>
+                    <span class="price-including-tax">
+                        <span class="label">TTC :</span>
+                        <span class="price" id="price-including-tax-410-related">
+                            7,50&nbsp;€                        </span>
+                    </span>
+                </p>
+                    
+    
+        </div>
+
+                    
+                                            <a class="related-add-to-wishlist" href="https://hackspark.fr/fr/wishlist/index/add/product/410/form_key/53ktTNpOWF64fgVa/" title="Ajouter à la liste d'envies">Ajouter à la liste d'envies</a>
+                                    </div> <!-- end: product-details -->
+            </li>
+
+                                
+            <li class="product">
+                <a class="product-image" href="https://hackspark.fr/fr/drv8825-stepper-motor-driver-with-heat-sink-widely-used-for-3d-printers-and-reprap.html" title="Driver de moteur avec dissipateur thermique DRV8825 (utile pour imprimantes 3d, reprap, cnc, etc.)">
+                    <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/_mg_5027.jpg" alt="Driver de moteur avec dissipateur thermique DRV8825 (utile pour imprimantes 3d, reprap, cnc, etc.)">
+                </a>
+                <div class="product-details">
+                    <h3 class="product-name"><a href="https://hackspark.fr/fr/drv8825-stepper-motor-driver-with-heat-sink-widely-used-for-3d-printers-and-reprap.html" title="Driver de moteur avec dissipateur thermique DRV8825 (utile pour imprimantes 3d, reprap, cnc, etc.)">Driver de moteur avec dissipateur thermique DRV8825 (utile pour imprimantes 3d, reprap, cnc, etc.)</a></h3>
+                    
+                                        
+                    
+
+                        
+    <div class="price-box">
+                                                                <span class="price-excluding-tax">
+                    <span class="label">HT :</span>
+                    <span class="price" id="price-excluding-tax-860-related">
+                                                    8,33&nbsp;€                                            </span>
+                </span>
+                <span class="price-including-tax">
+                    <span class="label">TTC :</span>
+                    <span class="price" id="price-including-tax-860-related">
+                        10,00&nbsp;€                    </span>
+                </span>
+                        
+        </div>
+
+                    
+                                            <a class="related-add-to-wishlist" href="https://hackspark.fr/fr/wishlist/index/add/product/860/form_key/53ktTNpOWF64fgVa/" title="Ajouter à la liste d'envies">Ajouter à la liste d'envies</a>
+                                    </div> <!-- end: product-details -->
+            </li>
+
+                                </ul> <!-- end: list of products -->
+                </div></div></div></div> <!-- end: slider item -->
+                            <div style="display: none;" class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev">prev</div><div class="owl-next">next</div></div></div></div> <!-- end: itemslider -->
+    </div> <!-- end: itemslider-wrapper -->
+    <script type="text/javascript">
+    //<![CDATA[
+        jQuery(function($) {
+
+            var owl = $('#itemslider-related-multi');
+            owl.owlCarousel({
+
+                            itemsCustom: [ [0, 1], [480, 2], [768, 1] ],
+                responsiveRefreshRate: 50,
+            
+                            slideSpeed: 400,
+            
+                            paginationSpeed: 500,
+            
+                            scrollPerPage: true,
+            
+                            autoPlay: 6000,
+            
+                            stopOnHover: true,
+            
+                            rewindNav: true,
+                rewindSpeed: 600,
+            
+                            pagination: false,
+            
+                navigation: true
+
+            }); //end: owl
+
+        });
+    //]]>
+    </script>
+
+        
+</div> <!-- end: block --></div>
+		</div>
+	         
+        	<div class="box-additional box-up-sell grid12-9"><h3 class="section-title padding-right">Vous pourriez également être intéressé par le(s) produit(s) suivant(s)</h3>
+<div class="itemslider-wrapper itemslider-upsell-wrapper slider-arrows1 slider-arrows1-pos-top-right slider-pagination1">
+    <div style="opacity: 1; display: block;" id="itemslider-upsell" class="itemslider  itemslider-responsive products-grid centered owl-carousel owl-theme">
+            
+        <div class="owl-wrapper-outer"><div style="width: 2628px; left: 0px; display: block;" class="owl-wrapper"><div style="width: 219px;" class="owl-item"><div class="item">
+            <a href="https://hackspark.fr/fr/28byj-48-high-quality-stepper-motor-12v.html" title="Moteur pas à pas quadri-polaire 12V haute qualité" class="product-image">
+
+                                    <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/stmt2.jpg" style="display: inline;" class="lazyOwl" alt="Moteur pas à pas quadri-polaire 12V haute qualité">
+                
+            </a>
+            <h3 class="product-name"><a href="https://hackspark.fr/fr/28byj-48-high-quality-stepper-motor-12v.html" title="Moteur pas à pas quadri-polaire 12V haute qualité">Moteur pas à pas quadri-polaire 12V haute qualité</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="price-excluding-tax">
+                    <span class="label">HT :</span>
+                    <span class="price" id="price-excluding-tax-82-upsell">
+                                                    7,00&nbsp;€                                            </span>
+                </span>
+                <span class="price-including-tax">
+                    <span class="label">TTC :</span>
+                    <span class="price" id="price-including-tax-82-upsell">
+                        8,40&nbsp;€                    </span>
+                </span>
+                        
+        </div>
+
+        </div></div><div style="width: 219px;" class="owl-item"><div class="item">
+            <a href="https://hackspark.fr/fr/28byj-48-high-quality-stepper-motor-5v.html" title="Moteur pas à pas quadri-polaire 5V haute qualité" class="product-image">
+
+                                    <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/stmt2_1.jpg" style="display: inline;" class="lazyOwl" alt="Moteur pas à pas quadri-polaire 5V haute qualité">
+                
+            </a>
+            <h3 class="product-name"><a href="https://hackspark.fr/fr/28byj-48-high-quality-stepper-motor-5v.html" title="Moteur pas à pas quadri-polaire 5V haute qualité">Moteur pas à pas quadri-polaire 5V haute qualité</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="price-excluding-tax">
+                    <span class="label">HT :</span>
+                    <span class="price" id="price-excluding-tax-212-upsell">
+                                                    7,00&nbsp;€                                            </span>
+                </span>
+                <span class="price-including-tax">
+                    <span class="label">TTC :</span>
+                    <span class="price" id="price-including-tax-212-upsell">
+                        8,40&nbsp;€                    </span>
+                </span>
+                        
+        </div>
+
+        </div></div><div style="width: 219px;" class="owl-item"><div class="item">
+            <a href="https://hackspark.fr/fr/17pm-k054-nema-17-stepper-motor.html" title="17PM K054 NEMA 17 Stepper motor" class="product-image">
+
+                                    <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/884154971_805.jpg" style="display: inline;" class="lazyOwl" alt="17PM K054 NEMA 17 Stepper motor">
+                
+            </a>
+            <h3 class="product-name"><a href="https://hackspark.fr/fr/17pm-k054-nema-17-stepper-motor.html" title="17PM K054 NEMA 17 Stepper motor">17PM K054 NEMA 17 Stepper motor</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="price-excluding-tax">
+                    <span class="label">HT :</span>
+                    <span class="price" id="price-excluding-tax-484-upsell">
+                                                    12,00&nbsp;€                                            </span>
+                </span>
+                <span class="price-including-tax">
+                    <span class="label">TTC :</span>
+                    <span class="price" id="price-including-tax-484-upsell">
+                        14,40&nbsp;€                    </span>
+                </span>
+                        
+        </div>
+
+        </div></div><div style="width: 219px;" class="owl-item"><div class="item">
+            <a href="https://hackspark.fr/fr/42hb34f08-nema-17-stepper-motor.html" title="42HB34F08 NEMA 17 Stepper motor" class="product-image">
+
+                                    <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/fz0605-01_1.jpg" style="display: inline;" class="lazyOwl" alt="42HB34F08 NEMA 17 Stepper motor">
+                
+            </a>
+            <h3 class="product-name"><a href="https://hackspark.fr/fr/42hb34f08-nema-17-stepper-motor.html" title="42HB34F08 NEMA 17 Stepper motor">42HB34F08 NEMA 17 Stepper motor</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="price-excluding-tax">
+                    <span class="label">HT :</span>
+                    <span class="price" id="price-excluding-tax-650-upsell">
+                                                    20,00&nbsp;€                                            </span>
+                </span>
+                <span class="price-including-tax">
+                    <span class="label">TTC :</span>
+                    <span class="price" id="price-including-tax-650-upsell">
+                        24,00&nbsp;€                    </span>
+                </span>
+                        
+        </div>
+
+        </div></div><div style="width: 219px;" class="owl-item loading"><div class="item">
+            <a href="https://hackspark.fr/fr/step-motor-42bygh47-401a.html" title="Stepper Motor 42BYGH47-401A" class="product-image">
+
+                                    <img style="display: none;" class="lazyOwl" data-src="https://hackspark.fr/media/catalog/product/cache/1/small_image/196x196/9df78eab33525d08d6e5fb8d27136e95/4/2/42bygh47-401a.jpg" alt="Stepper Motor 42BYGH47-401A">
+                
+            </a>
+            <h3 class="product-name"><a href="https://hackspark.fr/fr/step-motor-42bygh47-401a.html" title="Stepper Motor 42BYGH47-401A">Stepper Motor 42BYGH47-401A</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="price-excluding-tax">
+                    <span class="label">HT :</span>
+                    <span class="price" id="price-excluding-tax-835-upsell">
+                                                    15,00&nbsp;€                                            </span>
+                </span>
+                <span class="price-including-tax">
+                    <span class="label">TTC :</span>
+                    <span class="price" id="price-including-tax-835-upsell">
+                        18,00&nbsp;€                    </span>
+                </span>
+                        
+        </div>
+
+        </div></div><div style="width: 219px;" class="owl-item loading"><div class="item">
+            <a href="https://hackspark.fr/fr/step-motor-28h2p3205a4.html" title="Stepper Motor 28H2P3205A4" class="product-image">
+
+                                    <img style="display: none;" class="lazyOwl" data-src="https://hackspark.fr/media/catalog/product/cache/1/small_image/196x196/9df78eab33525d08d6e5fb8d27136e95/m/o/motor_28h2p3205a4.jpg" alt="Stepper Motor 28H2P3205A4">
+                
+            </a>
+            <h3 class="product-name"><a href="https://hackspark.fr/fr/step-motor-28h2p3205a4.html" title="Stepper Motor 28H2P3205A4">Stepper Motor 28H2P3205A4</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="price-excluding-tax">
+                    <span class="label">HT :</span>
+                    <span class="price" id="price-excluding-tax-838-upsell">
+                                                    15,50&nbsp;€                                            </span>
+                </span>
+                <span class="price-including-tax">
+                    <span class="label">TTC :</span>
+                    <span class="price" id="price-including-tax-838-upsell">
+                        18,60&nbsp;€                    </span>
+                </span>
+                        
+        </div>
+
+        </div></div></div></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev">prev</div><div class="owl-next">next</div></div></div></div> <!-- end: itemslider -->
+</div> <!-- end: itemslider-wrapper -->
+<script type="text/javascript">
+//<![CDATA[
+    jQuery(function($) {
+
+        var owl = $('#itemslider-upsell');
+        owl.owlCarousel({
+
+                    lazyLoad: true,
+        
+                    itemsCustom: [ [0, 1], [320, 2], [480, 3], [960, 4], [1280, 5] ],
+            responsiveRefreshRate: 50,
+        
+                    slideSpeed: 400,
+        
+                    paginationSpeed: 500,
+        
+                    scrollPerPage: true,
+        
+        
+                    stopOnHover: true,
+        
+                    rewindNav: true,
+            rewindSpeed: 600,
+        
+                    pagination: false,
+        
+            navigation: true
+
+        }); //end: owl
+
+    });
+//]]>
+</script></div>
+        
+</div> <!-- end: product-view -->
+
+<script type="text/javascript">
+    var lifetime = 3600;
+    var expireAt = Mage.Cookies.expires;
+    if (lifetime > 0) {
+        expireAt = new Date();
+        expireAt.setTime(expireAt.getTime() + lifetime * 1000);
+    }
+    Mage.Cookies.set('external_no_cache', 1, expireAt);
+</script>
+                </div>
+                <div class="postscript grid-full in-col1"></div>
+            </div>
+        </div>
+        
+<div class="footer-container">
+<div class="footer-container2">
+
+	<div class="footer-top-container section-container">
+        <div class="footer-top footer container stretched">
+            <div class="grid-full">
+            
+                <div class="section clearer links-wrapper-separators">
+                
+                	                                            <div class="item item-left"><ul class="links">
+                        <li class="first"><a href="https://hackspark.fr/fr/catalog/seo_sitemap/category/" title="Plan du site">Plan du site</a></li>
+                                <li><a href="https://hackspark.fr/fr/catalogsearch/term/popular/" title="Termes de recherche">Termes de recherche</a></li>
+                                <li><a href="https://hackspark.fr/fr/catalogsearch/advanced/" title="Recherche avancée">Recherche avancée</a></li>
+                                <li><a href="https://hackspark.fr/fr/sales/guest/form/" title="Commandes et retours">Commandes et retours</a></li>
+                                <li class=" last"><a href="https://hackspark.fr/fr/contacts/" title="Contactez-nous">Contactez-nous</a></li>
+            </ul>
+</div>
+                                        
+                                                            
+                                                            
+                </div> <!-- end: footer-top section -->
+                
+            </div> <!-- end: grid-full -->
+        </div> <!-- end: footer-top -->
+    </div>
+
+
+
+	    
+        
+    <div class="footer-primary-container section-container">
+        <div class="footer-primary footer container show-bg">
+            <div class="grid-full">
+
+				                <div class="section clearer">
+					<div class=" grid12-3">	<div class="std"><div class="feature first last"><img class="icon" src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/info.png" alt="">
+<h6 class="heading">Qui sommes-nous ?</h6>
+<p class="text">En quelques mots, HackSpark a été créé pour apporter la 
+bidouille hardware au plus grand nombre. Nous aimons l'open hardware et 
+l'open-source. On fera toujours de notre mieux pour vous aider dans tous
+ vos projets =)</p>
+<p class="text">Nous sommes basés à Paris, et nous serons heureux de 
+parler avec vous, donc n'hésitez pas, appelez nous, envoyez nous un 
+email, ou venez nous parler sur #hackspark (irc.freenode.net) !</p>
+</div></div></div><div class=" grid12-3">	<div class="std"><div class="feature indent first">
+	<div class="icon">
+		<img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/one.png">
+	</div>
+<p class="no-margin ">Tous nos produits sont livrés depuis Paris.</p>
+</div>
+<!--<div class="feature indent">
+	<div class="icon">
+		<img src="https://hackspark.fr/media/wysiwyg/infortis/ultimo/icons/two.png" />
+	</div>
+	<p class="no-margin ">Livraison gratuite à partir de 30 euros d'achats depuis la France et 50 euros depuis le reste de l'Europe.</p>
+</div>-->
+<div class="feature indent">
+	<div class="icon">
+		<img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/two.png">
+	</div>
+	<p class="no-margin ">Un doute sur votre achat ? Retournez-nous le produit sous 7 jours et nous vous remboursons.</p>
+</div>
+<div class="feature indent last">
+	<div class="icon">
+		<img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/three.png">
+	</div>
+	<p class="no-margin ">Nous choisissons et testons minutieusement les produits que nous vendons pour ne vous proposez que le meilleur.</p>
+</div></div></div><div class=" grid12-3">	<div class="std"><h6 class="heading">Paiement</h6>
+<p>Nous proposons le paiement par chèque, virement bancaire, PayPal et 
+par Carte de Crédit (Carte Bleue, Visa, Master Card, American Express...
+ via PayPal)</p>
+<p><a onclick="javascript:window.open('https://www.paypal.com/fr/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=350');" href="#"><img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/bnr_horizontal_solution_PP_327wx80h.gif" alt="Logos de solution PayPal" border="0"></a></p>
+<!--<p><span id="siteseal"><script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=O6MQqbGVgxMJKX09l8LWbQ7M0pKGa97gwfkcV5h6IFsQ3eofZMxCkALiQJfV"></script></span></p>--></div></div><div class=" grid12-3">	<div class="std"><div class="feature indent first">
+	<div class="icon">
+		<img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/info.png">
+	</div>
+	<p class="no-margin ">
+            <strong>Boutique :</strong><br>
+            16, Rue Alexandre Dumas<br>
+            75011 PARIS<br>
+            Ouvert du Mardi au Samedi, de 10h30 à 13h et de 16h à 19h.<br>
+            Téléphone : +33 (0) 1 46 59 17 37
+        </p>
+</div>
+<div class="feature indent">
+	<div class="icon">
+		<img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/phone.png">
+	</div>
+	<p class="no-margin ">Appelez-nous au&nbsp;:<br>+33 (0) 1 43 73 15 54<br>(de 10h à 19h heure de Paris du Lundi au Vendredi inclus)</p>
+</div>
+<div class="feature indent">
+	<div class="icon">
+		<img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/email.png">
+	</div>
+	<p class="no-margin "><a href="https://hackspark.fr/fr/contacts/">support -at- hackspark.fr<br>sales -at- hackspark.fr</a></p>
+</div></div></div>                </div> <!-- end: footer-primary section -->
+                                
+                                <div class="footer-primary-bottom grid-full">
+                    <div class="footer-primary-bottom-spacing clearer">
+                    
+						                        	<div class="item item-left clearer block_footer_primary_bottom_left">
+								<div class="social-links"><a title="Follow us on Twitter" href="http://twitter.com/HackSpark"> <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/twitter.png" alt="twitter"> </a> <a title="Watch us on YouTube" href="http://www.youtube.com/channel/UCUj4ZwpcpoZCDvZ4CCH3zXA"> <img src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/youtube.png" alt="youtube"> </a></div>                            </div>
+                                                
+                                                
+                                                    <div class="item item-right newsletter-wrapper clearer">
+                                <div id="subscribe-form" class="clearer">
+    <form action="https://hackspark.fr/fr/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+        <div>
+            <label for="newsletter">Newsletter</label>
+            <div class="input-box">
+                <input value="Saisissez votre email" name="email" id="newsletter" title="Abonnez-vous à la newsletter" class="input-text required-entry validate-email" type="text">
+            </div>
+            <button type="submit" title="Inscription" class="button btn-inline"><span><span>Inscription</span></span></button>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    new Varien.searchForm('newsletter-validate-detail', 'newsletter', 'Saisissez votre email');
+//]]>
+</script>
+                            </div>
+                                                
+                    </div> 
+                </div> <!-- end: footer-primary-bottom -->
+                            
+            </div> <!-- end: grid-full -->
+        </div> <!-- end: footer-primary -->
+    </div>
+    
+    
+
+    
+        
+    
+
+    
+    <div class="footer-bottom-container section-container">
+        <div class="footer-bottom footer container">
+            <div class="grid-full">
+
+                <div class="section clearer">
+                
+                	<div class="item item-left">
+                    	<p class="footer-copyright">© 2013 JMS Informatique</p>
+                    </div>
+                    
+                                        
+                                        
+                    
+                </div> <!-- end: footer-bottom section -->
+
+            </div> <!-- end: grid-full -->
+        </div> <!-- end: footer-bottom -->
+    </div>
+    
+    <a href="#top" id="scroll-to-top">To top</a>
+
+</div> <!-- end: footer-container2 -->
+</div> <!-- end: footer-container -->
+
+                
+<script type="text/javascript">
+	//<![CDATA[
+
+			var gridItemsEqualHeightApplied = false;
+	function setGridItemsEqualHeight($)
+	{
+		var $list = $('.category-products-grid');
+		var $listItems = $list.children();
+
+		var centered = $list.hasClass('centered');
+		var gridItemMaxHeight = 0;
+		$listItems.each(function() {
+			
+			$(this).css("height", "auto"); 			var $object = $(this).find('.actions');
+
+						if (centered)
+			{
+				var objectWidth = $object.width();
+				var availableWidth = $(this).width();
+				var space = availableWidth - objectWidth;
+				var leftOffset = space / 2;
+				$object.css("padding-left", leftOffset + "px"); 			}
+
+						var bottomOffset = parseInt($(this).css("padding-top"));
+			if (centered) bottomOffset += 10;
+			$object.css("bottom", bottomOffset + "px");
+
+						if ($object.is(":visible"))
+			{
+								var objectHeight = $object.height();
+				$(this).css("padding-bottom", (objectHeight + bottomOffset) + "px");
+			}
+
+						
+			gridItemMaxHeight = Math.max(gridItemMaxHeight, $(this).height());
+		});
+
+		//Apply max height
+		$listItems.css("height", gridItemMaxHeight + "px");
+		gridItemsEqualHeightApplied = true;
+
+	}
+	
+
+
+	jQuery(function($) {
+
+				$('.collapsible').each(function(index) {
+			$(this).prepend('<span class="opener">&nbsp;</span>');
+			if ($(this).hasClass('active'))
+			{
+				$(this).children('.block-content').css('display', 'block');
+			}
+			else
+			{
+				$(this).children('.block-content').css('display', 'none');
+			}			
+		});
+				$('.collapsible .opener').click(function() {
+			
+			var parent = $(this).parent();
+			if (parent.hasClass('active'))
+			{
+				$(this).siblings('.block-content').stop(true).slideUp(300, "easeOutCubic");
+				parent.removeClass('active');
+			}
+			else
+			{
+				$(this).siblings('.block-content').stop(true).slideDown(300, "easeOutCubic");
+				parent.addClass('active');
+			}
+			
+		});
+		
+		
+				var ddOpenTimeout;
+		var dMenuPosTimeout;
+		var DD_DELAY_IN = 200;
+		var DD_DELAY_OUT = 0;
+		var DD_ANIMATION_IN = 0;
+		var DD_ANIMATION_OUT = 0;
+		$(".clickable-dropdown > .dropdown-toggle").click(function() {
+			$(this).parent().addClass('open');
+			$(this).parent().trigger('mouseenter');
+		});
+		$(".dropdown").hover(function() {
+			
+			
+			var ddToggle = $(this).children('.dropdown-toggle');
+			var ddMenu = $(this).children('.dropdown-menu');
+			var ddWrapper = ddMenu.parent(); 			
+						ddMenu.css("left", "");
+			ddMenu.css("right", "");
+			
+						if ($(this).hasClass('clickable-dropdown'))
+			{
+								if ($(this).hasClass('open'))
+				{
+					$(this).children('.dropdown-menu').stop(true, true).delay(DD_DELAY_IN).fadeIn(DD_ANIMATION_IN, "easeOutCubic");
+				}
+			}
+			else
+			{
+								clearTimeout(ddOpenTimeout);
+				ddOpenTimeout = setTimeout(function() {
+					
+					ddWrapper.addClass('open');
+					
+				}, DD_DELAY_IN);
+				
+				//$(this).addClass('open');
+				$(this).children('.dropdown-menu').stop(true, true).delay(DD_DELAY_IN).fadeIn(DD_ANIMATION_IN, "easeOutCubic");
+			}
+			
+						clearTimeout(dMenuPosTimeout);
+			dMenuPosTimeout = setTimeout(function() {
+
+				if (ddMenu.offset().left < 0)
+				{
+					var space = ddWrapper.offset().left; 					ddMenu.css("left", (-1)*space);
+					ddMenu.css("right", "auto");
+				}
+			
+			}, DD_DELAY_IN);
+			
+		}, function() {
+			var ddMenu = $(this).children('.dropdown-menu');
+			clearTimeout(ddOpenTimeout); 			ddMenu.stop(true, true).delay(DD_DELAY_OUT).fadeOut(DD_ANIMATION_OUT, "easeInCubic");
+			if (ddMenu.is(":hidden"))
+			{
+				ddMenu.hide();
+			}
+			$(this).removeClass('open');
+		});
+		
+		
+		
+							$(".main").addClass("show-bg");
+				
+		
+		
+				var windowScroll_t;
+		$(window).scroll(function(){
+			
+			clearTimeout(windowScroll_t);
+			windowScroll_t = setTimeout(function() {
+										
+				if ($(this).scrollTop() > 100)
+				{
+					$('#scroll-to-top').fadeIn();
+				}
+				else
+				{
+					$('#scroll-to-top').fadeOut();
+				}
+			
+			}, 500);
+			
+		});
+		
+		$('#scroll-to-top').click(function(){
+			$("html, body").animate({scrollTop: 0}, 600, "easeOutCubic");
+			return false;
+		});
+		
+		
+		
+				
+			var startHeight;
+			var bpad;
+			$('.category-products-grid').on('mouseenter', '.item', function() {
+
+														if ($(window).width() >= 320)
+					{
+				
+											if (gridItemsEqualHeightApplied === false)
+						{
+							return false;
+						}
+					
+					startHeight = $(this).height();
+					$(this).css("height", "auto"); //Release height
+					$(this).find(".display-onhover").fadeIn(400, "easeOutCubic"); //Show elements visible on hover
+					var h2 = $(this).height();
+					
+										////////////////////////////////////////////////////////////////
+					var addtocartHeight = 0;
+					var addtolinksHeight = 0;
+					
+										
+											var addtolinksEl = $(this).find('.add-to-links');
+						if (addtolinksEl.hasClass("addto-onimage") == false)
+							addtolinksHeight = addtolinksEl.innerHeight(); //.height();
+										
+											var h3 = h2 + addtocartHeight + addtolinksHeight;
+						var diff = 0;
+						if (h3 < startHeight)
+						{
+							$(this).height(startHeight);
+						}
+						else
+						{
+							$(this).height(h3); 							diff = h3 - startHeight;
+						}
+										////////////////////////////////////////////////////////////////
+
+					$(this).css("margin-bottom", "-" + diff + "px"); 
+									} 								
+			}).on('mouseleave', '.item', function() {
+
+													if ($(window).width() >= 320)
+					{
+				
+					//Clean up
+					$(this).find(".display-onhover").stop(true).hide();
+					$(this).css("margin-bottom", "");
+
+																$(this).height(startHeight);
+					
+									} 								
+			});
+		
+		
+
+
+				$('.products-grid, .products-list').on('mouseenter', '.item', function() {
+			$(this).find(".alt-img").fadeIn(400, "easeOutCubic");
+		}).on('mouseleave', '.item', function() {
+			$(this).find(".alt-img").stop(true).fadeOut(400, "easeOutCubic");
+		});
+
+
+
+				$('.fade-on-hover').on('mouseenter', function() {
+			$(this).animate({opacity: 0.75}, 300, 'easeInOutCubic');
+		}).on('mouseleave', function() {
+			$(this).stop(true).animate({opacity: 1}, 300, 'easeInOutCubic');
+		});
+
+
+
+						var winWidth = $(window).width();
+		var winHeight = $(window).height();
+		$(window).resize(
+			$.debounce(50, onEventResize)
+		); //end: resize
+
+				function onEventResize() {
+
+						var winNewWidth = $(window).width();
+			var winNewHeight = $(window).height();
+			if (winWidth != winNewWidth || winHeight != winNewHeight)
+			{
+				afterResize(); 			}
+			//Update window size variables
+			winWidth = winNewWidth;
+			winHeight = winNewHeight;
+
+		} //end: onEventResize
+
+				function afterResize() {
+
+						$(document).trigger("themeResize");
+
+										setGridItemsEqualHeight($);
+									
+						$('.itemslider').each(function(index) {
+				var flex = $(this).data('flexslider');
+				if (flex != null)
+				{
+					flex.flexAnimate(0);
+					flex.resize();
+				}
+			});
+							
+						var slideshow = $('.the-slideshow').data('flexslider');
+			if (slideshow != null)
+			{
+				slideshow.resize();
+			}
+
+		} //end: afterResize
+
+
+
+	}); /* end: jQuery(){...} */
+	
+	
+
+	jQuery(window).load(function(){
+		
+							setGridItemsEqualHeight(jQuery);
+		
+	}); /* end: jQuery(window).load(){...} */
+
+	//]]>
+</script>
+
+
+    </div>
+</div>
+</div> <!-- end: root-wrapper -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-6.newrelic.com","licenseKey":"e053b1d91d","applicationID":"4323329","transactionName":"MQEEYBRTWRdRVkJbVghLM0YPHV4KVFBOHEkOFA==","queueTime":0,"applicationTime":556,"atts":"HUYHFlxJShk=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-536.min.js"}</script>
+
+<div style="display: none;" id="cboxOverlay"></div><div style="display: none; padding-bottom: 20px; padding-right: 20px;" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="width: 0px; height: 0px; overflow: hidden; float: left;" id="cboxLoadedContent"></div><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><div style="float: left;" id="cboxNext"></div><div style="float: left;" id="cboxPrevious"></div><div style="float: left;" id="cboxSlideshow"></div><div style="float: left;" id="cboxClose"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><script src="CNC%20Shield%20for%20Arduino%20Kit%20%28GRBL%20Compatible%29%20%7C%20HackSpark,%20tout%20ce%20dont%20vous%20avez%20besoin%20pour%20l%27%C3%A9lectronique%20et%20le%20hardware%20libre._files/nr-536.js"></script></body></html>
