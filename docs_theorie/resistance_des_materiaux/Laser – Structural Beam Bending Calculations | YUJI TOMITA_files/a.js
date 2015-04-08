@@ -1,0 +1,1 @@
+/**/skimlinksApplyHandlers({"country":"FR","sessid":null,"guid":null,"merchant_domains":["amazon.com"]});

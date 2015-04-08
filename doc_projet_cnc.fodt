@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2015-04-04T16:09:38.651727071</meta:creation-date><meta:generator>LibreOffice/4.2.5.2$Linux_x86 LibreOffice_project/420m0$Build-2</meta:generator><dc:date>2015-04-07T15:10:36.666857574</dc:date><meta:editing-duration>PT45M27S</meta:editing-duration><meta:editing-cycles>16</meta:editing-cycles><meta:document-statistic meta:table-count="0" meta:image-count="1" meta:object-count="0" meta:page-count="5" meta:paragraph-count="74" meta:word-count="359" meta:character-count="2261" meta:non-whitespace-character-count="1970"/></office:meta>
+ <office:meta><meta:creation-date>2015-04-04T16:09:38.651727071</meta:creation-date><meta:generator>LibreOffice/4.2.5.2$Linux_x86 LibreOffice_project/420m0$Build-2</meta:generator><dc:date>2015-04-07T16:35:42.328949520</dc:date><meta:editing-duration>PT45M27S</meta:editing-duration><meta:editing-cycles>18</meta:editing-cycles><meta:document-statistic meta:table-count="0" meta:image-count="1" meta:object-count="0" meta:page-count="5" meta:paragraph-count="75" meta:word-count="372" meta:character-count="2323" meta:non-whitespace-character-count="2019"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="int">81915</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="int">92287</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="int">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="int">32757</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="int">21936</config:config-item>
@@ -14,11 +14,11 @@
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
      <config:config-item config:name="ViewLeft" config:type="int">7583</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="int">94615</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="int">105262</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="int">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="int">81915</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="int">92287</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="int">32755</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="int">103849</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="int">114221</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -57,7 +57,7 @@
    <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
    <config:config-item config:name="RsidRoot" config:type="int">1265847</config:config-item>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">1835525</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">2048920</config:config-item>
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
@@ -299,73 +299,88 @@
   <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="001b625d"/>
   </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="0019e996"/>
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="001d7f78"/>
   </style:style>
-  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:paragraph-rsid="0019e996"/>
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="0019e996"/>
   </style:style>
   <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:rsid="0019e996"/>
-  </style:style>
-  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="0019e996"/>
-  </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
-  </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:rsid="001a6af9" officeooo:paragraph-rsid="001b625d"/>
-  </style:style>
-  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:paragraph-rsid="001b625d"/>
-  </style:style>
-  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:text-properties officeooo:rsid="0019e996"/>
-  </style:style>
-  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
-  </style:style>
-  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:text-properties officeooo:paragraph-rsid="001b625d"/>
-  </style:style>
-  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
-   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
-  </style:style>
-  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
-   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
-  </style:style>
-  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
-   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
-  </style:style>
-  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:paragraph-rsid="001b625d"/>
-  </style:style>
-  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="0019e996"/>
-  </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:paragraph-rsid="0019e996"/>
   </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="0019e996"/>
+  </style:style>
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="0019e996"/>
+  </style:style>
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
+  </style:style>
+  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:rsid="001a6af9" officeooo:paragraph-rsid="001b625d"/>
   </style:style>
-  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
-  </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:paragraph-rsid="001b625d"/>
   </style:style>
-  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:rsid="001b3858" officeooo:paragraph-rsid="001c0205"/>
   </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:rsid="0019e996"/>
+  </style:style>
+  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
   </style:style>
-  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:paragraph-rsid="001b625d"/>
   </style:style>
-  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:paragraph-rsid="001c0205"/>
+  </style:style>
+  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
+  </style:style>
+  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
+   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
+  </style:style>
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
+   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
+  </style:style>
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="001b625d"/>
+  </style:style>
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="001f4398"/>
+  </style:style>
+  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="0019e996"/>
+  </style:style>
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:paragraph-rsid="0019e996"/>
+  </style:style>
+  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="001a6af9" officeooo:paragraph-rsid="001b625d"/>
+  </style:style>
+  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
+  </style:style>
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:paragraph-rsid="001b625d"/>
+  </style:style>
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="001b3858" officeooo:paragraph-rsid="001c0205"/>
+  </style:style>
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:paragraph-rsid="001f4398"/>
+  </style:style>
+  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:rsid="0019e996" officeooo:paragraph-rsid="001b625d"/>
+  </style:style>
+  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:paragraph-rsid="001b625d"/>
+  </style:style>
+  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:paragraph-rsid="001c0205"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
@@ -388,6 +403,12 @@
   </style:style>
   <style:style style:name="T7" style:family="text">
    <style:text-properties officeooo:rsid="0019e996"/>
+  </style:style>
+  <style:style style:name="T8" style:family="text">
+   <style:text-properties officeooo:rsid="001c55ce"/>
+  </style:style>
+  <style:style style:name="T9" style:family="text">
+   <style:text-properties officeooo:rsid="001f4398"/>
   </style:style>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Graphics">
    <style:graphic-properties style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="center" style:horizontal-rel="paragraph" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
@@ -910,7 +931,7 @@
    <text:p text:style-name="P4">Les images sont intégrées automatiquement dans le fodt… ce qui est très pratique pour écrire vite ladite documentation. </text:p>
    <text:p text:style-name="P3">etc.</text:p>
    <text:p text:style-name="P7"/>
-   <text:h text:style-name="P18" text:outline-level="2">Fichiers types utiles/utilisés dans un projet </text:h>
+   <text:h text:style-name="P19" text:outline-level="2"><text:span text:style-name="T9">Annexe : </text:span>Fichiers types utiles/utilisés dans un projet </text:h>
    <text:p text:style-name="Text_20_body"><text:span text:style-name="T7">Voici des fichiers d&apos;exemple un projet, types de fichiers </text:span>tous utilisables avec Github) :</text:p>
    <text:p text:style-name="P6"/>
    <text:p text:style-name="P6">Lien vers code SVG du projet : <text:a xlink:type="simple" xlink:href="svg/dessin.svg" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">dessin.svg</text:a></text:p>
@@ -929,57 +950,57 @@
    <text:p text:style-name="P11">Si les applications à utiliser pour chaque type de fichier sont correctement configurées sur le système, les liens ci-dessous ouvrent directement les fichiers dans les applications adaptées !</text:p>
    <text:p text:style-name="P13">En clair, un simple clone du projet permet de lancer les différents logiciels utiles en un clic. </text:p>
    <text:p text:style-name="P13"/>
-   <text:h text:style-name="P17" text:outline-level="1">Rubriques type d&apos;un projet </text:h>
+   <text:h text:style-name="P18" text:outline-level="1">Rubriques type d&apos;un projet </text:h>
    <text:p text:style-name="P15"/>
-   <text:h text:style-name="P22" text:outline-level="2">Synthèse :</text:h>
+   <text:h text:style-name="P23" text:outline-level="2">Synthèse :</text:h>
    <text:p text:style-name="P14">Description rapide avec résumé des options prises par « poste » : </text:p>
    <text:p text:style-name="P14">Alimentation </text:p>
    <text:p text:style-name="P14">Mécanique </text:p>
-   <text:list xml:id="list1939592352710533799" text:style-name="L1">
+   <text:list xml:id="list881413835804740840" text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P27">Mécanique de structure</text:p>
+     <text:p text:style-name="P30">Mécanique de structure</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P27">Motorisation / entraînement</text:p>
+     <text:p text:style-name="P30">Motorisation / entraînement</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P27">Pièces standards</text:p>
+     <text:p text:style-name="P30">Pièces standards</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P27">Pièces 3D</text:p>
+     <text:p text:style-name="P30">Pièces 3D</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P27">Visserie</text:p>
+     <text:p text:style-name="P30">Visserie</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P14">Electronique « bas niveau »</text:p>
-   <text:list xml:id="list8707090752869855609" text:style-name="L2">
+   <text:list xml:id="list3391641757520263077" text:style-name="L2">
     <text:list-item>
-     <text:p text:style-name="P28">Montage général</text:p>
+     <text:p text:style-name="P31">Montage général</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P28">Capteurs</text:p>
+     <text:p text:style-name="P31">Capteurs</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P28">Carte programmable</text:p>
+     <text:p text:style-name="P31">Carte programmable</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P28">Effecteurs / interfaces</text:p>
+     <text:p text:style-name="P31">Effecteurs / interfaces</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P14"><text:soft-page-break/>Electronique « haut niveau »</text:p>
-   <text:list xml:id="list1944383320781495482" text:style-name="L3">
+   <text:list xml:id="list4288283551553088934" text:style-name="L3">
     <text:list-item>
-     <text:p text:style-name="P29">Montage général</text:p>
+     <text:p text:style-name="P32">Montage général</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P29">Capteurs « haut niveau »</text:p>
+     <text:p text:style-name="P32">Capteurs « haut niveau »</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P29">Système embarqué</text:p>
+     <text:p text:style-name="P32">Système embarqué</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P29">Effecteurs « haut niveau »</text:p>
+     <text:p text:style-name="P32">Effecteurs « haut niveau »</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P14">Code Arduino</text:p>
@@ -988,54 +1009,54 @@
    <text:p text:style-name="P14">Codes interfaces PyQt</text:p>
    <text:p text:style-name="P14">Codes webapps</text:p>
    <text:p text:style-name="P14"><text:s/>Etc… </text:p>
-   <text:h text:style-name="P21" text:outline-level="2">Description générale</text:h>
+   <text:h text:style-name="P22" text:outline-level="2">Description générale</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P21" text:outline-level="2">Docs utiles</text:h>
+   <text:h text:style-name="P22" text:outline-level="2">Docs utiles</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P21" text:outline-level="2">Discussion technique </text:h>
+   <text:h text:style-name="P22" text:outline-level="2">Discussion technique </text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P23" text:outline-level="2">Alimentation </text:h>
+   <text:h text:style-name="P24" text:outline-level="2">Alimentation </text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P21" text:outline-level="2">Mécanique </text:h>
-   <text:h text:style-name="P25" text:outline-level="3">Mécanique de structure</text:h>
+   <text:h text:style-name="P22" text:outline-level="2">Mécanique </text:h>
+   <text:h text:style-name="P27" text:outline-level="3">Mécanique de structure</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P25" text:outline-level="3">Motorisation / entraînement</text:h>
+   <text:h text:style-name="P27" text:outline-level="3">Motorisation / entraînement</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P26" text:outline-level="3"><text:soft-page-break/>Pièces standards</text:h>
+   <text:h text:style-name="P28" text:outline-level="3"><text:soft-page-break/>Pièces standards</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P26" text:outline-level="3">Pièces 3D</text:h>
+   <text:h text:style-name="P28" text:outline-level="3">Pièces 3D</text:h>
+   <text:p text:style-name="P17"><text:span text:style-name="T8">Voici la </text:span><text:a xlink:type="simple" xlink:href="3D_stl/"><text:span text:style-name="T8">liste des pièces 3D</text:span></text:a><text:span text:style-name="T8"> utiles dans ce projet : </text:span></text:p>
+   <text:h text:style-name="P28" text:outline-level="3">Visserie</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P26" text:outline-level="3">Visserie</text:h>
+   <text:h text:style-name="P25" text:outline-level="2">Circuits imprimés</text:h>
+   <text:h text:style-name="P29" text:outline-level="3"/>
+   <text:h text:style-name="P24" text:outline-level="2">Electronique « bas niveau »</text:h>
+   <text:h text:style-name="P28" text:outline-level="3">Montage général</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P36" text:outline-level="2">Circuits imprimés</text:h>
-   <text:h text:style-name="P39" text:outline-level="3"/>
-   <text:h text:style-name="P23" text:outline-level="2">Electronique « bas niveau »</text:h>
-   <text:h text:style-name="P26" text:outline-level="3">Montage général</text:h>
+   <text:h text:style-name="P28" text:outline-level="3">Capteurs</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P26" text:outline-level="3">Capteurs</text:h>
+   <text:h text:style-name="P28" text:outline-level="3">Carte programmable</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P26" text:outline-level="3">Carte programmable</text:h>
+   <text:h text:style-name="P28" text:outline-level="3">Effecteurs / interfaces</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P26" text:outline-level="3">Effecteurs / interfaces</text:h>
-   <text:p text:style-name="P16"/>
-   <text:h text:style-name="P23" text:outline-level="2">Electronique « haut niveau »</text:h>
-   <text:h text:style-name="P26" text:outline-level="3">Montage général</text:h>
+   <text:h text:style-name="P41" text:outline-level="2">Codes Arduino</text:h>
+   <text:p text:style-name="P34"/>
+   <text:h text:style-name="P24" text:outline-level="2">Electronique « haut niveau »</text:h>
+   <text:h text:style-name="P28" text:outline-level="3">Montage général</text:h>
    <text:p text:style-name="P14"/>
-   <text:h text:style-name="P26" text:outline-level="3">Capteurs « haut niveau »</text:h>
+   <text:h text:style-name="P28" text:outline-level="3">Capteurs « haut niveau »</text:h>
    <text:p text:style-name="P14"/>
-   <text:h text:style-name="P26" text:outline-level="3">Système embarqué</text:h>
+   <text:h text:style-name="P28" text:outline-level="3"><text:soft-page-break/>Système embarqué</text:h>
    <text:p text:style-name="P14"/>
-   <text:h text:style-name="P26" text:outline-level="3"><text:soft-page-break/>Effecteurs « haut niveau »</text:h>
+   <text:h text:style-name="P28" text:outline-level="3">Effecteurs « haut niveau »</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P23" text:outline-level="2">Codes Arduino</text:h>
+   <text:h text:style-name="P24" text:outline-level="2">Codes Pyduino</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P23" text:outline-level="2">Codes Pyduino</text:h>
+   <text:h text:style-name="P24" text:outline-level="2">Codes Python </text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P23" text:outline-level="2">Codes Python </text:h>
+   <text:h text:style-name="P24" text:outline-level="2">Codes interfaces PyQt</text:h>
    <text:p text:style-name="P16"/>
-   <text:h text:style-name="P23" text:outline-level="2">Codes interfaces PyQt</text:h>
-   <text:p text:style-name="P16"/>
-   <text:h text:style-name="P23" text:outline-level="2">Codes webapps</text:h>
+   <text:h text:style-name="P24" text:outline-level="2">Codes webapps</text:h>
    <text:p text:style-name="P14"/>
    <text:p text:style-name="P14"><text:s/></text:p>
   </office:text>

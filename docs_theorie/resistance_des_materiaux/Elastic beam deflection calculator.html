@@ -1,0 +1,1423 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	<title>Elastic beam deflection calculator</title> 
+<!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~ Title: Beam Calculator Program 
+    ~~ Author: Leszek D. Maj 
+    ~~ Created: July 29, 1997 
+    ~~ Example added by E.P Doherty, July 2004 
+    ~~ Script code cleaned up by Hal Eckhart, January 2005
+    ~~ Useful suggestions by Wayne Whitney, November 2005
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    -->
+<script language="JavaScript" type="text/javascript">
+  //<![CDATA[
+  
+  function Eqat(form)
+    {
+    Part1 = "Eqat";
+    Part2 = "_Beam();"
+    
+    no_cases = 68
+        for (var i=1; i <= no_cases; i++){
+           if (document.forms[0].Beam[i-1].checked) {
+           String = Part1 + i + Part2;
+           eval (String)
+           return (true)
+           }
+        }
+
+    alert("Please choose an appropriate loading case and submit again.");
+    return(false);
+    }
+  function validate_a(form)
+    {
+    if (document.forms[0].a.value == "")
+        {
+        alert("Dont forget to enter partial length a");
+        return(false);
+        }
+    return(true);
+    }
+
+  function validate_b(form)
+    {
+    if (document.forms[0].b.value == "")
+        {
+        alert("Dont forget to enter partial length b");
+        return(false);
+        }
+    return(true);
+    }
+
+  function validate_P(form)
+    {
+    if (document.forms[0].P.value == "")
+        {
+        alert("Where is the point load (P) value ? ");
+        return(false); 
+        }
+    return(true);
+    }
+
+  function validate_q(form)
+    {
+    if (document.forms[0].q.value == "")
+        {
+        alert("Where is uniform distributed load (q) value ?");
+        return(false);
+        }
+    return(true);
+    }
+
+  function validate_L(form)
+  
+    {
+        	 a = document.forms[0].a.value;
+    		 b = document.forms[0].b.value;
+    		 if (a&&b) {
+                  Fa = parseFloat(a)
+                  Fb = parseFloat(b)
+    		      if (document.forms[0].Beam[0].checked)document.forms[0].L.value = Fa + Fb
+    		      if (document.forms[0].Beam[1].checked)document.forms[0].L.value = Fa + Fb
+		    	if (document.forms[0].Beam[2].checked)document.forms[0].L.value = Fa + Fb
+		    	if (document.forms[0].Beam[12].checked)document.forms[0].L.value = Fa + Fb
+		    	if (document.forms[0].Beam[14].checked)document.forms[0].L.value = Fa + Fb
+		    	if (document.forms[0].Beam[33].checked)document.forms[0].L.value = Fa + 2*Fb
+	          	if (document.forms[0].Beam[35].checked)document.forms[0].L.value = 2*Fa + Fb
+		    	if (document.forms[0].Beam[44].checked)document.forms[0].L.value = Fa + Fb
+		    	if (document.forms[0].Beam[60].checked)document.forms[0].L.value = Fa + Fb
+		    	if (document.forms[0].Beam[61].checked)document.forms[0].L.value = Fa + Fb
+		    	if (document.forms[0].Beam[62].checked)document.forms[0].L.value = Fa + Fb
+                  if (document.forms[0].Beam[64].checked)document.forms[0].L.value = Fa + Fb
+		    	if (document.forms[0].Beam[67].checked)document.forms[0].L.value = 2* Fa + Fb
+
+             } else {   
+        	    if (document.forms[0].L.value == "") alert("Give me the total length (L) please");
+        	    return(false);
+        	 }
+    return(true);
+    }
+
+  function validate_E(form)
+    {
+    if (document.forms[0].E.value == "")
+        {
+        alert("Oops, you forget the Young's modulus (E)");
+        return(false);
+        }
+    return(true);
+    }
+
+  function validate_I(form)
+    {
+    if (document.forms[0].I.value == "")
+        {
+        alert("Oops, you forget the moment of inertia (I)");
+        return(false);
+        }
+    return(true);
+    }
+
+  function validate_M(form)
+    {
+    if (document.forms[0].M.value == "")
+        {
+        alert("Please enter the applied moment (M)");
+        return(false);
+        }
+    return(true);
+    }
+
+  function validate_M1(form)
+    {
+    if (document.forms[0].M1.value == "")
+        {
+        alert("Please enter the applied moment (M1)");
+        return(false);
+        }
+    return(true);
+    }
+
+  function validate_M2(form)
+    {
+    if (document.forms[0].M2.value == "")
+        {
+        alert("Please enter the applied moment (M2)");
+        return(false);
+        }
+    return(true);
+    }
+
+  function GetValue(form)
+    {
+    a = document.forms[0].a.value;
+    b = document.forms[0].b.value;
+    P = document.forms[0].P.value;
+    q = document.forms[0].q.value;
+    L = document.forms[0].L.value;
+    E = document.forms[0].E.value;
+    I = document.forms[0].I.value;
+    M = document.forms[0].M.value;
+    M1 = document.forms[0].M1.value;
+    M2 = document.forms[0].M2.value;
+
+    alpha = (a / L);
+    beta = (b / L);
+    }
+
+  function Eqat1_Beam(form)
+    {
+    if (validate_a() && validate_b() && validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();    
+
+        document.forms[0].MaxDeflection.value = -((P * (Math.pow(L,3)) * (Math.pow(alpha,2)) * (Math.pow(beta,2)))/(3 * E * I));
+        document.forms[0].EndSlope1.value = -((P * a * b * (1 + beta))/(6 * E * I));
+        document.forms[0].EndSlope2.value = ((P * a * b * (1 + alpha))/(6 * E * I));
+        }
+    }
+
+  function Eqat2_Beam(form)
+    {
+    if (validate_a() && validate_b() && validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+
+        document.forms[0].MaxDeflection.value = -((P * (Math.pow(L,3)) * (Math.pow(alpha,3)) * (Math.pow(beta,3)))/(3 * E * I));
+        document.forms[0].EndSlope1.value = "N/A";
+        document.forms[0].EndSlope2.value = "N/A";
+        }
+    }
+
+  function Eqat3_Beam(form)
+    {
+    if (validate_a() && validate_b() && validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0098 * ((P * (Math.pow(L,3)))/(E * I)));
+        document.forms[0].EndSlope1.value = "0";
+        document.forms[0].EndSlope2.value = ((P * (Math.pow(L,2)) * (Math.pow(alpha,2)) * beta)/(4 * E * I));
+        }
+    }
+
+  function Eqat4_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = -((P * (Math.pow(L,3)))/(48 * E * I));
+        document.forms[0].EndSlope1.value = -((P * (Math.pow(L,2)))/(16 * E * I));
+        document.forms[0].EndSlope2.value = ((P * (Math.pow(L,2)))/(16 * E * I));
+        }
+    }
+
+  function Eqat5_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = -((P * (Math.pow(L,3)))/(192 * E * I));
+        document.forms[0].EndSlope1.value = "N/A";
+        document.forms[0].EndSlope2.value = "N/A";
+        }
+    }
+
+  function Eqat6_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0093 * ((P * (Math.pow(L,3)))/(E * I)));
+        document.forms[0].EndSlope1.value = "0";
+        document.forms[0].EndSlope2.value = ((P * (Math.pow(L,2)))/(32 * E * I));
+        }
+    }
+
+  function Eqat7_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0179 * ((P * (Math.pow(L,3)))/(E * I)));
+        document.forms[0].EndSlope1.value = -((5 * P * (Math.pow(L,2)))/(81 * E * I));
+        document.forms[0].EndSlope2.value = ((4 * P * (Math.pow(L,2)))/(81 * E * I));
+        }
+    }
+
+  function Eqat8_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0403 * ((P * (Math.pow(L,3)))/(E * I)));
+        document.forms[0].EndSlope1.value = "N/A";
+        document.forms[0].EndSlope2.value = "N/A";
+        }
+    }
+
+  function Eqat9_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0151 * ((P * (Math.pow(L,3)))/(E * I)));
+        document.forms[0].EndSlope1.value = "0";
+        document.forms[0].EndSlope2.value = ((P * (Math.pow(L,2)))/(54 * E * I));
+        }
+    }
+
+  function Eqat10_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0146 * ((P * (Math.pow(L,3)))/(E * I)));
+        document.forms[0].EndSlope1.value = -((21 * P * (Math.pow(L,2)))/(384 * E * I));
+        document.forms[0].EndSlope2.value = ((15 * P * (Math.pow(L,2)))/(384 * E * I));
+        }
+    }
+
+  function Eqat11_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0028 * ((P * (Math.pow(L,3)))/(E * I)));
+        document.forms[0].EndSlope1.value = "N/A";
+        document.forms[0].EndSlope2.value = "N/A";
+        }
+    }
+
+  function Eqat12_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.01099 * ((P * (Math.pow(L,3)))/(E * I)));
+        document.forms[0].EndSlope1.value = "0";
+        document.forms[0].EndSlope2.value = ((3 * P * (Math.pow(L,2)))/(448 * E * I));
+        }
+    }
+
+  function Eqat13_Beam(form)
+    {
+    if (validate_a() && validate_b() && validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = ((-((P * (Math.pow(L,3)))/(6 * E * I))) * ((2 + alpha) * (Math.pow(beta,2))));
+        document.forms[0].EndSlope1.value = ((P * (Math.pow(b,2))) / (2 * E * I));
+        document.forms[0].EndSlope2.value = "0";
+        }
+    }
+
+  function Eqat14_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = -((P * (Math.pow(L,3)))/(3 * E * I));
+        document.forms[0].EndSlope1.value = ((P * (Math.pow(L,2))) / (2 * E * I));
+        document.forms[0].EndSlope2.value = "0";
+        }
+    }
+
+  function Eqat15_Beam(form)
+    {
+    if (validate_a() && validate_b() && validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = -(((P * (Math.pow(L,3)))/(24 * E * I)) * alpha * (3 - 4 * Math.pow(alpha,2)));
+        document.forms[0].EndSlope1.value = -((P * a * b) / (2 * E * I));
+        document.forms[0].EndSlope2.value = ((P * a * b) / (2 * E * I));
+        }
+    }
+
+  function Eqat16_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0355 * ((P * (Math.pow(L,3))) / (E * I)));
+        document.forms[0].EndSlope1.value = -((P * Math.pow(L,2)) / (2 * E * I));
+        document.forms[0].EndSlope2.value = ((P * Math.pow(L,2)) / (2 * E * I));
+        }
+    }
+
+  function Eqat17_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0286 * ((P * (Math.pow(L,3))) / (E * I)));
+        document.forms[0].EndSlope1.value = -((3 * P * Math.pow(L,2)) / (32 * E * I));
+        document.forms[0].EndSlope2.value = ((3 * P * Math.pow(L,2)) / (32 * E * I));
+        }
+    }
+
+  function Eqat18_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0352 * ((P * (Math.pow(L,3))) / (E * I)));
+        document.forms[0].EndSlope1.value = -((45 * P * Math.pow(L,2)) / (384 * E * I));
+        document.forms[0].EndSlope2.value = ((39 * P * Math.pow(L,2)) / (384 * E * I));
+        }
+    }
+
+  function Eqat19_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0315 * ((P * (Math.pow(L,3))) / (E * I)));
+        document.forms[0].EndSlope1.value = -((39 * P * Math.pow(L,2)) / (375 * E * I));
+        document.forms[0].EndSlope2.value = ((39 * P * Math.pow(L,2)) / (375 * E * I));
+        }
+    }
+
+  function Eqat20_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0533 * ((P * (Math.pow(L,3))) / (E * I)));
+        document.forms[0].EndSlope1.value = -((33 * P * Math.pow(L,2)) / (192 * E * I));
+        document.forms[0].EndSlope2.value = ((33 * P * Math.pow(L,2)) / (192 * E * I));
+        }
+    }
+
+  function Eqat21_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0409 * ((P * (Math.pow(L,3))) / (E * I)));
+        document.forms[0].EndSlope1.value = -((19 * P * Math.pow(L,2)) / (144 * E * I));
+        document.forms[0].EndSlope2.value = ((19 * P * Math.pow(L,2)) / (144 * E * I));
+        }
+    }
+
+  function Eqat22_Beam(form)
+    {
+    if (validate_P() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0495 * ((P * (Math.pow(L,3))) / (E * I)));
+        document.forms[0].EndSlope1.value = -((5 * P * Math.pow(L,2)) / (32 * E * I));
+        document.forms[0].EndSlope2.value = ((5 * P * Math.pow(L,2)) / (32 * E * I));
+        }
+    }
+
+  function Eqat23_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        { 
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0130 * ((q * (Math.pow(L,4))) / (E * I)));
+        document.forms[0].EndSlope1.value = -((q * Math.pow(L,3)) / (24 * E * I));
+        document.forms[0].EndSlope2.value = ((q * Math.pow(L,3)) / (24 * E * I));
+        }
+    }
+
+  function Eqat24_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0026 * ((q * (Math.pow(L,4))) / (E * I)));
+        document.forms[0].EndSlope1.value = "N/A";
+        document.forms[0].EndSlope2.value = "N/A";
+        }
+    }
+
+  function Eqat25_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0054 * ((q * (Math.pow(L,4))) / (E * I)));
+        document.forms[0].EndSlope1.value = "0";
+        document.forms[0].EndSlope2.value = ((q * Math.pow(L,3)) / (48 * E * I));
+        }
+    }
+
+  function Eqat26_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.125 * ((q * (Math.pow(L,4))) / (E * I)));
+        document.forms[0].EndSlope1.value = ((q * Math.pow(L,3)) / (6 * E * I));
+        document.forms[0].EndSlope2.value = "0";
+        }
+    }
+
+  function Eqat27_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0066 * ((q * (Math.pow(L,4))) / (E * I)));
+        document.forms[0].EndSlope1.value = -((3 * q * Math.pow(L,3)) / (128 * E * I));
+        document.forms[0].EndSlope2.value = ((7 * q * Math.pow(L,3)) / (384 * E * I));
+        }
+    }
+
+  function Eqat28_Beam(form)
+    {
+    if (validate_a() && validate_b() && validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = "N/A";
+        document.forms[0].EndSlope1.value = -((q * L * Math.pow(a,3) * (Math.pow((1+beta),2))) / (24 * E * I));
+        document.forms[0].EndSlope2.value = ((q * L * Math.pow(a,3) * (2 - (Math.pow(alpha,2)))) / (24 * E * I));
+        }
+    }
+
+  function Eqat29_Beam(form)
+    {
+    GetValue();
+    
+    document.forms[0].MaxDeflection.value = "N/A";
+    document.forms[0].EndSlope1.value = "N/A";
+    document.forms[0].EndSlope2.value = "N/A";
+    }
+
+  function Eqat30_Beam(form)
+    {
+    GetValue();
+    
+    document.forms[0].MaxDeflection.value = "N/A";
+    document.forms[0].EndSlope1.value = "N/A";
+    document.forms[0].EndSlope2.value = "N/A";
+    }
+
+  function Eqat31_Beam(form)
+    {
+    GetValue();
+    
+    document.forms[0].MaxDeflection.value = "N/A";
+    document.forms[0].EndSlope1.value = "N/A";
+    document.forms[0].EndSlope2.value = "N/A";
+    }
+
+  function Eqat32_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = "N/A";
+        document.forms[0].EndSlope1.value = -((8 * q * Math.pow(L,3))/(243 * E * I));
+        document.forms[0].EndSlope2.value = ((7 * q * Math.pow(L,3))/(243 * E * I));
+        }
+    }
+
+  function Eqat33_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = "N/A";
+        document.forms[0].EndSlope1.value = -0.0265 * ((q * Math.pow(L,3))/(E * I));
+        document.forms[0].EndSlope2.value = 0.0087 * ((q * Math.pow(L,3))/(E * I));
+        }
+    }
+
+  function Eqat34_Beam(form)
+    {
+    if (validate_a() && validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = "N/A";
+        document.forms[0].EndSlope1.value = -(((q * a * Math.pow(L,2))/(48 * E * I)) * (3 - Math.pow(alpha,2)));
+        document.forms[0].EndSlope2.value = (((q * a * Math.pow(L,2))/(48 * E * I)) * (3 - Math.pow(alpha,2)));
+        }
+    }
+
+  function Eqat35_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0066 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = -((13 * q * Math.pow(L,3))/(648 * E * I));
+        document.forms[0].EndSlope2.value = ((13 * q * Math.pow(L,3))/(648 * E * I));
+        }
+    }
+
+  function Eqat36_Beam(form)
+    {
+    if (validate_a() && validate_b() && validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-((q * Math.pow(a,4))/(48 * E * I)) * ((3 / Math.pow(alpha,2)) - 2));
+        document.forms[0].EndSlope1.value = -((q * Math.pow(a,2) * L * (2 + beta))/(12 * E * I));
+        document.forms[0].EndSlope2.value = ((q * Math.pow(a,2) * L * (2 + beta))/(12 * E * I));
+        }
+    }
+
+  function Eqat37_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0064 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = -((7 * q * Math.pow(L,3))/(324 * E * I));
+        document.forms[0].EndSlope2.value = ((7 * q * Math.pow(L,3))/(324 * E * I));
+        }
+    }
+
+  function Eqat38_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0065 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = -((7 * q * Math.pow(L,3))/(360 * E * I));
+        document.forms[0].EndSlope2.value = ((q * Math.pow(L,3))/(45 * E * I));
+        }
+    }
+
+  function Eqat39_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0013 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = "N/A";
+        document.forms[0].EndSlope2.value = "N/A";
+        }
+    }
+
+  function Eqat40_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0031 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = "0";
+        document.forms[0].EndSlope2.value = ((q * Math.pow(L,3))/(80 * E * I));
+        }
+    }
+
+  function Eqat41_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0024 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = -((q * Math.pow(L,3))/(120 * E * I));
+        document.forms[0].EndSlope2.value = "0";
+        }
+    }
+
+  function Eqat42_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0917 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = ((q * Math.pow(L,3))/(8 * E * I));
+        document.forms[0].EndSlope2.value = "0";
+        }
+    }
+
+  function Eqat43_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0333 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = ((q * Math.pow(L,3))/(24 * E * I));
+        document.forms[0].EndSlope2.value = "0";
+        }
+    }
+
+  function Eqat44_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0083 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = -((5 * q * Math.pow(L,3))/(192 * E * I));
+        document.forms[0].EndSlope2.value = ((5 * q * Math.pow(L,3))/(192 * E * I));
+        }
+    }
+
+  function Eqat45_Beam(form)
+    {
+    if (validate_a() && validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = -((q * Math.pow(a,4))/(120 * E * I)) * ((5/Math.pow(alpha,2)) - 4);
+        document.forms[0].EndSlope1.value = -((q * Math.pow(a,2) * (4 - 3 * alpha) * L)/(24 * E * I));
+        document.forms[0].EndSlope2.value = ((q * Math.pow(a,2) * (4 - 3 * alpha) * L)/(24 * E * I));
+        }
+    }
+
+  function Eqat46_Beam(form)
+    {
+    GetValue();
+    
+    document.forms[0].MaxDeflection.value = "N/A";
+    document.forms[0].EndSlope1.value = "N/A";
+    document.forms[0].EndSlope2.value = "N/A";
+    }
+
+  function Eqat47_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0047 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = -((q * Math.pow(L,3))/(64 * E * I));
+        document.forms[0].EndSlope2.value = ((q * Math.pow(L,3))/(64 * E * I));
+        }
+    }
+
+  function Eqat48_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0108 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = -((11 * q * Math.pow(L,3))/(324 * E * I));
+        document.forms[0].EndSlope2.value = ((11 * q * Math.pow(L,3))/(324 * E * I));
+        }
+    }
+
+  function Eqat49_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0104 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = -((57 * q * Math.pow(L,3))/(1536 * E * I));
+        document.forms[0].EndSlope2.value = ((57 * q * Math.pow(L,3))/(1536 * E * I));
+        }
+    }
+
+  function Eqat50_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0039 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = -((q * Math.pow(L,3))/(90 * E * I));
+        document.forms[0].EndSlope2.value = ((q * Math.pow(L,3))/(90 * E * I));
+        }
+    }
+
+  function Eqat51_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0092 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = -((11 * q * Math.pow(L,3))/(360 * E * I));
+        document.forms[0].EndSlope2.value = ((q * Math.pow(L,3))/(36 * E * I));
+        }
+    }
+
+  function Eqat52_Beam(form)
+    {
+    if (validate_q() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0106 * (q * Math.pow(L,4))/(E * I));
+        document.forms[0].EndSlope1.value = -((q * Math.pow(L,3))/(30 * E * I));
+        document.forms[0].EndSlope2.value = ((q * Math.pow(L,3))/(30 * E * I));
+        }
+    }
+
+  function Eqat53_Beam(form)
+    {
+    if (validate_M() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0642 * (M * Math.pow(L,2))/(E * I));
+        document.forms[0].EndSlope1.value = -((M * L)/(3 * E * I));
+        document.forms[0].EndSlope2.value = ((M * L)/(6 * E * I));
+        }
+    }
+
+  function Eqat54_Beam(form)
+    {
+    if (validate_M() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0370 * (M * Math.pow(L,2))/(E * I));
+        document.forms[0].EndSlope1.value = -((M * L)/(4 * E * I));
+        document.forms[0].EndSlope2.value = "0";
+        }
+    }
+
+  function Eqat55_Beam(form)
+    {
+    if (validate_M() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.5000 * (M * Math.pow(L,2))/(E * I));
+        document.forms[0].EndSlope1.value = -((M * L)/(E * I));
+        document.forms[0].EndSlope2.value = "0";
+        }
+    }
+
+  function Eqat56_Beam(form)
+    {
+    if (validate_M() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0642 * (M * Math.pow(L,2))/(E * I));
+        document.forms[0].EndSlope1.value = -((M * L)/(6 * E * I));
+        document.forms[0].EndSlope2.value = ((M * L)/(3 * E * I));
+        }
+    }
+
+  function Eqat57_Beam(form)
+    {
+    if (validate_M() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0370 * (M * Math.pow(L,2))/(E * I));
+        document.forms[0].EndSlope1.value = "0";
+        document.forms[0].EndSlope2.value = ((M * L)/(4 * E * I));
+        }
+    }
+
+  function Eqat58_Beam(form)
+    {
+    if (validate_M1() && validate_M2() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = "N/A";
+        document.forms[0].EndSlope1.value = -(((2 * M1 + M2) * L)/(6 * E * I));
+        document.forms[0].EndSlope2.value = (((M1 + 2 * M2) * L)/(6 * E * I));
+        }
+    }
+
+  function Eqat59_Beam(form)
+    {
+    if (validate_M() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0125 * (M * Math.pow(L,2))/(E * I));
+        document.forms[0].EndSlope1.value = -((M * L)/(2 * E * I));
+        document.forms[0].EndSlope2.value = ((M * L)/(2 * E * I));
+        }
+    }
+
+  function Eqat60_Beam(form)
+    {
+    if (validate_M() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0481 * (M * Math.pow(L,2))/(E * I));
+        document.forms[0].EndSlope1.value = -((M * L)/(6 * E * I));
+        document.forms[0].EndSlope2.value = -((M * L)/(6 * E * I));
+        }
+    }
+
+  function Eqat61_Beam(form)
+    {
+    GetValue();
+    
+    document.forms[0].MaxDeflection.value = "N/A";
+    document.forms[0].EndSlope1.value = "N/A";
+    document.forms[0].EndSlope2.value = "N/A";
+    }
+
+  function Eqat62_Beam(form)
+    {
+    GetValue();
+    
+    document.forms[0].MaxDeflection.value = "N/A";
+    document.forms[0].EndSlope1.value = "N/A";
+    document.forms[0].EndSlope2.value = "N/A";
+    }
+
+  function Eqat63_Beam(form)
+    {
+    GetValue();
+    
+    document.forms[0].MaxDeflection.value = "N/A";
+    document.forms[0].EndSlope1.value = "N/A";
+    document.forms[0].EndSlope2.value = "N/A";
+    }
+
+  function Eqat64_Beam(form)
+    {
+    if (validate_M() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = (-0.0080 * (M * Math.pow(L,2))/(E * I));
+        document.forms[0].EndSlope1.value = ((M * L)/(24 * E * I));
+        document.forms[0].EndSlope2.value = ((M * L)/(24 * E * I));
+        }
+    }
+
+  function Eqat65_Beam(form)
+    {
+    GetValue();
+    
+    document.forms[0].MaxDeflection.value = "N/A";
+    document.forms[0].EndSlope1.value = "N/A";
+    document.forms[0].EndSlope2.value = "N/A";
+    }
+
+  function Eqat66_Beam(form)
+    {
+    if (validate_M() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = "N/A";
+        document.forms[0].EndSlope1.value = "0";
+        document.forms[0].EndSlope2.value = ((M * L)/(16 * E * I));
+        }
+    }
+
+  function Eqat67_Beam(form)
+    {
+    if (validate_M() && validate_E() && validate_I() && validate_L())
+        {
+        GetValue();
+    
+        document.forms[0].MaxDeflection.value = "N/A";
+        document.forms[0].EndSlope1.value = -((M * L * beta)/(2 * E * I));
+        document.forms[0].EndSlope2.value = ((M * L * beta)/(2 * E * I));
+        }
+    }
+
+  function Eqat68_Beam(form)
+    {
+    GetValue();
+    
+    document.forms[0].MaxDeflection.value = "N/A";
+    document.forms[0].EndSlope1.value = "N/A";
+    document.forms[0].EndSlope2.value = "N/A";
+    }
+  //]]>
+    </script> <style type="text/css">
+ 	/*<![CDATA[*/
+ 	a:link
+ 	{
+ 		color: #0069B3;
+ 		text-decoration: none;
+ 	}
+ 	
+ 	a:visited
+ 	{
+ 		color: #446;
+ 		text-decoration: none;
+ 	}
+ 	
+ 	a:hover { color: red; }
+ 	span.red { color: red; }
+ 	span.blue { color: blue; }
+ 	
+ 	span.inp-label
+ 	{
+ 		color: red;
+ 		font-size: 150%;
+ 	}
+ 	
+ 	.wht { color: #FFF; }
+ 	
+ 	td
+ 	{
+ 		padding: .35em .1em .35em .1em;
+ 		text-align: right;
+ 		width: 23em;
+ 	}
+ 	
+ 	table.skinny
+ 	{
+ 		padding: 0em;
+ 		width: 80%;
+ 	}
+ 	
+ 	.tiny { font-size: 70%; }
+ 	.large { font-size: 120%; }
+ 	.cent { text-align: center; }
+ 	h1 { text-align: center; }
+ 	h2 { text-align: center; }
+ 	
+ 	h2.warn
+ 	{
+ 		text-align: center;
+ 		color: red;
+ 	}
+ 	
+ 	body
+ 	{
+ 		padding: 0em 3em 3em 3em;
+ 		text-align: center;
+ 	}
+ 	
+ 	div.header
+ 	{
+ 		text-align: center;
+ 		color: #FFF;
+ 		background-color: #0069b3;
+ 		font-size: 120%;
+ 		padding: .15em;
+ 	}
+ 	
+ 	/*]]>*/
+    </style> 
+</head>
+<body onkeyup="if(event.keyCode == 13) {Eqat(this.form);}">
+<h1>Elastic Beam Deflection Calculator</h1> 
+<noscript>
+<h2 class="warn">Sorry, this page requires javascript to calculate the form.</h2></noscript>
+<div align="center">
+	Please enter in the applicable properties and values to be used in the calculation. 
+	<br>
+	<span class="red"><strong>IMPORTANT: UNITS MUST REMAIN CONSISTENT THROUGHOUT ALL VALUES.</strong></span> 
+	<br>
+	Once all values are entered, select the image that most resembles the 
+situation of concern and click the "Submit for Calculation" button for 
+results. 
+	<br>
+	<br>
+	<span class="blue"><strong>NOTE:</strong></span> If the situation 
+consists of several loads on the beam, remember the superposition 
+principal: simply enter in the 'component' situations and sum up the 
+deflection. 
+	<br>
+	<br>
+	<a href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/example.html">An Example of Using this Calculator</a> 
+	<br>
+	<br>
+	<div class="header">
+		Material Properties 
+	</div>
+	<form action="javascript:void()" method="post">
+		<table>
+			<tbody><tr>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#young">Young's modulus (E) :</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					<br>
+					<a class="tiny" href="http://en.wikipedia.org/wiki/Young%27s_modulus" target="_blank">Values of Young's Modulus</a> &nbsp; <input value="210" name="E" size="12" type="text"> 
+				</td>
+				<td width="50%">
+				</td>
+			</tr>
+		</tbody></table>
+		<div class="header">
+			Geometrical Properties 
+		</div>
+		<table>
+			<tbody><tr>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#moment">Moment of inertia (I):</a> &nbsp; <input value="0.98" name="I" size="10" type="text"> 
+				</td><td></td>
+			</tr>
+			<tr>
+			    <td> Enter total length L, and/or partial lengths a and b <br><em>(L is updated when both a and b are given)</em>	
+				</td>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#length">Total length (L):</a> &nbsp; <input value="1" name="L" size="10" type="text"> 
+				</td>
+			</tr>
+			<tr>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#a">Partial length&nbsp; 
+                    (a):</a>&nbsp;&nbsp; <input value="0.5" name="a" size="10" type="text"> 
+				</td>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#b">Partial length (b):</a> &nbsp; <input value="0.5" name="b" size="10" type="text"> 
+				</td>
+			</tr>
+		</tbody></table>
+		<div class="header">
+			Loading Type 
+		</div>
+		<table>
+			<tbody><tr>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#p">Point load (P):</a> &nbsp; <input value="100" name="P" size="10" type="text"> 
+				</td>
+				<td width="50%">
+				</td>
+			</tr>
+			<tr>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#q">Distributed load (q):</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					<br><font class="tiny"> (force/length)&nbsp; </font><input value="0.01" name="q" size="10" type="text"> 		
+					</td>
+				<td width="50%">
+				</td>
+                  </tr>
+			
+			<tr>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#m">Applied moment (M<sub>0</sub>) :</a> &nbsp; <input value="0" name="M" size="10" type="text"> 
+				</td>
+				<td width="50%">
+				</td>
+			</tr>
+			<tr>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#m">Applied moment (M<sub>1</sub>):</a> &nbsp; <input value="0" name="M1" size="10" type="text"> 
+				</td>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#m">Applied moment (M<sub>2</sub>) :</a> &nbsp; <input value="0" name="M2" size="10" type="text"> 
+				</td>
+			</tr>
+		</tbody></table>
+		<div class="wht">
+			<input value="Submit For Calculation" onclick="Eqat(this.form)" type="button"> &nbsp; <input value="Reset The Form" type="reset"> 
+		</div>
+		<br>
+		<div class="header">
+			Results 
+		</div>
+		<table>
+			<tbody><tr>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#slope">Right End Slope (&#952;<sub>r</sub>) =</a> &nbsp; <input value="0.030369290573372208" name="EndSlope2" size="12" type="text"> 
+				</td>
+				<td width="50%">
+				</td>
+			</tr>
+			<tr>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#slope">Left End Slope (&#952;<sub>l</sub>) =</a> &nbsp; <input value="-0.030369290573372208" name="EndSlope1" size="12" type="text"> 
+				</td>
+				<td width="50%">
+				</td>
+			</tr>
+			<tr>
+				<td width="50%">
+					<a class="large" href="http://www.aps.anl.gov/APS_Engineering_Support_Division/Mechanical_Operations_and_Maintenance/Calculators/definitions.html#max">Maximum Deflection (y) =</a> &nbsp; <input value="-0.010123096857790736" name="MaxDeflection" size="12" type="text"> 
+				</td>
+				<td width="50%">
+				</td>
+			</tr>
+		</tbody></table>
+		<hr>
+		<h2>Loading Cases</h2> 
+		<table class="skinny">
+			<tbody><tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">1</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat1.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">2</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat2.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">3</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat3.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input checked="checked" name="Beam" type="radio"><span class="inp-label">4</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat4.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">5</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat5.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">6</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat6.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">7</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat7.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">8</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat8.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">9</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat9.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">10</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat10.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">11</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat11.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">12</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat12.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">13</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat13.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">14</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat14.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">15</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat15.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">16</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat16.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">17</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat17.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">18</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat18.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">19</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat19.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">20</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat20.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">21</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat21.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">22</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat22.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">23</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat23.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">24</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat24.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">25</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat25.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">26</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat26.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">27</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat27.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">28</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat28.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">29</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat29.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">30</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat30.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">31</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat31.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">32</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat32.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">33</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat33.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">34</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat34.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">35</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat35.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">36</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat36.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">37</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat37.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">38</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat38.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">39</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat39.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">40</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat40.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">41</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat41.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">42</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat42.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">43</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat43.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">44</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat44.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">45</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat45.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">46</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat46.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">47</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat47.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">48</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat48.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">49</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat49.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">50</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat50.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">51</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat51.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">52</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat52.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">53</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat53.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">54</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat54.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">55</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat55.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">56</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat56.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">57</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat57.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">58</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat58.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">59</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat59.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">60</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat60.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">61</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat61.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">62</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat62.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">63</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat63.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">64</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat64.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">65</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat65.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">66</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat66.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">67</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat67.gif" alt="" width="138" height="55"> 
+				</td>
+				<td>
+					<input name="Beam" type="radio"><span class="inp-label">68</span><img src="Elastic%20beam%20deflection%20calculator_files/eqat68.gif" alt="" width="138" height="55"> 
+				</td>
+			</tr>
+		</tbody></table>
+	</form>
+	<a href="http://www.aps.anl.gov/asd/me/Calculators/disclaimer.html">DISCLAIMER</a> 
+	<br>
+	<noscript>
+    <div>
+Sorry, this page requires javascript to calculate the form.
+</div></noscript>
+</div>
+
+</body></html>

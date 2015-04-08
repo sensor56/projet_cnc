@@ -1,0 +1,852 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en-gb" lang="en-gb"><head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-language" content="en-gb">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>FreeCAD forum • View topic - Units, trying to get correct results with Calculix</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - FreeCAD forum" href="http://forum.freecadweb.org/feed.php"><link rel="alternate" type="application/atom+xml" title="Feed - All forums" href="http://forum.freecadweb.org/feed.php?mode=forums"><link rel="alternate" type="application/atom+xml" title="Feed - Forum - FEM" href="http://forum.freecadweb.org/feed.php?f=18"><link rel="alternate" type="application/atom+xml" title="Feed - Topic - Units, trying to get correct results with Calculix" href="http://forum.freecadweb.org/feed.php?f=18&amp;t=7172">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '2';
+	var per_page = '10';
+	var base_url = './viewtopic.php?f=18&amp;t=7172&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forum.freecadweb.org';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/styleswitcher.js"></script>
+<script type="text/javascript" src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/forum_fn.js"></script>
+
+<link href="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/print.css" rel="stylesheet" type="text/css" media="print" title="printonly">
+<link href="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/style.css" rel="stylesheet" type="text/css" media="screen, projection">
+
+<link href="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/phpbb.css" rel="stylesheet" type="text/css">
+
+<link href="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/normal.css" rel="stylesheet" type="text/css" title="A">
+<link href="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/medium.css" rel="alternate stylesheet" type="text/css" title="A+">
+<link href="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/large.css" rel="alternate stylesheet" type="text/css" title="A++">
+
+
+
+<link rel="shortcut icon" href="http://www.freecadweb.org/images/favicon.ico">
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="http://forum.freecadweb.org/index.php?sid=f823d06f4ff0a2a4c8caad6f1b583b6d" title="Board index" id="logo"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/site_logo.gif" alt="" title="" width="139" height="52"></a>
+				<h1>FreeCAD forum</h1>
+				<p>The help and development forum of FreeCAD</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php?sid=f823d06f4ff0a2a4c8caad6f1b583b6d" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" type="text">
+					<input class="button2" value="Search" type="submit"><br>
+					<a href="http://forum.freecadweb.org/search.php?sid=f823d06f4ff0a2a4c8caad6f1b583b6d" title="View the advanced search options">Advanced search</a> <input name="sid" value="f823d06f4ff0a2a4c8caad6f1b583b6d" type="hidden">
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+<form style="float:right" method="get" action="http://www.google.com/search" target="google_window">
+<input class="inputbox search" style="width:65px;" name="q" maxlength="255" type="text">
+<input class="button2" name="sa" value="Search with google" type="submit">
+<input name="sitesearch" value="forum.freecadweb.org" type="hidden"><br>
+</form>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="http://forum.freecadweb.org/index.php?sid=f823d06f4ff0a2a4c8caad6f1b583b6d" accesskey="h">Board index</a>  <strong>‹</strong> <a href="http://forum.freecadweb.org/viewforum.php?f=6&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">Development</a> <strong>‹</strong> <a href="http://forum.freecadweb.org/viewforum.php?f=18&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">FEM</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="http://forum.freecadweb.org/viewtopic.php?f=18&amp;t=7172&amp;start=10&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="http://forum.freecadweb.org/faq.php?sid=f823d06f4ff0a2a4c8caad6f1b583b6d" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="http://forum.freecadweb.org/ucp.php?mode=register&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">Register</a></li>
+					<li class="icon-logout"><a href="http://forum.freecadweb.org/ucp.php?mode=login&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="http://forum.freecadweb.org/viewtopic.php?f=18&amp;t=7172&amp;start=10&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">Units, trying to get correct results with Calculix</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">About the development of the FEM module/workbench.<br></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="http://forum.freecadweb.org/posting.php?mode=reply&amp;f=18&amp;t=7172&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=f823d06f4ff0a2a4c8caad6f1b583b6d">
+			<fieldset>
+				<input class="inputbox search tiny" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" type="text">
+				<input class="button2" value="Search" type="submit">
+				<input name="t" value="7172" type="hidden">
+<input name="sf" value="msgonly" type="hidden">
+<input name="sid" value="f823d06f4ff0a2a4c8caad6f1b583b6d" type="hidden">
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			35 posts
+			 • <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>2</strong> of <strong>4</strong></a> • <span><a href="http://forum.freecadweb.org/viewtopic.php?f=18&amp;t=7172&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">1</a><span class="page-sep">, </span><strong>2</strong><span class="page-sep">, </span><a href="http://forum.freecadweb.org/viewtopic.php?f=18&amp;t=7172&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d&amp;start=20">3</a><span class="page-sep">, </span><a href="http://forum.freecadweb.org/viewtopic.php?f=18&amp;t=7172&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d&amp;start=30">4</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p58364" class="post bg2 online">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 class="first"><a href="#p58364">Re: Units, trying to get correct results with Calculix</a></h3>
+			<p class="author"><a href="http://forum.freecadweb.org/viewtopic.php?p=58364&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d#p58364"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_post_target.gif" alt="Post" title="Post" width="11" height="9"></a>by <strong><a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=765&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d" style="color: #00AA00;" class="username-coloured">shoogen</a></strong> » Thu Jul 31, 2014 9:09 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>ulrich1a wrote:</cite>Stretching
+ the material also involves some contraction. Depending on the degree of
+ freedom for the fixed nodes, also forces in other directions may occur.
+ The nature of tets as elements do also create forces in other 
+directions.<br>I did only see equally distributed stress, with a look at
+ stress in z-axis. Overall stress had also some components from 
+contraction of the elements.</div></blockquote>I don't get my head 
+around this. One of you is saying the the results are of by orders of 
+magnitude. And you, Ulrich, are saying that multidimensional stress is 
+becomming a problem.<br>I was told that i was forced to do all the hand 
+calculation with beam theory, to be able to always use it, to check if 
+the result of simulations is in expected order of magnitude. <br>But thought the problem is actually to correctly define the loads correctly (punctual load or line load) from the FreeCAD GUI.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile58364">
+			<dt>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=765&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file.png" alt="User avatar" width="90" height="90"></a><br>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=765&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d" style="color: #00AA00;" class="username-coloured">shoogen</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2555</dd><dd><strong>Joined:</strong> Thu Dec 01, 2011 5:24 pm</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider">
+
+	<div id="p58372" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3><a href="#p58372">Re: Units, trying to get correct results with Calculix</a></h3>
+			<p class="author"><a href="http://forum.freecadweb.org/viewtopic.php?p=58372&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d#p58372"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_post_target.gif" alt="Post" title="Post" width="11" height="9"></a>by <strong><a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=1928&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">ulrich1a</a></strong> » Thu Jul 31, 2014 9:39 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>shoogen wrote:</cite> And you, Ulrich, are saying that multidimensional stress is becomming a problem.</div></blockquote><br>I
+ have to admit, that I did not do useful FEM calculation with FreeCAD. I
+ did a few tests with meshing in netgen or cgx and viewing the resuts in
+ cgx. I just strained a beam with a negative pressure. I expected an 
+evenly distributed stress in the part. This was not the case, when I 
+looked at absolute stress. It was only the case when I looked at the 
+stress in the axis parallel to the force.<br><br>A result that is magnitudes away from the real stress is another issue.  <br><br>I
+ am wondering, if the load definition is right in FreeCAD. But I cannot 
+test, as I am getting a crash when trying to call the FEM-workbench or 
+getting this message:<dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>/home/ulrich/Sourcen/FreeCAD/Build64_20140728/lib/libStdMeshers.so:
+ undefined symbol: _ZN17Expr_NamedUnknownC1ERK23TCollection_AsciiString<br></code></dd></dl><br><br>Ulrich<br><br>OS: Debian GNU/Linux testing (jessie)<br>Word size: 64-bit<br>Version: 0.15.3804 (Git)<br>Branch: master<br>Hash: 3e83a98cb8d08ef001a191ae1a2f2ed0e0527294<br>Python version: 2.7.8<br>Qt version: 4.8.6<br>Coin version: 4.0.0a<br>SoQt version: 1.6.0a</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile58372">
+			<dt>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=1928&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">ulrich1a</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 704</dd><dd><strong>Joined:</strong> Sun Jul 07, 2013 12:08 pm</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider">
+
+	<div id="p64763" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3><a href="#p64763">Re: Units, trying to get correct results with Calculix</a></h3>
+			<p class="author"><a href="http://forum.freecadweb.org/viewtopic.php?p=64763&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d#p64763"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_post_target.gif" alt="Post" title="Post" width="11" height="9"></a>by <strong><a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">bernd</a></strong> » Tue Oct 07, 2014 6:14 pm </p>
+
+			
+
+			<div class="content">played a bit with Cantileverbeam too ... and got
+ results as expected. I'm not finished but since I don't know when I 
+will have time again I'm gone post it anyway.<br><br>I did not change 
+the MechanicalAnalysis.py I changed the CalculiX input file instead and 
+made a manual calculation of the file and used CGX for the output. <br><br>Here
+ is what I did. I took the expample of Calculix Manual beamp.inp A 
+cantilever beam 1 m x 1 m x 8 m loaded by 9 MN at the end. Material is 
+Steel E = 210000 MN / m2<br><br>Displacement (Formula see first Post)<br>f = (F x l^3) / (3 x E x I) = ( 9 x 8^3 ) / ((3 x 210000 x ((1x1^3)/12)) = (12x9x8^3) / (3x210000) =  0.0877 m<br><br>In CGX use Dataset DISPR and then Entity D2.<br><br>beamp.inp (original CalculiX) has 8.77e-002 = 0.0877 m  <img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_e_smile.gif" alt=":)" title="Smile"> <br>Box_Mesh.inp (original FreeCAD) has wrong Material and wrong Loaddirection and wrong load (you can not put in gui 0.009)<br>Box_Mesh-edited.inp has 8.79e-002 = 0.0879 m  <img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_e_biggrin.gif" alt=":D" title="Very Happy">  <img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_e_biggrin.gif" alt=":D" title="Very Happy">  <img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_e_biggrin.gif" alt=":D" title="Very Happy"> <br><br>If
+ FreeCAD document is opend the Forces are shown the wrong direction, 
+just click on the Forceconstrained and click ok and they will show to 
+y-Dircetion. At the end this does not matters becaus force is exported 
+the wrong direction either. <br><br>Next to do ... If i have a minute I 
+will have a look at MechanicalAnalysis.py to get the right result 
+without editing the input file. <br><br>BTW: I don't not what it should be but kwahoo is right the force is NOT N/mm2 the force is N !!!</div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_topic_attach.gif" alt="" title="" width="7" height="10"> <a class="postlink" href="http://forum.freecadweb.org/download/file.php?id=8331&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">CalculixInputFiles.zip</a></dt>
+			
+			<dd>(57.15 KiB) Downloaded 13 times</dd>
+		</dl>
+		</dd>
+					
+						<dd>
+		<dl class="file">
+			<dt><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_topic_attach.gif" alt="" title="" width="7" height="10"> <a class="postlink" href="http://forum.freecadweb.org/download/file.php?id=8330&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">cantileverbeam.FCStd</a></dt>
+			
+			<dd>(122.61 KiB) Downloaded 12 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile64763">
+			<dt>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file_003.jpeg" alt="User avatar" width="90" height="90"></a><br>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">bernd</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 700</dd><dd><strong>Joined:</strong> Sun Sep 08, 2013 8:07 pm</dd><dd><strong>Location:</strong> Zürich, Switzerland</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider">
+
+	<div id="p64818" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3><a href="#p64818">Re: Units, trying to get correct results with Calculix</a></h3>
+			<p class="author"><a href="http://forum.freecadweb.org/viewtopic.php?p=64818&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d#p64818"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_post_target.gif" alt="Post" title="Post" width="11" height="9"></a>by <strong><a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">bernd</a></strong> » Wed Oct 08, 2014 7:26 am </p>
+
+			
+
+			<div class="content">For kwahoos cantileverbeam (first post) I got 3.84 mm instead of the 3.6 mm it is just a difference of less than 10 %  <img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_e_biggrin.gif" alt=":D" title="Very Happy"> <br><br>Again Force was in the wrong direction ... <br><br>Find the FreeCAD file of kwahoo, the FreeCAD-CalculiX-file and the edited Calculixfile here: <!-- m --><a class="postlink" href="http://b75.ch/bim/heb100-cantinlever.zip">http://b75.ch/bim/heb100-cantinlever.zip</a><!-- m --></div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt class="attach-image"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file_004.jpeg" alt="screen1.jpg" onclick="viewableArea(this);"></dt>
+			
+			<dd>screen1.jpg (188.04 KiB) Viewed 692 times</dd>
+		</dl>
+		</dd>
+					
+						<dd>
+		<dl class="file">
+			<dt class="attach-image"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file.jpeg" alt="screen.jpg" onclick="viewableArea(this);"></dt>
+			
+			<dd>screen.jpg (100.01 KiB) Viewed 696 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile64818">
+			<dt>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file_003.jpeg" alt="User avatar" width="90" height="90"></a><br>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">bernd</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 700</dd><dd><strong>Joined:</strong> Sun Sep 08, 2013 8:07 pm</dd><dd><strong>Location:</strong> Zürich, Switzerland</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider">
+
+	<div id="p64829" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3><a href="#p64829">Re: Units, trying to get correct results with Calculix</a></h3>
+			<p class="author"><a href="http://forum.freecadweb.org/viewtopic.php?p=64829&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d#p64829"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_post_target.gif" alt="Post" title="Post" width="11" height="9"></a>by <strong><a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">bernd</a></strong> » Wed Oct 08, 2014 11:04 am </p>
+
+			
+
+			<div class="content">Attached a MechanicalAnalysis.py which gives correct results for the cantilever examples.<br><br>The material is directly written to the Calculix file <br>E = 200000.0 MN / m2<br>PR = 0.3<br><br>Units
+ are m (meter) and MN (Meganewton) (which is the same like mm and N). I 
+get max Displacement in Y of 0.0858 m which is nearly the by hand 
+calculated of 0.0877 m  <img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_e_biggrin.gif" alt=":D" title="Very Happy"> <br><br>Line
+ 423 of mechanicalAnalysis.py is the culprit. The NormalDirection is 
+written to the Calculixfile but this has to be the DirectionVector of 
+the Force. Since I have some other little things I'm gone make a git 
+repo and post a feature request as soon as I have a minute again.</div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt class="attach-image"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file_002.jpeg" alt="screen2.jpg" onclick="viewableArea(this);"></dt>
+			
+			<dd>screen2.jpg (164.6 KiB) Viewed 681 times</dd>
+		</dl>
+		</dd>
+					
+						<dd>
+		<dl class="file">
+			<dt><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_topic_attach.gif" alt="" title="" width="7" height="10"> <a class="postlink" href="http://forum.freecadweb.org/download/file.php?id=8348&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">MechanicalAnalysis.zip</a></dt>
+			
+			<dd>(5.32 KiB) Downloaded 17 times</dd>
+		</dl>
+		</dd>
+					
+						<dd>
+		<dl class="file">
+			<dt><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_topic_attach.gif" alt="" title="" width="7" height="10"> <a class="postlink" href="http://forum.freecadweb.org/download/file.php?id=8347&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">cantileverbeam.FCStd</a></dt>
+			
+			<dd>(74.27 KiB) Downloaded 16 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile64829">
+			<dt>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file_003.jpeg" alt="User avatar" width="90" height="90"></a><br>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">bernd</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 700</dd><dd><strong>Joined:</strong> Sun Sep 08, 2013 8:07 pm</dd><dd><strong>Location:</strong> Zürich, Switzerland</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider">
+
+	<div id="p64904" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3><a href="#p64904">Re: Units, trying to get correct results with Calculix</a></h3>
+			<p class="author"><a href="http://forum.freecadweb.org/viewtopic.php?p=64904&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d#p64904"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_post_target.gif" alt="Post" title="Post" width="11" height="9"></a>by <strong><a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=1529&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">r-frank</a></strong> » Wed Oct 08, 2014 7:00 pm </p>
+
+			
+
+			<div class="content">Hello.<br><br>I am curious.<br>How did you apply the material ?<br>Via the GUI ?<br><br>Because if you re-enter the material menu the entry reads "PLA".<br><br>That's why I got the impression that applying of other material is ignored.<br>But maybe it is only an optical issue ...<br><br>Also i did take a quick look at the material data-files.<br>There seemed to be some not-good-looking entries.<br><br>For instance, look at PLA.FCMat<br><br><blockquote class="uncited"><div>; Father of steel is metal<br>Father=Metal</div></blockquote><br><br>Ahem, no comment ...<br><br><blockquote class="uncited"><div>; more elaborate description of this material card:<br>Description:
+ This is a blend Steel material card. The values are at the low end of 
+the spectrum. If you need a more precise material definition use the 
+more specialised steel cards.</div></blockquote><br><br>Still talking about steel ?<br><br><blockquote class="uncited"><div>; Specific wight in kg/mm^3 <br>SpecificWeight=1.27e-06 </div></blockquote><br><br>The first line should read "Specific weight ..." i guess.<br>And looking at the values, shouldn't that be the density ?<br><br>@Bernd: if your deviation is 10% or less did you take a look at the number of cells (mesh quality) ?<br>Because having a deviation of that size normally is a sign of a difference in meshing.<br><br>Roland</div>
+
+			<div id="sig64904" class="signature"><a href="https://www.youtube.com/watch?v=m49z0weonog&amp;list=PLsrwVwvqYb8G4Ri0iz1JIebsOXkgoytAY" class="postlink">Deutsche FreeCAD Tutorials auf Youtube</a><br><a href="http://grabcad.com/bpl.rfe-1/projects" class="postlink">My GrabCAD FreeCAD-Projects</a><br><br>Native german speaker - so apologies for my english, no offense intended <img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_e_smile.gif" alt=":)" title="Smile"></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile64904">
+			<dt>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=1529&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file.gif" alt="User avatar" width="90" height="90"></a><br>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=1529&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">r-frank</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 394</dd><dd><strong>Joined:</strong> Thu Jan 24, 2013 6:26 pm</dd><dd><strong>Location:</strong> Möckmühl, Germany</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider">
+
+	<div id="p64905" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3><a href="#p64905">Re: Units, trying to get correct results with Calculix</a></h3>
+			<p class="author"><a href="http://forum.freecadweb.org/viewtopic.php?p=64905&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d#p64905"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_post_target.gif" alt="Post" title="Post" width="11" height="9"></a>by <strong><a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">bernd</a></strong> » Wed Oct 08, 2014 7:07 pm </p>
+
+			
+
+			<div class="content">Checked the material too. If youth modulus in 
+FCmat files is integer it is not accepted by the FEMMaterialGui. Change 
+in Steel.FCMat from 2e+08 to 2.0e+08 and it will be accepeted from the 
+FEM object. If one opens the FEMMaterialGui the Material is set back to 
+PLA all the time  <img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_e_sad.gif" alt=":(" title="Sad"> . I could not find why. If one puts values in the spinn boxes these values are taken by click on ok <img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_e_smile.gif" alt=":)" title="Smile"> . Material Values of the FEMObject could be checked by <br><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>App.ActiveDocument.MechanicalMaterial.Material['FEM_poissonratio']<br>App.ActiveDocument.MechanicalMaterial.Material['Mechanical_youngsmodulus']<br></code></dd></dl><br><br>If Report View Option Redirect Python Output is activated they are printed on CalculiX run. <br><br>In
+ current  MechanicalAnalysis.py of FreeCAD the youth modulus is written 
+in kPa to the CalculiX file and the load is multiplied by 1000 to get 
+the same unit. I would prefere the other way around. That would mean 
+write youth modulus in MPa = N/mm2 = MN/m2 and the force like it was put
+ in by user in N or MN. Attached again a MechanicalAnalysis.py which 
+works with the cantilever and makes it possible to change the material 
+(if you have valid materials files besides PLA available).<br><br>Still missing a little github repo which shows the changes, mhh may be tomorrow. <br><br>That's my 2 cent to current state of FEM module. It's working, at least with the cantilever examples posted here.  <img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_e_biggrin.gif" alt=":D" title="Very Happy"><br><br>EDIT: <br>The
+ following line is removed from CalculiX input too, because we don't 
+want to apply a initial stress level. It is assumed Stress is zero at 
+beginning. <!-- m --><a class="postlink" href="http://web.mit.edu/calculix_v2.7/CalculiX/ccx_2.7/doc/ccx/node215.html">http://web.mit.edu/calculix_v2.7/Calcul ... de215.html</a><!-- m --> <br><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>*INITIAL CONDITIONS, TYPE=STRESS, USER<br></code></dd></dl></div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_topic_attach.gif" alt="" title="" width="7" height="10"> <a class="postlink" href="http://forum.freecadweb.org/download/file.php?id=8364&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">MechanicalAnalysis.zip</a></dt>
+			
+			<dd>(5.33 KiB) Downloaded 16 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile64905">
+			<dt>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file_003.jpeg" alt="User avatar" width="90" height="90"></a><br>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">bernd</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 700</dd><dd><strong>Joined:</strong> Sun Sep 08, 2013 8:07 pm</dd><dd><strong>Location:</strong> Zürich, Switzerland</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider">
+
+	<div id="p65218" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3><a href="#p65218">Re: Units, trying to get correct results with Calculix</a></h3>
+			<p class="author"><a href="http://forum.freecadweb.org/viewtopic.php?p=65218&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d#p65218"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_post_target.gif" alt="Post" title="Post" width="11" height="9"></a>by <strong><a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">bernd</a></strong> » Sat Oct 11, 2014 7:58 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>bernd wrote:</cite>... Still missing a little github repo which shows the changes, mhh may be tomorrow. ... </div></blockquote><br><br>done <!-- l --><a class="postlink-local" href="http://forum.freecadweb.org/viewtopic.php?f=18&amp;t=7959&amp;p=65217#p65217">viewtopic.php?f=18&amp;t=7959&amp;p=65217#p65217</a><!-- l --></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile65218">
+			<dt>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file_003.jpeg" alt="User avatar" width="90" height="90"></a><br>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=2069&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">bernd</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 700</dd><dd><strong>Joined:</strong> Sun Sep 08, 2013 8:07 pm</dd><dd><strong>Location:</strong> Zürich, Switzerland</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider">
+
+	<div id="p65476" class="post bg2 online">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3><a href="#p65476">Re: Units, trying to get correct results with Calculix</a></h3>
+			<p class="author"><a href="http://forum.freecadweb.org/viewtopic.php?p=65476&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d#p65476"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_post_target.gif" alt="Post" title="Post" width="11" height="9"></a>by <strong><a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=765&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d" style="color: #00AA00;" class="username-coloured">shoogen</a></strong> » Mon Oct 13, 2014 8:37 am </p>
+
+			
+
+			<div class="content">It took me some time to fully understand the unit system. So here is a little reminder (for me)<br>In the {mm,N,s,K} system the mass is a derived dimension. It has the unit (N*s²/mm) which can be experessed as Mg (Megagramm).<br>m/Mg; p/MPa; E/mJ; P/mW; U/mV; R/mOhm; C/kF; B/kT</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile65476">
+			<dt>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=765&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file.png" alt="User avatar" width="90" height="90"></a><br>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=765&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d" style="color: #00AA00;" class="username-coloured">shoogen</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2555</dd><dd><strong>Joined:</strong> Thu Dec 01, 2011 5:24 pm</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider">
+
+	<div id="p65484" class="post bg1 online">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3><a href="#p65484">Re: Units, trying to get correct results with Calculix</a></h3>
+			<p class="author"><a href="http://forum.freecadweb.org/viewtopic.php?p=65484&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d#p65484"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/icon_post_target.gif" alt="Post" title="Post" width="11" height="9"></a>by <strong><a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=765&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d" style="color: #00AA00;" class="username-coloured">shoogen</a></strong> » Mon Oct 13, 2014 9:40 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>jriegel wrote:</cite>So at the  moment all units have to be mm/kg/deg.</div></blockquote>That would mean to use F/(kg*mm/s²) == F/mN; p/(kg/s²/mm) == p/(mN/mm²); ρ/(kg/mm³); η/(kg/mm/s)</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile65484">
+			<dt>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=765&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d"><img src="FreeCAD%20forum%20%E2%80%A2%20View%20topic%20-%20Units,%20trying%20to%20get%20correct%20results%20with%20Calculix_files/file.png" alt="User avatar" width="90" height="90"></a><br>
+				<a href="http://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=765&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d" style="color: #00AA00;" class="username-coloured">shoogen</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2555</dd><dd><strong>Joined:</strong> Thu Dec 01, 2011 5:24 pm</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider">
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=18&amp;t=7172&amp;start=10&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="http://forum.freecadweb.org/viewtopic.php?f=18&amp;t=7172&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d&amp;start=0" class="left-box left">Previous</a><a href="http://forum.freecadweb.org/viewtopic.php?f=18&amp;t=7172&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d&amp;start=20" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input name="sort" value="Go" class="button2" type="submit"></label>
+		
+	</fieldset>
+
+	</form>
+	<hr>
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="http://forum.freecadweb.org/posting.php?mode=reply&amp;f=18&amp;t=7172&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			35 posts
+			 • <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>2</strong> of <strong>4</strong></a> • <span><a href="http://forum.freecadweb.org/viewtopic.php?f=18&amp;t=7172&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">1</a><span class="page-sep">, </span><strong>2</strong><span class="page-sep">, </span><a href="http://forum.freecadweb.org/viewtopic.php?f=18&amp;t=7172&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d&amp;start=20">3</a><span class="page-sep">, </span><a href="http://forum.freecadweb.org/viewtopic.php?f=18&amp;t=7172&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d&amp;start=30">4</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="http://forum.freecadweb.org/viewforum.php?f=18&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d" class="left-box left" accesskey="r">Return to FEM</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=f823d06f4ff0a2a4c8caad6f1b583b6d" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="7">Users</option>
+			
+				<option value="3">&nbsp; &nbsp;Help on using FreeCAD</option>
+			
+				<option value="22">&nbsp; &nbsp;Python scripting and macros</option>
+			
+				<option value="4">&nbsp; &nbsp;Install / Compile</option>
+			
+				<option value="8">&nbsp; &nbsp;Open discussion</option>
+			
+				<option value="9">&nbsp; &nbsp;Feature Announcements</option>
+			
+				<option value="24">&nbsp; &nbsp;Users Showcase</option>
+			
+				<option value="6">Development</option>
+			
+				<option value="10">&nbsp; &nbsp;Developers corner</option>
+			
+				<option value="17">&nbsp; &nbsp;Pull Requests</option>
+			
+				<option value="27">&nbsp; &nbsp;&nbsp; &nbsp;Archived Pull Requests</option>
+			
+				<option value="19">&nbsp; &nbsp;Part Design module development</option>
+			
+				<option value="20">&nbsp; &nbsp;Assembly</option>
+			
+				<option value="18" selected="selected">&nbsp; &nbsp;FEM</option>
+			
+				<option value="15">&nbsp; &nbsp;CAM</option>
+			
+				<option value="23">&nbsp; &nbsp;Arch</option>
+			
+				<option value="21">&nbsp; &nbsp;Wiki</option>
+			
+				<option value="11">Forums in other languages</option>
+			
+				<option value="12">&nbsp; &nbsp;Forum français</option>
+			
+				<option value="13">&nbsp; &nbsp;Forum in Deutsch</option>
+			
+				<option value="14">&nbsp; &nbsp;Foro en Español</option>
+			
+				<option value="28">&nbsp; &nbsp;Forum Italiano</option>
+			
+				<option value="16">&nbsp; &nbsp;日本語フォーラム</option>
+			
+				<option value="29">&nbsp; &nbsp;Форум на русском языке</option>
+			
+			</select>
+			<input value="Go" class="button2" type="submit">
+		</fieldset>
+	</form>
+
+
+	<h3>Who is online</h3>
+	<p>Users browsing this forum: No registered users and 1 guest</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="http://forum.freecadweb.org/index.php?sid=f823d06f4ff0a2a4c8caad6f1b583b6d" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="http://forum.freecadweb.org/memberlist.php?mode=leaders&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">The team</a> • <a href="http://forum.freecadweb.org/ucp.php?mode=delete_cookies&amp;sid=f823d06f4ff0a2a4c8caad6f1b583b6d">Delete all board cookies</a> • All times are UTC </li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>® Forum Software © phpBB Group
+		
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+
+</body></html>

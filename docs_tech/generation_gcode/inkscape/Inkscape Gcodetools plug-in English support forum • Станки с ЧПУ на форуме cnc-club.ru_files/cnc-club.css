@@ -1,0 +1,437 @@
+/*  Some custom styles for cnc-club.ru
+    --------------------------------------------------------------
+	Based on style:	proSilver (this is the default phpBB 3 style)
+	Original author:	Nick from cnc-club.ru
+	Modified by:		
+	
+    --------------------------------------------------------------
+*/
+
+
+/* -------------- Youtube --------------*/
+iframe {display: block;}
+a.youtube-inserted {text-decoration: none; font-size: 0.8em; border-bottom: none; color: #777777; border-color: #777777;}
+a.youtube-inserted:visited {color: #aaaaaa; border-color:#aaaaaa;}
+a.youtube-inserted:hover {background:none; border-bottom: 1px solid;}
+
+/* -------------- Site slogan --------------*/
+#site-description {width:450px;}
+#site-descriptions div {} /* Moved to overall_header.html! */
+#site-descriptions p  small {font-size: 7px; position:absolute; rigth:200px;}
+
+/* -------------- Overall Header --------------*/
+
+.navbar ul.navlinks {text-align:center; width:100%}
+.navbar .navlinks li.center { float:none; display: inline-block;}
+.navbar .navlinks a.wiki {text-shadow: 1px 1px white;}
+
+/* -------------- Content Headers --------------*/
+.content h2, .content h1
+{
+	border-bottom: 1px solid #CCCCCC;
+	color: #000000;
+	font-size: 1.5em;
+	font-weight: 700;
+	line-height: 1.2em;
+	margin: 0px;
+	padding: 10px 0px 3px;
+}
+
+.content h1
+{
+	font-size: 1.8em;
+}
+
+/* -------------- Last post avatar --------------*/
+
+a.last-post-avatar {
+	float: left;
+	padding: 1px;
+	border: 1px solid #cccccc;
+	background: white;
+	margin: 0px 4px;
+	width: 26px;
+	height: 26px;
+	overflow: hidden;
+	-moz-box-shadow: 	0px 1px 2px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	 box-shadow: 		0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+a.last-post-avatar:hover {
+	border: 1px solid #536482;
+}
+
+
+/* -------------- Search box --------------*/
+#search-box
+{
+	background:#098DCF;
+	margin-top: 4px;
+	-moz-box-shadow: 	0 0 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	 box-shadow: 		0 0 5px rgba(0,0,0,0.5);
+	 float:right;
+}
+
+#search-box form {
+	margin-top: 4px;
+}
+div.yandexform {
+	height: 31px;
+}
+#search-box #keywords{
+	height: 16px;
+	width: 130px;
+	padding: 1px 2px 1px 17px;
+}
+
+#search-box fieldset{
+	font-size: 12px;
+	padding-left: 6px;	
+}
+
+#search-box fieldset a{
+	font-size: 10px;
+}
+
+#search-box form{
+	text-align: left;
+}	
+
+/*	--- Style for medals in user's profiles.  ---
+	Medal code:
+	 <a class="medal gold" href="" title="За собранный станок"></a> 
+*/
+
+a.medal.silver {background-position: 0px 0px;}
+a.medal.gold   {background-position: -20px 0px;}
+a.medal.red   {background-position: -40px 0px;}
+a.medal.green   {background-position: -60px 0px;}
+
+a.medal
+{
+	display: inline-block ;
+	width: 14px;
+	height: 21px;
+	vertical-align: middle;
+	background: url('/forum/images/custom/medals_icons.png') 0 0 no-repeat;
+}
+
+/* admin medal icons */
+ul.profile-icons li.medal-icon, ul.profile-icons li.medal-icon a{
+	background-image: url('/forum/styles/prosilver/imageset/icon_post_medal.gif');
+	width: 20px;
+	height: 20px;
+}
+ul.profile-icons li.medal-icon a:hover{
+	background: none;
+}
+
+dd span span.index-last-topic-title {
+	height: 15px;
+	line-height: 17px;
+	overflow: hidden;
+	padding-left: 0px;
+}
+
+
+.topic-starter
+{
+	background-image: url('/forum/styles/prosilver/imageset/ru/topic-starter.png');
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+}
+
+.online-topic-starter
+{
+	background-image: url("/forum/styles/prosilver/imageset/ru/icon_user_online.gif"), url('/forum/styles/prosilver/imageset/ru/topic-starter.png');
+}
+
+span.cmd
+{
+	font-style: italic;
+}
+
+a.named-href-to-post{
+	background: url('/forum/styles/prosilver/imageset/named-link.gif') no-repeat;
+	width: 23px;
+	height: 15px;
+	display: inline-block;
+}
+
+a.name-quote{
+	background: url('/forum/styles/prosilver/imageset/name-quote.gif') no-repeat;
+	width: 18px;
+	height: 15px;
+	display: inline-block;
+}
+
+/* -------------- UCP - attachments --------------*/
+#ucp dd.thumbnail	{width: 100px}
+#ucp dd.title 		{padding-left: 5px}
+
+/* -------------- Offtop --------------*/
+div.offtop {
+	color: #444444;
+	opacity: 0.3;
+}
+div.offtop:hover {
+	color: #444444;
+	opacity: 1;
+}
+
+/* -------------- Attach preview --------------*/
+
+div.attach-preview{
+	float: right;
+	width: 90px; 
+}
+
+div.attach-preview img{
+	border:		1px Solid #ccc;	
+	padding:	1px;
+	background:	#fff;
+	-moz-box-shadow: 	0px 1px 2px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	 box-shadow: 		0px 1px 2px rgba(0, 0, 0, 0.2);
+	 text-align: center;
+
+}
+
+fieldset.fields2 dt {
+	width: 22em;
+}
+fieldset.fields2 dd { 
+	margin-left: 22em;
+}
+
+.postprofile {
+	overflow:	hidden;
+	min-height:	160px;
+	position:	relative;
+}
+
+.show-profile-div{
+	position:absolute;
+	bottom:0px;
+	height:20px;
+	background: url("/forum/images/custom/profile-slider-bg1.png") repeat-x;
+	width:100%;
+	z-index:900;  
+}
+
+.show-profile-div.bg2{
+	background: url("/forum/images/custom/profile-slider-bg2.png");
+}
+.show-profile-div a {
+	display: block;
+	height:20px;
+	background: url("/forum/images/custom/profile-slider.png") no-repeat 30px;
+	width:100%;
+}
+
+.code-variants {
+	position: absolute;
+	z-index:1000;  
+	top: 15px;
+	left:-10px;
+	padding:5px;
+	border:		1px Solid #ccc;	
+	padding:	5px 7px;
+	background:	#fff;
+	-moz-box-shadow: 	0px 1px 2px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	 box-shadow: 		0px 1px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 		2px;
+	-moz-border-radius: 2px; /* Для Firefox 3 */
+
+}
+
+
+/* -------------- Copyrights --------------*/
+
+.copyright div.cnc-box-adv {
+	float:left;
+}
+
+.copyright img.cnc-box-adv {
+	float:left;
+	margin: 0px 10px 10px 0px;
+}
+
+
+.copyright div {
+	float:right;
+	line-height: 140%;
+	padding: 5px 0px 0px 0px;
+}
+
+
+/* -------------- Masters --------------*/
+li.f137.bg1, div.f137 .post.bg1, form.f137 .panel {background-color: #eeffe5;}
+li.f137.bg2, div.f137 .post.bg2, form.f137 .panel {background-color: #dffad1;}
+
+li.f139.bg1, div.f139 .post.bg1, form.f139 .panel {background-color: #eeffe5;}
+li.f139.bg2, div.f139 .post.bg2, form.f139 .panel {background-color: #dffad1;}
+
+li.f141.bg1, div.f141 .post.bg1, form.f141 .panel {background-color: #F7EDF7;}
+li.f141.bg2, div.f141 .post.bg2, form.f141 .panel {background-color: #F9F1F9;}
+
+li.f143.bg1, div.f143 .post.bg1, form.f143 .panel {background-color: #FFEDED;}
+li.f143.bg2, div.f143 .post.bg2, form.f143 .panel {background-color: #FFF1F1;}
+
+
+.f141 .rules {background-color: #E7F4E6; color: #118A0F;}
+
+.yashare-auto-init a.b-share__handle {padding: 0px 2px !important;}
+.yashare-auto-init {line-height: 1em; font-size:1em;}
+
+
+/* -------------- Reputation --------------*/
+#reputation-popup {
+	font-size: 0.9em;
+	z-index: 5000;
+	display: none;
+	background: RGBA(0,0,0,0.3);
+	box-shadow: 2px 2px 4px #555555;
+	border-radius: 14px;
+	padding: 7px;
+	border: none;;
+}
+
+#reputation-popup.normal-popup {
+	font-size: 0.9em;
+	z-index: 5000;
+	display: none;
+	background: white;
+	box-shadow: 2px 2px 4px #555555;
+	border-radius: 7px;
+	padding: 7px;
+	border: none;;
+}
+
+
+
+#reputation-popup form {
+	background: white;
+	border-radius: 7px;
+	border: none;
+	padding: 5px;
+	border: none;;
+}
+
+#reputation-popup .error {
+	background: #ECF1F3;
+	border-radius: 8px;
+	border: 7px Solid white;
+	padding: 10px;
+	
+}
+
+
+#reputation-popup.new-popup {
+	background: #ffffff;
+	border-radius: 8px;
+	border: 7px Solid white;
+	padding: 10px;
+	
+}
+
+.colorbox_img_size {
+	background: url('/forum/styles/prosilver/imageset/img_size.png');
+	display: block;
+	width: 22px;
+	height: 18px;
+
+}
+.colorbox_img_size.small {
+	background-position: 0 -18px;
+}
+
+.image-bbcode-error {
+	width: 600px;
+}
+.image-bbcode-error {
+	font-size: 10px;
+}
+
+.image-bbcode-error h1{
+	font-size: 1.5em;
+	color: #536482;
+}
+
+.image-bbcode-error a{
+	float: right; 
+	padding: 5px;
+	margin:10px;
+	border:		1px Solid #ccc;	
+	padding:	5px 7px;
+	background:	#fff;
+	-moz-box-shadow: 	0px 1px 2px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	 box-shadow: 		0px 1px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 		2px;
+	-moz-border-radius: 2px; /* Для Firefox 3 */
+
+}
+
+
+
+.ads {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+/*	position: absolute;
+	left: 50%;
+	top: -2px;*/
+}
+
+#page-body .mcp, #page-body .time, #page-body .last-visit  {
+	float: left;
+	width: 270px;
+}
+
+#page-body .last-visit {
+	float:right;
+}
+
+
+.left-col { 
+	float:left;
+	width: 25%;
+}
+
+.right-col { 
+	float:right;
+	width: 25%;
+	text-align: right;
+	
+}
+
+#page-body .panel.search-no-results {margin-top:10px;}
+
+.pagination{
+		line-height: 1.5em;
+}
+
+.index-seach-links
+{clear:both;}
+
+.search.post {
+	clear: both;
+}
+
+#page-body h2.topic-title, #page-body h2.forum-title {
+	margin-top: 0px;
+	clear: both;
+}
+
+/*.ads .spacer{
+	position: relative;
+	left: -50%;
+}
+
+form#login {
+	margin-top: 50px;
+}*/

@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en">
+<![endif]-->
+<!--[if !(IE 6) & !(IE 7) & !(IE 8)]><!-->
+<html lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Laser – Structural Beam Bending Calculations | YUJI TOMITA</title>
+
+	<link rel="pingback" href="https://yuji.wordpress.com/xmlrpc.php">
+	<!--[if lt IE 9]>
+		<script src="https://s0.wp.com/wp-content/themes/pub/manifest/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<link rel="alternate" type="application/rss+xml" title="YUJI TOMITA » Feed" href="https://yuji.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="YUJI TOMITA » Comments Feed" href="https://yuji.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="YUJI TOMITA » Laser – Structural Beam Bending&nbsp;Calculations Comments Feed" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel="stylesheet" id="all-css-0" href="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/a_002.css" type="text/css" media="all">
+<!--[if IE 7]>
+<link rel='stylesheet' id='manifest-ie-css'  href='https://s0.wp.com/wp-content/themes/pub/manifest/css/style_ie.css?ver=4.1' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="all-css-2" href="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/a.css" type="text/css" media="all">
+<link rel="stylesheet" id="print-css-2" href="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/global-print.css" type="text/css" media="print">
+<script type="text/javascript">
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/a_002"></script>
+<link rel="stylesheet" id="all-css-0" href="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/style.css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://yuji.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Programmatically log into a website with Python and urllib, urllib2. This one for my&nbsp;django." href="https://yuji.wordpress.com/2011/02/22/programmatically-log-into-a-website-with-python-and-urllib-urllib2-this-one-for-my-django/">
+<link rel="next" title="SolidWorks — Where is the Show Feature Dimensions&nbsp;Button?" href="https://yuji.wordpress.com/2011/03/06/solidworks-where-is-the-show-feature-dimensions-button/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/">
+<link rel="shortlink" href="http://wp.me/peKag-bX">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Fyuji.wordpress.com%2F2011%2F03%2F05%2Flaser-structural-beam-bending-calculations%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Fyuji.wordpress.com%2F2011%2F03%2F05%2Flaser-structural-beam-bending-calculations%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Laser - Structural Beam Bending Calculations">
+<meta property="og:url" content="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/">
+<meta property="og:description" content="This is the first post in the Laser category. I wrote &quot;Structural Beam Bending&quot; because I am not referring to a laser beam, but an aluminum beam in my laser. It took me a while to get back on the e...">
+<meta property="article:published_time" content="2011-03-06T01:38:07+00:00">
+<meta property="article:modified_time" content="2014-06-24T05:29:38+00:00">
+<meta property="article:author" content="https://yuji.wordpress.com/author/yuchant/">
+<meta property="og:site_name" content="YUJI TOMITA">
+<meta property="og:image" content="https://yuji.files.wordpress.com/2011/03/screen-shot-2011-10-20-at-12-30-32-am.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@wordpressdotcom">
+<meta name="twitter:image:src" content="https://yuji.files.wordpress.com/2011/03/screen-shot-2011-10-20-at-12-30-32-am.png?w=640">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png">
+<link rel="openid.server" href="https://yuji.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="https://yuji.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="https://yuji.wordpress.com/osd.xml" title="YUJI TOMITA">
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com">
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<style type="text/css">
+.widget_twitter li {
+	word-wrap: break-word;
+}
+</style>
+<meta name="application-name" content="YUJI TOMITA"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="Tech Consultant. Backend Developer. Frontend Developer. Designer. Adventure Time Super Fan."><meta name="msapplication-task" content="name=Subscribe;action-uri=https://yuji.wordpress.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="title" content="Laser – Structural Beam Bending&nbsp;Calculations | YUJI TOMITA on WordPress.com">
+<meta name="description" content="This is the first post in the Laser category. I wrote &quot;Structural Beam Bending&quot; because I am not referring to a laser beam, but an aluminum beam in my laser. It took me a while to get back on the engineering concepts train. The last time I did any unit conversions at all was at…">
+
+<script type="text/javascript" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/google_service.js">
+</script>
+<script type="text/javascript">
+if ( typeof GS_googleAddAdSenseService == 'function' ) { GS_googleAddAdSenseService("ca-pub-3443918307802676"); }
+if ( typeof GS_googleEnableAllServices == 'function' ) { GS_googleEnableAllServices() };
+</script><script src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/google_ads.js"></script>
+<script type="text/javascript" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/amzn_ads.js"></script>
+<script type="text/javascript">
+try { amznads.getAds("3033","300x250"); } catch(e) { /* ignore */ }
+</script><script type="text/javascript" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/bid"></script>
+<script type="text/javascript">
+var amznKeys = amznads.getKeys();
+if (typeof amznKeys != "undefined" && amznKeys != "") { for (var i =0; i < amznKeys.length; i++) { var key = amznKeys[i]; GA_googleAddAttr("amzn", key);} }
+document.close();
+</script>
+<script type="text/javascript">
+if ( typeof GA_googleAddSlot == 'function' ) { GA_googleAddSlot("ca-pub-3443918307802676", "wpcom_below_post_adsafe"); }
+</script>
+<script type="text/javascript">
+if ( typeof GA_googleFetchAds == 'function' ) { GA_googleFetchAds(); }
+</script>
+
+<script type="text/javascript">
+var wpcom_ads = { bid: 3514052, pt: 'permalink', wa: 0, as: 1, domain: 'yuji.wordpress.com', url: 'https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/', gid: '', };
+</script>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script><script src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/ga.js" async="" type="text/javascript"></script>
+<script src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/osd.js" type="text/javascript"></script><style media="screen" type="text/css">#cto300x250_div700327252e {visibility:hidden}</style><style media="screen" type="text/css">#cto300x250_div700327252e {visibility:visible}</style><script src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/a.js" async="" type="text/javascript"></script></head>
+
+<body data-twttr-rendered="true" class="single single-post postid-741 single-format-standard mp6 customizer-styles-applied highlander-enabled highlander-light">
+
+<div id="site-wrapper">
+	<h1 class="vcard author" id="site-title"><a sl-processed="1" href="https://yuji.wordpress.com/" title="Home" class="fn">YUJI TOMITA</a></h1>
+	<nav id="main-nav">
+			<ul>
+		<li class="page_item page-item-6"><a sl-processed="1" href="https://yuji.wordpress.com/about-yuji-tomita/">About Yuji&nbsp;Tomita</a></li>
+	</ul>
+	</nav>
+		<div id="site-description">
+		Tech Consultant. Backend Developer. Frontend Developer. Designer. Adventure Time Super Fan.	</div>
+
+<div id="core-content">
+
+
+	
+<div class="post-741 post type-post status-publish format-standard hentry category-laser" id="post-741">
+	<div class="post-content">
+		<h3 class="entry-title">Laser – Structural Beam Bending&nbsp;Calculations</h3>		<h4 class="vcard author">by <span class="fn">Yuji</span></h4>
+
+				<div class="entry-content">
+			<p>This is the first post in the Laser category. I wrote “Structural 
+Beam Bending” because I am not referring to a laser beam, but an 
+aluminum beam in my laser.</p>
+<p>It took me a while to get back on the engineering concepts train. The
+ last time I did any unit conversions at all was at least 5 years ago. </p>
+<p>The first major hiccup I experienced while attempting to do beam 
+bending calculations with a program called BeamBoy was that I wanted to 
+determine my beam lengths in inches. All of my material data is in 
+metric, so converting mm4 to in4 took me a moment to realize you simply 
+divide by (mm/inch)^4, which is 25.4^4, or 416,231.4256</p>
+<p>Unlike programming, physics information is not as readily available 
+in easily digestible formats. I will outline my experiences to help 
+anybody else who stumbles across this blog.</p>
+<p><strong>To calculate beam deflection: </strong></p>
+<p>Find your material’s Moment of Inertia, Modulus of Elasticity, and the Distance to Farthest Fiber. </p>
+<p>My parts come from Misumi, so their data sheet looks like this: <a sl-processed="1" href="https://yuji.files.wordpress.com/2011/03/screen-shot-2011-03-05-at-9-24-58-pm.png"><img src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/screen-shot-2011-03-05-at-9-24-58-pm.png" alt="" title="Screen shot 2011-03-05 at 9.24.58 PM" class="alignnone size-full wp-image-744"></a></p>
+<p>The Moment of Inertia for the two axes are clearly shown. The Modulus
+ of Elasticity is a property of the material, and I couldn’t actually 
+find the exact grade of aluminum Misumi is using, so I looked online for
+ average values and it ranged from 9,000,000 PSI to 11,000,000 PSI. </p>
+<p>Distance to farthest fiber is the farthest distance from the beam’s 
+neutral axis, so I interpret that to be 1/2 the width. This may be 
+wrong. </p>
+<p>First, start up BeamBoy and type in the length of your beam.</p>
+<p>Enter in the properties of your beam as discussed above: moment of 
+inertia, modulus of elasticity, and distance to farthest fiber.</p>
+<p>Next, add two supports to your structure, I simply added a support at the start and end of my beam.</p>
+<p>Add a distributed load over the length of your beam equal to the 
+weight per distance (in my case, lb/ft) to simulate the weight of the 
+beam itself.</p>
+<p>Optionally, add a distributed or point load to the beam. I wanted 
+maximum deflection for a given weight so I used a point load in the 
+“worst” possible spot: the center, away from my 2 support structures.</p>
+<p>Click calculate and see your results!</p>
+<p><a sl-processed="1" href="https://yuji.files.wordpress.com/2011/03/screen-shot-2011-03-05-at-9-34-04-pm.png"><img src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/screen-shot-2011-03-05-at-9-34-04-pm.png" alt="" title="Screen shot 2011-03-05 at 9.34.04 PM" class="alignnone size-full wp-image-745"></a></p>
+<p>PS: I tried doing this in Solidworks beam modeler but the results 
+don’t seem to be accurate.. Perhaps it’s because I was using a 
+distributed load? </p>
+<p>The Solidworks beam simulation is potentially a huge time saver as 
+you the length, material properties and thickness is auto calculated.</p>
+<p>Just can’t trust it yet.</p>
+<p><a sl-processed="1" href="https://yuji.files.wordpress.com/2011/03/solidworks.png"><img src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/solidworks.png" alt="" title="solidworks" class="alignnone size-full wp-image-750"></a></p>
+
+<div class="wpcnt">
+<div class="wpa">
+<a sl-processed="1" class="wpa-about" href="http://wordpress.com/about-these-ads/" rel="nofollow">About these ads</a>
+<script type="text/javascript">
+		var wpcom_adclk_hovering = false;
+		var wpcom_adclk_recorded = false;
+		var wpcom_adclk_theme = "Manifest";
+		var wpcom_adclk_slot = "wpcom_below_post_adsafe";
+		var wpcom_adclk_network = ( typeof wpcom_adclk_network === "undefined" ) ? "" : wpcom_adclk_network ;
+
+		jQuery(document).ready( function() {
+			function wpcom_adclk_hover_yes() { wpcom_adclk_hovering = true; }
+			function wpcom_adclk_hover_no() { wpcom_adclk_hovering = false; }
+			jQuery(".wpa").click(wpcom_adclk_click);
+			jQuery(".wpa iframe").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+			jQuery(".wpa object").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+
+			jQuery(window).blur( function() {
+				if ( wpcom_adclk_hovering ) { wpcom_adclk_click(); }
+			});
+		});
+
+		function wpcom_adclk_impression() {
+			var stat_gif = document.location.protocol + "//pixel.wp.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_imp_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_imp_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_imp_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_imp_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			return true;
+		}
+
+		function wpcom_adclk_click() {
+			if (wpcom_adclk_recorded) { return true; } // no double counting
+			var stat_gif = document.location.protocol + "//pixel.wp.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_click_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_click_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_click_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_click_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			wpcom_adclk_recorded = true;
+			var now=new Date(); var end=now.getTime()+250;
+			while(true){now=new Date();if(now.getTime()>end){break;}}
+			return true;
+		}
+	
+if ( typeof GA_googleAddAttr == 'function' ) {
+GA_googleAddAttr("AdOpt", "1");
+GA_googleAddAttr("Origin", "extsearch");
+GA_googleAddAttr("LangId", "1");
+GA_googleAddAttr("Domain", "yuji.wordpress.com");
+GA_googleAddAttr("BlogId", "3514052");
+GA_googleAddAttr("PageURL", "https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/");
+GA_googleAddAttr("AdSafe", "1");
+GA_googleAddAttr("Autotag", "science");
+GA_googleAddAttr("Tag", "laser");
+GA_googleAddAttr("Partner", "AOL");
+GA_googleAddAttr("theme_bg", "fff");
+GA_googleAddAttr("theme_border", "eeeeee");
+GA_googleAddAttr("theme_text", "444444");
+GA_googleAddAttr("theme_link", "9c8a6a");
+GA_googleAddAttr("theme_url", "9c8a6a");
+GA_googleAddAdSensePageAttr("google_page_url", "https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/");
+GA_googleFillSlot("wpcom_below_post_adsafe");
+}
+</script><script src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/ads"></script><div id="google_ads_div_wpcom_below_post_adsafe_ad_wrapper">
+<div id="google_ads_div_wpcom_below_post_adsafe_ad_container" style="display:inline-block;"><script type="text/javascript">
+<!--//<![CDATA[
+   document.MAX_ct0 ='';
+   var m3_u = (location.protocol=='https:'?'https://cas.criteo.com/delivery/ajs.php?':'http://cas.criteo.com/delivery/ajs.php?');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("zoneid=155617");document.write("&amp;nodis=1");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
+       document.write ("&amp;ct0=" + escape(document.MAX_ct0));
+   }
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'></scr"+"ipt>");
+//]]>--></script><script type="text/javascript" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/ajs.php"></script><div id="main700327252e" style="position:relative; padding:0; width:300px ; height:250px ; background-color:#ddd; cursor:pointer; overflow:hidden;  display:inline-block; ">  <style> #privacy_700327252e_0, #privacy_700327252e_0 a, #privacy_700327252e_0 img { position:absolute; text-decoration:none; margin:0; padding:0; border:none; z-index:100; top:0px;bottom:auto;vertical-align:top; right:0px;left:auto; cursor: pointer; }  #privacy_700327252e_0 .privacy_out { width:19px; height:15px; z-index:150; } #privacy_700327252e_0 .privacy_hover { width:87px; height:15px; z-index:100; }  </style> <div id="privacy_700327252e_0">   <a sl-processed="1" href="https://info.criteo.com/pac/privacy/informations?static=1&amp;infonorm=3&amp;partner=1319&amp;campaignid=68295&amp;zoneid=155617&amp;bannerid=3377736&amp;displayid=700327252e&amp;uaCap=0" class="privacy_out" target="_blank">  <img alt="" style="width:19px; height:15px;  position:relative" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/nai_small.png">  </a>  <a sl-processed="1" href="https://info.criteo.com/pac/privacy/informations?static=1&amp;infonorm=3&amp;partner=1319&amp;campaignid=68295&amp;zoneid=155617&amp;bannerid=3377736&amp;displayid=700327252e&amp;uaCap=0" style="display:none;" class="privacy_hover" target="_blank"> <img alt="" style="width:87px;height:15px" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/adchoices_fr.png"> </a>  </div>  <script type="text/javascript"> (function() { var applyPrivacy = function(container, clickable) { var onContainer = container.children[1]; var offContainer = container.children[0]; var timeout = 0; var setVisibility = function(isOn, ignoreTimeout) { return function() { if (timeout) { clearTimeout(timeout); } if (!isOn && !ignoreTimeout) { timeout = setTimeout(setVisibility(false, true), 100); } else { onContainer.style.display = isOn ? 'block' : 'none'; offContainer.style.display = !isOn ? 'block' : 'none';  } }; };  container.onmouseout = setVisibility(false); container.onmouseover = setVisibility(true);  };  applyPrivacy(document.getElementById('privacy_700327252e_0'), true);  })(); </script><object id="cto300x250_div700327252e" data="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20|%20YUJI%20TOMITA_files/141103_vistaprintfr_500_300250.swf" type="application/x-shockwave-flash" width="300" height="250"><param value="opaque" name="wmode"><param value="always" name="allowScriptAccess"><param value="policy=0&amp;ifn=if700327252e&amp;clickTag=http%3a%2f%2fcat.nl.eu.criteo.com%2fdelivery%2fck.php%3fckmode%3d9%26cb%3d700327252e%26nlsid%3d68295%26c1%3dOvqNZYH_GN1_jOuiHzP5qOmFK4LN6dTRfHRpFeKdMNuf0XRKaN_oLgJXIhq17xuqFKkkK7Ny3qNKCOdEahnQz3lXWPdqTN_wyRTP6aTqSWBkUxMWvvoTRqACedWJNve1onY8kdr_v71JlKWsZH9Fn9PxP92V6lgBi5y6yC9NqexlyOxwJY8RcrlKZM81G81Y92UfqsVdvfLxWvNlkDm6n5UQJWsmELLkhQqwLImbj2-Aa-JpQ2bkqtHxIXrHDyAvaHGExtf63WQ8puuaA8e9cv7wu0PjPcRBs6-BbCXxYjo%26maxdest%3dhttp%253a%252f%252fwww.vistaprint.fr%252fvp%252fgateway.aspx%253fS%253d0435050263%2526affid%253d31820516&amp;clickTAG=http%3a%2f%2fcat.nl.eu.criteo.com%2fdelivery%2fck.php%3fckmode%3d9%26cb%3d700327252e%26nlsid%3d68295%26c1%3dOvqNZYH_GN1_jOuiHzP5qOmFK4LN6dTRfHRpFeKdMNuf0XRKaN_oLgJXIhq17xuqFKkkK7Ny3qNKCOdEahnQz3lXWPdqTN_wyRTP6aTqSWBkUxMWvvoTRqACedWJNve1onY8kdr_v71JlKWsZH9Fn9PxP92V6lgBi5y6yC9NqexlyOxwJY8RcrlKZM81G81Y92UfqsVdvfLxWvNlkDm6n5UQJWsmELLkhQqwLImbj2-Aa-JpQ2bkqtHxIXrHDyAvaHGExtf63WQ8puuaA8e9cv7wu0PjPcRBs6-BbCXxYjo%26maxdest%3dhttp%253a%252f%252fwww.vistaprint.fr%252fvp%252fgateway.aspx%253fS%253d0435050263%2526affid%253d31820516&amp;clicktag=http%3a%2f%2fcat.nl.eu.criteo.com%2fdelivery%2fck.php%3fckmode%3d9%26cb%3d700327252e%26nlsid%3d68295%26c1%3dOvqNZYH_GN1_jOuiHzP5qOmFK4LN6dTRfHRpFeKdMNuf0XRKaN_oLgJXIhq17xuqFKkkK7Ny3qNKCOdEahnQz3lXWPdqTN_wyRTP6aTqSWBkUxMWvvoTRqACedWJNve1onY8kdr_v71JlKWsZH9Fn9PxP92V6lgBi5y6yC9NqexlyOxwJY8RcrlKZM81G81Y92UfqsVdvfLxWvNlkDm6n5UQJWsmELLkhQqwLImbj2-Aa-JpQ2bkqtHxIXrHDyAvaHGExtf63WQ8puuaA8e9cv7wu0PjPcRBs6-BbCXxYjo%26maxdest%3dhttp%253a%252f%252fwww.vistaprint.fr%252fvp%252fgateway.aspx%253fS%253d0435050263%2526affid%253d31820516" name="flashvars"></object>
+<script type="text/javascript" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/criteoflash_ld2.js"></script>
+<script type="text/javascript">
+(function() {
+var cto_fv = {};
+cto_fv.policy="0";
+cto_fv.ifn="if700327252e";
+cto_fv.clickTag="http%3a%2f%2fcat.nl.eu.criteo.com%2fdelivery%2fck.php%3fckmode%3d9%26cb%3d700327252e%26nlsid%3d68295%26c1%3dOvqNZYH_GN1_jOuiHzP5qOmFK4LN6dTRfHRpFeKdMNuf0XRKaN_oLgJXIhq17xuqFKkkK7Ny3qNKCOdEahnQz3lXWPdqTN_wyRTP6aTqSWBkUxMWvvoTRqACedWJNve1onY8kdr_v71JlKWsZH9Fn9PxP92V6lgBi5y6yC9NqexlyOxwJY8RcrlKZM81G81Y92UfqsVdvfLxWvNlkDm6n5UQJWsmELLkhQqwLImbj2-Aa-JpQ2bkqtHxIXrHDyAvaHGExtf63WQ8puuaA8e9cv7wu0PjPcRBs6-BbCXxYjo%26maxdest%3dhttp%253a%252f%252fwww.vistaprint.fr%252fvp%252fgateway.aspx%253fS%253d0435050263%2526affid%253d31820516";cto_fv.clickTAG="http%3a%2f%2fcat.nl.eu.criteo.com%2fdelivery%2fck.php%3fckmode%3d9%26cb%3d700327252e%26nlsid%3d68295%26c1%3dOvqNZYH_GN1_jOuiHzP5qOmFK4LN6dTRfHRpFeKdMNuf0XRKaN_oLgJXIhq17xuqFKkkK7Ny3qNKCOdEahnQz3lXWPdqTN_wyRTP6aTqSWBkUxMWvvoTRqACedWJNve1onY8kdr_v71JlKWsZH9Fn9PxP92V6lgBi5y6yC9NqexlyOxwJY8RcrlKZM81G81Y92UfqsVdvfLxWvNlkDm6n5UQJWsmELLkhQqwLImbj2-Aa-JpQ2bkqtHxIXrHDyAvaHGExtf63WQ8puuaA8e9cv7wu0PjPcRBs6-BbCXxYjo%26maxdest%3dhttp%253a%252f%252fwww.vistaprint.fr%252fvp%252fgateway.aspx%253fS%253d0435050263%2526affid%253d31820516";cto_fv.clicktag="http%3a%2f%2fcat.nl.eu.criteo.com%2fdelivery%2fck.php%3fckmode%3d9%26cb%3d700327252e%26nlsid%3d68295%26c1%3dOvqNZYH_GN1_jOuiHzP5qOmFK4LN6dTRfHRpFeKdMNuf0XRKaN_oLgJXIhq17xuqFKkkK7Ny3qNKCOdEahnQz3lXWPdqTN_wyRTP6aTqSWBkUxMWvvoTRqACedWJNve1onY8kdr_v71JlKWsZH9Fn9PxP92V6lgBi5y6yC9NqexlyOxwJY8RcrlKZM81G81Y92UfqsVdvfLxWvNlkDm6n5UQJWsmELLkhQqwLImbj2-Aa-JpQ2bkqtHxIXrHDyAvaHGExtf63WQ8puuaA8e9cv7wu0PjPcRBs6-BbCXxYjo%26maxdest%3dhttp%253a%252f%252fwww.vistaprint.fr%252fvp%252fgateway.aspx%253fS%253d0435050263%2526affid%253d31820516";var cto_p = { wmode: "opaque", allowScriptAccess: "always" };
+var cto_a = { };
+var flp = [true, "https://static.criteo.net/flash/staticbanners/vistaprintfr/141103_vistaprintfr_500_300250.swf", "cto300x250_div700327252e", "300", "250", "9.0.0", "", cto_fv, cto_p, cto_a];
+var octoswfloader = typeof ctoswfloader!="undefined" ? ctoswfloader : typeof swfobject!="undefined" ? swfobject : null;
+if (octoswfloader != null){octoswfloader.embedSWF(flp[1],flp[2],flp[3],flp[4],flp[5],flp[6],flp[7],flp[8],flp[9]);flp[0]=false;}
+else if (typeof ctoFA !="undefined" && ctoFA instanceof Array) { ctoFA.push(flp); }
+else { ctoFA = [flp]; }
+})();
+</script>
+<div style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
+<iframe id="if700327252e" name="if700327252e" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/empty.html" width="1px" height="1px"></iframe>
+</div>
+</div>
+<div id="beacon_700327252e" style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
+<img alt="" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/lg.gif" width="0" height="0">
+
+                <script type="text/javascript">
+                  (function() {
+                    var applyAltText = function(container) {
+                      if (container != null) {
+                        var images = container.getElementsByTagName('img');
+                        for(var i = 0; i < images.length; ++i) {
+                          if(!images[i].getAttribute('alt')) {
+                            images[i].setAttribute('alt', '');
+                          }
+                        }
+                      }
+                    };
+                    applyAltText(document.getElementById('main700327252e'));
+                    applyAltText(document.getElementById('beacon_700327252e'));
+                    applyAltText(document.getElementById('cto_banner_content'));
+                  })();
+                </script>
+</div>
+
+
+</div>
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+jQuery( window ).load( function() {
+    if ( jQuery(".wpa script[src*='virool.com']").length > 0 || jQuery(".wpa script[src*='shareth.ru']").length > 0 || jQuery(".wpa iframe[src*='boomvideo.tv']").length > 0 || jQuery(".wpa iframe[src*='viewablemedia.net']").length > 0 || jQuery(".wpa .sharethrough-placement").length > 0 ) {
+        jQuery( '.wpa' ).css( 'width', '400px' );
+    }
+setTimeout(function(){if(typeof GS_googleAddAdSenseService !== 'function'){new Image().src=document.location.protocol+"//pixel.wp.com/g.gif?v=wpcom-no-pv&x_noads=adblock&baba="+Math.random()}},100);
+} );
+</script>
+
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a sl-processed="1" rel="nofollow" class="share-facebook sd-button share-icon" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/?share=facebook&amp;nb=1" title="Share on Facebook" id="sharing-facebook-741"><span>Facebook</span></a></li><li class="share-email share-service-visible"><a sl-processed="1" rel="nofollow" class="share-email sd-button share-icon" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/?share=email&amp;nb=1" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-loaded" id="like-post-wrapper-3514052-741-54ea0a9e0f73e" data-src="//widgets.wp.com/likes/#blog_id=3514052&amp;post_id=741&amp;origin=yuji.wordpress.com&amp;obj_id=3514052-741-54ea0a9e0f73e" data-name="like-post-frame-3514052-741-54ea0a9e0f73e"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px; display: none;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><iframe class="post-likes-widget jetpack-likes-widget" name="like-post-frame-3514052-741-54ea0a9e0f73e" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/a.html" width="100%" frameborder="0" height="55px"></iframe><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div style="display: block;" id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-minimal"><p class="jp-relatedposts-post jp-relatedposts-post0" data-post-id="39" data-post-format="false"><span class="jp-relatedposts-post-title"><a sl-processed="1" data-position="0" data-origin="741" rel="nofollow" title="I work much better at night.
+
+I work much better when there are zero distractions. No people, no sounds, not anything. Right now it is 2:44AM which is getting late. I feel like I Just woke up though. I consistently flow more at night. In fact, I'm not sure I have ever gotten into flow during…" href="https://yuji.wordpress.com/2008/05/09/i-work-much-better-at-night/" class="jp-relatedposts-post-a">I work much better at night.</a></span><span class="jp-relatedposts-post-context">In "Anuva Vinos"</span></p><p class="jp-relatedposts-post jp-relatedposts-post1" data-post-id="203" data-post-format="false"><span class="jp-relatedposts-post-title"><a sl-processed="1" data-position="1" data-origin="741" rel="nofollow" title="The Girl Who Leapt Through Time
+
+This animation was enjoyable enough that I am about to write about it, the day after I watched it. For those of you I'm going to lose in the first sentence, watch it. Don't watch the dub. For a real review of this film, check out the bunny who didn't…" href="https://yuji.wordpress.com/2009/12/02/the-girl-who-leapt-through-time/" class="jp-relatedposts-post-a">The Girl Who Leapt Through Time</a></span><span class="jp-relatedposts-post-context">In "Life"</span></p><p class="jp-relatedposts-post jp-relatedposts-post2" data-post-id="209" data-post-format="false"><span class="jp-relatedposts-post-title"><a sl-processed="1" data-position="2" data-origin="741" rel="nofollow" title="Find the things in life that make you cry.
+
+I just read &quot;Find the things in life that make you cry&quot; and couldn't agree more. Life's pleasures to me are the things that move me so much I am in tears. Why do we cry? Sadness is obvious. But what about those times you are deeply moved by something?…" href="https://yuji.wordpress.com/2009/12/21/find-the-things-in-life-that-make-you-cry/" class="jp-relatedposts-post-a">Find the things in life that make you cry.</a></span><span class="jp-relatedposts-post-context">In "Life"</span></p></div></div></div>					</div>
+	</div>
+	<div class="post-meta">
+						<div class="post-date"><span>Published:</span> <abbr class="published" title="2011-03-05T18:38:07+0000"><a sl-processed="1" href="https://yuji.wordpress.com/2011/03/05/">March 5, 2011</a></abbr></div>
+		<div class="categories"><span>Filed Under:</span> <a sl-processed="1" href="https://yuji.wordpress.com/category/laser/" rel="category tag">Laser</a></div>
+			</div>
+</div>
+	<div id="comments">
+	
+			<h3 id="comments">5 Comments to “Laser – Structural Beam Bending&nbsp;Calculations”</h3>
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1 parent highlander-comment" id="comment-1060">
+				<div id="div-comment-1060" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">bla bnal</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a sl-processed="1" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/#comment-1060">
+			December 4, 2011 at 8:21 am</a>		</div>
+
+		<p>Hi. How do you read the deflection on a particular place on the beam in Solidworks?<br>
+I only get some unintelligible URES(mm) values.<br>
+Is there a tool in Solidworks that lets you plot a point on the beam and measure maximum deflection?</p>
+
+		<div class="reply"><a sl-processed="1" class="comment-reply-link" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/?replytocom=1060#respond" onclick='return addComment.moveForm( "div-comment-1060", "1060", "respond", "741" )' aria-label="Reply to bla bnal">Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-2 highlander-comment" id="comment-1066">
+				<div id="div-comment-1066" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a sl-processed="1" href="http://gravatar.com/yuchant" rel="external nofollow" class="url">Yuji</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a sl-processed="1" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/#comment-1066">
+			December 5, 2011 at 3:51 pm</a>		</div>
+
+		<p>I’m sorry but I’m not sure — I used the manual BeamBoy calculations since I was clearly not able to get it working correctly.</p>
+
+		<div class="reply"><a sl-processed="1" class="comment-reply-link" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/?replytocom=1066#respond" onclick='return addComment.moveForm( "div-comment-1066", "1066", "respond", "741" )' aria-label="Reply to Yuji">Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="comment-1417">
+				<div id="div-comment-1417" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a sl-processed="1" href="http://rsmith.home.xs4all.nl/" rel="external nofollow" class="url">Roland Smith</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a sl-processed="1" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/#comment-1417">
+			July 22, 2012 at 12:24 pm</a>		</div>
+
+		<p>The furthest fiber distance is half the height (for a cross-section that is symmetric along the x-axis).</p>
+<p>For pure bending, you have to solve the differential equation y”=-M/(E·I),<br>
+where M is the bending moment, E is the Young’s modulus of the material 
+and I is the second area moment. How easy it is to solve this equation 
+depends on which if the constituents are functions of x (which runs 
+along the length of the beam). In the basic case, only M is a function 
+of x, and EI is constant along the length of the beam. You can find the 
+analytical solution for simple cases like these in reference books. For a
+ simply supported beam with a point-load in the middle, the solution for
+ the maximum deflection is: F·L³/(48·E·I), where F is the load, L is the
+ length of the beam.</p>
+<p>The maximum bending stress is: M·e/I, where M is the bending moment and e is the furthest fiber distance.</p>
+<p>If you want to know about solid mechanics, read “Mechanics of Materials” (<a style="" sl-processed="1" href="http://www.amazon.com/Mechanics-Materials-James-M-Gere/dp/0534934293" rel="nofollow">http://www.amazon.com/Mechanics-Materials-James-M-Gere/dp/0534934293</a>) by Timoshenko and Gere. It also shows you how to calculate the second area moment.</p>
+<p>Depending on the materials used and their geometry, you might also 
+want to take shear deflection into account. This is usually not done in 
+standard engineering texts, because in metals shear doesn’t contribute 
+much to the total deflection. Shear is governed by the differential 
+equation y’ = α·V/(G·A), where α is a factor that depends on the shape 
+of the cross-section (1.5 for rectangular ones), V is the shear force in
+ the cross-section, G is the shear modulus, and A is the surface area of
+ the cross section.</p>
+
+		<div class="reply"><a sl-processed="1" class="comment-reply-link" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/?replytocom=1417#respond" onclick='return addComment.moveForm( "div-comment-1417", "1417", "respond", "741" )' aria-label="Reply to Roland Smith">Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 highlander-comment" id="comment-1804">
+				<div id="div-comment-1804" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a sl-processed="1" href="http://sopromat.ho.ua/en" rel="external nofollow" class="url">Vladimir</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a sl-processed="1" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/#comment-1804">
+			January 29, 2013 at 3:22 am</a>		</div>
+
+		<p>visit to <a sl-processed="1" href="http://www.sopromat.ho.ua/en" rel="nofollow">http://www.sopromat.ho.ua/en</a><br>
+to calculate beam deflection</p>
+
+		<div class="reply"><a sl-processed="1" class="comment-reply-link" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/?replytocom=1804#respond" onclick='return addComment.moveForm( "div-comment-1804", "1804", "respond", "741" )' aria-label="Reply to Vladimir">Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="comment-1999">
+				<div id="div-comment-1999" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a sl-processed="1" href="https://www.facebook.com/chandni.jha.148" rel="external nofollow" class="url">Chandni Jha</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a sl-processed="1" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/#comment-1999">
+			August 31, 2013 at 3:10 am</a>		</div>
+
+		<p><a sl-processed="1" href="http://www.structures-made-easy.co.uk/" rel="nofollow">Structural Calculations</a></p>
+<p>I am extremely surprised by the data of this weblog and i am happy i 
+experienced a search over the site. Thank you so considerably for 
+sharing this sort of great information.</p>
+
+		<div class="reply"><a sl-processed="1" class="comment-reply-link" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/?replytocom=1999#respond" onclick='return addComment.moveForm( "div-comment-1999", "1999", "respond", "741" )' aria-label="Reply to Chandni Jha">Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		</ol>
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+ 	
+									<div id="respond" class="comment-respond js">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a sl-processed="1" rel="nofollow" id="cancel-comment-reply-link" href="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="https://yuji.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
+
+
+												<input id="highlander_comment_nonce" name="highlander_comment_nonce" value="52994a07a6" type="hidden"><input name="_wp_http_referer" value="/2011/03/05/laser-structural-beam-bending-calculations/" type="hidden">
+<input name="hc_post_as" id="hc_post_as" value="guest" type="hidden">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea class="autosizejs " tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px none; padding: 0px; box-sizing: content-box; word-wrap: break-word; height: 0px ! important; min-height: 0px ! important; overflow: hidden; transition: none 0s ease 0s ; font-family: Arial,Helvetica,Tahoma,Verdana,sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none; word-spacing: 0px; text-indent: 0px; line-height: 16px; width: 478px;">Enter your comment here...</textarea><textarea style="height: 36px; overflow: hidden; word-wrap: break-word; resize: none;" placeholder="Enter your comment here..." id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div style="display: none;" id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a sl-processed="1" href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a sl-processed="1" href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a sl-processed="1" href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a sl-processed="1" href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/a_002.html" scrolling="no" allowtransparency="true" seamless="seamless" width="24" frameborder="0" height="24"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a sl-processed="1" href="https://gravatar.com/site/signup/" target="_blank">				<img src="" alt="Gravatar" class="no-grav" width="25">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email"></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text"></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text"></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/wplogo.png" alt="WordPress.com Logo" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" type="hidden">
+				<input name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" type="hidden">
+				<input name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" type="hidden">
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your <span class="skimlinks-unlinked">WordPress.com</span> account. <span class="comment-form-log-out">(&nbsp;<a sl-processed="1" href="javascript:HighlanderComments.doExternalLogout(%20'wordpress'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a sl-processed="1" href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="" alt="Twitter picture" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" type="hidden">
+				<input name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" type="hidden">
+				<input name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" type="hidden">
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a sl-processed="1" href="javascript:HighlanderComments.doExternalLogout(%20'twitter'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a sl-processed="1" href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="" alt="Facebook photo" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" type="hidden">
+				<input name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" type="hidden">
+				<input name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" type="hidden">
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a sl-processed="1" href="javascript:HighlanderComments.doExternalLogout(%20'facebook'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a sl-processed="1" href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="" alt="Google+ photo" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" type="hidden">
+				<input name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" type="hidden">
+				<input name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" type="hidden">
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a sl-processed="1" href="javascript:HighlanderComments.doExternalLogout(%20'googleplus'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a sl-processed="1" href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a sl-processed="1" href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+	
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div style="display: none;" id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6" type="checkbox"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+<style type="text/css">
+#respond .comment-form-avatar { display: none !important; }
+#respond .comment-form-fields { margin-left: 0 !important; }
+</style>
+
+												<p style="display: none;" class="form-submit">
+							<input name="submit" id="comment-submit" class="submit" value="Post Comment" type="submit">
+							<input name="comment_post_ID" value="741" id="comment_post_ID" type="hidden">
+<input name="comment_parent" id="comment_parent" value="0" type="hidden">
+						</p>
+						<p style="display: none;"><input id="akismet_comment_nonce" name="akismet_comment_nonce" value="977515983d" type="hidden"></p>
+<input name="genseq" value="1424624286" type="hidden">
+<p style="display: none;"></p>					<input id="ak_js" name="ak_js" value="1424624287482" type="hidden"></form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div></div>
+	<div class="navigation">
+		<div class="prev"><a sl-processed="1" href="https://yuji.wordpress.com/2011/02/22/programmatically-log-into-a-website-with-python-and-urllib-urllib2-this-one-for-my-django/" rel="prev">« Previous Post</a></div>
+		<div class="next"><a sl-processed="1" href="https://yuji.wordpress.com/2011/03/06/solidworks-where-is-the-show-feature-dimensions-button/" rel="next">Next Post »</a></div>
+	</div>
+
+
+</div><!-- #core-content -->
+
+
+</div><!-- #site-wrapper -->
+
+<div id="footer">
+
+	
+<div id="supplementary" class="one">
+
+		<div id="first" class="widget-area" role="complementary">
+		<aside id="search-4" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://yuji.wordpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input name="s" id="s" type="text">
+					<input id="searchsubmit" value="Search" type="submit">
+				</div>
+			</form></aside><aside id="text-2" class="widget widget_text"><h4 class="widget-title">Stack Overflow</h4>			<div class="textwidget"><div style="text-align:center;">
+<a sl-processed="1" href="http://stackoverflow.com/users/267887/yuji-tomita">
+<img src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/267887.png" alt="profile for Yuji Tomita at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Yuji Tomita at Stack Overflow, Q&amp;A for professional and enthusiast programmers" width="208" height="58">
+</a></div></div>
+		</aside><aside id="twitter-3" class="widget widget_twitter"><h4 class="widget-title"><a sl-processed="1" href="http://twitter.com/yuchantomita">Twitter</a></h4><ul class="tweets">
+			<li>
+				RT @<a sl-processed="1" href="http://twitter.com/zeeg">zeeg</a>: Someone stuck Django in React: <a sl-processed="1" href="https://github.com/insin/newforms"> github.com/insin/newforms</a> 				<a sl-processed="1" href="http://twitter.com/yuchantomita/statuses/564962303078981632" class="timesince">1&nbsp;week&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				@<a sl-processed="1" href="http://twitter.com/shlykur">shlykur</a> I used to. Found out there are better people at it than me :) Grove V1 &amp; V2 were me. Grove V3 is our studio team! 				<a sl-processed="1" href="http://twitter.com/yuchantomita/statuses/553048168170930176" class="timesince">1&nbsp;month&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				@<a sl-processed="1" href="http://twitter.com/shlykur">shlykur</a> sure which one? 				<a sl-processed="1" href="http://twitter.com/yuchantomita/statuses/549643692621840385" class="timesince">1&nbsp;month&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				@<a sl-processed="1" href="http://twitter.com/bradymower">bradymower</a>
+ if it fits the spec, Shopify is amazing. Getting creative with the CMS 
+is the battle. Email me if you want some specific advice! 				<a sl-processed="1" href="http://twitter.com/yuchantomita/statuses/542429444963450881" class="timesince">2&nbsp;months&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				@<a sl-processed="1" href="http://twitter.com/bradymower">bradymower</a>
+ "if the needs fit the service". If you need CMS functionality that is 
+too complex for Shopify, then it's not the right fit. 				<a sl-processed="1" href="http://twitter.com/yuchantomita/statuses/542421218356244480" class="timesince">2&nbsp;months&nbsp;ago</a>
+			</li>
+
+			</ul><iframe style="width: 147px; height: 20px;" data-twttr-rendered="true" title="Twitter Follow Button" class="twitter-follow-button twitter-follow-button" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/follow_button.html" allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0"></iframe></aside><aside id="blog_subscription-5" class="widget widget_blog_subscription"><h4 class="widget-title"><label for="subscribe-field">Email Subscription</label></h4>
+				<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="subscribe-blog">
+											<p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+<p>Join 108 other followers</p>
+						<p><input name="email" style="width: 95%; padding: 1px 2px" placeholder="Enter your email address" id="subscribe-field" type="text"></p>
+					
+					<p>
+						<input name="action" value="subscribe" type="hidden">
+						<input name="blog_id" value="3514052" type="hidden">
+						<input name="source" value="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/" type="hidden">
+						<input name="sub-type" value="widget" type="hidden">
+						<input name="redirect_fragment" value="blog_subscription-5" type="hidden">
+						<input id="_wpnonce" name="_wpnonce" value="8c159f9ee7" type="hidden">						<input value="Sign me up!" type="submit">
+					</p>
+				</form>
+			
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h4 class="widget-title">Recent Comments</h4>				<table class="recentcommentsavatar" border="0" cellpadding="0" cellspacing="0">
+					<tbody><tr><td title="Shalin" class="recentcommentsavatartop" style="height:32px; width:32px;"></td><td class="recentcommentstexttop" style="">Shalin on <a sl-processed="1" href="https://yuji.wordpress.com/2011/02/08/data-modeling-free-osx-entity-relationship-diagram-software/#comment-4920">Data Modeling — Free OSX…</a></td></tr><tr><td title="Concerned citizen" class="recentcommentsavatarend" style="height:32px; width:32px;"></td><td class="recentcommentstextend" style="">Concerned citizen on <a sl-processed="1" href="https://yuji.wordpress.com/2014/03/10/export-chrome-history-as-csv-spreadsheet/#comment-4892">Export Chrome History as CSV…</a></td></tr><tr><td title="skui" class="recentcommentsavatarend" style="height:32px; width:32px;"></td><td class="recentcommentstextend" style="">skui on <a sl-processed="1" href="https://yuji.wordpress.com/2009/08/31/python-on-windows-setting-pythonpath-environment-variable/#comment-4858">Python on Windows — Sett…</a></td></tr><tr><td title="Hyip" class="recentcommentsavatarend" style="height:32px; width:32px;"><a sl-processed="1" href="http://tophyipmonitor.wordpress.com/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a sl-processed="1" href="http://tophyipmonitor.wordpress.com/" rel="nofollow">Hyip</a> on <a sl-processed="1" href="https://yuji.wordpress.com/2010/02/22/jquery-click-event-fires-twice/#comment-4852">Jquery — Click event fir…</a></td></tr><tr><td title="richardthombs" class="recentcommentsavatarend" style="height:32px; width:32px;"><a sl-processed="1" href="http://richardthombs.wordpress.com/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a sl-processed="1" href="http://richardthombs.wordpress.com/" rel="nofollow">richardthombs</a> on <a sl-processed="1" href="https://yuji.wordpress.com/2014/10/29/watch-a-child-property-array-with-angularjs/#comment-4795">Watch a child property / array…</a></td></tr><tr><td title="chikala" class="recentcommentsavatarend" style="height:32px; width:32px;"></td><td class="recentcommentstextend" style="">chikala on <a sl-processed="1" href="https://yuji.wordpress.com/2008/05/14/python-basics-of-python-dictionary-and-looping-through-them/#comment-4616">Python — Basics of Pytho…</a></td></tr><tr><td title="Eric" class="recentcommentsavatarend" style="height:32px; width:32px;"></td><td class="recentcommentstextend" style="">Eric on <a sl-processed="1" href="https://yuji.wordpress.com/2012/01/11/shopify-behind-an-nginx-reverse-proxy/#comment-4610">Shopify Behind an Nginx Revers…</a></td></tr><tr><td title="Johnny" class="recentcommentsavatarend" style="height:32px; width:32px;"></td><td class="recentcommentstextend" style="">Johnny on <a sl-processed="1" href="https://yuji.wordpress.com/2011/06/22/python-imaplib-imap-example-with-gmail/#comment-4556">Python — imaplib IMAP ex…</a></td></tr><tr><td title="خرید vpn" class="recentcommentsavatarend" style="height:32px; width:32px;"><a sl-processed="1" href="http://01.fcvpn.org/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a sl-processed="1" href="http://01.fcvpn.org/" rel="nofollow">خرید vpn</a> on <a sl-processed="1" href="https://yuji.wordpress.com/2014/11/24/shopify-collection-ordering/#comment-4538">Shopify collection ordering</a></td></tr><tr><td title="دانلود سریال" class="recentcommentsavatarend" style="height:32px; width:32px;"><a sl-processed="1" href="http://1.master-movie.com/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a sl-processed="1" href="http://1.master-movie.com/" rel="nofollow">دانلود سریال</a> on <a sl-processed="1" href="https://yuji.wordpress.com/2014/11/24/shopify-collection-ordering/#comment-4535">Shopify collection ordering</a></td></tr>				</tbody></table>
+				</aside><aside id="top-posts-2" class="widget widget_top-posts"><h4 class="widget-title">Top Posts</h4><ul><li><a sl-processed="1" href="https://yuji.wordpress.com/2011/06/22/python-imaplib-imap-example-with-gmail/" class="bump-view" data-bump-view="tp">Python -- imaplib IMAP example with Gmail</a></li>
+<li><a sl-processed="1" href="https://yuji.wordpress.com/2008/05/14/python-basics-of-python-dictionary-and-looping-through-them/" class="bump-view" data-bump-view="tp">Python -- Basics of Python Dictionary: Looping &amp; Sorting</a></li>
+<li><a sl-processed="1" href="https://yuji.wordpress.com/2010/02/22/jquery-click-event-fires-twice/" class="bump-view" data-bump-view="tp">Jquery -- Click event fires twice.</a></li>
+<li><a sl-processed="1" href="https://yuji.wordpress.com/2012/04/19/python-xlwt-writing-excel-files/" class="bump-view" data-bump-view="tp">Python xlwt: writing excel files</a></li>
+<li><a sl-processed="1" href="https://yuji.wordpress.com/2010/10/29/git-remove-all-pyc/" class="bump-view" data-bump-view="tp">Git -- Remove all .pyc </a></li>
+<li><a sl-processed="1" href="https://yuji.wordpress.com/2011/02/08/data-modeling-free-osx-entity-relationship-diagram-software/" class="bump-view" data-bump-view="tp">Data Modeling -- Free OSX Entity Relationship Diagram Software</a></li>
+<li><a sl-processed="1" href="https://yuji.wordpress.com/2012/01/11/shopify-behind-an-nginx-reverse-proxy/" class="bump-view" data-bump-view="tp">Shopify Behind an Nginx Reverse Proxy</a></li>
+<li><a sl-processed="1" href="https://yuji.wordpress.com/2014/12/08/angularjs-slidedown-or-slideup-on-ng-if/" class="bump-view" data-bump-view="tp">AngularJS slideDown or slideUp on ng-if</a></li>
+<li><a sl-processed="1" href="https://yuji.wordpress.com/2009/08/31/python-on-windows-setting-pythonpath-environment-variable/" class="bump-view" data-bump-view="tp">Python on Windows -- Setting PYTHONPATH Environment Variable</a></li>
+<li><a sl-processed="1" href="https://yuji.wordpress.com/2014/01/28/coffeescript-enumerate-array-get-index-during-for-loop/" class="bump-view" data-bump-view="tp">CoffeeScript - enumerate array / get index during for loop</a></li>
+</ul></aside>		<aside id="recent-posts-4" class="widget widget_recent_entries">		<h4 class="widget-title">Recent Posts</h4>		<ul>
+					<li>
+				<a sl-processed="1" href="https://yuji.wordpress.com/2015/02/16/django-admin-attribute-decorator/">Django Admin Attribute&nbsp;Decorator</a>
+						</li>
+					<li>
+				<a sl-processed="1" href="https://yuji.wordpress.com/2014/12/10/mailchimp-api-how-to-submit-booean-values-via-form-post-data/">Mailchimp API how to submit booean values via form post&nbsp;data</a>
+						</li>
+					<li>
+				<a sl-processed="1" href="https://yuji.wordpress.com/2014/12/08/angularjs-slidedown-or-slideup-on-ng-if/">AngularJS slideDown or slideUp on&nbsp;ng-if</a>
+						</li>
+					<li>
+				<a sl-processed="1" href="https://yuji.wordpress.com/2014/11/24/shopify-collection-ordering/">Shopify collection ordering</a>
+						</li>
+					<li>
+				<a sl-processed="1" href="https://yuji.wordpress.com/2014/11/18/serve-django-https-over-localhost/">Serve Django HTTPS over&nbsp;localhost</a>
+						</li>
+				</ul>
+		</aside>	</div>
+	
+	
+</div>
+	<!-- Search Field -->
+	<div class="footer-content">
+		<form method="get" id="searchform" action="https://yuji.wordpress.com/">
+			<div id="search">
+				<input name="s" id="s" type="text">
+				<input id="searchsubmit" value="Search" type="submit">
+			</div>
+		</form>
+		<p>
+			<a sl-processed="1" href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com</a>.
+			<a sl-processed="1" href="https://wordpress.com/themes/manifest/" title="Learn more about this theme">The Manifest Theme</a>.		</p>
+	</div>
+</div><!-- #footer -->
+
+<!-- wpcom_wp_footer -->
+	<div style="display:none">
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/yuji.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/yuji.wordpress.com\/wp-login.php?action=logout&_wpnonce=68dfabdbb2","homeURL":"https:\/\/yuji.wordpress.com\/","postID":"741","gravDefault":"mystery","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/a_003"></script>
+
+	<div style="bottom: -276px;" id="bit" class="loggedout-follow-normal">
+		<a sl-processed="1" class="bsub" href="javascript:void(0)"><span id="bsub-text">Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow “YUJI TOMITA”</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+						<p class="bit-follow-count">Join 108 other followers</p>
+			<p><input name="email" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter your email address" : this.value;' id="loggedout-follow-field" type="email"></p>
+
+			<input name="action" value="subscribe" type="hidden">
+			<input name="blog_id" value="3514052" type="hidden">
+			<input name="source" value="https://yuji.wordpress.com/2011/03/05/laser-structural-beam-bending-calculations/" type="hidden">
+			<input name="sub-type" value="loggedout-follow" type="hidden">
+
+			<input id="_wpnonce" name="_wpnonce" value="8c159f9ee7" type="hidden"><input name="_wp_http_referer" value="/2011/03/05/laser-structural-beam-bending-calculations/" type="hidden">
+			<p id="bsub-subscribe-button"><input value="Sign me up" type="submit"></p>
+			</form>
+					<div id="bsub-credit"><a sl-processed="1" href="https://wordpress.com/?ref=lof">Build a website with WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+
+	<script type="text/javascript">
+		WPCOM_sharing_counts = {"https:\/\/yuji.wordpress.com\/2011\/03\/05\/laser-structural-beam-bending-calculations\/":741}	</script>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+			
+		<iframe src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesWidgetBatch = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesBatchHandler() {
+				var requests = [];
+				jQuery( 'div.jetpack-likes-widget-unloaded' ).each( function( i ) {
+					if ( jetpackLikesWidgetBatch.indexOf( this.id ) > -1 )
+						return;
+					jetpackLikesWidgetBatch.push( this.id );
+					var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+					var match = regex.exec( this.id );
+					if ( ! match || match.length != 5 )
+						return;
+
+					var info = {
+						blog_id: match[2],
+						width:   this.width
+					};
+
+					if ( 'post' == match[1] ) {
+						info.post_id = match[3];
+					} else if ( 'comment' == match[1] ) {
+						info.comment_id = match[3];
+					}
+
+					info.obj_id = match[4];
+
+					requests.push( info );
+				});
+
+				if ( requests.length > 0 ) {
+					JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+				}
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' ),
+								isRtl: ( 'rtl' == jQuery( '#wpadminbar' ).css( 'direction' ) )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						JetpackLikesBatchHandler();
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'clickReblogFlair' == event.event ) {
+					wpcom_reblog.toggle_reblog_box_flair( event.obj_id );
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Grab any unloaded widgets for a batch request
+					JetpackLikesBatchHandler();
+
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				if ( 'undefined' === typeof wrapperID ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type="text/javascript" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/form.js"></script>
+<script type="text/javascript" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/widgets.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var JetpackEmojiSettings = {"base_url":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/emoji\/twemoji\/"};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/a"></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "yuji.wordpress.com";
+	</script>
+	<script type="text/javascript" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/725X1342.js"></script><script src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/w.js" type="text/javascript" async="" defer="defer"></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'3514052','blog_tz':'-7','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'3514052','v':'wpcom','tz':'-7','user_id':'0','post':'741','subd':'yuji'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWFnNncxc1tjZG9XVXhRdzR6dTIuSnFPfDl1MGVyZGt+VVpCfGJuVj1NSjRoWWtZcVJzdjlkYWd5LEQ/bWZlRnllS34rPThXMW1OLTdmbi5GRllZSjFVL3hoMEpKUHx2TmxsODYsSzVyeTU5em40SHhSPUFjQ2ImWEMtMSZ3SS5ydGpuaHAvfFBRWCVtQ0F0Yj1UP3JURTNRMEVsTmJJWnl5U3d0MERTNTd6WmFYTVVCVCVQdyUrQzJWcD04bE9VMF0tVlFRX3pGZFVvSkM5K1pXbjcrcjY2LFY0dnYvLXdSR1ZlNVlKJlp3dmZZV1suJj9KWmVzJn5HYklseVdHUkZFMm4yQ3JmMGt6Mzd0VVlOfnFoQS9ZOEszdzdhNEFpRTVnTHMvSEJVYnlmM2U='}]);
+_stq.push([ 'clickTrackerInit', '3514052', '741' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+<div id="sharing_email" style="display: none;">
+		<form action="/2011/03/05/laser-structural-beam-bending-calculations/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input name="target_email" id="target_email" type="email">
+
+			
+				<label for="source_name">Your Name</label>
+				<input name="source_name" id="source_name" type="text">
+
+				<label for="source_email">Your Email Address</label>
+				<input name="source_email" id="source_email" type="email">
+
+			
+			<div class="recaptcha" id="sharing_recaptcha"></div><input name="recaptcha_public_key" id="recaptcha_public_key" value="6LcYW8MSAAAAADBAuEH9yaPcF7lWh11Iq62ZKtoo" type="hidden">
+			<img style="float: right; display: none" class="loading" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/loading.gif" alt="loading" width="16" height="16">
+			<input value="Send Email" class="sharing_send" type="submit">
+			<a sl-processed="1" href="#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div><img id="wpstats" src="Laser%20%E2%80%93%20Structural%20Beam%20Bending%20Calculations%20%7C%20YUJI%20TOMITA_files/g.gif"><iframe style="display: none; width: 0px; height: 0px;" name="google_osd_static_frame" id="google_osd_static_frame_1527815104691"></iframe></body></html>

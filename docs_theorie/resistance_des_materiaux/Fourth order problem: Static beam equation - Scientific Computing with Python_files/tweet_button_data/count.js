@@ -1,0 +1,1 @@
+/**/__twttr.receiveCount({"count":1,"url":"http:\/\/www.scientificpython.net\/1\/post\/2013\/03\/fourth-order-problem-static-beam-equation.html\/"});

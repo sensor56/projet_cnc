@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js ve-not-available" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Euler–Bernoulli beam theory - Wikipedia, the free encyclopedia</title>
+<meta name="generator" content="MediaWiki 1.25wmf17">
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Euler%E2%80%93Bernoulli_beam_theory">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit">
+<link rel="edit" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit">
+<link rel="apple-touch-icon" href="http://bits.wikimedia.org/apple-touch/wikipedia.png">
+<link rel="shortcut icon" href="http://bits.wikimedia.org/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://en.wikipedia.org/w/api.php?action=rsd">
+<link rel="alternate" hreflang="x-default" href="http://en.wikipedia.org/wiki/Euler%E2%80%93Bernoulli_beam_theory">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="http://en.wikipedia.org/wiki/Euler%E2%80%93Bernoulli_beam_theory">
+<link rel="stylesheet" href="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/load_002.css">
+<style>
+.tipsy{padding:5px;position:absolute;z-index:100000;cursor:default}.tipsy-inner{padding:5px 8px 4px 8px; background-color:#ffffff;border:solid 1px #a7d7f9;color:black;max-width:15em;border-radius:4px; }.tipsy-arrow{position:absolute;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEX5+fmn1/n///9s6BFKAAAAAXRSTlMAQObYZgAAACpJREFUCB1jZBD4wMiQMoeRcUU4I9uSaYxSE54xZjn8AtMgPkgcJA9UBwAeDw1Qrb3pVAAAAABJRU5ErkJggg==) no-repeat top left;background:url(//bits.wikimedia.org/static-1.25wmf17/resources/src/jquery.tipsy/images/tipsy.png?2015-02-11T19:30:00Z) no-repeat top left!ie;width:11px;height:6px} .tipsy-n .tipsy-arrow{top:0px;left:50%;margin-left:-5px} .tipsy-nw .tipsy-arrow{top:1px;left:10px} .tipsy-ne .tipsy-arrow{top:1px;right:10px} .tipsy-s .tipsy-arrow{bottom:0px;left:50%;margin-left:-5px;background-position:bottom left} .tipsy-sw .tipsy-arrow{bottom:0px;left:10px;background-position:bottom left} .tipsy-se .tipsy-arrow{bottom:0px;right:10px;background-position:bottom left} .tipsy-e .tipsy-arrow{top:50%;margin-top:-5px;right:1px;width:5px;height:11px;background-position:top right} .tipsy-w .tipsy-arrow{top:50%;margin-top:-5px;left:0px;width:6px;height:11px} .tipsy{font-size:0.8em}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:1ec4647b8cbc5c1b93b5d0531f14e78b */
+@media print{#centralNotice{display:none}}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ddb0c98a055632ae8e349c9cf48ac703 */
+.uls-menu a{cursor:pointer}.uls-menu.callout .caret-before{border-top:20px solid transparent;border-right:20px solid #C9C9C9;border-bottom:20px solid transparent;display:inline-block;left:-21px;top:30px;position:absolute}.uls-menu.callout .caret-after{border-top:20px solid transparent;border-right:20px solid #FCFCFC;border-bottom:20px solid transparent;display:inline-block;left:-20px;top:30px;position:absolute}.uls-ui-languages button{width:23%;text-overflow:ellipsis;margin-right:4%}button.uls-more-languages{width:auto}.settings-title{font-size:11pt}.settings-text{color:#555555;font-size:9pt}div.display-settings-block:hover .settings-text{color:#252525}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:22d1681fa868b4ff4fbcb1ec1e58a9ea */
+@-webkit-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@-moz-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-moz-transform:translateY(-20px)}100%{opacity:1;-moz-transform:translateY(0)}}@-o-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-o-transform:translateY(-20px)}100%{opacity:1;-o-transform:translateY(0)}}@keyframes centralAuthPPersonalAnimation{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}.centralAuthPPersonalAnimation{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:centralAuthPPersonalAnimation;-moz-animation-name:centralAuthPPersonalAnimation;-o-animation-name:centralAuthPPersonalAnimation;animation-name:centralAuthPPersonalAnimation}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:0dcacc990dd02e7db9669ab3090b80f1 */
+.mw-viewPageTarget-loading{width:128px;height:15px;float:right} .mw-editsection{white-space:nowrap; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555}.ve-tabmessage-appendix{font-size:0.7em;vertical-align:top;line-height:1.43em;padding-left:0.5em; background-image:none !important;display:inline !important} .mw-viewPageTarget-loading{background-image:url(data:image/gif;base64,R0lGODlhgAAPAPEAAP///6fX+eXy/KfX+SH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAgAAPAAACo5QvoIC33NKKUtF3Z8RbN/55CEiNonMaJGp1bfiaMQvBtXzTpZuradUDZmY+opA3DK6KwaQTCbU9pVHc1LrDUrfarq765Ya9u+VRzLyO12lwG10yy39zY11Jz9t/6jf5/HfXB8hGWKaHt6eYyDgo6BaH6CgJ+QhnmWWoiVnI6ddJmbkZGkgKujhplNpYafr5OooqGst66Uq7OpjbKmvbW/p7UAAAIfkECQoAAAAsAAAAAIAADwAAArCcP6Ag7bLYa3HSZSG2le/Zgd8TkqODHKWzXkrWaq83i7V5s6cr2f2TMsSGO9lPl+PBisSkcekMJphUZ/OopGGfWug2Jr16x92yj3w247bh6teNXseRbyvc0rbr6/x5Ng0op4YSJDb4JxhI58eliEiYYujYmFi5eEh5OZnXhylp+RiaKQpWeDf5qQk6yprawMno2nq6KlsaSauqS5rLu8cI69k7+ytcvGl6XDtsyzxcAAAh+QQJCgAAACwAAAAAgAAPAAACvpw/oIC3IKIUb8pq6cpacWyBk3htGRk1xqMmZviOcemdc4R2kF3DvfyTtFiqnPGm+yCPQdzy2RQMF9Moc+fDArU0rtMK9SYzVUYxrASrxdc0G00+K8ruOu+9tmf1W06ZfsfXJfiFZ0g4ZvEndxjouPfYFzk4mcIICJkpqUnJWYiYs9jQVpm4edqJ+lkqikDqaZoquwr7OtHqAFerqxpL2xt6yQjKO+t7bGuMu1L8a5zsHI2MtOySVwo9fb0bVQAAIfkECQoAAAAsAAAAAIAADwAAAsucP6CAt9zSErSKZyvOd/KdgZaoeaFpRZKiPi1aKlwnfzBF4jcNzDk/e7EiLuLuhzwqayfmaNnjCCGNYhXqw9qcsWjT++TqxIKp2UhOprXf7PoNrpyvQ3p8fAdu82o+O5w3h2A1+Nfl5geHuLgXhEZVWBeZSMnY1oh5qZnyKOhgiGcJKHqYOSrVmWpHGmpauvl6CkvhaUD4qejaOqvH2+doV7tSqdsrexybvMsZrDrJaqwcvSz9i9qM/Vxs7Qs6/S18a+vNjUx9/v1TAAAh+QQJCgAAACwAAAAAgAAPAAAC0Zw/oIC33NKKUomLxct4c718oPV5nJmhGPWwU9TCYTmfdXp3+aXy+wgQuRRDSCN2/PWAoqVTCSVxilQZ0RqkSXFbXdf3ZWqztnA1eUUbEc9wm8yFe+VguniKPbNf6mbU/ubn9ieUZ6hWJAhIOKbo2Pih58C3l1a5OJiJuflYZidpgHSZCOnZGXc6l3oBWrE2aQnLWYpKq2pbV4h4OIq1eldrigt8i7d73Ns3HLjMKGycHC1L+hxsXXydO9wqOu3brPnLXL3C640sK+6cTaxNflEAACH5BAkKAAAALAAAAACAAA8AAALVnD+ggLfc0opS0SeyFnjn7oGbqJHf4mXXFD2r1bKNyaEpjduhPvLaC5nJEK4YTKhI1ZI334m5g/akJacAiDUGiUOHNUd9ApTgcTN81WaRW++Riy6Tv/S4dQ1vG4ps4NwOaBYlOEVYhYbnplexyJf3ZygGOXkWuWSZuNel+aboV0k5GFo4+qN22of6CMoq2kr6apo6m5fJWCoZm+vKu2Hr6KmqiHtJLKebRhuszNlYZ3ncewh9J9z8u3mLHA0rvetrzYjd2Wz8bB6oNO5MLq6FTp2+bVUAACH5BAkKAAAALAAAAACAAA8AAALanD+ggLfc0opS0XeX2Fy8zn2gp40ieHaZFWHt9LKNO5eo3aUhvisj6RutIDUZgnaEFYnJ4M2Z4210UykQ8BtqY0yHstk1UK+/sdk63i7VYLYX2sOa0HR41S5wi7/vcMWP1FdWJ/dUGIWXxqX3xxi4l0g4GEl5yOHIBwmY2cg1aXkHSjZXmbV4uoba5kkqelbaapo6u0rbN/SZG7trKFv7e6savKTby4voaoVpNAysiXscV4w8fSn8fN1pq1kd2j1qDLK8yYy9/ff9mgwrnv2o7QwvGO1ND049UgAAIfkECQoAAAAsAAAAAIAADwAAAticP6CAt9zSilLRd2d8onvBfV0okp/pZdamNRi7ui3yyoo4Ljio42h+w6kgNiJt5kAaasdYE7D78YKlXpX6GWphxqTT210qK1Cf9XT2SKXbYvv5Bg+jaWD5ekdjU9y4+PsXRuZHRrdnZ5inVidAyCTXF+nGlVhpdjil2OE49hjICVh4qZlpibcDKug5KAlHOWqqR8rWCjl564oLFruIucaYGlz7+XoKe2wsIqxLzMxaxIuILIs6/JyLbZsdGF063Uu6vH2tXc79LZ1MLWS96t4JH/rryzhPWgAAIfkECQoAAAAsAAAAAIAADwAAAtWcP6CAt9zSilLRd2fEe4kPCk8IjqTonZnVsQ33arGLwLV8Kyeqnyb5C60gM2LO6MAlaUukwdbcBUspYFXYcla00KfSywRzv1vpldqzprHFoTv7bsOz5jUaUMer5vL+Mf7Hd5RH6HP2AdiUKLa41Tj1Acmjp0bJFuinKKiZyUhnaBd5OLnzSNbluOnZWQZqeVdIYhqWyop6ezoquTs6O0aLC5wrHErqGnvJibms3LzKLIYMe7xnO/yL7TskLVosqa1aCy3u3FrJbSwbHpy9fr1NfR4fUgAAIfkECQoAAAAsAAAAAIAADwAAAsqcP6CAt9zSilLRd2fEW7cnhKIAjmFpZla3fh7CuS38OrUR04p5Ljzp46kgMqLOaJslkbhbhfkc/lAjqmiIZUFzy2zRe5wGTdYQuKs9N5XrrZPbFu94ZYE6ms5/9cd7/T824vdGyIa3h9inJQfA+DNoCHeomIhWGUcXKFIH6RZZ6Bna6Zg5l8JnSamayto2WtoI+4jqSjvZelt7+URKpmlmKykM2vnqa1r1axdMzPz5LLooO326Owxd7Bzam4x8pZ1t3Szu3VMOdF4AACH5BAkKAAAALAAAAACAAA8AAAK/nD+ggLfc0opS0XdnxFs3/i3CSApPSWZWt4YtAsKe/DqzXRsxDqDj6VNBXENakSdMso66WzNX6fmAKCXRasQil9onM+oziYLc8tWcRW/PbGOYWupG5Tsv3TlXe9/jqj7ftpYWaPdXBzbVF2eId+jYCAn1KKlIApfCSKn5NckZ6bnJpxB2t1kKinoqJCrlRwg4GCs4W/jayUqamaqryruES2b72StsqgvsKlurDEvbvOx8mzgazNxJbD18PN1aUgAAIfkECQoAAAAsAAAAAIAADwAAArKcP6CAt9zSilLRd2fEWzf+ecgjlKaQWZ0asqPowAb4urE9yxXUAqeZ4tWEN2IOtwsqV8YkM/grLXvTYbV4PTZpWGYU9QxTxVZyd4wu975ZZ/qsjsPn2jYpatdx62b+2y8HWMTW5xZoSIcouKjYePeTh7TnqFcpabmFSfhHeemZ+RkJOrp5OHmKKapa+Hiyyokaypo6q1CaGDv6akoLu3DLmLuL28v7CdypW6vsK9vsE1UAACH5BAkKAAAALAAAAACAAA8AAAKjnD+ggLfc0opS0XdnxFs3/nkISI2icxokanVt+JoxC8G1fNOlm6tp1QNmZj6ikDcMrorBpBMJtT2lUdzUusNSt9qurvrlhr275VHMvI7XaXAbXTLLf3NjXUnP23/qN/n8d9cHyEZYpoe3p5jIOCjoFofoKAn5CGeZZaiJWcjp10mZuRkaSAq6OGmU2lhp+vk6iioay3rpSrs6mNsqa9tb+ntQAAA7AAAAAAAAAAAA);background-image:url(//bits.wikimedia.org/static-1.25wmf17/extensions/VisualEditor/modules/ve-mw/init/styles/images/loading-ltr.gif?2015-02-11T19:35:00Z)!ie}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:f523e02431f0de14598d2dc08b0701c1 */</style><style>
+.cite-accessibility-label{position:absolute !important; top:-99999px;clip:rect(1px 1px 1px 1px); clip:rect(1px,1px,1px,1px);padding:0 !important;border:0 !important;height:1px !important;width:1px !important;overflow:hidden}.mw-cite-backlink,.cite-accessibility-label{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:a59b70abe6ecaa39388bb79ebc509cb0 */
+.referencetooltip{position:absolute;list-style:none;list-style-image:none;opacity:0;font-size:10px;margin:0;z-index:5;padding:0}.referencetooltip li{border:#080086 2px solid;max-width:260px;padding:10px 8px 13px 8px;margin:0px;background-color:#F7F7F7;box-shadow:2px 4px 2px rgba(0,0,0,0.3);-moz-box-shadow:2px 4px 2px rgba(0,0,0,0.3);-webkit-box-shadow:2px 4px 2px rgba(0,0,0,0.3)}.referencetooltip li+li{margin-left:7px;margin-top:-2px;border:0;padding:0;height:3px;width:0px;background-color:transparent;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;border-top:12px #080086 solid;border-right:7px transparent solid;border-left:7px transparent solid}.referencetooltip>li+li::after{content:'';border-top:8px #F7F7F7 solid;border-right:5px transparent solid;border-left:5px transparent solid;margin-top:-12px;margin-left:-5px;z-index:1;height:0px;width:0px;display:block}.client-js body .referencetooltip li li{border:none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;height:auto;width:auto;margin:auto;padding:0;position:static}.RTflipped{padding-top:13px}.referencetooltip.RTflipped li+li{position:absolute;top:2px;border-top:0;border-bottom:12px #080086 solid}.referencetooltip.RTflipped li+li::after{border-top:0;border-bottom:8px #F7F7F7 solid;position:absolute;margin-top:7px}.RTsettings{float:right;height:24px;width:24px;cursor:pointer;background-image:url(//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Gear_icon.svg/24px-Gear_icon.svg.png);background-image:linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/7/77/Gear_icon.svg);margin-top:-9px;margin-right:-7px;-webkit-transition:opacity 0.15s;-moz-transition:opacity 0.15s;-o-transition:opacity 0.15s;-ms-transition:opacity 0.15s;transition:opacity 0.15s;opacity:0.6;filter:alpha(opacity=60)}.RTsettings:hover{opacity:1;filter:alpha(opacity=100)}.RTTarget{border:#080086 2px solid}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:1a7de28fa04cd61435c75627cef69e87 */
+.skin-vector li.GA,.skin-monobook li.GA,.skin-modern li.GA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/4/42/Monobook-bullet-ga.png)} .skin-vector li.FA,.skin-monobook li.FA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/d/d4/Monobook-bullet-star.png)}.skin-modern li.FA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Modern-bullet-star.svg/9px-Modern-bullet-star.svg.png)}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:22ca6c0fc9d0923a196f8a3aec796994 */
+.wp-teahouse-question-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}#wp-th-question-ask{float:right}.wp-teahouse-ask a.external{background-image:none !important}.wp-teahouse-respond-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}.wp-th-respond{float:right}.wp-teahouse-respond a.external{background-image:none !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:8614dfa7ef847fc9bfcc2d1c9f720197 */
+#p-lang .uls-settings-trigger{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAgCAQAAACI54EcAAAAAnNCSVQICFXsRgQAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAABWklEQVQoz42RwWrCQBBAc/PkyXiQfpEXobKzEsipCkKh5CBUhBBmaWrw6j/oIQr6VeaSXzDpZDbZ1CWVMhBm5zGT2X1O6fwdv1L0saTwLajmar0d4JHh6XuEofqooVpiQcU7ozbeGWJklXVEGrrcWWKOCUXOeYEuQeXhQaNdv/rPrl/jFH3HjEnM1klTa2FsYNzCBV45zfa9Cu17mPH5gm903A7rhW60d0Rf7opf9D03nVf50jCwyjxHrZvnCzCkR0sZndFVK/y0Hl7NGC46rTxV9hRKH0oope0T5nL9OhDHCsJpOhKhaHyKJRRUvDMyIbRPiB7LdWifnsudJeSQUOScF17lU3pw0GjCPid9jWUqfceMMT6pu6610PiE2ECxgCun2Zh9jnuQ8fkiK58wrBe60d4RfXWf9ik2XVeR2icEFuA5svEJgQinI5kyOnuuWAnbJ8z42f7r8wfhovZYX3llNQAAAABJRU5ErkJggg==) no-repeat right top;background:transparent url(//bits.wikimedia.org/static-1.25wmf17/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.png?2015-02-11T19:33:20Z) no-repeat right top!ie;background-image:-webkit-linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2214%22%20height%3D%2232%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M14%209.3V6.73l-1.575-.264c-.117-.44-.292-.848-.496-1.2l.93-1.285-1.81-1.84-1.31.908c-.38-.205-.79-.38-1.196-.497L8.284%201H5.716l-.263%201.578c-.437.117-.816.293-1.196.497L2.975%202.17%201.137%203.98l.934%201.287c-.2.38-.376.79-.493%201.228L0%206.73V9.3l1.575.264c.117.438.292.818.496%201.198l-.93%201.315L2.95%2013.89l1.312-.938c.38.205.787.38%201.224.497L5.746%2015h2.566l.263-1.578c.408-.117.817-.293%201.196-.497l1.315.935%201.81-1.812-.935-1.315c.203-.38.38-.76.495-1.2L14%209.303zm-7%201.404c-1.488%200-2.683-1.2-2.683-2.69S5.542%205.327%207%205.327c1.458%200%202.683%201.198%202.683%202.69%200%201.49-1.195%202.688-2.683%202.688z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23808080%22%2F%3E%3Cuse%20transform%3D%22translate%280%2016%29%22%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E%0A);background-image:-webkit-linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.25wmf17/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2015-02-11T19:33:20Z)!ie;background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2214%22%20height%3D%2232%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M14%209.3V6.73l-1.575-.264c-.117-.44-.292-.848-.496-1.2l.93-1.285-1.81-1.84-1.31.908c-.38-.205-.79-.38-1.196-.497L8.284%201H5.716l-.263%201.578c-.437.117-.816.293-1.196.497L2.975%202.17%201.137%203.98l.934%201.287c-.2.38-.376.79-.493%201.228L0%206.73V9.3l1.575.264c.117.438.292.818.496%201.198l-.93%201.315L2.95%2013.89l1.312-.938c.38.205.787.38%201.224.497L5.746%2015h2.566l.263-1.578c.408-.117.817-.293%201.196-.497l1.315.935%201.81-1.812-.935-1.315c.203-.38.38-.76.495-1.2L14%209.303zm-7%201.404c-1.488%200-2.683-1.2-2.683-2.69S5.542%205.327%207%205.327c1.458%200%202.683%201.198%202.683%202.69%200%201.49-1.195%202.688-2.683%202.688z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23808080%22%2F%3E%3Cuse%20transform%3D%22translate%280%2016%29%22%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E%0A);background-image:linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.25wmf17/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2015-02-11T19:33:20Z)!ie;height:16px;width:14px;float:right;cursor:pointer}.skin-vector #p-lang .uls-settings-trigger{ margin-top:3px}#p-lang .uls-settings-trigger:hover{background-position:right -16px}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:fd31bded631c50fc979e1c9dcada9952 */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:869aa9133c31e6040d4830b259da96a8 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:f8d0c6895ce3ae14434c16b8fca59432 */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(//bits.wikimedia.org/static-1.25wmf17/resources/src/mediawiki.action/images/green-checkmark.png?2015-02-11T19:30:00Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:35402b2ab48d70a0f8d0b25b0d6a6de3 */
+.mw-ui-icon{position:relative;min-height:1.4em;min-width:1.4em}.mw-ui-icon.mw-ui-icon-element{text-indent:-999px;overflow:hidden;width:3.4em;min-width:3.4em;max-width:3.4em}.mw-ui-icon.mw-ui-icon-element:before{left:0;right:0;position:absolute;margin:0 1em}.mw-ui-icon.mw-ui-icon-after:after,.mw-ui-icon.mw-ui-icon-before:before,.mw-ui-icon.mw-ui-icon-element:before{background-position:50% 50%;float:left;display:block;background-repeat:no-repeat;background-size:100% auto;min-height:1.4em;content:''}.mw-ui-icon.mw-ui-icon-before:before{position:relative;width:1.4em;margin-right:1em}.mw-ui-icon.mw-ui-icon-after:after{position:relative;float:right;width:1.4em;margin-left:1em}.mw-ui-icon-ok.mw-ui-icon:after,.mw-ui-icon-ok.mw-ui-icon:before{background-image:url(//bits.wikimedia.org/static-1.25wmf17/resources/src/mediawiki.ui/components/images/ok.png?2015-02-11T19:30:00Z);background-image:-webkit-linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%3E%3Cpath%20d%3D%22M18.125%201.813l-10.5%2010.75-3.844-3.75L0%2012.719l7.72%207.452L22%205.625z%22%20fill%3D%22%23f0f0f0%22%2F%3E%3C%2Fsvg%3E%0A);background-image:-webkit-linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.25wmf17/resources/src/mediawiki.ui/components/images/ok.svg?2015-02-11T19:30:00Z)!ie;background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%3E%3Cpath%20d%3D%22M18.125%201.813l-10.5%2010.75-3.844-3.75L0%2012.719l7.72%207.452L22%205.625z%22%20fill%3D%22%23f0f0f0%22%2F%3E%3C%2Fsvg%3E%0A);background-image:linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.25wmf17/resources/src/mediawiki.ui/components/images/ok.svg?2015-02-11T19:30:00Z)!ie}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:28ec956b329f58d85044e80a63b5f3e1 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */
+.mw-mmv-overlay{position:fixed;top:0px;left:0px;right:0px;bottom:0px;z-index:1000;background-color:#000000}body.mw-mmv-lightbox-open{overflow-y:auto}body.mw-mmv-lightbox-open #mw-page-base,body.mw-mmv-lightbox-open #mw-head-base,body.mw-mmv-lightbox-open #mw-navigation,body.mw-mmv-lightbox-open #content,body.mw-mmv-lightbox-open #footer,body.mw-mmv-lightbox-open #globalWrapper // monobook{ display:none}body.mw-mmv-lightbox-open > *{ display:none}body.mw-mmv-lightbox-open > .mw-mmv-overlay,body.mw-mmv-lightbox-open > .mw-mmv-wrapper{display:block}.mw-mmv-filepage-buttons{margin-top:5px}.mw-mmv-filepage-buttons .mw-mmv-view-expanded,.mw-mmv-filepage-buttons .mw-mmv-view-config{display:block}.mw-mmv-filepage-buttons .mw-mmv-view-expanded.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3C%21--%20Created%20with%20Inkscape%20%28http%3A%2F%2Fwww.inkscape.org%2F%29%20--%3E%0A%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20width%3D%22100%25%22%0A%20%20%20height%3D%22100%25%22%0A%20%20%20viewBox%3D%220%200%201024%20768%22%0A%20%20%20id%3D%22Layer_1%22%0A%20%20%20xml%3Aspace%3D%22preserve%22%3E%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata17%22%3E%3Crdf%3ARDF%3E%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%3C%2Fcc%3AWork%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cdefs%0A%20%20%20%20%20id%3D%22defs15%22%20%2F%3E%3Cg%0A%20%20%20%20%20id%3D%22g3%22%3E%3Cpolygon%0A%20%20%20%20%20%20%20points%3D%22851.2%2C71.6%20690.7%2C232.1%20650.6%2C191.8%20641%2C356.6%20805.8%2C347.3%20765.5%2C306.9%20926%2C146.4%20984.5%2C204.9%20997.6%2C0%20792.7%2C13.1%20%22%0A%20%20%20%20%20%20%20id%3D%22polygon5%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3Cpolygon%0A%20%20%20%20%20%20%20points%3D%22769.6%2C89.3%20611.9%2C89.3%20682.8%2C160.1%20690.7%2C167.6%20%22%0A%20%20%20%20%20%20%20id%3D%22polygon7%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3Cpath%0A%20%20%20%20%20%20%20d%3D%22m%20643.6%2C402.2%20-51.2%2C3%203%2C-51.2%209.4%2C-164.4%205.8%2C-100.3%20H%2026.4%20V%20768%20H%20909.5%20V%20387%20l%20-100.9%2C5.8%20-165%2C9.4%20z%20M%20813.9%2C678%20H%20113.6%20l%20207.2%2C-270.2%2031.5%2C-12.9%20195.7%2C204.9%20105.9%2C-63.2%20159.8%2C140.8%200.2%2C0.6%200%2C0%20z%22%0A%20%20%20%20%20%20%20id%3D%22path9%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3Cpolygon%0A%20%20%20%20%20%20%20points%3D%22909.5%2C386.1%20909.5%2C228%20830.4%2C306.9%20838.2%2C314.8%20%22%0A%20%20%20%20%20%20%20id%3D%22polygon11%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);background-image:url(//bits.wikimedia.org/static-1.25wmf17/extensions/MultimediaViewer/resources/mmv/img/expand.svg?2015-02-11T19:31:40Z)!ie}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3C%21--%20Created%20with%20Inkscape%20%28http%3A%2F%2Fwww.inkscape.org%2F%29%20--%3E%0A%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20width%3D%22100%25%22%0A%20%20%20height%3D%22100%25%22%0A%20%20%20viewBox%3D%220%200%201024%20768%22%0A%20%20%20id%3D%22Layer_1%22%0A%20%20%20xml%3Aspace%3D%22preserve%22%3E%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata9%22%3E%3Crdf%3ARDF%3E%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%3C%2Fcc%3AWork%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cdefs%0A%20%20%20%20%20id%3D%22defs7%22%20%2F%3E%3Cpath%0A%20%20%20%20%20d%3D%22M%20897%2C454.6%20V%20313.4%20L%20810.4%2C299%20c%20-6.4%2C-23.3%20-16%2C-45.7%20-27.3%2C-65.8%20L%20833.6%2C161.8%20734.2%2C61.6%20662.8%2C112.1%20C%20641.9%2C100.9%20620.3%2C91.2%20597%2C84.8%20L%20582.6%2C-1%20H%20441.4%20L%20427%2C85.6%20c%20-23.3%2C6.4%20-45.7%2C16%20-65.8%2C27.3%20L%20289.8%2C62.4%20189.5%2C161.9%20240%2C233.3%20c%20-11.2%2C20.9%20-20.9%2C42.5%20-27.3%2C66.6%20L%20127%2C313.4%20v%20141.2%20l%2085.8%2C14.4%20c%206.4%2C23.3%2016%2C45.7%2027.3%2C66.6%20l%20-50.5%2C71.4%2099.5%2C99.5%2071.4%2C-50.5%20c%2020.9%2C11.2%2042.5%2C20.9%2066.6%2C27.3%20l%2014.4%2C85.8%20h%20141.2%20l%2014.4%2C-86.6%20c%2023.3%2C-6.4%2045.7%2C-16%2065.8%2C-27.3%20l%2071.4%2C50.5%2099.5%2C-99.5%20-50.5%2C-71.4%20c%2011.2%2C-20.9%2020.9%2C-42.5%2027.3%2C-66.6%20L%20897%2C454.6%20z%20m%20-385%2C77%20C%20430.2%2C531.6%20364.4%2C465%20364.4%2C384%20364.4%2C302.2%20431%2C236.4%20512%2C236.4%20c%2081%2C0%20147.6%2C65.8%20147.6%2C147.6%200%2C81.8%20-65.8%2C147.6%20-147.6%2C147.6%20z%22%0A%20%20%20%20%20id%3D%22path3%22%0A%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3C%2Fsvg%3E);background-image:url(//bits.wikimedia.org/static-1.25wmf17/extensions/MultimediaViewer/resources/mmv/img/gear_gray.svg?2015-02-11T19:31:40Z)!ie;opacity:0.75}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before:hover{opacity:1}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:044c53002cff088b30c7d665dbf61ad1 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/load.css">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:3904d24a08aa08f6a68dc338f9be277e */</style>
+<script src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/load_004.php"></script><script src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/load_002.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Euler–Bernoulli_beam_theory","wgTitle":"Euler–Bernoulli beam theory","wgCurRevisionId":644534391,"wgRevisionId":644534391,"wgArticleId":2064935,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from November 2008","All articles needing additional references","Elasticity (physics)","Solid mechanics","Structural analysis","Mechanical engineering","Equations"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Euler–Bernoulli_beam_theory","wgRelevantArticleId":2064935,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","svgMaxSize":4096,"namespacesWithSubpages":{"6":0,"8":0,"1":true,"2":true,"3":true,"4":true,"5":true,"7":true,"9":true,"10":true,"11":true,"12":true,"13":true,"14":true,"15":true,"100":true,"101":true,"102":true,"103":true,"104":true,"105":true,"106":true,"107":true,"108":true,"109":true,"110":true,"111":true,"830":true,"831":true,"447":true,"2600":false,"828":true,"829":true}},"wikilove-recipient":"","wikilove-anon":0,"wgPoweredByHHVM":true,"wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q805099"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});},{},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});},{},{},{});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:94007ea073e20ad4a3cdce36b2f2e369 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.viewPageTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+}</script><script src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/load.php"></script>
+<link rel="dns-prefetch" href="http://meta.wikimedia.org/">
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static-1.25wmf17/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Euler–Bernoulli_beam_theory skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><div id="centralNotice"></div><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Euler–Bernoulli beam theory</h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><table class="metadata plainlinks ambox ambox-content ambox-Refimprove" role="presentation">
+<tbody><tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="http://en.wikipedia.org/wiki/File:Question_book-new.svg" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/50px-Question_book-new.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="262" data-file-height="204" width="50" height="39"></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="http://en.wikipedia.org/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit">improve this article</a> by <a href="http://en.wikipedia.org/wiki/Help:Introduction_to_referencing/1" title="Help:Introduction to referencing/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(November 2008)</i></small></span></td>
+</tr>
+</tbody></table>
+<div class="thumb tright">
+<div class="thumbinner" style="width:292px;"><a href="http://en.wikipedia.org/wiki/File:VibratingGlassBeam.jpg" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/290px-VibratingGlassBeam.jpg" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c7/VibratingGlassBeam.jpg/435px-VibratingGlassBeam.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c7/VibratingGlassBeam.jpg/580px-VibratingGlassBeam.jpg 2x" data-file-width="1280" data-file-height="852" width="290" height="193"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:VibratingGlassBeam.jpg" class="internal" title="Enlarge"></a></div>
+This vibrating glass beam may be modeled as a cantilever beam with 
+acceleration, variable linear density, variable section modulus, some 
+kind of dissipation, springy end loading, and possibly a point mass at 
+the free end.</div>
+</div>
+</div>
+<p><b>Euler–Bernoulli beam theory</b> (also known as <b>engineer's beam theory</b> or <b>classical beam theory</b>)<sup id="cite_ref-Timoshenko_1-0" class="reference"><a href="#cite_note-Timoshenko-1"><span>[</span>1<span>]</span></a></sup> is a simplification of the linear <a href="http://en.wikipedia.org/wiki/Theory_of_elasticity" title="Theory of elasticity" class="mw-redirect">theory of elasticity</a> which provides a means of calculating the load-carrying and <a href="http://en.wikipedia.org/wiki/Deflection_%28engineering%29" title="Deflection (engineering)">deflection</a> characteristics of <a href="http://en.wikipedia.org/wiki/Beam_%28structure%29" title="Beam (structure)">beams</a>. It covers the case for small deflections of a <a href="http://en.wikipedia.org/wiki/Beam_%28structure%29" title="Beam (structure)">beam</a> that is subjected to lateral loads only. It is thus a special case of <a href="http://en.wikipedia.org/wiki/Timoshenko_beam_theory" title="Timoshenko beam theory">Timoshenko beam theory</a> that accounts for shear deformation and is applicable for thick beams. It was first enunciated circa 1750,<sup id="cite_ref-Truesdell_2-0" class="reference"><a href="#cite_note-Truesdell-2"><span>[</span>2<span>]</span></a></sup> but was not applied on a large scale until the development of the <a href="http://en.wikipedia.org/wiki/Eiffel_Tower" title="Eiffel Tower">Eiffel Tower</a> and the <a href="http://en.wikipedia.org/wiki/Ferris_wheel" title="Ferris wheel">Ferris wheel</a>
+ in the late 19th century. Following these successful demonstrations, it
+ quickly became a cornerstone of engineering and an enabler of the <a href="http://en.wikipedia.org/wiki/Second_Industrial_Revolution" title="Second Industrial Revolution">Second Industrial Revolution</a>.</p>
+<p>Additional analysis tools have been developed such as <a href="http://en.wikipedia.org/wiki/Plate_theory" title="Plate theory">plate theory</a> and <a href="http://en.wikipedia.org/wiki/Finite_element_analysis" title="Finite element analysis" class="mw-redirect">finite element analysis</a>, but the simplicity of beam theory makes it an important tool in the sciences, especially <a href="http://en.wikipedia.org/wiki/Structural_engineering" title="Structural engineering">structural</a> and <a href="http://en.wikipedia.org/wiki/Mechanical_engineering" title="Mechanical engineering">mechanical engineering</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+<span class="toctoggle">&nbsp;[<a href="#" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Static_beam_equation"><span class="tocnumber">2</span> <span class="toctext">Static beam equation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Derivation_of_bending_moment_equation"><span class="tocnumber">2.1</span> <span class="toctext">Derivation of bending moment equation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Dynamic_beam_equation"><span class="tocnumber">3</span> <span class="toctext">Dynamic beam equation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Free_vibration"><span class="tocnumber">3.1</span> <span class="toctext">Free vibration</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Example:_Cantilevered_beam"><span class="tocnumber">3.1.1</span> <span class="toctext">Example: Cantilevered beam</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Stress"><span class="tocnumber">4</span> <span class="toctext">Stress</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Simple_or_symmetrical_bending"><span class="tocnumber">4.1</span> <span class="toctext">Simple or symmetrical bending</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Maximum_stresses_at_a_cross-section"><span class="tocnumber">4.2</span> <span class="toctext">Maximum stresses at a cross-section</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Strain_in_an_Euler.E2.80.93Bernoulli_beam"><span class="tocnumber">4.3</span> <span class="toctext">Strain in an Euler–Bernoulli beam</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Relation_between_curvature_and_beam_deflection"><span class="tocnumber">4.4</span> <span class="toctext">Relation between curvature and beam deflection</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Stress-strain_relations"><span class="tocnumber">4.5</span> <span class="toctext">Stress-strain relations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Boundary_considerations"><span class="tocnumber">5</span> <span class="toctext">Boundary considerations</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Loading_considerations"><span class="tocnumber">6</span> <span class="toctext">Loading considerations</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Examples"><span class="tocnumber">7</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Three-point_bending"><span class="tocnumber">7.1</span> <span class="toctext">Three-point bending</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Cantilever_beams"><span class="tocnumber">7.2</span> <span class="toctext">Cantilever beams</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Statically_indeterminate_beams"><span class="tocnumber">7.3</span> <span class="toctext">Statically indeterminate beams</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="#Extensions"><span class="tocnumber">8</span> <span class="toctext">Extensions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="#Large_deflections"><span class="tocnumber">8.1</span> <span class="toctext">Large deflections</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#Notes"><span class="tocnumber">10</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:352px;"><a href="http://en.wikipedia.org/wiki/File:BeamBendingDefinitions.svg" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/350px-BeamBendingDefinitions.png" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/54/BeamBendingDefinitions.svg/525px-BeamBendingDefinitions.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/54/BeamBendingDefinitions.svg/700px-BeamBendingDefinitions.svg.png 2x" data-file-width="490" data-file-height="320" width="350" height="229"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:BeamBendingDefinitions.svg" class="internal" title="Enlarge"></a></div>
+Schematic of cross-section of a bent beam showing the neutral axis.</div>
+</div>
+</div>
+<p>Prevailing consensus is that <a href="http://en.wikipedia.org/wiki/Galileo_Galilei" title="Galileo Galilei">Galileo Galilei</a> made the first attempts at developing a theory of beams, but recent studies argue that <a href="http://en.wikipedia.org/wiki/Leonardo_da_Vinci" title="Leonardo da Vinci">Leonardo da Vinci</a> was the first to make the crucial observations. Da Vinci lacked <a href="http://en.wikipedia.org/wiki/Hooke%27s_law" title="Hooke's law">Hooke's law</a> and <a href="http://en.wikipedia.org/wiki/Calculus" title="Calculus">calculus</a> to complete the theory, whereas Galileo was held back by an incorrect assumption he made.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>The Bernoulli beam is named after <a href="http://en.wikipedia.org/wiki/Jacob_Bernoulli" title="Jacob Bernoulli">Jacob Bernoulli</a>, who made the significant discoveries. <a href="http://en.wikipedia.org/wiki/Leonhard_Euler" title="Leonhard Euler">Leonhard Euler</a> and <a href="http://en.wikipedia.org/wiki/Daniel_Bernoulli" title="Daniel Bernoulli">Daniel Bernoulli</a> were the first to put together a useful theory circa 1750.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> At the time, science and <a href="http://en.wikipedia.org/wiki/Engineering" title="Engineering">engineering</a>
+ were generally seen as very distinct fields, and there was considerable
+ doubt that a mathematical product of academia could be trusted for 
+practical safety applications. Bridges and buildings continued to be 
+designed by precedent until the late 19th century, when the <a href="http://en.wikipedia.org/wiki/Eiffel_Tower" title="Eiffel Tower">Eiffel Tower</a> and <a href="http://en.wikipedia.org/wiki/Ferris_wheel" title="Ferris wheel">Ferris wheel</a> demonstrated the validity of the theory on large scales.</p>
+<h2><span class="mw-headline" id="Static_beam_equation">Static beam equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=2" title="Edit section: Static beam equation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:352px;"><a href="http://en.wikipedia.org/wiki/File:Euler-Bernoulli_beam_theory-2.svg" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/350px-Euler-Bernoulli_beam_theory-2.png" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Euler-Bernoulli_beam_theory-2.svg/525px-Euler-Bernoulli_beam_theory-2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Euler-Bernoulli_beam_theory-2.svg/700px-Euler-Bernoulli_beam_theory-2.svg.png 2x" data-file-width="555" data-file-height="370" width="350" height="233"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Euler-Bernoulli_beam_theory-2.svg" class="internal" title="Enlarge"></a></div>
+Bending of an Euler–Bernoulli beam. Each cross-section of the beam is at 90 degrees to the neutral axis.</div>
+</div>
+</div>
+<p>The Euler–Bernoulli equation describes the relationship between the beam's <a href="http://en.wikipedia.org/wiki/Deflection_%28engineering%29" title="Deflection (engineering)">deflection</a> and the applied load:<sup id="cite_ref-Gere_5-0" class="reference"><a href="#cite_note-Gere-5"><span>[</span>5<span>]</span></a></sup></p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\frac{\mathrm{d}^2}{\mathrm{d} x^2}\left(EI \frac{\mathrm{d}^2 w}{\mathrm{d} x^2}\right) = q\," src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/3b4f76353f598948112b6a6c66144397.png"></dd>
+</dl>
+<p>The curve <img class="mwe-math-fallback-image-inline tex" alt="w(x)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/aa968370efc9797533259ffe70ad1192.png"> describes the deflection of the beam in the <img class="mwe-math-fallback-image-inline tex" alt="z" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/fbade9e36a3f36d3d676c1b808451dd7.png"> direction at some position <img class="mwe-math-fallback-image-inline tex" alt="x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9dd4e461268c8034f5c8564e155c67a6.png"> (recall that the beam is modeled as a one-dimensional object). <img class="mwe-math-fallback-image-inline tex" alt="q" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/7694f4a66316e53c8cdd9d9954bd611d.png"> is a distributed load, in other words a force per unit length (analogous to <a href="http://en.wikipedia.org/wiki/Pressure" title="Pressure">pressure</a> being a force per area); it may be a function of <img class="mwe-math-fallback-image-inline tex" alt="x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9dd4e461268c8034f5c8564e155c67a6.png">, <img class="mwe-math-fallback-image-inline tex" alt="w" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f1290186a5d0b1ceab27f4e77c0c5d68.png">, or other variables.</p>
+<p>Note that <img class="mwe-math-fallback-image-inline tex" alt="E" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/3a3ea00cfc35332cedf6e5e9a32e94da.png"> is the <a href="http://en.wikipedia.org/wiki/Elastic_modulus" title="Elastic modulus">elastic modulus</a> and that <img class="mwe-math-fallback-image-inline tex" alt="I" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/dd7536794b63bf90eccfd37f9b147d7f.png"> is the <a href="http://en.wikipedia.org/wiki/Second_moment_of_area" title="Second moment of area">second moment of area</a> of the beam's cross-section. <img class="mwe-math-fallback-image-inline tex" alt="I" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/dd7536794b63bf90eccfd37f9b147d7f.png">
+ must be calculated with respect to the axis which passes through the 
+centroid of the cross-section and which is perpendicular to the applied 
+loading.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>N 1<span>]</span></a></sup> Explicitly, for a beam whose axis is oriented along <i>x</i> with a loading along <i>z</i>, the beam's cross-section is in the <i>yz</i> plane, and the relevant second moment of area is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" I = \iint z^2\; dy\; dz," src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/ba9694c521460de5946106d3cd640555.png"></dd>
+</dl>
+<p>where it is assumed that the centroid of the cross-section occurs at <i>y</i>&nbsp;= <i>z</i>&nbsp;= 0.</p>
+<p>Often, the product <i>EI</i> (known as the <a href="http://en.wikipedia.org/wiki/Stiffness" title="Stiffness">stiffness</a>) is a constant, so that</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="EI \frac{\mathrm{d}^4 w}{\mathrm{d} x^4} = q(x).\," src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/0a9bdfcb6afbee0e18cfcd252f2bb46d.png"></dd>
+</dl>
+<p>This equation, describing the deflection of a uniform, static beam, 
+is used widely in engineering practice. Tabulated expressions for the 
+deflection <img class="mwe-math-fallback-image-inline tex" alt="w" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f1290186a5d0b1ceab27f4e77c0c5d68.png">
+ for common beam configurations can be found in engineering handbooks. 
+For more complicated situations the deflection can be determined by 
+solving the Euler–Bernoulli equation using techniques such as the "<a href="http://en.wikipedia.org/wiki/Slope_deflection_method" title="Slope deflection method">slope deflection method</a>", "<a href="http://en.wikipedia.org/wiki/Moment_distribution_method" title="Moment distribution method">moment distribution method</a>", "<a href="http://en.wikipedia.org/wiki/Moment-area_theorem" title="Moment-area theorem">moment area method</a>, "<a href="http://en.wikipedia.org/wiki/Conjugate_beam_method" title="Conjugate beam method">conjugate beam method</a>", "<a href="http://en.wikipedia.org/wiki/Virtual_work" title="Virtual work">the principle of virtual work</a>", "<a href="http://en.wikipedia.org/wiki/Direct_integration_of_a_beam" title="Direct integration of a beam">direct integration</a>", "<a href="http://en.wikipedia.org/wiki/Castigliano%27s_method" title="Castigliano's method">Castigliano's method</a>", "<a href="http://en.wikipedia.org/wiki/Macaulay%27s_method" title="Macaulay's method">Macaulay's method</a>" or the "<a href="http://en.wikipedia.org/wiki/Direct_stiffness_method" title="Direct stiffness method">direct stiffness method</a>".</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:402px;"><a href="http://en.wikipedia.org/wiki/File:Poutre_moment_flechissant_et_courbure.svg" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/400px-Poutre_moment_flechissant_et_courbure.png" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Poutre_moment_flechissant_et_courbure.svg/600px-Poutre_moment_flechissant_et_courbure.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Poutre_moment_flechissant_et_courbure.svg/800px-Poutre_moment_flechissant_et_courbure.svg.png 2x" data-file-width="281" data-file-height="168" width="400" height="239"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Poutre_moment_flechissant_et_courbure.svg" class="internal" title="Enlarge"></a></div>
+Bending moments in a beam</div>
+</div>
+</div>
+<p>Sign conventions are defined here since different conventions can be found in the literature.<sup id="cite_ref-Gere_5-1" class="reference"><a href="#cite_note-Gere-5"><span>[</span>5<span>]</span></a></sup> In this article, a <a href="http://en.wikipedia.org/wiki/Right-hand_rule" title="Right-hand rule">right handed</a>
+ coordinate system is used as shown in the figure, Bending of an 
+Euler–Bernoulli beam. In this figure, the x and z direction of a right 
+handed coordinate system are shown. Since <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{e_z} \times \mathbf{e_x} =  \mathbf{e_y}  " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/a03849e3a6175c53b527a48d68c0e97d.png"> where <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{e_x}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/c7b61aff1c1dc3b35d4ba8810d4b58a1.png">, <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{e_y}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/a404c7040a5bfcd7242d467dcce9df6c.png">, and <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{e_z}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b97a67e2356c6b2054d9278fb3ed069f.png">
+ are unit vectors in the direction of the x, y, and z axes respectively,
+ the y axis direction is into the figure. Forces acting in the positive <img class="mwe-math-fallback-image-inline tex" alt="x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9dd4e461268c8034f5c8564e155c67a6.png"> and <img class="mwe-math-fallback-image-inline tex" alt="z" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/fbade9e36a3f36d3d676c1b808451dd7.png">
+ directions are assumed positive. The sign of the bending moment is 
+positive when the torque vector associated with the bending moment on 
+the right hand side of the section is in the positive y direction (i.e. 
+so that a positive value of M leads to a compressive stress at the 
+bottom fibers). With this choice of bending moment sign convention, in 
+order to have <img class="mwe-math-fallback-image-inline tex" alt=" dM = Qdx " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e21d819d91b58af5556c05d63ce48de7.png">, it is necessary that <img class="mwe-math-fallback-image-inline tex" alt=" Q " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f09564c9ca56850d4cd6b3319e541aee.png">
+ the shear force acting on the right side of the section be positive in 
+the z direction so as to achieve static equilibrium of moments. To have 
+force equilibrium with <img class="mwe-math-fallback-image-inline tex" alt=" dQ = qdx " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e6c89d33fd56aba88ce0f53c73c305eb.png">,
+ q, the loading intensity must be positive in the minus z direction. In 
+addition to these sign conventions for scalar quantities, we also 
+sometimes use vectors in which the directions of the vectors is made 
+clear through the use of the unit vectors, <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{e_x}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/c7b61aff1c1dc3b35d4ba8810d4b58a1.png">, <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{e_y}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/a404c7040a5bfcd7242d467dcce9df6c.png">, and <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{e_z}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b97a67e2356c6b2054d9278fb3ed069f.png">.</p>
+<p>Successive derivatives of the deflection <i>w</i> have important physical meanings: d<i>w</i>/d<i>x</i> is the slope of the beam,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" M = -EI \frac{d^2w}{dx^2}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/0c3f1c7993d9d08d095b90f01e0d849f.png"></dd>
+</dl>
+<p>is the <a href="http://en.wikipedia.org/wiki/Bending_moment" title="Bending moment">bending moment</a> in the beam, and</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="Q = -\frac{d}{d x}\left(EI\frac{d^2 w}{d x^2}\right)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e1e6a2037aecd516ab8619e85a38173a.png"></dd>
+</dl>
+<p>is the <a href="http://en.wikipedia.org/wiki/Shearing_%28physics%29" title="Shearing (physics)">shear force</a> in the beam.</p>
+<p>The stresses in a beam can be calculated from the above expressions 
+after the deflection due to a given load has been determined.</p>
+<h3><span class="mw-headline" id="Derivation_of_bending_moment_equation">Derivation of bending moment equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=3" title="Edit section: Derivation of bending moment equation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:402px;"><a href="http://en.wikipedia.org/wiki/File:Poutre_flexion_deviee.svg" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/400px-Poutre_flexion_deviee.png" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Poutre_flexion_deviee.svg/600px-Poutre_flexion_deviee.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Poutre_flexion_deviee.svg/800px-Poutre_flexion_deviee.svg.png 2x" data-file-width="471" data-file-height="594" width="400" height="504"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Poutre_flexion_deviee.svg" class="internal" title="Enlarge"></a></div>
+Deflection of a beam deflected symmetrically and principle of superposition</div>
+</div>
+</div>
+<p>Because of the fundamental importance of the bending moment equation 
+in engineering, we will provide a short derivation. The length of the 
+neutral axis in the figure, Bending of an Euler–Bernoulli beam, is <img class="mwe-math-fallback-image-inline tex" alt=" \rho \ d \theta " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/2ab22954288f47b7257a4f556e87e58a.png">. The length of a fiber with a radial distance, e, below the neutral axis is <img class="mwe-math-fallback-image-inline tex" alt=" \left(\rho + e \right ) \ d \theta " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/5096ada10c50a1290728c3977d723aef.png">. Therefore the strain of this fiber is <img class="mwe-math-fallback-image-inline tex" alt=" \frac {\left(\rho + e - \rho \right ) \ d \theta} {\rho \ d \theta} = \frac {e} {\rho}\ ." src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/d89d3e212fb8fe92f0f55b89464f75ec.png"> The stress of this fiber is <img class="mwe-math-fallback-image-inline tex" alt=" E \ \frac {e} {\rho} " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f43438f2ed14b20a22e7de31429d995b.png"> where E is the <a href="http://en.wikipedia.org/wiki/Elastic_modulus" title="Elastic modulus">elastic modulus</a> in accordance with <a href="http://en.wikipedia.org/wiki/Hooke%27s_Law" title="Hooke's Law" class="mw-redirect">Hooke's Law</a>. The differential force vector, <img class="mwe-math-fallback-image-inline tex" alt=" d\mathbf{F} \ , " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/78be24751b9304140bf65a60741dcd1e.png"> resulting from this stress is given by, <img class="mwe-math-fallback-image-inline tex" alt=" d\mathbf{F} = E \ \frac {e} {\rho} \ dA \ \mathbf{e_x} \ ." src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/ffb189532de590189c45cbefab10e946.png">
+ This is the differential force vector exerted on the right hand side of
+ the section shown in the figure. We know that it is in the <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{e_x}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/c7b61aff1c1dc3b35d4ba8810d4b58a1.png"> direction since the figure clearly shows that the fibers in the lower half are in tension. <img class="mwe-math-fallback-image-inline tex" alt="dA" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e1d05039943632bf0c5bb9a6f886ed4f.png"> is the differential element of area at the location of the fiber. The differential bending moment vector, <img class="mwe-math-fallback-image-inline tex" alt=" d\mathbf{M} \ , " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/be93360219d1cf9acb705cf4598e84b3.png"> associated with <img class="mwe-math-fallback-image-inline tex" alt=" d\mathbf{F} \ , " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/78be24751b9304140bf65a60741dcd1e.png"> is given by</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" d\mathbf{M} = -e\mathbf{e_z} \times   d\mathbf{F}\ = -\mathbf{e_y} E \ \frac {e^2} {\rho} \ dA  \ . " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/2264e524743f3936c8ac46bc39053ab2.png"> This expression is valid for the fibers in the lower half of the beam.</dd>
+</dl>
+<p>The expression for the fibers in the upper half of the beam will be 
+similar except that the moment arm vector will be in the positive z 
+direction and the force vector will be in the -x direction since the 
+upper fibers are in compression. But the resulting bending moment vector
+ will still be in the -y direction since <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{e_z} \times -\mathbf{e_x} =  -\mathbf{e_y} \ . " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/2d48bbc33db6fe592a3ab8cfd89dc263.png"> Therefore we integrate over the entire cross section of the beam and get for <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{M} " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/ed453d7dfcbd94d16050e57e602a5f66.png"> the bending moment vector exerted on the right cross section of the beam the expression</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\mathbf{M} =\int d\mathbf{M} = -\mathbf{e_y} \frac {E} {\rho} \int {e^2} \ dA =   \ -\mathbf{e_y} \frac {EI} {\rho} " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/c56e3b574e74ff122eb40e4f89247d80.png"> where <img class="mwe-math-fallback-image-inline tex" alt="I" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/dd7536794b63bf90eccfd37f9b147d7f.png"> is the <a href="http://en.wikipedia.org/wiki/Second_moment_of_area" title="Second moment of area">second moment of area</a>. From calculus, we know that when <img class="mwe-math-fallback-image-inline tex" alt=" {dw \over dx}  " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9ca20e07d0e512e55932e944548a4009.png"> is small as it is for an Euler–Bernoulli beam, <img class="mwe-math-fallback-image-inline tex" alt=" \frac {1} {\rho} = {d^2w \over dx^2}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/0db27db6b37d3569103767c4c2c3c126.png"> (<img class="mwe-math-fallback-image-inline tex" alt=" \rho " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f7f177957cf064a93e9811df8fe65ed1.png"> is the <a href="http://en.wikipedia.org/wiki/Radius_of_curvature_%28mathematics%29" title="Radius of curvature (mathematics)">radius of curvature (mathematics)</a>). Therefore</dd>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\mathbf{M} = \ -\mathbf{e_y} EI {d^2w \over dx^2} = \ -\mathbf{e_y} EI {d^2z \over dx^2}  " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/70b412f800750e6ba2147e017d535436.png"> .</dd>
+</dl>
+<h2><span class="mw-headline" id="Dynamic_beam_equation">Dynamic beam equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=4" title="Edit section: Dynamic beam equation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;"><a href="http://en.wikipedia.org/wiki/File:Beam_mode_6.gif" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/200px-Beam_mode_6.gif" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Beam_mode_6.gif/300px-Beam_mode_6.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Beam_mode_6.gif/400px-Beam_mode_6.gif 2x" data-file-width="1239" data-file-height="737" width="200" height="119"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Beam_mode_6.gif" class="internal" title="Enlarge"></a></div>
+<a href="http://en.wikipedia.org/wiki/Finite_element_method" title="Finite element method">Finite element method</a> model of a vibration of a wide-flange beam (<a href="http://en.wikipedia.org/wiki/I-beam" title="I-beam"><span style="font-family:'Courier New',monospace;font-size:125%;">I</span>-beam</a>).</div>
+</div>
+</div>
+<p>The dynamic beam equation is the <a href="http://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation" title="Euler–Lagrange equation">Euler–Lagrange equation</a> for the following action</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" 
+  S = \int_0^L \left[ \frac{1}{2} \mu \left( \frac{\partial w}{\partial t} \right)^2 - \frac{1}{2} EI \left( \frac{ \partial^2 w}{\partial x^2} \right)^2 + q(x) w(x,t)\right] dx.
+" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/6fe32225dad629bc775da20223f37b4a.png"></dd>
+</dl>
+<p>The first term represents the kinetic energy where <img class="mwe-math-fallback-image-inline tex" alt="\mu" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b72bb92668acc30b4474caff40274044.png">
+ is the mass per unit length; the second one represents the potential 
+energy due to internal forces (when considered with a negative sign) and
+ the third term represents the potential energy due to the external load
+ <img class="mwe-math-fallback-image-inline tex" alt=" q(x) " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9dbcf8f4523b910764da7f544a192a69.png">. The <a href="http://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation" title="Euler–Lagrange equation">Euler–Lagrange equation</a> is used to determine the function that minimizes the functional <img class="mwe-math-fallback-image-inline tex" alt="S" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/5dbc98dcc983a70728bd082d1a47546e.png">. For a dynamic Euler–Bernoulli beam, the Euler–Lagrange equation is</p>
+<blockquote style="border: 1px solid black; padding:10px; width:300px">
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+  \cfrac{\partial^2 }{\partial x^2}\left(EI\cfrac{\partial^2 w}{\partial x^2}\right) = - \mu\cfrac{\partial^2 w}{\partial t^2} + q(x)
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/93b21f6622f6de8f14704d58393ae4f2.png"></dd>
+</dl>
+</blockquote>
+<dl>
+<dd>
+<table id="collapsibleTable0" class="toccolours collapsible collapsed" style="text-align:left" width="60%">
+<tbody><tr>
+<th><span class="collapseButton">[<a href="#" id="collapseButton0">show</a>]</span>Derivation of Euler–Lagrange equation for beams</th>
+</tr>
+<tr style="display: none;">
+<td>Since the <a href="http://en.wikipedia.org/wiki/Lagrangian" title="Lagrangian">Lagrangian</a> is
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   \mathcal{L} := \tfrac{1}{2} \mu \left( \frac{\partial w}{\partial t} \right)^2 - \tfrac{1}{2} EI \left( \frac{ \partial^2 w}{\partial x^2} \right)^2 + q(x) w(x,t) = \tfrac{\mu}{2}\dot{w}^2 - \tfrac{EI}{2}w_{xx}^2 + qw \equiv \mathcal{L}(x, t, w, \dot{w}, w_{xx})
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/907a3f24a2e34d021d23c929dad898c8.png"></dd>
+</dl>
+<p>the corresponding <a href="http://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation#Single_function_of_two_variables_with_higher_derivatives" title="Euler–Lagrange equation">Euler–Lagrange equation</a> is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   \cfrac{\partial\mathcal{L}}{\partial w} - \frac{\partial}{\partial t}\left(\frac{\partial \mathcal{L}}{\partial \dot{w}}\right)  + \frac{\partial^2}{\partial x^2}\left(\frac{\partial \mathcal{L}}{\partial w_{xx}}\right) = 0
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/89afa0a026a3226668789bb7afce58fe.png"></dd>
+</dl>
+<p>Now,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   \cfrac{\partial\mathcal{L}}{\partial w} = q ~;~~ \frac{\partial \mathcal{L}}{\partial \dot{w}} = \mu\dot{w} 
+   ~;~~ \frac{\partial \mathcal{L}}{\partial w_{xx}} = -EI w_{xx} ~.
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/044ac03e8a6ec383bdaf02706bc26065.png"></dd>
+</dl>
+<p>Plugging into the Euler–Lagrange equation gives</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   q - \mu\ddot{w} - (EI w_{xx})_{xx} = 0
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b81087536a8028a08128452e3406f01e.png"></dd>
+</dl>
+<p>or,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+  \cfrac{\partial^2 }{\partial x^2}\left(EI\cfrac{\partial^2 w}{\partial x^2}\right) = - \mu\cfrac{\partial^2 w}{\partial t^2} + q
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/a11f1d6f43efe460814b4e73667d7e73.png"></dd>
+</dl>
+<p>which is the governing equation for the dynamics of an Euler–Bernoulli beam.</p>
+</td>
+</tr>
+</tbody></table>
+</dd>
+</dl>
+<p>When the beam is homogeneous, <img class="mwe-math-fallback-image-inline tex" alt="E" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/3a3ea00cfc35332cedf6e5e9a32e94da.png"> and <img class="mwe-math-fallback-image-inline tex" alt="I" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/dd7536794b63bf90eccfd37f9b147d7f.png"> are independent of <img class="mwe-math-fallback-image-inline tex" alt="x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9dd4e461268c8034f5c8564e155c67a6.png">, and the beam equation is simpler:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+  EI\cfrac{\partial^4 w}{\partial x^4} = - \mu\cfrac{\partial^2 w}{\partial t^2} + q \,.
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/1903c0240eaf2cfbb2b7c2340d1d58eb.png"></dd>
+</dl>
+<h3><span class="mw-headline" id="Free_vibration">Free vibration</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=5" title="Edit section: Free vibration">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the absence of a transverse load, <img class="mwe-math-fallback-image-inline tex" alt="q" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/7694f4a66316e53c8cdd9d9954bd611d.png">, we have the <b>free vibration</b>
+ equation. This equation can be solved using a Fourier decomposition of 
+the displacement into the sum of harmonic vibrations of the form</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   w(x,t) = \text{Re}[\hat{w}(x)~e^{-i\omega t}]
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/402d22904d4ee4c046452bff25c1f78c.png"></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="\omega" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/4d1b7b74aba3cfabd624e898d86b4602.png"> is the frequency of vibration. Then, for each value of frequency, we can solve an ordinary differential equation</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   EI~\cfrac{\mathrm{d}^4 \hat{w}}{\mathrm{d}x^4} - \mu\omega^2\hat{w} = 0 \,.
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/731e378c29364d289a6d3745dad05ec7.png"></dd>
+</dl>
+<p>The general solution of the above equation is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   \hat{w} = A_1\cosh(\beta x) + A_2\sinh(\beta x) + A_3\cos(\beta x) + A_4\sin(\beta x) \quad \text{with} \quad \beta := \left(\frac{\mu\omega^2}{EI}\right)^{1/4}
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/4a7a4b9b309f30c6f7b6270551a9e5d1.png"></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="A_1,A_2,A_3,A_4" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/adfc1fd1879a283e4c54e4bdd66b61ac.png">
+ are constants. These constants are unique for a given set of boundary 
+conditions. However, the solution for the displacement is not unique and
+ depends on the frequency. These solutions are typically written as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   \hat{w}_n = A_1\cosh(\beta_n x) + A_2\sinh(\beta_n x) + A_3\cos(\beta_n x) + A_4\sin(\beta_n x) \quad \text{with} \quad \beta_n := \left(\frac{\mu\omega_n^2}{EI}\right)^{1/4}\,.
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/a8e0479c850c4905b5566483285692ad.png"></dd>
+</dl>
+<p>The quantities <img class="mwe-math-fallback-image-inline tex" alt="\omega_n" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/03f47d97eaef81215eec85969e8cb88d.png"> are called the <b>natural frequencies</b> of the beam. Each of the displacement solutions is called a <b>mode</b> and the shape of the displacement curve is called the <b>mode shape</b>.</p>
+<h4><span class="mw-headline" id="Example:_Cantilevered_beam">Example: Cantilevered beam</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=6" title="Edit section: Example: Cantilevered beam">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="thumb tright">
+<div class="thumbinner" style="width:402px;"><a href="http://en.wikipedia.org/wiki/File:BeamVibrationPlot.svg" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/400px-BeamVibrationPlot.png" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/28/BeamVibrationPlot.svg/600px-BeamVibrationPlot.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/28/BeamVibrationPlot.svg/800px-BeamVibrationPlot.svg.png 2x" data-file-width="612" data-file-height="295" width="400" height="193"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:BeamVibrationPlot.svg" class="internal" title="Enlarge"></a></div>
+Mode shapes for the first four modes of a vibrating cantilever beam.</div>
+</div>
+</div>
+<p>The boundary conditions for a cantilevered beam of length <img class="mwe-math-fallback-image-inline tex" alt="L" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/d20caec3b48a1eef164cb4ca81ba2587.png"> (fixed at <img class="mwe-math-fallback-image-inline tex" alt=" x = 0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e11729b0b65ecade3fc272548a3883fc.png">) are</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+  \begin{align}
+   &amp;\hat{w}_n = 0 ~,~~ \frac{d\hat{w}_n}{dx} = 0 \quad \text{at} ~~ x = 0 \\
+   &amp;\frac{d^2\hat{w}_n}{dx^2} = 0 ~,~~ \frac{d^3\hat{w}_n}{dx^3} = 0 \quad \text{at} ~~ x = L \,.
+   \end{align}
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/65677706655435e9ec5136619f2f9f95.png"></dd>
+</dl>
+<p>If we apply these conditions, non-trivial solutions are found to exist only if <img class="mwe-math-fallback-image-inline tex" alt="
+   \cosh(\beta_n L)\,\cos(\beta_n L) + 1 = 0 \,.
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/ae1660783d707b2aac8201a94ac647ed.png"> This nonlinear equation can be solved numerically. The first few roots are <i>β<sub>1</sub> L</i> = 1.875, <i>β<sub>2</sub> L</i> = 4.694, <i>β<sub>3</sub> L</i> = 7.855, <i>β<sub>4</sub> L</i> = 10.9955, ...</p>
+<p>The corresponding natural frequencies of vibration are</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+  \omega_1 = \beta_1^2 \sqrt{\frac{EI}{\mu}} = \frac{3.515}{L^2}\sqrt{\frac{EI}{\mu}} ~,~~ \dots
+" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f993d92bcceec25f8fb601f7e81a607a.png"></dd>
+</dl>
+<p>The boundary conditions can also be used to determine the mode shapes from the solution for the displacement:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+  \hat{w}_n = A_1 \Bigl[\cosh\beta_n x - \cos\beta_n x +
+      \frac{(\cos\beta_n L + \cosh\beta_n L)(\sin\beta_n x - \sinh\beta_n x)}{\sin\beta_n L + \sinh\beta_n L}\Bigr]
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/abbc32cb52588f0ca40bbf290c408fa7.png"></dd>
+</dl>
+<p>The unknown constant (actually constants as there is one for each <img class="mwe-math-fallback-image-inline tex" alt="n" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/7b8b965ad4bca0e41ab51de7b31363a1.png">), <img class="mwe-math-fallback-image-inline tex" alt="A_1" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e283f48f6f3d4077546b2b697c3eebad.png">, which in general is complex, is determined by the initial conditions at <img class="mwe-math-fallback-image-inline tex" alt="t = 0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/3e8f7b0adf6d7024b951f29a18225e4a.png"> on the velocity and displacements of the beam. Typically a value of <img class="mwe-math-fallback-image-inline tex" alt="A_1 = 1" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/5b1c307dea7e97392a447e2c1130e76c.png">
+ is used when plotting mode shapes. Solutions to the undampened forced 
+problem have unbounded displacements when the driving frequency matches a
+ natural frequency <img class="mwe-math-fallback-image-inline tex" alt="\omega_n" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/03f47d97eaef81215eec85969e8cb88d.png">, i.e., the beam can <b>resonate</b>. The natural frequencies of a beam therefore correspond to the frequencies at which <b>resonance</b> can occur.</p>
+<h2><span class="mw-headline" id="Stress">Stress</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=7" title="Edit section: Stress">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Besides deflection, the beam equation describes <a href="http://en.wikipedia.org/wiki/Force" title="Force">forces</a> and <a href="http://en.wikipedia.org/wiki/Moment_%28physics%29" title="Moment (physics)">moments</a> and can thus be used to describe <a href="http://en.wikipedia.org/wiki/Stress_%28physics%29" title="Stress (physics)" class="mw-redirect">stresses</a>. For this reason, the Euler–Bernoulli beam equation is widely used in <a href="http://en.wikipedia.org/wiki/Engineering" title="Engineering">engineering</a>, especially civil and mechanical, to determine the strength (as well as deflection) of beams under bending.</p>
+<p>Both the <a href="http://en.wikipedia.org/wiki/Bending_moment" title="Bending moment">bending moment</a> and the <a href="http://en.wikipedia.org/wiki/Shear_force" title="Shear force">shear force</a> cause stresses in the beam. The stress due to shear force is maximum along the <a href="http://en.wikipedia.org/wiki/Neutral_axis" title="Neutral axis">neutral axis</a>
+ of the beam (when the width of the beam, t, is constant along the cross
+ section of the beam; otherwise an integral involving the first moment 
+and the beam's width needs to be evaluated for the particular cross 
+section), and the maximum tensile stress is at either the top or bottom 
+surfaces. Thus the maximum <a href="http://en.wikipedia.org/wiki/Stress_%28physics%29#Principal_stresses_and_stress_invariants" title="Stress (physics)" class="mw-redirect">principal stress</a>
+ in the beam may be neither at the surface nor at the center but in some
+ general area. However, shear force stresses are negligible in 
+comparison to bending moment stresses in all but the stockiest of beams 
+as well as the fact that <a href="http://en.wikipedia.org/wiki/Stress_concentration" title="Stress concentration">stress concentrations</a> commonly occur at surfaces, meaning that the maximum stress in a beam is likely to be at the surface.</p>
+<h3><span class="mw-headline" id="Simple_or_symmetrical_bending">Simple or symmetrical bending</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=8" title="Edit section: Simple or symmetrical bending">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:352px;"><a href="http://en.wikipedia.org/wiki/File:BeamBendingUpdated.svg" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/350px-BeamBendingUpdated.png" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/BeamBendingUpdated.svg/525px-BeamBendingUpdated.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8a/BeamBendingUpdated.svg/700px-BeamBendingUpdated.svg.png 2x" data-file-width="264" data-file-height="162" width="350" height="215"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:BeamBendingUpdated.svg" class="internal" title="Enlarge"></a></div>
+Element of a bent beam: the fibers form concentric arcs, the top fibers are compressed and bottom fibers stretched.</div>
+</div>
+</div>
+<p>For beam cross-sections that are symmetrical about a plane 
+perpendicular to the neutral plane, it can be shown that the tensile 
+stress experienced by the beam may be expressed as:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\sigma = \frac{Mz}{I} = -zE ~ \frac{\mathrm{d}^2 w}{\mathrm{d} x^2}.\," src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b9a59393764371bed6e791170c2d9404.png"></dd>
+</dl>
+<p>Here, <img class="mwe-math-fallback-image-inline tex" alt="z" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/fbade9e36a3f36d3d676c1b808451dd7.png"> is the distance from the neutral axis to a point of interest; and <img class="mwe-math-fallback-image-inline tex" alt="M" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/69691c7bdcc3ce6d5d8a1361f22d04ac.png"> is the bending moment. Note that this equation implies that <a href="http://en.wikipedia.org/wiki/Pure_bending" title="Pure bending">pure bending</a>
+ (of positive sign) will cause zero stress at the neutral axis, positive
+ (tensile) stress at the "top" of the beam, and negative (compressive) 
+stress at the bottom of the beam; and also implies that the maximum 
+stress will be at the top surface and the minimum at the bottom. This 
+bending stress may be superimposed with axially applied stresses, which 
+will cause a shift in the neutral (zero stress) axis.</p>
+<h3><span class="mw-headline" id="Maximum_stresses_at_a_cross-section">Maximum stresses at a cross-section</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=9" title="Edit section: Maximum stresses at a cross-section">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.wikipedia.org/wiki/File:SectionModulusOfBeam.svg" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/220px-SectionModulusOfBeam.png" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/SectionModulusOfBeam.svg/330px-SectionModulusOfBeam.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/87/SectionModulusOfBeam.svg/440px-SectionModulusOfBeam.svg.png 2x" data-file-width="673" data-file-height="723" width="220" height="236"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:SectionModulusOfBeam.svg" class="internal" title="Enlarge"></a></div>
+Quantities used in the definition of the section modulus of a beam.</div>
+</div>
+</div>
+<p>The maximum tensile stress at a cross-section is at the location <img class="mwe-math-fallback-image-inline tex" alt="z = c_1" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/d79c90190f7620bd50ffe4d761423380.png"> and the maximum compressive stress is at the location <img class="mwe-math-fallback-image-inline tex" alt="z = -c_2" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/61fa1b38db0416b16d172a312d4ef1a5.png"> where the height of the cross-section is <img class="mwe-math-fallback-image-inline tex" alt=" h = c_1 + c_2 " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/464aa0e2a1506e97fd44e64bba1d48d2.png">. These stresses are</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   \sigma_1 = \cfrac{Mc_1}{I} = \cfrac{M}{S_1} ~;~~ \sigma_2 = -\cfrac{Mc_2}{I} = -\cfrac{M}{S_2}
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/5bf237b18057c6ad34c34fd51930bc43.png"></dd>
+</dl>
+<p>The quantities <img class="mwe-math-fallback-image-inline tex" alt="S_1,S_2" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/939edc4e740953f97f18de8659b89f97.png"> are the <a href="http://en.wikipedia.org/wiki/Section_modulus" title="Section modulus">section moduli</a><sup id="cite_ref-Gere_5-2" class="reference"><a href="#cite_note-Gere-5"><span>[</span>5<span>]</span></a></sup> and are defined as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   S_1 = \cfrac{I}{c_1} ~;~~ S_2 = \cfrac{I}{c_2}
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/5a625f47d06a61bf317acd8d537f7fe1.png"></dd>
+</dl>
+<p>The section modulus combines all the important geometric information 
+about a beam's section into one quantity. For the case where a beam is 
+doubly symmetric, <img class="mwe-math-fallback-image-inline tex" alt="c_1 = c_2" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b36e844a978cbf8a6b5b7c751f78fd3b.png"> and we have one section modulus <img class="mwe-math-fallback-image-inline tex" alt="S = I/c" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/0c56da548ce465a9567f3cc5537bbc74.png">.</p>
+<h3><span class="mw-headline" id="Strain_in_an_Euler.E2.80.93Bernoulli_beam">Strain in an Euler–Bernoulli beam</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=10" title="Edit section: Strain in an Euler–Bernoulli beam">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>We need an expression for the <a href="http://en.wikipedia.org/wiki/Infinitesimal_strain_theory" title="Infinitesimal strain theory">strain</a>
+ in terms of the deflection of the neutral surface to relate the 
+stresses in an Euler–Bernoulli beam to the deflection. To obtain that 
+expression we use the assumption that normals to the neutral surface 
+remain normal during the deformation and that deflections are small. 
+These assumptions imply that the beam bends into an arc of a circle of 
+radius <img class="mwe-math-fallback-image-inline tex" alt="\rho" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f7f177957cf064a93e9811df8fe65ed1.png"> (see Figure 1) and that the neutral surface does not change in length during the deformation.<sup id="cite_ref-Gere_5-3" class="reference"><a href="#cite_note-Gere-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>Let <img class="mwe-math-fallback-image-inline tex" alt="\mathrm{d}x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/1607da9c3a0c1512e9001ff6cacbc5f2.png">
+ be the length of an element of the neutral surface in the undeformed 
+state. For small deflections, the element does not change its length 
+after bending but deforms into an arc of a circle of radius <img class="mwe-math-fallback-image-inline tex" alt="\rho" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f7f177957cf064a93e9811df8fe65ed1.png">. If <img class="mwe-math-fallback-image-inline tex" alt="\mathrm{d}\theta" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f8bfa42c4086499205420243f4494738.png"> is the angle subtended by this arc, then <img class="mwe-math-fallback-image-inline tex" alt="\mathrm{d}x = \rho~\mathrm{d}\theta" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f127c79dd5cefe9b9058b4e32379183d.png">.</p>
+<p>Let us now consider another segment of the element at a distance <img class="mwe-math-fallback-image-inline tex" alt="z" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/fbade9e36a3f36d3d676c1b808451dd7.png"> above the neutral surface. The initial length of this element is <img class="mwe-math-fallback-image-inline tex" alt="\mathrm{d}x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/1607da9c3a0c1512e9001ff6cacbc5f2.png">. However, after bending, the length of the element becomes <img class="mwe-math-fallback-image-inline tex" alt="\mathrm{d}x' = (\rho-z)~\mathrm{d}\theta = \mathrm{d}x - z~\mathrm{d}\theta" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/bd6e3e5ce523d2f74a3b74891fc84d50.png">. The strain in that segment of the beam is given by</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+  \varepsilon_x = \cfrac{\mathrm{d}x'-\mathrm{d}x}{\mathrm{d}x} = -\cfrac{z}{\rho} = -\kappa~z
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9bb255e39cf65c00298458279d0872f7.png"></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="\kappa" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/c78f6d0f108bd13554e62804d0790f42.png"> is the <a href="http://en.wikipedia.org/wiki/Curvature" title="Curvature">curvature</a>
+ of the beam. This gives us the axial strain in the beam as a function 
+of distance from the neutral surface. However, we still need to find a 
+relation between the radius of curvature and the beam deflection <img class="mwe-math-fallback-image-inline tex" alt="w" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f1290186a5d0b1ceab27f4e77c0c5d68.png">.</p>
+<h3><span class="mw-headline" id="Relation_between_curvature_and_beam_deflection">Relation between curvature and beam deflection</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=11" title="Edit section: Relation between curvature and beam deflection">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Let P be a point on the neutral surface of the beam at a distance <img class="mwe-math-fallback-image-inline tex" alt="x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9dd4e461268c8034f5c8564e155c67a6.png"> from the origin of the <img class="mwe-math-fallback-image-inline tex" alt="(x,z)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/09b7dcb1ec285769c284b76af43765be.png"> coordinate system. The slope of the beam, i.e., the angle made by the neutral surface with the <img class="mwe-math-fallback-image-inline tex" alt="x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9dd4e461268c8034f5c8564e155c67a6.png">-axis, at this point is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   \theta(x) = \cfrac{\mathrm{d}w}{\mathrm{d}x}
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9696f242e021dcf3ce014ad22d0ded59.png"></dd>
+</dl>
+<p>Therefore, for an infinitesimal element <img class="mwe-math-fallback-image-inline tex" alt="\mathrm{d}x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/1607da9c3a0c1512e9001ff6cacbc5f2.png">, the relation <img class="mwe-math-fallback-image-inline tex" alt="\mathrm{d}x = \rho~\mathrm{d}\theta" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f127c79dd5cefe9b9058b4e32379183d.png"> can be written as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+    \cfrac{1}{\rho} = \cfrac{\mathrm{d}\theta}{\mathrm{d}x} = \cfrac{\mathrm{d}^2w}{\mathrm{d}x^2} = \kappa
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/bdc5ce6023c2ffb57fb1add98ca5b294.png"></dd>
+</dl>
+<p>Hence the strain in the beam may be expressed as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   \varepsilon_{x} = -z\cfrac{\mathrm{d}^2w}{\mathrm{d}x^2}
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/813161bd7ba300dadeb0dfab88028967.png"></dd>
+</dl>
+<h3><span class="mw-headline" id="Stress-strain_relations">Stress-strain relations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=12" title="Edit section: Stress-strain relations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For a homogeneous <a href="http://en.wikipedia.org/wiki/Isotropy" title="Isotropy">isotropic</a> <a href="http://en.wikipedia.org/wiki/Linear_elasticity" title="Linear elasticity">linear elastic</a> material, the stress is related to the strain by <img class="mwe-math-fallback-image-inline tex" alt="\sigma = E\varepsilon" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/6e59c40394521cef2515bb90786e28f8.png">, where <img class="mwe-math-fallback-image-inline tex" alt="E" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/3a3ea00cfc35332cedf6e5e9a32e94da.png"> is the <a href="http://en.wikipedia.org/wiki/Young%27s_modulus" title="Young's modulus">Young's modulus</a>. Hence the stress in an Euler–Bernoulli beam is given by</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   \sigma_x = -zE\cfrac{\mathrm{d}^2w}{\mathrm{d}x^2}
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/a493a0e189a9b68dcffdfa605b44718c.png"></dd>
+</dl>
+<p>Note that the above relation, when compared with the relation between the axial stress and the bending moment, leads to</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   M = -EI\cfrac{\mathrm{d}^2w}{\mathrm{d}x^2}
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/01785b180e5d07d1fff764e6f701c150.png"></dd>
+</dl>
+<p>Since the shear force is given by <img class="mwe-math-fallback-image-inline tex" alt="Q = \mathrm{d}M/\mathrm{d}x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/2ebfa9da2a37f7aeae843ce6d7ef9b29.png">, we also have</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   Q = -EI\cfrac{\mathrm{d}^3w}{\mathrm{d}x^3}
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/65a9b1e9099b65d1d91526efb03112bd.png"></dd>
+</dl>
+<h2><span class="mw-headline" id="Boundary_considerations">Boundary considerations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=13" title="Edit section: Boundary considerations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The beam equation contains a fourth-order derivative in <img class="mwe-math-fallback-image-inline tex" alt="x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9dd4e461268c8034f5c8564e155c67a6.png">. To find a unique solution <img class="mwe-math-fallback-image-inline tex" alt="w(x,t)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/56d1a88c5a8855ad93b111334a4b118c.png"> we need four boundary conditions. The boundary conditions usually model <i>supports</i>, but they can also model point loads, distributed loads and moments. The <i>support</i> or displacement boundary conditions are used to fix values of displacement (<img class="mwe-math-fallback-image-inline tex" alt="w" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f1290186a5d0b1ceab27f4e77c0c5d68.png">) and rotations (<img class="mwe-math-fallback-image-inline tex" alt="\mathrm{d}w/\mathrm{d}x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/8c597f2a01be397a43126865cafbe609.png">) on the boundary. Such boundary conditions are also called <a href="http://en.wikipedia.org/wiki/Dirichlet_boundary_conditions" title="Dirichlet boundary conditions" class="mw-redirect">Dirichlet boundary conditions</a>. Load and moment boundary conditions involve higher derivatives of <img class="mwe-math-fallback-image-inline tex" alt="w" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f1290186a5d0b1ceab27f4e77c0c5d68.png"> and represent <a href="http://en.wikipedia.org/wiki/Flux" title="Flux">momentum flux</a>. Flux boundary conditions are also called <a href="http://en.wikipedia.org/wiki/Neumann_boundary_condition" title="Neumann boundary condition">Neumann boundary conditions</a>.</p>
+<p>As an example consider a <a href="http://en.wikipedia.org/wiki/Cantilever" title="Cantilever">cantilever</a>
+ beam that is built-in at one end and free at the other as shown in the 
+adjacent figure. At the built-in end of the beam there cannot be any 
+displacement or rotation of the beam. This means that at the left end 
+both deflection and slope are zero. Since no external bending moment is 
+applied at the free end of the beam, the bending moment at that location
+ is zero. In addition, if there is no external force applied to the 
+beam, the shear force at the free end is also zero.</p>
+<p>Taking the <img class="mwe-math-fallback-image-inline tex" alt="x" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9dd4e461268c8034f5c8564e155c67a6.png"> coordinate of the left end as <img class="mwe-math-fallback-image-inline tex" alt="0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/cfcd208495d565ef66e7dff9f98764da.png"> and the right end as <img class="mwe-math-fallback-image-inline tex" alt="L" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/d20caec3b48a1eef164cb4ca81ba2587.png"> (the length of the beam), these statements translate to the following set of boundary conditions (assume <img class="mwe-math-fallback-image-inline tex" alt="EI" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/55de946fc316c2255cfc7cd096acebc0.png"> is a constant):</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="w|_{x = 0} = 0 \quad ; \quad \frac{\partial w}{\partial x}\bigg|_{x = 0} = 0 \qquad \mbox{(fixed end)}\," src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/5960414f39f012f93d9adc72bffd52ba.png">
+<div class="thumb tright">
+<div class="thumbinner" style="width:402px;"><a href="http://en.wikipedia.org/wiki/File:Cantilever_Beam.svg" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/400px-Cantilever_Beam.png" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Cantilever_Beam.svg/600px-Cantilever_Beam.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Cantilever_Beam.svg/800px-Cantilever_Beam.svg.png 2x" data-file-width="450" data-file-height="300" width="400" height="267"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Cantilever_Beam.svg" class="internal" title="Enlarge"></a></div>
+A cantilever beam.</div>
+</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\frac{\partial^2 w}{\partial x^2}\bigg|_{x = L} = 0 \quad ; \quad \frac{\partial^3 w}{\partial x^3}\bigg|_{x = L} = 0 \qquad \mbox{(free end)}\," src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f9019f755a9db001189bcdcd4bd0c105.png"></dd>
+</dl>
+<p>A simple support (pin or roller) is equivalent to a point force on 
+the beam which is adjusted in such a way as to fix the position of the 
+beam at that point. A fixed support or clamp, is equivalent to the 
+combination of a point force and a point torque which is adjusted in 
+such a way as to fix both the position and slope of the beam at that 
+point. Point forces and torques, whether from supports or directly 
+applied, will divide a beam into a set of segments, between which the 
+beam equation will yield a continuous solution, given four boundary 
+conditions, two at each end of the segment. Assuming that the product <i>EI</i> is a constant, and defining <img class="mwe-math-fallback-image-inline tex" alt="\lambda=F/EI" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/148b86eb987e67247d9be018ad92babe.png"> where <i>F</i> is the magnitude of a point force, and <img class="mwe-math-fallback-image-inline tex" alt="\tau=M/EI" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/5ddbfb0e38af0f187ed35ffb1cc4170d.png"> where <i>M</i>
+ is the magnitude of a point torque, the boundary conditions appropriate
+ for some common cases is given in the table below. The change in a 
+particular derivative of <i>w</i> across the boundary as <i>x</i> increases is denoted by <img class="mwe-math-fallback-image-inline tex" alt="\Delta" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/659d23f0ed16cdb87b1d41c7b58b52f4.png"> followed by that derivative. For example, <img class="mwe-math-fallback-image-inline tex" alt="\Delta w''=w''(x+)-w''(x-)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9b93990d04b45413ea592eab6727cdfa.png"> where <img class="mwe-math-fallback-image-inline tex" alt="w''(x+)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9247e421f1f11c5dc70da09006c73562.png"> is the value of <img class="mwe-math-fallback-image-inline tex" alt="w''" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/39d55c498edaba1e9cd4d9833223922c.png"> at the lower boundary of the upper segment, while <img class="mwe-math-fallback-image-inline tex" alt="w''(x-)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/6d1c97eee4f4ef9e0cf6cea004bbfb53.png"> is the value of <img class="mwe-math-fallback-image-inline tex" alt="w''" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/39d55c498edaba1e9cd4d9833223922c.png">
+ at the upper boundary of the lower segment. When the values of the 
+particular derivative are not only continuous across the boundary, but 
+fixed as well, the boundary condition is written e.g., <img class="mwe-math-fallback-image-inline tex" alt="\Delta w''=0^*" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/1105a66dc7d5a2ae56c9a5124a548779.png"> which actually constitutes two separate equations (e.g., <img class="mwe-math-fallback-image-inline tex" alt="w''(x-) = w''(x+)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/7fd0e112992a85cbb5506e96e291425e.png"> = fixed).</p>
+<dl>
+<dd>
+<table class="wikitable">
+<tbody><tr>
+<th>Boundary</th>
+<th><img class="mwe-math-fallback-image-inline tex" alt="w'''" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/69e913c707e319da2b344b9ff16f17c9.png"></th>
+<th><img class="mwe-math-fallback-image-inline tex" alt="w''" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/39d55c498edaba1e9cd4d9833223922c.png"></th>
+<th><img class="mwe-math-fallback-image-inline tex" alt="w'" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/8624c3694bf8d786aba4c979661866b2.png"></th>
+<th><img class="mwe-math-fallback-image-inline tex" alt="w" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f1290186a5d0b1ceab27f4e77c0c5d68.png"></th>
+</tr>
+<tr>
+<td>Clamp</td>
+<td></td>
+<td></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w'=0^*" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/4302d04598ae1613d164f33e2476c19e.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w=0^*" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9d7bb9fc1fafe673ce1550e722059309.png"></td>
+</tr>
+<tr>
+<td>Simple support</td>
+<td></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w''=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/7ae5ffe3bc88d6b154d0706578929760.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w'=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/2d22058c70f4cb488f126ca7c1e12f02.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w=0^*" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9d7bb9fc1fafe673ce1550e722059309.png"></td>
+</tr>
+<tr>
+<td>Point force</td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w'''=\lambda" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/efbee4bb318b3d0b088521b0de141822.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w''=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/7ae5ffe3bc88d6b154d0706578929760.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w'=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/2d22058c70f4cb488f126ca7c1e12f02.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e43e9d5de2b857f9217b8cf68c05fe97.png"></td>
+</tr>
+<tr>
+<td>Point torque</td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w'''=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/3efe6c5aede420ae0bd008f5f9f1befd.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w''=\tau" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9b31c86eb38fbaa02b23872f8ce415e4.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w'=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/2d22058c70f4cb488f126ca7c1e12f02.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\Delta w=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e43e9d5de2b857f9217b8cf68c05fe97.png"></td>
+</tr>
+<tr>
+<td>Free end</td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w'''=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e77816da1a937908b379b1096a28db76.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w''=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/027bb5050684378c588a0384461002dd.png"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Clamp at end</td>
+<td></td>
+<td></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w'" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/8624c3694bf8d786aba4c979661866b2.png"> fixed</td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f1290186a5d0b1ceab27f4e77c0c5d68.png"> fixed</td>
+</tr>
+<tr>
+<td>Simply supported end</td>
+<td></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w''=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/027bb5050684378c588a0384461002dd.png"></td>
+<td></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f1290186a5d0b1ceab27f4e77c0c5d68.png"> fixed</td>
+</tr>
+<tr>
+<td>Point force at end</td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w'''=\pm\lambda" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e8cc3f2ee55d385a84db505f396cb933.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w''=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/027bb5050684378c588a0384461002dd.png"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Point torque at end</td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w'''=0" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e77816da1a937908b379b1096a28db76.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w''=\pm\tau" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/522510e87dab62b3a9104f4b8ba0cfac.png"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</dd>
+</dl>
+<p>Note that in the first cases, in which the point forces and torques 
+are located between two segments, there are four boundary conditions, 
+two for the lower segment, and two for the upper. When forces and 
+torques are applied to one end of the beam, there are two boundary 
+conditions given which apply at that end. The sign of the point forces 
+and torques at an end will be positive for the lower end, negative for 
+the upper end.</p>
+<h2><span class="mw-headline" id="Loading_considerations">Loading considerations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=14" title="Edit section: Loading considerations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Applied loads may be represented either through boundary conditions or through the function <img class="mwe-math-fallback-image-inline tex" alt="q(x,t)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/54df328d4637aa2a22f1bd538a413190.png">
+ which represents an external distributed load. Using distributed 
+loading is often favorable for simplicity. Boundary conditions are, 
+however, often used to model loads depending on context; this practice 
+being especially common in vibration analysis.</p>
+<p>By nature, the distributed load is very often represented in a 
+piecewise manner, since in practice a load isn't typically a continuous 
+function. Point loads can be modeled with help of the <a href="http://en.wikipedia.org/wiki/Dirac_delta_function" title="Dirac delta function">Dirac delta function</a>. For example, consider a static uniform cantilever beam of length <img class="mwe-math-fallback-image-inline tex" alt="L" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/d20caec3b48a1eef164cb4ca81ba2587.png"> with an upward point load <img class="mwe-math-fallback-image-inline tex" alt="F" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/800618943025315f869e4e1f09471012.png">
+ applied at the free end. Using boundary conditions, this may be modeled
+ in two ways. In the first approach, the applied point load is 
+approximated by a shear force applied at the free end. In that case the 
+governing equation and boundary conditions are:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+  \begin{align}
+  &amp; EI \frac{\mathrm{d}^4 w}{\mathrm{d} x^4} = 0 \\
+  &amp; w|_{x = 0} = 0 \quad ; \quad \frac{\mathrm{d} w}{\mathrm{d} x}\bigg|_{x = 0} = 0 \quad ; \quad
+  \frac{\mathrm{d}^2 w}{\mathrm{d} x^2}\bigg|_{x = L} = 0 \quad ; \quad -EI \frac{\mathrm{d}^3 w}{\mathrm{d} x^3}\bigg|_{x = L} = F\,
+  \end{align}
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/a44beb5e06edd82359fa88f9b7ac21d2.png"></dd>
+</dl>
+<p>Alternatively we can represent the point load as a distribution using
+ the Dirac function. In that case the equation and boundary conditions 
+are</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+  \begin{align}
+  &amp; EI \frac{\mathrm{d}^4 w}{\mathrm{d} x^4} = F \delta(x - L) \\
+  &amp; w|_{x = 0} = 0 \quad ; \quad \frac{\mathrm{d} w}{\mathrm{d} x}\bigg|_{x = 0} = 0 \quad; \quad
+  \frac{\mathrm{d}^2 w}{\mathrm{d} x^2}\bigg|_{x = L} = 0\,
+  \end{align}
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/a17506b486eb4cac36bae48b5184b037.png"></dd>
+</dl>
+<p>Note that shear force boundary condition (third derivative) is 
+removed, otherwise there would be a contradiction. These are equivalent <a href="http://en.wikipedia.org/wiki/Boundary_value_problem" title="Boundary value problem">boundary value problems</a>, and both yield the solution</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="w = \frac{F}{6 EI}(3 L x^2 - x^3)\,~." src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/98dc6fe22927147375b0d24e7bbb8f9f.png"></dd>
+</dl>
+<p>The application of several point loads at different locations will lead to <img class="mwe-math-fallback-image-inline tex" alt="w(x)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/aa968370efc9797533259ffe70ad1192.png">
+ being a piecewise function. Use of the Dirac function greatly 
+simplifies such situations; otherwise the beam would have to be divided 
+into sections, each with four boundary conditions solved separately. A 
+well organized family of functions called <a href="http://en.wikipedia.org/wiki/Singularity_function" title="Singularity function">Singularity functions</a> are often used as a shorthand for the Dirac function, its <a href="http://en.wikipedia.org/wiki/Derivative" title="Derivative">derivative</a>, and its <a href="http://en.wikipedia.org/wiki/Antiderivatives" title="Antiderivatives" class="mw-redirect">antiderivatives</a>.</p>
+<p>Dynamic phenomena can also be modeled using the static beam equation 
+by choosing appropriate forms of the load distribution. As an example, 
+the free <a href="http://en.wikipedia.org/wiki/Vibration" title="Vibration">vibration</a> of a beam can be accounted for by using the load function:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="q(x, t) = \mu \frac{\partial^2 w}{\partial t^2}\," src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/eec1773394bc4196b22a67a778884abc.png"></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="\mu" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b72bb92668acc30b4474caff40274044.png"> is the <a href="http://en.wikipedia.org/wiki/Linear_mass_density" title="Linear mass density" class="mw-redirect">linear mass density</a> of the beam, not necessarily a constant. With this time-dependent loading, the beam equation will be a <a href="http://en.wikipedia.org/wiki/Partial_differential_equation" title="Partial differential equation">partial differential equation</a>:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \frac{\partial^2}{\partial x^2} \left( EI \frac{\partial^2 w}{\partial x^2} \right) = -\mu \frac{\partial^2 w}{\partial t^2}." src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/c146dc49daf10c35be627e0d9d2624c5.png"></dd>
+</dl>
+<p>Another interesting example describes the deflection of a beam rotating with a constant <a href="http://en.wikipedia.org/wiki/Angular_frequency" title="Angular frequency">angular frequency</a> of <img class="mwe-math-fallback-image-inline tex" alt="\omega" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/4d1b7b74aba3cfabd624e898d86b4602.png">:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="q(x) = \mu \omega^2 w(x)\," src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/3b808bbf036bf210afef8178842608c9.png"></dd>
+</dl>
+<p>This is a <a href="http://en.wikipedia.org/wiki/Centripetal_force" title="Centripetal force">centripetal force</a> distribution. Note that in this case, <img class="mwe-math-fallback-image-inline tex" alt="q" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/7694f4a66316e53c8cdd9d9954bd611d.png"> is a function of the displacement (the dependent variable), and the beam equation will be an autonomous <a href="http://en.wikipedia.org/wiki/Ordinary_differential_equation" title="Ordinary differential equation">ordinary differential equation</a>.</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=15" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Three-point_bending">Three-point bending</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=16" title="Edit section: Three-point bending">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="http://en.wikipedia.org/wiki/Three_point_flexural_test" title="Three point flexural test">three point bending test</a>
+ is a classical experiment in mechanics. It represents the case of a 
+beam resting on two roller supports and subjected to a concentrated load
+ applied in the middle of the beam. The shear is constant in absolute 
+value: it is half the central load, P / 2. It changes sign in the middle
+ of the beam. The bending moment varies linearly from one end, where it 
+is 0, and the center where its absolute value is PL / 4, is where the 
+risk of rupture is the most important. The deformation of the beam is 
+described by a polynomial of third degree over a half beam (the other 
+half being symmetrical). The bending moments (<img class="mwe-math-fallback-image-inline tex" alt="M" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/69691c7bdcc3ce6d5d8a1361f22d04ac.png">), shear forces (<img class="mwe-math-fallback-image-inline tex" alt="Q" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f09564c9ca56850d4cd6b3319e541aee.png">), and deflections (<img class="mwe-math-fallback-image-inline tex" alt="w" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f1290186a5d0b1ceab27f4e77c0c5d68.png">) for a beam subjected to a central point load and an asymmetric point load are given in the table below.<sup id="cite_ref-Gere_5-4" class="reference"><a href="#cite_note-Gere-5"><span>[</span>5<span>]</span></a></sup></p>
+<table class="wikitable">
+<tbody><tr>
+<th>Distribution</th>
+<th>Max. value</th>
+</tr>
+<tr>
+<td colspan="2"><b>Simply supported beam with central load</b></td>
+<td rowspan="4"><a href="http://en.wikipedia.org/wiki/File:SimpSuppBeamPointLoad.svg" class="image"><img alt="SimpSuppBeamPointLoad.svg" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/350px-SimpSuppBeamPointLoad.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/57/SimpSuppBeamPointLoad.svg/525px-SimpSuppBeamPointLoad.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/57/SimpSuppBeamPointLoad.svg/700px-SimpSuppBeamPointLoad.svg.png 2x" data-file-width="509" data-file-height="526" width="350" height="362"></a></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="M(x) = \begin{cases}   
+    \frac{Px}{2},  &amp; \mbox{for } 0 \le x \le \tfrac{L}{2} \\  
+    \frac{P(L-x)}{2}, &amp; \mbox{for } \tfrac{L}{2} &lt; x \le L
+    \end{cases}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/7e15c618971512ec919b27385a2a6df8.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="M_{L/2} = \tfrac{PL}{4}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b665c7db1abebb6e4df76a6401c541ae.png"></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Q(x) = \begin{cases}
+    \frac{P}{2}, &amp; \mbox{for } 0 \le x \le \tfrac{L}{2} \\
+    \frac{-P}{2}, &amp; \mbox{for } \tfrac{L}{2} &lt; x \le L
+    \end{cases}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/495673f95d6f57b1f21feb35c549f435.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="|Q_0| = |Q_L| = \tfrac{P}{2}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/28acb9e179df469dbda0320a321c4bd7.png"></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w(x) = \begin{cases}
+    -\frac{Px(4x^2-3L^2)}{48EI}, &amp; \mbox{for } 0 \le x \le \tfrac{L}{2} \\
+    \frac{P(x-L)(L^2-8Lx+4x^2)}{48EI}, &amp; \mbox{for } \tfrac{L}{2} &lt; x \le L
+    \end{cases}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/69a18509bed2d602fc2f8e5bd6926551.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w_{L/2} = \tfrac{PL^3}{48EI}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/0c03561ba6cb823a6520ad600c346318.png"></td>
+</tr>
+<tr>
+<td colspan="2"><b>Simply supported beam with asymmetric load</b></td>
+<td rowspan="4"><a href="http://en.wikipedia.org/wiki/File:SimpSuppBeamPointLoadUnsymm.svg" class="image"><img alt="SimpSuppBeamPointLoadUnsymm.svg" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/350px-SimpSuppBeamPointLoadUnsymm.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/SimpSuppBeamPointLoadUnsymm.svg/525px-SimpSuppBeamPointLoadUnsymm.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2c/SimpSuppBeamPointLoadUnsymm.svg/700px-SimpSuppBeamPointLoadUnsymm.svg.png 2x" data-file-width="509" data-file-height="526" width="350" height="362"></a></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="M(x) = \begin{cases}   
+    \tfrac{Pbx}{L},  &amp; \mbox{for } 0 \le x \le a  \\  
+    \tfrac{Pbx}{L}-P(x-a)=\tfrac{Pa(L-x)}{L}, &amp; \mbox{for } a &lt; x \le L
+    \end{cases}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/107a95090924e0a2ef5f29d7c03624d7.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="M_B = \tfrac{Pab}{L}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b689e4f48cc0d5585312740950c76329.png"></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Q(x) = \begin{cases}
+    \tfrac{Pb}{L}, &amp; \mbox{for } 0 \le x \le a  \\
+    \tfrac{Pb}{L}-P, &amp; \mbox{for } a &lt; x \le L
+    \end{cases}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/82904877236dc1cdd65e273d0e816539.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Q_A = \tfrac{Pb}{L}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/22b3b4b2e7da1a1015fb74f1f12cde74.png">
+<p><img class="mwe-math-fallback-image-inline tex" alt="Q_C = \tfrac{Pa}{L}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e3cbc468fce062e183e0f600a7cf2d77.png"></p>
+</td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w(x) = \begin{cases}
+    \tfrac{Pbx(L^2-b^2-x^2)}{6LEI}, &amp;  0 \le x \le a \\
+    \tfrac{Pbx(L^2-b^2-x^2)}{6LEI}+\tfrac{P(x-a)^3}{6EI}, &amp;  a &lt; x \le L
+    \end{cases}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/09d5cdcac51d3380731d3ec6f43d65f3.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w_{\mathrm{max}} = \tfrac{\sqrt{3}Pb(L^2-b^2)^{\frac{3}{2}}}{27LEI}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e55faaa2ab2ad238142033389db9b2ee.png">
+<p>at <img class="mwe-math-fallback-image-inline tex" alt="x = \sqrt{\tfrac{L^2-b^2}{3}}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/2ffd9ae20f1423a917b39f117cf5d95d.png"></p>
+</td>
+</tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Cantilever_beams">Cantilever beams</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=17" title="Edit section: Cantilever beams">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Another important class of problems involves <a href="http://en.wikipedia.org/wiki/Cantilever" title="Cantilever">cantilever</a> beams. The bending moments (<img class="mwe-math-fallback-image-inline tex" alt="M" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/69691c7bdcc3ce6d5d8a1361f22d04ac.png">), shear forces (<img class="mwe-math-fallback-image-inline tex" alt="Q" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f09564c9ca56850d4cd6b3319e541aee.png">), and deflections (<img class="mwe-math-fallback-image-inline tex" alt="w" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/f1290186a5d0b1ceab27f4e77c0c5d68.png">) for a cantilever beam subjected to a point load at the free end and a uniformly distributed load are given in the table below.<sup id="cite_ref-Gere_5-5" class="reference"><a href="#cite_note-Gere-5"><span>[</span>5<span>]</span></a></sup></p>
+<table class="wikitable" style="margin:auto;">
+<tbody><tr>
+<th>Distribution</th>
+<th>Max. value</th>
+</tr>
+<tr>
+<td colspan="2"><b>Cantilever beam with end load</b></td>
+<td rowspan="4"><a href="http://en.wikipedia.org/wiki/File:CantBeamPointLoad.svg" class="image"><img alt="CantBeamPointLoad.svg" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/350px-CantBeamPointLoad.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a9/CantBeamPointLoad.svg/525px-CantBeamPointLoad.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a9/CantBeamPointLoad.svg/700px-CantBeamPointLoad.svg.png 2x" data-file-width="509" data-file-height="526" width="350" height="362"></a></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="M(x) = P(x-L)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/d55ee8fe1a7a2306bed76ace43f8f9c0.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="M_A = PL" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/15703f5ecbbc6d256379fd5d63b1034b.png"></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Q(x) = P " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/6738721945baea582e9f6af02664a85b.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Q_{\mathrm{max}} = P" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/7880ddc9c96c175d919f851541942318.png"></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w(x) = \tfrac{Px^2(3L-x)}{6EI} " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/5f0f9ee5ea4348401861d46630186f62.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w_C = \tfrac{PL^3}{3EI}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/c2754cb1cfee5974f03ea36c2459c7d1.png"></td>
+</tr>
+<tr>
+<td colspan="2"><b>Cantilever beam with uniformly distributed load</b></td>
+<td rowspan="4"><a href="http://en.wikipedia.org/wiki/File:CantBeamDistLoad.svg" class="image"><img alt="CantBeamDistLoad.svg" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/350px-CantBeamDistLoad.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/CantBeamDistLoad.svg/525px-CantBeamDistLoad.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4c/CantBeamDistLoad.svg/700px-CantBeamDistLoad.svg.png 2x" data-file-width="509" data-file-height="526" width="350" height="362"></a></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="M(x) =-\tfrac{q(L^2-2Lx+x^2)}{2}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/1f19b14b2fe68bfc80b60422fe0c70f0.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="M_A = \tfrac{qL^2}{2}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/7d1831e63d289d35e41ef43fc67cb9a5.png"></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Q(x) = q(L-x), " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/c2116f27ccc758ca21c4393b5337a6e3.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Q_A = qL" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/862cd7bc8aaa8b9226a406c9b64f13e2.png"></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w(x) = \tfrac{qx^2(6L^2-4Lx+x^2)}{24EI} " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/dc4071344c4a7b8a573b76d53a5eb676.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w_C = \tfrac{qL^4}{8EI}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b710e8642cf01d9f52254720f197b197.png"></td>
+</tr>
+</tbody></table>
+<p>Solutions for several other commonly encountered configurations are 
+readily available in textbooks on mechanics of materials and engineering
+ handbooks.</p>
+<h3><span class="mw-headline" id="Statically_indeterminate_beams">Statically indeterminate beams</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=18" title="Edit section: Statically indeterminate beams">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="http://en.wikipedia.org/wiki/Bending_moment" title="Bending moment">bending moments</a> and <a href="http://en.wikipedia.org/wiki/Shear_force" title="Shear force">shear forces</a> in Euler–Bernoulli beams can often be determined directly using static balance of <a href="http://en.wikipedia.org/wiki/Force" title="Force">forces</a> and <a href="http://en.wikipedia.org/wiki/Moment_%28physics%29" title="Moment (physics)">moments</a>. However, for certain boundary conditions, the number of reactions can exceed the number of independent equilibrium equations.<sup id="cite_ref-Gere_5-6" class="reference"><a href="#cite_note-Gere-5"><span>[</span>5<span>]</span></a></sup> Such beams are called <i><a href="http://en.wikipedia.org/wiki/Statically_indeterminate" title="Statically indeterminate">statically indeterminate</a></i>.</p>
+<p>The built-in beams shown in the figure below are statically 
+indeterminate. To determine the stresses and deflections of such beams, 
+the most direct method is to solve the Euler–Bernoulli beam equation 
+with appropriate boundary conditions. But direct analytical solutions of
+ the beam equation are possible only for the simplest cases. Therefore, 
+additional techniques such as linear superposition are often used to 
+solve statically indeterminate beam problems.</p>
+<p>The superposition method involves adding the solutions of a number of
+ statically determinate problems which are chosen such that the boundary
+ conditions for the sum of the individual problems add up to those of 
+the original problem.</p>
+<table class="wikitable" style="background:white; text-align:center;">
+<tbody><tr>
+<td>
+<div class="center">
+<div class="floatnone"><a href="http://en.wikipedia.org/wiki/File:Fem1.png" class="image"><img alt="Fem1.png" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/400px-Fem1.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/12/Fem1.png/600px-Fem1.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/12/Fem1.png/800px-Fem1.png 2x" data-file-width="1030" data-file-height="421" width="400" height="163"></a></div>
+</div>
+<br>
+(a) Uniformly distributed load <i>q</i>.</td>
+<td>
+<div class="center">
+<div class="floatnone"><a href="http://en.wikipedia.org/wiki/File:Fem3.png" class="image"><img alt="Fem3.png" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/400px-Fem3.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Fem3.png/600px-Fem3.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Fem3.png/800px-Fem3.png 2x" data-file-width="1069" data-file-height="482" width="400" height="180"></a></div>
+</div>
+<br>
+<p>(b) Linearly distributed load with maximum <i>q</i><sub>0</sub></p>
+</td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="M_{\mathrm{max}} = \cfrac{qL^2}{12} ~;~~ w_{\mathrm{max}} = \cfrac{qL^4}{384EI}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/38175f23454ef6a76960c2862583450b.png"></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<div class="center">
+<div class="floatnone"><a href="http://en.wikipedia.org/wiki/File:Fem2.png" class="image"><img alt="Fem2.png" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/400px-Fem2.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/47/Fem2.png/600px-Fem2.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/47/Fem2.png/800px-Fem2.png 2x" data-file-width="1051" data-file-height="450" width="400" height="171"></a></div>
+</div>
+<br>
+(c) Concentrated load P</td>
+<td>
+<div class="center">
+<div class="floatnone"><a href="http://en.wikipedia.org/wiki/File:Fem4.png" class="image"><img alt="Fem4.png" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/400px-Fem4.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/Fem4.png/600px-Fem4.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/Fem4.png/800px-Fem4.png 2x" data-file-width="1300" data-file-height="409" width="400" height="126"></a></div>
+</div>
+<br>
+(d) Moment M<sub>0</sub></td>
+</tr>
+</tbody></table>
+<p>Another commonly encountered statically indeterminate beam problem is the <a href="http://en.wikipedia.org/wiki/Cantilever" title="Cantilever">cantilevered beam</a> with the free end supported on a roller.<sup id="cite_ref-Gere_5-7" class="reference"><a href="#cite_note-Gere-5"><span>[</span>5<span>]</span></a></sup> The bending moments, shear forces, and deflections of such a beam are listed below.</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Distribution</th>
+<th>Max. value</th>
+<td rowspan="4"><a href="http://en.wikipedia.org/wiki/File:Beam1svg.svg" class="image"><img alt="Beam1svg.svg" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/350px-Beam1svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Beam1svg.svg/525px-Beam1svg.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Beam1svg.svg/700px-Beam1svg.svg.png 2x" data-file-width="509" data-file-height="526" width="350" height="362"></a></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="M(x) = -\tfrac{q}{8}(L^2-5Lx+4x^2)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e86d9f85126860e2349f5e8ffa733894.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="\begin{align} M_B &amp; = -\tfrac{9qL^2}{128} \mbox{ at } x=\tfrac{5L}{8}\\
+                      M_A &amp; = \tfrac{qL^2}{8} \end{align}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/d8f96b1e344cd468b5af00255dcabd09.png"></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Q(x) = -\tfrac{q}{8}(8x -5L)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/d979b8821f73fa5328583dc884767cb9.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Q_A = -\tfrac{5qL}{8}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/11e9c94e9541f245475329c042929e7d.png"></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w(x) = \tfrac{qx^2}{48EI}(3L^2-5Lx+2x^2)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/ddfcca22d97393820567edb8045d7f86.png"></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="w_{\mathrm{max}} = \tfrac{qL^4}{185EI} \mbox{ at } x=0.5785L" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/ed4fa6483ca7f9db41aedc521c8f3cc2.png"></td>
+</tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Extensions">Extensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=19" title="Edit section: Extensions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The kinematic assumptions upon which the Euler–Bernoulli beam theory 
+is founded allow it to be extended to more advanced analysis. Simple 
+superposition allows for three-dimensional transverse loading. Using 
+alternative <a href="http://en.wikipedia.org/wiki/Constitutive_equation" title="Constitutive equation">constitutive equations</a> can allow for <a href="http://en.wikipedia.org/wiki/Viscoelasticity" title="Viscoelasticity">viscoelastic</a> or <a href="http://en.wikipedia.org/wiki/Plastic_bending" title="Plastic bending">plastic</a> beam deformation. Euler–Bernoulli beam theory can also be extended to the analysis of curved beams, <a href="http://en.wikipedia.org/wiki/Buckling" title="Buckling">beam buckling</a>, composite beams, and geometrically nonlinear beam deflection.</p>
+<p>Euler–Bernoulli beam theory does not account for the effects of transverse <a href="http://en.wikipedia.org/wiki/Shear_stress" title="Shear stress">shear</a>
+ strain. As a result it underpredicts deflections and overpredicts 
+natural frequencies. For thin beams (beam length to thickness ratios of 
+the order 20 or more) these effects are of minor importance. For thick 
+beams, however, these effects can be significant. More advanced beam 
+theories such as the <a href="http://en.wikipedia.org/wiki/Timoshenko_beam_theory" title="Timoshenko beam theory">Timoshenko beam theory</a> (developed by the Russian-born scientist <a href="http://en.wikipedia.org/wiki/Stephen_Timoshenko" title="Stephen Timoshenko">Stephen Timoshenko</a>) have been developed to account for these effects.</p>
+<h3><span class="mw-headline" id="Large_deflections">Large deflections</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=20" title="Edit section: Large deflections">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:402px;"><a href="http://en.wikipedia.org/wiki/File:EulerBernoulliBeam.png" class="image"><img alt="" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/400px-EulerBernoulliBeam.png" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/EulerBernoulliBeam.png/600px-EulerBernoulliBeam.png 1.5x, //upload.wikimedia.org/wikipedia/commons/d/d7/EulerBernoulliBeam.png 2x" data-file-width="766" data-file-height="378" width="400" height="197"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:EulerBernoulliBeam.png" class="internal" title="Enlarge"></a></div>
+Euler–Bernoulli beam</div>
+</div>
+</div>
+<p>The original Euler–Bernoulli theory is valid only for <a href="http://en.wikipedia.org/wiki/Infinitesimal_strain_theory" title="Infinitesimal strain theory">infinitesimal strains</a>
+ and small rotations. The theory can be extended in a straightforward 
+manner to problems involving moderately large rotations provided that 
+the strain remains small by using the <a href="http://en.wikipedia.org/wiki/Theodore_von_K%C3%A1rm%C3%A1n" title="Theodore von Kármán">von Kármán</a> strains.<sup id="cite_ref-Reddy_7-0" class="reference"><a href="#cite_note-Reddy-7"><span>[</span>6<span>]</span></a></sup></p>
+<p>The Euler–Bernoulli hypotheses that plane sections remain plane and 
+normal to the axis of the beam lead to displacements of the form</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+v_1 = v_0(x) - z \cfrac{\mathrm{d}w_0}{\mathrm{d}x} ~;~~v_2 = 0 ~;~~ v_3 = w_0(x) 
+" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/885af0a809e22c6f5b39a6587b22a7c9.png"></dd>
+</dl>
+<p>Using the definition of the Lagrangian Green strain from <a href="http://en.wikipedia.org/wiki/Finite_strain_theory" title="Finite strain theory">finite strain theory</a>, we can find the <i>von Karman strains</i> for the beam that are valid for large rotations but small strains. These strains have the form</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+\begin{align}
+\varepsilon_{11} &amp; = \cfrac{\mathrm{d}u_0}{dx_1} - x_3\cfrac{\mathrm{d}^2w_0}{\mathrm{d}x_1^2} + 
+\frac{1}{2}\left[
+\left(\cfrac{\mathrm{d}u_0}{\mathrm{d}x_1}-x_3\cfrac{\mathrm{d}^2w_0}{\mathrm{d}x_1^2}\right)^2 +
+ \left(\cfrac{\mathrm{d}w_0}{\mathrm{d}x_1}\right)^2\right] \\
+\varepsilon_{22} &amp; = 0 \\
+\varepsilon_{33} &amp; = \frac{1}{2}\left(\cfrac{\mathrm{d}w_0}{\mathrm{d}x_1}\right)^2 \\
+\varepsilon_{23} &amp; = 0 \\
+\varepsilon_{31} &amp; = 
+\frac{1}{2}\left(\cfrac{\mathrm{d}w_0}{\mathrm{d}x_1}-\cfrac{\mathrm{d}w_0}{\mathrm{d}x_1}\right) -
+ \frac{1}{2}\left[\left(\cfrac{\mathrm{d}u_0}{\mathrm{d}x_1}-x_3\cfrac{\mathrm{d}^2w_0}{\mathrm{d}x_1^2}\right)
+ \left(\cfrac{\mathrm{d}w_0}{\mathrm{d}x_1}\right)\right] \\
+\varepsilon_{12} &amp; = 0 
+\end{align}
+" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/02f1d91657ff3982e98a5d428ac57955.png"></dd>
+</dl>
+<p>From the <a href="http://en.wikipedia.org/wiki/Principle_of_virtual_work" title="Principle of virtual work" class="mw-redirect">principle of virtual work</a>, the balance of forces and moments in the beams gives us the equilibrium equations</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+\begin{align}
+\cfrac{\mathrm{d}N_{xx}}{\mathrm{d}x} + f(x) &amp; = 0 \\
+\cfrac{\mathrm{d}^2M_{xx}}{\mathrm{d}x^2} + q(x) + 
+ \cfrac{\mathrm{d}}{\mathrm{d}x}\left(N_{xx}\cfrac{\mathrm{d}w_0}{\mathrm{d}x}\right) &amp; = 0
+\end{align}
+" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/2d42d1156e2e3f1a6e7f9ce21a30d424.png"></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="f(x)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/50bbd36e1fd2333108437a2ca378be62.png"> is the axial load, <img class="mwe-math-fallback-image-inline tex" alt="q(x)" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/9dbcf8f4523b910764da7f544a192a69.png"> is the transverse load, and</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+N_{xx} = \int_A \sigma_{xx}~ \mathrm{d}A  ~;~~ M_{xx}  = \int_A z\sigma_{xx}~ \mathrm{d}A 
+" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/2d7fda7cebb46e903c19d42ccdaa2e95.png"></dd>
+</dl>
+<p>To close the system of equations we need the <a href="http://en.wikipedia.org/wiki/Constitutive_equations" title="Constitutive equations" class="mw-redirect">constitutive equations</a>
+ that relate stresses to strains (and hence stresses to displacements). 
+For large rotations and small strains these relations are</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+\begin{align}
+N_{xx} &amp; = 
+ A_{xx}\left[\cfrac{\mathrm{d}u_0}{dx} + \frac{1}{2}\left(\cfrac{\mathrm{d}w_0}{\mathrm{d}x}\right)^2 \right] -
+ B_{xx}\cfrac{\mathrm{d}^2w_0}{\mathrm{d}x^2} \\
+M_{xx} &amp; = 
+ B_{xx}\left[\cfrac{du_0}{\mathrm{d}x} + \frac{1}{2}\left(\cfrac{\mathrm{d}w_0}{\mathrm{d}x}\right)^2 \right] -
+ D_{xx}\cfrac{\mathrm{d}^2w_0}{\mathrm{d}x^2} 
+\end{align}
+" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e9cb11d5973c17821b69e1de904fb93a.png"></dd>
+</dl>
+<p>where</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+  A_{xx}  = \int_A E~\mathrm{d}A ~;~~ B_{xx}  = \int_A zE~\mathrm{d}A ~;~~ D_{xx}  = \int_A z^2E~\mathrm{d}A ~.
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e9d8642d8c1d58dc880269ceac51b114.png"></dd>
+</dl>
+<p>The quantity <img class="mwe-math-fallback-image-inline tex" alt="A_{xx}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/8e5602a13cc3a7172602c72d3fe0f56a.png"> is the <i><a href="http://en.wikipedia.org/wiki/Stiffness" title="Stiffness">extensional stiffness</a></i>,<img class="mwe-math-fallback-image-inline tex" alt="B_{xx}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/5c34baa2eee2375598d98e5965ad6e07.png"> is the coupled <i>extensional-bending stiffness</i>, and <img class="mwe-math-fallback-image-inline tex" alt="D_{xx}" src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b98e8ff8e93244bc9c878a750bc87fa0.png"> is the <i><a href="http://en.wikipedia.org/wiki/Bending_stiffness" title="Bending stiffness">bending stiffness</a></i>.</p>
+<p>For the situation where the beam has a uniform cross-section and no 
+axial load, the governing equation for a large-rotation Euler–Bernoulli 
+beam is</p>
+<blockquote style="border: 1px solid black; padding:10px; width:400px">
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+   EI~\cfrac{\mathrm{d}^4 w}{\mathrm{d}x^4} - \frac{3}{2}~EA~\left(\cfrac{\mathrm{d} w}{\mathrm{d}x}\right)^2\left(\cfrac{\mathrm{d}^2 w}{\mathrm{d}x^2}\right) = q(x)
+ " src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e38bbda30f2d97821541a3484feb654d.png"></dd>
+</dl>
+</blockquote>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=21" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Applied_mechanics" title="Applied mechanics">Applied mechanics</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bending" title="Bending">Bending</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bending_moment" title="Bending moment">Bending moment</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Buckling" title="Buckling">Buckling</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Flexural_rigidity" title="Flexural rigidity">Flexural rigidity</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Plate_theory" title="Plate theory">Plate theory</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sandwich_theory" title="Sandwich theory">Sandwich theory</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Shear_and_moment_diagram" title="Shear and moment diagram">Shear and moment diagram</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Singularity_function" title="Singularity function">Singularity function</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Strain_%28materials_science%29" title="Strain (materials science)" class="mw-redirect">Strain (materials science)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Timoshenko_beam_theory" title="Timoshenko beam theory">Timoshenko beam theory</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Theorem_of_three_moments" title="Theorem of three moments">Theorem of three moments</a> (Clapeyron's theorem)</li>
+<li><a href="http://en.wikipedia.org/wiki/Three_point_flexural_test" title="Three point flexural test">Three point flexural test</a></li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=22" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text">For an Euler–Bernoulli beam not under any axial loading this axis is called the <a href="http://en.wikipedia.org/wiki/Neutral_axis" title="Neutral axis">neutral axis</a>.</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit&amp;section=23" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Timoshenko-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-Timoshenko_1-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text">Timoshenko, S., (1953), <i>History of strength of materials</i>, McGraw-Hill New York</span></li>
+<li id="cite_note-Truesdell-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-Truesdell_2-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text">Truesdell, C., (1960), <i>The rational mechanics of flexible or elastic bodies 1638-1788</i>, Venditioni Exponunt Orell Fussli Turici.</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation journal">Ballarini, Roberto (April 18, 2003). <a rel="nofollow" class="external text" href="http://www.memagazine.org/contents/current/webonly/webex418.html">"The Da Vinci-Euler-Bernoulli Beam Theory?"</a>. <i>Mechanical Engineering Magazine Online</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2006-07-22</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler%E2%80%93Bernoulli+beam+theory&amp;rft.atitle=The+Da+Vinci-Euler-Bernoulli+Beam+Theory%3F&amp;rft.au=Ballarini%2C+Roberto&amp;rft.aufirst=Roberto&amp;rft.aulast=Ballarini&amp;rft.date=April+18%2C+2003&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.memagazine.org%2Fcontents%2Fcurrent%2Fwebonly%2Fwebex418.html&amp;rft.jtitle=Mechanical+Engineering+Magazine+Online&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation journal">Seon M. Han, Haym Benaroya and Timothy Wei (March 22, 1999). <a rel="nofollow" class="external text" href="http://csxe.rutgers.edu/research/vibration/51.pdf">"Dynamics of Transversely Vibrating Beams using four Engineering Theories"</a> (PDF). final version. Academic Press<span class="reference-accessdate">. Retrieved <span class="nowrap">2007-04-15</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler%E2%80%93Bernoulli+beam+theory&amp;rft.aulast=Seon+M.+Han%2C+Haym+Benaroya+and+Timothy+Wei&amp;rft.au=Seon+M.+Han%2C+Haym+Benaroya+and+Timothy+Wei&amp;rft.btitle=Dynamics+of+Transversely+Vibrating+Beams+using+four+Engineering+Theories&amp;rft.date=March+22%2C+1999&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fcsxe.rutgers.edu%2Fresearch%2Fvibration%2F51.pdf&amp;rft.pub=Academic+Press&amp;rft.series=final+version&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-Gere-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-Gere_5-0"><span class="cite-accessibility-label">Jump up to: </span><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Gere_5-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Gere_5-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Gere_5-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-Gere_5-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-Gere_5-5"><sup><i><b>f</b></i></sup></a> <a href="#cite_ref-Gere_5-6"><sup><i><b>g</b></i></sup></a> <a href="#cite_ref-Gere_5-7"><sup><i><b>h</b></i></sup></a></span> <span class="reference-text">Gere, J. M. and Timoshenko, S. P., 1997, <i>Mechanics of Materials</i>, PWS Publishing Company.</span></li>
+<li id="cite_note-Reddy-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-Reddy_7-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text">Reddy, J. N., (2007), <i>Nonlinear finite element analysis</i>, Oxford University Press.</span></li>
+</ol>
+</div>
+<ul>
+<li><span class="citation conference">E. A. Witmer (1991–1992). "Elementary Bernoulli-Euler Beam Theory". <i>MIT Unified Engineering Course Notes</i>. pp.&nbsp;5–114 to 5–164.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler%E2%80%93Bernoulli+beam+theory&amp;rft.atitle=Elementary+Bernoulli-Euler+Beam+Theory&amp;rft.au=E.+A.+Witmer&amp;rft.aulast=E.+A.+Witmer&amp;rft.btitle=MIT+Unified+Engineering+Course+Notes&amp;rft.date=1991-1992&amp;rft.genre=bookitem&amp;rft.pages=5-114+to+5-164&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1015
+CPU time usage: 0.591 seconds
+Real time usage: 7.287 seconds
+Preprocessor visited node count: 1923/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 8690/2097152 bytes
+Template argument size: 19/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 1/500
+Lua time usage: 0.050/10.000 seconds
+Lua memory usage: 1.64 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 7016.140      1 - -total
+  2.04%  142.787      1 - Template:Refimprove
+  1.64%  114.946      1 - Template:Ambox
+  0.90%   63.465      2 - Template:Reflist
+  0.50%   34.779      2 - Template:Cite_journal
+  0.10%    6.749      1 - Template:Cite_conference
+  0.03%    1.951      1 - Template:Ibeam
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:2064935-0!*!0!!en!4!*!math=0 and timestamp 20150217230742 and revision id 644534391
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>									<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;oldid=644534391">http://en.wikipedia.org/w/index.php?title=Euler–Bernoulli_beam_theory&amp;oldid=644534391</a>"					</div>
+													<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="http://en.wikipedia.org/wiki/Category:Elasticity_%28physics%29" title="Category:Elasticity (physics)">Elasticity (physics)</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Solid_mechanics" title="Category:Solid mechanics">Solid mechanics</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Structural_analysis" title="Category:Structural analysis">Structural analysis</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Mechanical_engineering" title="Category:Mechanical engineering">Mechanical engineering</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Equations" title="Category:Equations">Equations</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="http://en.wikipedia.org/wiki/Category:Articles_needing_additional_references_from_November_2008" title="Category:Articles needing additional references from November 2008">Articles needing additional references from November 2008</a></li><li><a href="http://en.wikipedia.org/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Euler%E2%80%93Bernoulli+beam+theory&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Euler%E2%80%93Bernoulli+beam+theory" title="You're encouraged to log in; however, it's not mandatory. [Alt+Shift+o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li id="ca-nstab-main" class="selected"><span><a href="http://en.wikipedia.org/wiki/Euler%E2%80%93Bernoulli_beam_theory" title="View the content page [Alt+Shift+c]" accesskey="c">Article</a></span></li>
+															<li id="ca-talk"><span><a href="http://en.wikipedia.org/wiki/Talk:Euler%E2%80%93Bernoulli_beam_theory" title="Discussion about the content page [Alt+Shift+t]" accesskey="t">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 tabindex="0" id="p-variants-label"><span>Variants</span><a tabindex="-1" href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="http://en.wikipedia.org/wiki/Euler%E2%80%93Bernoulli_beam_theory">Read</a></span></li>
+															<li id="ca-edit"><span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=edit" title="You can edit this page. Please use the preview button before saving [Alt+Shift+e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=history" title="Past versions of this page [Alt+Shift+h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div style="" id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 tabindex="0" id="p-cactions-label"><span>More</span><a tabindex="-1" href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input autocomplete="off" tabindex="1" name="search" placeholder="Search" title="Search Wikipedia [Alt+Shift+f]" accesskey="f" id="searchInput" type="search"><input value="Special:Search" name="title" type="hidden"><input name="go" value="Go" title="Go to a page with this exact name if one exists" id="searchButton" class="searchButton" type="submit">								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-mainpage-description"><a href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [Alt+Shift+z]" accesskey="z">Main page</a></li>
+													<li id="n-contents"><a href="http://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+													<li id="n-featuredcontent"><a href="http://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+													<li id="n-currentevents"><a href="http://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+													<li id="n-randompage"><a href="http://en.wikipedia.org/wiki/Special:Random" title="Load a random article [Alt+Shift+x]" accesskey="x">Random article</a></li>
+													<li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li>
+													<li id="n-shoplink"><a href="http://shop.wikimedia.org/" title="Visit the Wikimedia Shop">Wikimedia Shop</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-help"><a href="http://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+													<li id="n-aboutsite"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+													<li id="n-portal"><a href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+													<li id="n-recentchanges"><a href="http://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [Alt+Shift+r]" accesskey="r">Recent changes</a></li>
+													<li id="n-contactpage"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Euler%E2%80%93Bernoulli_beam_theory" title="List of all English Wikipedia pages containing links to this page [Alt+Shift+j]" accesskey="j">What links here</a></li>
+													<li id="t-recentchangeslinked"><a href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Euler%E2%80%93Bernoulli_beam_theory" title="Recent changes in pages linked from this page [Alt+Shift+k]" accesskey="k">Related changes</a></li>
+													<li id="t-upload"><a href="http://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [Alt+Shift+u]" accesskey="u">Upload file</a></li>
+													<li id="t-specialpages"><a href="http://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [Alt+Shift+q]" accesskey="q">Special pages</a></li>
+													<li id="t-permalink"><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;oldid=644534391" title="Permanent link to this revision of the page">Permanent link</a></li>
+													<li id="t-info"><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;action=info" title="More information about this page">Page information</a></li>
+													<li id="t-wikibase"><a href="http://www.wikidata.org/wiki/Q805099" title="Link to connected data repository item [Alt+Shift+g]" accesskey="g">Wikidata item</a></li>
+						<li id="t-cite"><a href="http://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=Euler%E2%80%93Bernoulli_beam_theory&amp;id=644534391" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+
+			<div class="body">
+									<ul>
+													<li id="coll-create_a_book"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Euler%E2%80%93Bernoulli+beam+theory">Create a book</a></li>
+													<li id="coll-download-as-rdf2latex"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Euler%E2%80%93Bernoulli+beam+theory&amp;oldid=644534391&amp;writer=rdf2latex">Download as PDF</a></li>
+													<li id="t-print"><a href="http://en.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;printable=yes" title="Printable version of this page [Alt+Shift+p]" accesskey="p">Printable version</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label"><span aria-haspopup="true" role="button" tabindex="0" title="Language settings" class="uls-settings-trigger"></span>
+			<h3 id="p-lang-label">Languages</h3>
+
+			<div class="body">
+									<ul>
+													<li class="interlanguage-link interwiki-ar"><a href="http://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A9_%D8%B4%D8%B9%D8%A7%D8%B9_%D8%A3%D9%88%D9%8A%D9%84%D8%B1-%D8%A8%D9%8A%D8%B1%D9%86%D9%88%D9%84%D9%8A" title="معادلة شعاع أويلر-بيرنولي – Arabic" hreflang="ar" lang="ar">العربية</a></li>
+													<li class="interlanguage-link interwiki-de"><a href="http://de.wikipedia.org/wiki/Balkentheorie" title="Balkentheorie – German" hreflang="de" lang="de">Deutsch</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="http://es.wikipedia.org/wiki/Curva_el%C3%A1stica" title="Curva elástica – Spanish" hreflang="es" lang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Th%C3%A9orie_des_poutres" title="Théorie des poutres – French" hreflang="fr" lang="fr">Français</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="http://it.wikipedia.org/wiki/Teoria_della_trave" title="Teoria della trave – Italian" hreflang="it" lang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-he"><a href="http://he.wikipedia.org/wiki/%D7%94%D7%A0%D7%97%D7%AA_%D7%90%D7%95%D7%99%D7%9C%D7%A8-%D7%91%D7%A8%D7%A0%D7%95%D7%9C%D7%99" title="הנחת אוילר-ברנולי – Hebrew" hreflang="he" lang="he">עברית</a></li>
+													<li class="interlanguage-link interwiki-ml"><a href="http://ml.wikipedia.org/wiki/%E0%B4%93%E0%B4%AF%E0%B5%8D%E0%B4%B2%E0%B5%BC-%E0%B4%AC%E0%B5%86%E0%B5%BC%E0%B4%A3%E0%B5%82%E0%B4%B2%E0%B4%BF_%E0%B4%89%E0%B4%A4%E0%B5%8D%E0%B4%A4%E0%B4%B0%E0%B4%B8%E0%B4%BF%E0%B4%A6%E0%B5%8D%E0%B4%A7%E0%B4%BE%E0%B4%A8%E0%B5%8D%E0%B4%A4%E0%B4%82" title="ഓയ്ലർ-ബെർണൂലി ഉത്തരസിദ്ധാന്തം – Malayalam" hreflang="ml" lang="ml">മലയാളം</a></li>
+													<li class="interlanguage-link interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Balkvergelijking_van_Euler-Bernoulli" title="Balkvergelijking van Euler-Bernoulli – Dutch" hreflang="nl" lang="nl">Nederlands</a></li>
+													<li class="interlanguage-link interwiki-ja"><a href="http://ja.wikipedia.org/wiki/%E5%BC%BE%E6%80%A7%E6%9B%B2%E7%B7%9A%E6%96%B9%E7%A8%8B%E5%BC%8F" title="弾性曲線方程式 – Japanese" hreflang="ja" lang="ja">日本語</a></li>
+													<li class="interlanguage-link interwiki-pms"><a href="http://pms.wikipedia.org/wiki/Teor%C3%ACa_dla_trav" title="Teorìa dla trav – Piedmontese" hreflang="pms" lang="pms">Piemontèis</a></li>
+													<li class="interlanguage-link interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Modelo_de_viga_de_Euler-Bernoulli" title="Modelo de viga de Euler-Bernoulli – Portuguese" hreflang="pt" lang="pt">Português</a></li>
+													<li class="interlanguage-link interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Balkteori" title="Balkteori – Swedish" hreflang="sv" lang="sv">Svenska</a></li>
+													<li class="interlanguage-link interwiki-uk"><a href="http://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D1%96%D1%8F_%D0%B1%D0%B0%D0%BB%D0%BA%D0%B8_%D0%95%D0%B9%D0%BB%D0%B5%D1%80%D0%B0-%D0%91%D0%B5%D1%80%D0%BD%D1%83%D0%BB%D0%BB%D1%96" title="Теорія балки Ейлера-Бернуллі – Ukrainian" hreflang="uk" lang="uk">Українська</a></li>
+													<li class="interlanguage-link interwiki-ur"><a href="http://ur.wikipedia.org/wiki/%D8%A7%D9%88%DB%8C%D9%84%D8%B1_%D8%A8%D8%B1%D9%86%D9%88%D9%84%DB%8C_%D8%A8%DB%8C%D9%85_%D9%85%D8%B3%D8%A7%D9%88%D8%A7%D8%AA" title="اویلر برنولی بیم مساوات – Urdu" hreflang="ur" lang="ur">اردو</a></li>
+													<li class="interlanguage-link interwiki-zh"><a href="http://zh.wikipedia.org/wiki/%E6%AD%90%E6%8B%89%EF%B9%A3%E4%BC%AF%E5%8A%AA%E5%8A%9B%E6%A3%9F%E6%A8%91%E6%96%B9%E7%A8%8B" title="歐拉﹣伯努力棟樑方程 – Chinese" hreflang="zh" lang="zh">中文</a></li>
+													
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a action="edit" href="http://www.wikidata.org/wiki/Q805099#sitelinks-wikipedia" text="Edit links" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 28 January 2015, at 10:03.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/w/index.php?title=Euler%E2%80%93Bernoulli_beam_theory&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+															<a href="http://wikimediafoundation.org/"><img src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/wikimedia-button.png" srcset="//bits.wikimedia.org/images/wikimedia-button-1.5x.png 1.5x, //bits.wikimedia.org/images/wikimedia-button-2x.png 2x" alt="Wikimedia Foundation" width="88" height="31"></a>
+													</li>
+											<li id="footer-poweredbyico">
+															<a href="http://www.mediawiki.org/"><img src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="//bits.wikimedia.org/static-1.25wmf17/resources/assets/poweredby_mediawiki_132x47.png 1.5x, //bits.wikimedia.org/static-1.25wmf17/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a>
+													</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.cite","mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents.statsd","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"],null,true);
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false\u0026amp;lang=en\u0026amp;modules=site\u0026amp;only=scripts\u0026amp;skin=vector\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script><script src="Euler%E2%80%93Bernoulli%20beam%20theory%20-%20Wikipedia,%20the%20free%20encyclopedia_files/load_003.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":103,"wgHostname":"mw1209"});
+}</script>
+	
+
+<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>

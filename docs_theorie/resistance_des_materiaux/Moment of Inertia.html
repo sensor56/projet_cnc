@@ -1,0 +1,182 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+   <title>Moment of Inertia</title>
+</head>
+<body bgcolor="#FFE4C8">
+<!-- Copyright 1998 by Carl Rod Nave, RodNave@gsu.edu-->
+
+<a name="rlin"></a>
+<table width="580" border="1" cellpadding="2" cellspacing="2" height="370">
+<tbody><tr>
+<td width="514" height="309">
+<h1 align="center">Rotational and Linear Example</h1>
+ <p>  A mass m is placed on a rod of length r and negligible mass, and 
+constrained to rotate about a fixed axis. If the mass is released from a
+ horizontal orientation, it can be described either in terms of force 
+and accleration with <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/newt.html#fma">Newton's second law</a> for linear motion, or as a pure rotation about the axis with <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/n2r.html#n2r">Newton's second law for rotation</a>.
+ This provides a setting for comparing linear and rotational quantities 
+for the same system. This process leads to the expression for the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mi.html#mi">moment of inertia</a> of a point mass. </p>
+<center><img src="Moment%20of%20Inertia_files/rlin2.gif" usemap="#mi2c"></center>
+
+
+<map name="mi2c">
+
+<area shape="rect" coords="5,25,80,75" href="http://hyperphysics.phy-astr.gsu.edu/hbase/newt.html#fma">
+<area shape="rect" coords="415,25,490,75" href="http://hyperphysics.phy-astr.gsu.edu/hbase/n2r.html#n2r">
+<area shape="rect" coords="315,105,390,170" href="http://hyperphysics.phy-astr.gsu.edu/hbase/torq.html#torq">
+<area shape="rect" coords="415,105,500,190" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rotq.html#rq">
+
+</map>
+
+
+<!-- nt2  5,25,80,75 
+nt2rot  415,25,490,75
+torque 315,105,390,170
+angular acceleration 415,105,500,190
+
+-->
+
+
+</td>
+<td width="66" align="center"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">Index</a><br><br><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/inecon.html">Moment of inertia concepts</a><br><br><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mi.html#mix">Moment of inertia examples</a></td></tr>
+<tr>
+<td height="17">&nbsp;<table><tbody><tr><td width="450"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html"> HyperPhysics</a>*****<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html#mechcon">     Mechanics </a>*****<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#rotcon"> Rotation </a></td><td align="right"><font size="-1"><i>R Nave</i></font></td></tr></tbody></table></td>
+<td><a href="javascript:history.go(-1)">Go Back</a></td></tr>
+</tbody></table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a name="irod"></a>
+<table width="580" border="1" cellpadding="2" cellspacing="2" height="370">
+<tbody><tr>
+<td width="514" height="309">
+<h1 align="center">Moment of Inertia: Rod</h1>
+  <p>For a uniform rod with negligible thickness, the moment of inertia about
+                                                          its <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/cm.html#cm">center of mass</a> is</p>
+<script>
+function irod(){fh=document.forms[0];fh.I.value=II=fh.m.value*fh.L.value*fh.L.value/12;fh.Ie.value=II*4}
+</script>
+<form method="" action="">
+<table><tbody><tr><td><img src="Moment%20of%20Inertia_files/rod1.gif"></td>
+<td>For mass M = <input name="m" size="6" onchange="irod()" type="text">kg and length <br>L = <input name="L" size="6" onchange="irod()" type="text">m, the moment of inertia is <br>I = <input name="I" size="6" onchange="irod()" type="text">kg m²
+<table border="1"><tbody><tr><td><a href="#irod2">Show</a></td></tr></tbody></table></td></tr></tbody></table>The
+ moment of inertia about the end of the rod can be calculated directly 
+or obtained from the center of mass expression by use of the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/parax.html#pax">Parallel axis theorem</a>.<p></p>
+
+<table><tbody><tr><td><img src="Moment%20of%20Inertia_files/rod2.gif"></td><td> The moment of inertia about the end of the rod is<br>
+I = <input name="Ie" size="6" onchange="irod()" type="text">kg m².<table border="1"><tbody><tr><td><a href="#irod4">Show</a></td></tr></tbody></table></td></tr></tbody></table>
+
+<p>If the thickness is not negligible, then the expression for I of a <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/icyl.html#icyl">cylinder</a> about its end can be used. </p>
+</form></td>
+<td width="66" align="center"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">Index</a><br><br><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/inecon.html">Moment of inertia concepts</a></td></tr>
+<tr>
+<td height="17">&nbsp;<table><tbody><tr><td width="450"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html"> HyperPhysics</a>*****<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html#mechcon">     Mechanics </a>*****<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#rotcon"> Rotation </a></td><td align="right"><font size="-1"><i>R Nave</i></font></td></tr></tbody></table></td>
+<td><a href="javascript:history.go(-1)">Go Back</a></td></tr>
+</tbody></table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a name="irod2"></a>
+<table width="580" border="1" cellpadding="2" cellspacing="2" height="370">
+<tbody><tr>
+<td width="514" height="309">
+<h1 align="center">Moment of Inertia: Rod</h1>
+
+<p>Calculating the <a href="#irod">moment of inertia of a rod</a> about its <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/cm.html#cm">center of mass</a>
+ is a good example of the need for calculus to deal with the properties 
+of continuous mass distributions. The moment of inertia of a <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mi2.html#rlin">point mass</a> is given by I = mr<sup>2</sup>,
+ but the rod would have to be considered to be an infinite number of 
+point masses, and each must be multiplied by the square of its distance 
+from the axis. The resulting infinite sum is called an <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/intcon.html#intcon">integral</a>. The   <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mi.html#mig">general form</a> for the moment of inertia
+                                                         is:</p>
+<center><img src="Moment%20of%20Inertia_files/rod3.gif"></center>
+
+
+                                                         <p>When the 
+mass element dm is expressed in terms of a length element dr along the 
+rod and the sum taken over the entire length, the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/intpol.html#c1">integral</a> takes the form:</p> 
+<center><table><tbody><tr><td><img src="Moment%20of%20Inertia_files/rod4.gif"></td><td> <table border="1"><tbody><tr><td><a href="#irod3">Show details</a></td></tr></tbody></table></td></tr></tbody></table></center>
+</td>
+<td width="66" align="center"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">Index</a><br><br><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/inecon.html">Moment of inertia concepts</a></td></tr>
+<tr>
+<td height="17">&nbsp;<table><tbody><tr><td width="450"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html"> HyperPhysics</a>*****<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html#mechcon">     Mechanics </a>*****<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#rotcon"> Rotation </a></td><td align="right"><font size="-1"><i>R Nave</i></font></td></tr></tbody></table></td>
+<td><a href="javascript:history.go(-1)">Go Back</a></td></tr>
+</tbody></table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a name="irod3"></a>
+<table width="580" border="1" cellpadding="2" cellspacing="2" height="370">
+<tbody><tr>
+<td width="514" height="309">
+<h1 align="center">Rod Moment Calculation</h1>
+<table><tbody><tr><td>
+    <p>The moment of inertia calculation for a <a href="#irod">uniform rod</a>
+ involves expressing 
+any mass element in terms of a distance
+element dr along the rod. To perform the integral, it is necessary to 
+express eveything in the integral in terms of one variable, in this case
+ the length variable r. Since the total
+length L has mass M, then M/L is the 
+proportion of mass to length and the mass
+element can be expressed as shown. 
+Integrating from -L/2 to +L/2 from the 
+center includes the entire rod. The integral
+is of <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/intpol.html#c1">polynomial</a> type:</p>
+</td><td><img src="Moment%20of%20Inertia_files/rod5.gif"></td></tr></tbody></table>
+<center><img src="Moment%20of%20Inertia_files/rod6.gif"></center>
+</td>
+<td width="66" align="center"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">Index</a><br><br><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/inecon.html">Moment of inertia concepts</a></td></tr>
+<tr>
+<td height="17">&nbsp;<table><tbody><tr><td width="450"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html"> HyperPhysics</a>*****<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html#mechcon">     Mechanics </a>*****<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#rotcon"> Rotation </a></td><td align="right"><font size="-1"><i>R Nave</i></font></td></tr></tbody></table></td>
+<td><a href="javascript:history.go(-1)">Go Back</a></td></tr>
+</tbody></table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a name="irod4"></a>
+<table width="580" border="1" cellpadding="2" cellspacing="2" height="370">
+<tbody><tr>
+<td width="514" height="309">
+<h1 align="center">Rod Moment About End</h1>
+<table><tbody><tr><td>
+    <p>   Once the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mi.html#mi">moment of inertia</a> of an 
+object about its <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/cm.html#cm">center of mass</a> has been
+determined, the moment about any other 
+axis can be determined by the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/parax.html#pax">Parallel axis theorem</a>:</p>
+</td><td><img src="Moment%20of%20Inertia_files/rod1.gif"></td></tr></tbody></table>
+<center><img src="Moment%20of%20Inertia_files/rod7.gif"></center>
+
+
+<p>In this case that becomes</p>
+
+<center><img src="Moment%20of%20Inertia_files/rod8.gif"></center>
+
+<p>This can be confirmed by direct
+<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/intpol.html#c1">integration</a>  </p>
+<center><img src="Moment%20of%20Inertia_files/rod10.gif"></center>
+</td>
+<td width="66" align="center"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">Index</a><br><br><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/inecon.html">Moment of inertia concepts</a></td></tr>
+<tr>
+<td height="17">&nbsp;<table><tbody><tr><td width="450"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html"> HyperPhysics</a>*****<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html#mechcon">     Mechanics </a>*****<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#rotcon"> Rotation </a></td><td align="right"><font size="-1"><i>R Nave</i></font></td></tr></tbody></table></td>
+<td><a href="javascript:history.go(-1)">Go Back</a></td></tr>
+</tbody></table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body></html>
