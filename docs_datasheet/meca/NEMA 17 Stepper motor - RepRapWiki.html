@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>NEMA 17 Stepper motor - RepRapWiki</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.1">
+<link rel="shortcut icon" href="http://reprap.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://reprap.org/mediawiki/opensearch_desc.php" title="RepRapWiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://reprap.org/mediawiki/api.php?action=rsd">
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html">
+<link rel="alternate" type="application/atom+xml" title="RepRapWiki Atom feed" href="http://reprap.org/mediawiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="alternate" type="application/rss+xml" title="RepRapWiki RSS feed" href="http://reprap.org/mediawiki/index.php?title=Special:RecentChanges&amp;feed=rss">
+<link rel="stylesheet" href="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/load_002.css">
+<style>
+.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:4250852ed2349a0d4d0fc6509a3e7d4c */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.autoellipsis-matched,.highlight{font-weight:bold}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:9780324491b653a3780e2d029bdc140c */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{text-decoration:none;color:black}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:52b1797f70c7e4094dfa4191101944e8 */</style><style>
+table.jquery-tablesorter th.headerSort{background-image:url(data:image/gif;base64,R0lGODlhFQAJAIABAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAxODAxMTc0MDcyMDY4MTE4OEM2REYyN0ExMDhBNDJFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjdCNTAyODcwMEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjdCNTAyODZGMEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDE4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDE4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQBAAABACwAAAAAFQAJAAACF4yPgMsJ2mJ4VDKKrd4GVz5lYPeMiVUAADs=);background-image:url(http://reprap.org/mediawiki/resources/jquery/images/sort_both.gif?2013-05-28T13:11:40Z)!ie;cursor:pointer;background-repeat:no-repeat;background-position:center right;padding-right:21px}table.jquery-tablesorter th.headerSortUp{background-image:url(data:image/gif;base64,R0lGODlhFQAEAIABAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAzODAxMTc0MDcyMDY4MTE4OEM2REYyN0ExMDhBNDJFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjdCNTAyODc0MEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjdCNTAyODczMEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDM4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDM4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQBAAABACwAAAAAFQAEAAACDYwfoAvoz9qbZ9FrJC0AOw==);background-image:url(http://reprap.org/mediawiki/resources/jquery/images/sort_up.gif?2013-05-28T13:11:40Z)!ie}table.jquery-tablesorter th.headerSortDown{background-image:url(data:image/gif;base64,R0lGODlhFQAEAIABAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAyODAxMTc0MDcyMDY4MTE4OEM2REYyN0ExMDhBNDJFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhFNzNGQjI3MEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhFNzNGQjI2MEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDI4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDI4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQBAAABACwAAAAAFQAEAAACDYyPAcmtsJyDVDKKWQEAOw==);background-image:url(http://reprap.org/mediawiki/resources/jquery/images/sort_down.gif?2013-05-28T13:11:40Z)!ie}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:f76a6d490aadf6cc11dde0793db4c550 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/load.css">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:0c3e4654831aeb1f565f4042e7f0f926 */</style>
+
+<script src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/ca-pub-7619640428450381.js" type="text/javascript" async=""></script><script src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/load_002.php"></script><script src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/load_006.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"NEMA_17_Stepper_motor","wgTitle":"NEMA 17 Stepper motor","wgCurRevisionId":145105,"wgArticleId":25308,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Vitamin","Stepper motors"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"NEMA_17_Stepper_motor","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRestrictionRead":[],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":6,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs274":false,"searchNs275":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mediawiki_121:resourceloader:filter:minify-js:7:693c4e15be025fa0b3a3b7a8bd3447ec */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/load.php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mediawiki/skins/vector/csshover.min.htc")}</style><![endif]--><script src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/load_003.php" async=""></script><script src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/load_005.php" async=""></script></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-NEMA_17_Stepper_motor skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">NEMA 17 Stepper motor</span></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From RepRapWiki</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-navigation">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><div class="vitaminBox" style="float: right; width: 240px; color: white; padding: 5px; margin: 0 0 5px 5px; text-align: center; border-radius: 15px; font-weight: bold; background-color:#009200;"><span style="font-size: 130%;">NEMA 17 Stepper motor</span><br>
+<p><span style="font-size: bigger; font-weight: bolder;">Vitamin</span>
+</p>
+<div style="background-color: white; margin: 0 5px 5px 5px; border-radius: 0 0 8px 8px; color: black; font-weight: normal; text-align: left;">
+<div class="center"><div class="floatnone"><a href="http://reprap.org/wiki/File:Motor-pap.png" class="image"><img style="display: inline;" srcset="/mediawiki/images/thumb/f/f9/Motor-pap.png/345px-Motor-pap.png 1.5x, /mediawiki/images/thumb/f/f9/Motor-pap.png/460px-Motor-pap.png 2x" alt="Motor-pap.png" src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/230px-Motor-pap.png" data-url="/mediawiki/images/thumb/f/f9/Motor-pap.png/230px-Motor-pap.png" data-srcset="/mediawiki/images/thumb/f/f9/Motor-pap.png/345px-Motor-pap.png 1.5x, /mediawiki/images/thumb/f/f9/Motor-pap.png/460px-Motor-pap.png 2x" width="230" height="221"></a></div></div>
+<table style="background-color: transparent; width: 100%;">
+
+<tbody><tr>
+<td colspan="2" style="text-align: center"> A NEMA 17 sized stepper motor.
+</td></tr>
+<tr>
+<td style="vertical-align: top"> <b>Wikipedia</b> </td>
+<td> <a href="http://en.wikipedia.org/wiki/Stepper_motor" class="extiw" title="wikipedia:Stepper motor">Stepper motor</a>
+</td></tr></tbody></table>
+</div>
+</div>
+<p><br>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="http://reprap.org/wiki/File:RepRap-NEMA-17.jpg" class="image"><img style="display: inline;" srcset="/mediawiki/images/thumb/c/c1/RepRap-NEMA-17.jpg/270px-RepRap-NEMA-17.jpg 1.5x, /mediawiki/images/thumb/c/c1/RepRap-NEMA-17.jpg/360px-RepRap-NEMA-17.jpg 2x" alt="" src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/180px-RepRap-NEMA-17.jpg" class="thumbimage" data-url="/mediawiki/images/thumb/c/c1/RepRap-NEMA-17.jpg/180px-RepRap-NEMA-17.jpg" data-srcset="/mediawiki/images/thumb/c/c1/RepRap-NEMA-17.jpg/270px-RepRap-NEMA-17.jpg 1.5x, /mediawiki/images/thumb/c/c1/RepRap-NEMA-17.jpg/360px-RepRap-NEMA-17.jpg 2x" width="180" height="171"></a>  <div class="thumbcaption"><div class="magnify"><a href="http://reprap.org/wiki/File:RepRap-NEMA-17.jpg" class="internal" title="Enlarge"><img src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/magnify-clip.png" alt="" width="15" height="11"></a></div>another NEMA-17 size motor</div></div></div>
+<p><br>
+A <b>NEMA 17 stepper motor</b> is a <a href="http://reprap.org/wiki/Stepper_motor" title="Stepper motor">stepper motor</a>
+ with a 1.7 x 1.7 inch (43.2 x 43.2 mm) faceplate. The NEMA 17 is larger
+ and generally heavier than for example a NEMA 14, but this also means 
+it has more room to put a higher torque. However, its size is <i>not</i> an indication of its power.
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Dimensions"><span class="tocnumber">1</span> <span class="toctext">Dimensions</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Common_Stepper_Motor_Models"><span class="tocnumber">2</span> <span class="toctext">Common Stepper Motor Models</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Common_Stepper_Motor_Models_2"><span class="tocnumber">4</span> <span class="toctext">Common Stepper Motor Models</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h2> <span class="mw-headline" id="Dimensions"> Dimensions </span></h2>
+<p><a href="http://reprap.org/wiki/File:Step_motor_nema_17_stepper_motor.jpg" class="image"><img style="display: inline;" srcset="/mediawiki/images/thumb/7/70/Step_motor_nema_17_stepper_motor.jpg/675px-Step_motor_nema_17_stepper_motor.jpg 1.5x, /mediawiki/images/thumb/7/70/Step_motor_nema_17_stepper_motor.jpg/900px-Step_motor_nema_17_stepper_motor.jpg 2x" alt="Step motor nema 17 stepper motor.jpg" src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/450px-Step_motor_nema_17_stepper_motor.jpg" data-url="/mediawiki/images/thumb/7/70/Step_motor_nema_17_stepper_motor.jpg/450px-Step_motor_nema_17_stepper_motor.jpg" data-srcset="/mediawiki/images/thumb/7/70/Step_motor_nema_17_stepper_motor.jpg/675px-Step_motor_nema_17_stepper_motor.jpg 1.5x, /mediawiki/images/thumb/7/70/Step_motor_nema_17_stepper_motor.jpg/900px-Step_motor_nema_17_stepper_motor.jpg 2x" width="450" height="241"></a>
+</p><p><br>
+</p>
+<h2> <span class="mw-headline" id="Common_Stepper_Motor_Models"> Common Stepper Motor Models </span></h2>
+<p>the most commonly used stepper motors in Reprap based 3d printers are
+ the kysan 1124090/42BYGH4803 or the rattm 17HS8401 or Wantai 42BYGHW609
+</p><p>however motors close to NEMA17 size, rated 1.5A to 1.8A or less, 
+1-4 volts, 3 to 8 mH, 62oz.in (0.44Nm, 4.5kg.cm) or more of torque, 1.8 
+or 0.9 degrees per step (200/400 steps/rev respectively) can also work.
+</p>
+<h2> <span class="mw-headline" id="References"> References </span></h2>
+<ul><li> <a href="http://reprap.org/wiki/Stepper_motor" title="Stepper motor">Stepper motor</a>
+</li></ul>
+<h2> <span class="mw-headline" id="Common_Stepper_Motor_Models_2"> Common Stepper Motor Models </span></h2>
+<p>You are welcome to add information on a stepper motor you encounter, 
+but please add only steppers not other motors which were tested to 
+actually work on some or all printer.
+</p><p><br>	
+The most commonly used stepper motors in Reprap based 3d printers are 
+the kysan 1124090/42BYGH4803 or the rattm 17HS8401 or Wantai 42BYGHW609
+</p><p><br>	
+</p><p>however motors close to NEMA17 size, rated 1.5A to 1.8A or less, 
+1-4 volts, 3 to 8 mH, 62oz.in (0.44Nm, 4.5kg.cm) or more of torque, 1.8 
+or 0.9 degrees per step (200/400 steps/rev respectively) can also work.
+</p>
+<table class="wikitable sortable jquery-tablesorter">
+
+<thead><tr>
+<th title="Sort ascending" class="headerSort"> Model </th>
+<th title="Sort ascending" class="headerSort"> Holding Torque </th>
+<th title="Sort ascending" class="headerSort"> Rated voltage </th>
+<th title="Sort ascending" class="headerSort"> Shaft </th>
+<th title="Sort ascending" class="headerSort"> Step angle </th>
+<th title="Sort ascending" class="headerSort"> Motor length
+</th></tr></thead><tbody>
+<tr>
+<td>  42HT47</td>
+<td> 44&nbsp;N·cm </td>
+<td> 2.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm Dual </td>
+<td> 1.8° </td>
+<td> 47&nbsp;mm
+</td></tr>
+<tr>
+<td> 42SHD0404-22 </td>
+<td> 52&nbsp;N·cm </td>
+<td> 3.84&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm Single </td>
+<td> 1.8° </td>
+<td> 48&nbsp;mm
+</td></tr>
+<tr>
+<td> 42BYGH4803(SKU&nbsp;1124030)</td>
+<td> 54.0&nbsp;N·cm </td>
+<td> 4.2&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 48&nbsp;mm
+</td></tr>
+<tr>
+<td> 42BYGH4803-DC (SKU&nbsp;1124090) </td>
+<td> 54.0&nbsp;N·cm </td>
+<td> 4.2&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 48&nbsp;mm
+</td></tr>
+<tr>
+<td> 1040222 </td>
+<td> 88&nbsp;N·cm </td>
+<td> 2.6&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 48&nbsp;mm
+</td></tr>
+<tr>
+<td> LDO-42STH47-1684A </td>
+<td> 50&nbsp;N·cm </td>
+<td> 2.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single or dula </td>
+<td> 1.8° </td>
+<td> 47&nbsp;mm
+</td></tr>
+<tr>
+<td> 4118S-62-07</td>
+<td> 31&nbsp;N·cm </td>
+<td> &nbsp; </td>
+<td> Ø&nbsp;5&nbsp;mm </td>
+<td> 1.8° </td>
+<td> 34&nbsp;mm
+</td></tr>
+<tr>
+<td> 17HS4417 </td>
+<td> 40.0&nbsp;N·cm </td>
+<td> 2.6&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 40&nbsp;mm
+</td></tr>
+<tr>
+<td> SM-42BYG011-25 </td>
+<td> 23.0&nbsp;N·cm </td>
+<td> 12&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 34&nbsp;mm
+</td></tr>
+<tr>
+<td> 17HS1011-20B </td>
+<td> 28.0&nbsp;N·cm </td>
+<td> 4.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 34&nbsp;mm
+</td></tr>
+<tr>
+<td> 17HS3001-20B </td>
+<td> 40.0&nbsp;N·cm </td>
+<td> 2.0&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 40&nbsp;mm
+</td></tr>
+<tr>
+<td> 17HS5005-S24 </td>
+<td> 44.0&nbsp;N·cm </td>
+<td> 3&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm double </td>
+<td> 1.8° </td>
+<td> 48&nbsp;mm
+</td></tr>
+<tr>
+<td> 17HS6002-27B </td>
+<td> 65.0&nbsp;N·cm </td>
+<td> 4.05&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single flat</td>
+<td> 1.8° </td>
+<td> 60&nbsp;mm
+</td></tr>
+<tr>
+<td> 17HD2038E </td>
+<td> 45.0&nbsp;N·cm </td>
+<td> &nbsp; </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> &nbsp;
+</td></tr>
+<tr>
+<td> 17HS19-1684S </td>
+<td> 55&nbsp;N·cm </td>
+<td> 2.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 47&nbsp;mm
+</td></tr>
+<tr>
+<td> KH42JM2B087C </td>
+<td> 33&nbsp;N·cm </td>
+<td> 6.7&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 42&nbsp;mm
+</td></tr>
+<tr>
+<td> SY42STH47-1206A </td>
+<td> 31.1&nbsp;N·cm </td>
+<td> 4.0&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 40&nbsp;mm
+</td></tr>
+<tr>
+<td> SY42STH47-1504A </td>
+<td> 55.0 N·cm </td>
+<td> 2.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm </td>
+<td> 1.8° </td>
+<td> 47&nbsp;mm
+</td></tr>
+<tr>
+<td> SY42STH47-1684A </td>
+<td> 43.1&nbsp;N·cm </td>
+<td> 2.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 48&nbsp;mm
+</td></tr>
+<tr>
+<td> SY42STH47-1684B </td>
+<td> 43.1&nbsp;N·cm </td>
+<td> 2.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm double </td>
+<td> 1.8° </td>
+<td> 48&nbsp;mm
+</td></tr>
+<tr>
+<td>TB35HT36-1004A </td>
+<td> 35.3&nbsp;N·cm </td>
+<td> 2.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single</td>
+<td> 1.8° </td>
+<td> 36&nbsp;mm
+</td></tr>
+<tr>
+<td>TB35HT36-1004B </td>
+<td> 35.3&nbsp;N·cm </td>
+<td> 2.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm double</td>
+<td> 1.8° </td>
+<td> 36&nbsp;mm
+</td></tr>
+<tr>
+<td>QSH4218-51-049 </td>
+<td> 49&nbsp;N·cm </td>
+<td> &nbsp; </td>
+<td> Ø&nbsp;5&nbsp;mm </td>
+<td> 1.8° </td>
+<td> 47&nbsp;mm
+</td></tr>
+<tr>
+<td> 42BYGH W811 </td>
+<td> 47.0&nbsp;N·cm </td>
+<td> 3.1&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm </td>
+<td> 1.8° </td>
+<td> 48&nbsp;mm
+</td></tr>
+
+
+
+
+
+
+</tbody><tfoot></tfoot></table>
+<p><br>
+</p>
+<pre>--- ignore everything below, this page is a work in progress to build a table without all the external linking ---
+</pre>
+<p><br>
+</p>
+
+}
+<table class="wikitable sortable jquery-tablesorter">
+
+<thead><tr>
+<th title="Sort ascending" class="headerSort"> Model </th>
+<th title="Sort ascending" class="headerSort"> Holding Torque </th>
+<th title="Sort ascending" class="headerSort"> Rated voltage </th>
+<th title="Sort ascending" class="headerSort"> Shaft </th>
+<th title="Sort ascending" class="headerSort"> Step angle </th>
+<th title="Sort ascending" class="headerSort"> Motor length
+</th></tr></thead><tbody>
+<tr>
+<td>417-11-48-02 </td>
+<td> 7.0&nbsp;N·cm </td>
+<td> &nbsp; </td>
+<td> Ø&nbsp;5&nbsp;mm </td>
+<td> 1.8° </td>
+<td> 28&nbsp;mm
+</td></tr>
+<tr>
+<td> 4018X-07-04 </td>
+<td> 11.0&nbsp;N·cm </td>
+<td> &nbsp; </td>
+<td> Ø&nbsp;5&nbsp;mm </td>
+<td> 1.8° </td>
+<td> 26&nbsp;mm
+</td></tr>
+<tr>
+<td> 4118L-25P-07R0 </td>
+<td> 48.5&nbsp;N·cm </td>
+<td> &nbsp; </td>
+<td> Ø&nbsp;5&nbsp;mm </td>
+<td> 1.8° </td>
+<td> 48&nbsp;mm
+</td></tr>
+<tr>
+<td> KH4248-B95101 </td>
+<td> 48&nbsp;N·cm </td>
+<td> &nbsp; </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 48&nbsp;mm
+</td></tr>
+<tr>
+<td> PK244-01AA </td>
+<td> 33.0&nbsp;N·cm </td>
+<td> 5.6&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 39&nbsp;mm
+</td></tr>
+<tr>
+<td> PX243M-03AA </td>
+<td> 20.0&nbsp;N·cm </td>
+<td> &nbsp; </td>
+<td> single </td>
+<td> 0.9° </td>
+<td> 42&nbsp;mm
+</td></tr>
+<tr>
+<td> PX243M-01AA </td>
+<td> 15.0&nbsp;N·cm </td>
+<td> &nbsp; </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 0.9° </td>
+<td> 33&nbsp;mm
+</td></tr>
+<tr>
+<td> 17H185H-04A </td>
+<td> 43.8&nbsp;N·cm </td>
+<td> 2.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 42&nbsp;mm
+</td></tr>
+<tr>
+<td> 17H185H-04B </td>
+<td> 43.8&nbsp;N·cm </td>
+<td> 2.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm double </td>
+<td> 1.8° </td>
+<td> 42&nbsp;mm
+</td></tr>
+<tr>
+<td> KH42KM2R001 </td>
+<td> 45&nbsp;N·cm </td>
+<td> &nbsp; </td>
+<td> Ø&nbsp;5&nbsp;mm </td>
+<td> &nbsp; </td>
+<td> &nbsp;
+</td></tr>
+<tr>
+<td> 42BYGHM809 </td>
+<td> 48&nbsp;N·cm </td>
+<td>  3&nbsp;V  </td>
+<td> Ø&nbsp;5&nbsp;mm </td>
+<td> 0.9° </td>
+<td> 48&nbsp;mm
+</td></tr>
+<tr>
+<td> 42BYGH404  </td>
+<td> 31&nbsp;N·cm </td>
+<td> &nbsp; </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 49&nbsp;mm
+</td></tr>
+<tr>
+<td> YH42BYGH47-401A</td>
+<td> 55&nbsp;N·cm </td>
+<td> 2.8&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 47&nbsp;mm
+</td></tr>
+<tr>
+<td> B6524772A</td>
+<td> 23&nbsp;N·cm </td>
+<td> 3.9&nbsp;V </td>
+<td> Ø&nbsp;5&nbsp;mm single </td>
+<td> 1.8° </td>
+<td> 34&nbsp;mm
+</td></tr></tbody><tfoot></tfoot></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 35/1000000
+Preprocessor generated node count: 140/1000000
+Post‐expand include size: 777/2097152 bytes
+Template argument size: 105/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://reprap.org/mediawiki/index.php?title=NEMA_17_Stepper_motor&amp;oldid=145105">http://reprap.org/mediawiki/index.php?title=NEMA_17_Stepper_motor&amp;oldid=145105</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://reprap.org/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="http://reprap.org/wiki/Category:Vitamin" title="Category:Vitamin">Vitamin</a></li><li><a href="http://reprap.org/wiki/Category:Stepper_motors" title="Category:Stepper motors">Stepper motors</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<!-- header -->
+			<div id="mw-head">
+				
+<!-- 0 -->
+<div id="p-personal" role="navigation" class="">
+	<h3>Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="http://reprap.org/mediawiki/index.php?title=Special:UserLogin&amp;returnto=NEMA+17+Stepper+motor&amp;type=signup">Create account</a></li><li id="pt-login"><a href="http://reprap.org/mediawiki/index.php?title=Special:UserLogin&amp;returnto=NEMA+17+Stepper+motor" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+
+<!-- /0 -->
+				<div id="left-navigation">
+					
+<!-- 0 -->
+<div id="p-namespaces" role="navigation" class="vectorTabs">
+	<h3>Namespaces</h3>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="http://reprap.org/wiki/NEMA_17_Stepper_motor" title="View the content page [alt-shift-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk"><span><a href="http://reprap.org/wiki/Talk:NEMA_17_Stepper_motor" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+				</div>
+				<div id="right-navigation">
+					
+<!-- 0 -->
+<div id="p-views" role="navigation" class="vectorTabs">
+	<h3>Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="http://reprap.org/wiki/NEMA_17_Stepper_motor">Read</a></span></li>
+					<li id="ca-viewsource"><span><a href="http://reprap.org/mediawiki/index.php?title=NEMA_17_Stepper_motor&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://reprap.org/mediawiki/index.php?title=NEMA_17_Stepper_motor&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet">
+	<h3><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/mediawiki/index.php" id="searchform">
+				<div>
+			<input placeholder="Search" autocomplete="off" name="search" title="Search RepRapWiki [alt-shift-f]" accesskey="f" id="searchInput" type="search">			<input name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" type="submit">			<input name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" type="submit">					<input name="title" value="Special:Search" type="hidden">
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+				</div>
+			</div>
+			<!-- /header -->
+			<!-- panel -->
+			<div id="mw-panel">
+				<!-- logo -->
+					<div id="p-logo" role="banner"><a style="background-image: url(/mediawiki/reprap_logo.png);" href="http://reprap.org/wiki/Main_Page" title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- navigation -->
+<div class="portal" role="navigation" id="p-navigation">
+	<h3>Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Main-Page"><a href="http://reprap.org/wiki/RepRap">Main Page</a></li>
+			<li id="n-Build-a-RepRap"><a href="http://reprap.org/wiki/RepRap_Options">Build a RepRap</a></li>
+			<li id="n-Glossary"><a href="http://reprap.org/wiki/Glossary">Glossary</a></li>
+			<li id="n-Reference"><a href="http://reprap.org/wiki/Reference">Reference</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- Participation -->
+<div class="portal" role="navigation" id="p-Participation">
+	<h3>Participation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Recent-Changes"><a href="http://reprap.org/wiki/Special:RecentChanges">Recent Changes</a></li>
+			<li id="n-Create-a-new-page"><a href="http://reprap.org/wiki/Very_Messy_Example">Create a new page</a></li>
+			<li id="n-Donation-Page"><a href="http://sourceforge.net/donate/index.php?group_id=159590" rel="nofollow">Donation Page</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Participation -->
+
+<!-- Community -->
+<div class="portal" role="navigation" id="p-Community">
+	<h3>Community</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Development-Index"><a href="http://reprap.org/wiki/Development">Development Index</a></li>
+			<li id="n-Planet-RepRap"><a href="http://planet.arcol.hu/" rel="nofollow">Planet RepRap</a></li>
+			<li id="n-Blog-of-Blogs"><a href="http://pipes.yahoo.com/pipesadrian_reprap_pipe/reprap" rel="nofollow">Blog of Blogs</a></li>
+			<li id="n-IRC"><a href="http://reprap.org/wiki/IRC">IRC</a></li>
+			<li id="n-Forums"><a href="http://forums.reprap.org/" rel="nofollow">Forums</a></li>
+			<li id="n-RepRap-Groups"><a href="http://forums.reprap.org/index.php?19" rel="nofollow">RepRap Groups</a></li>
+			<li id="n-Community-Portal"><a href="http://reprap.org/wiki/Community_portal">Community Portal</a></li>
+			<li id="n-Licence"><a href="http://reprap.org/wiki/RepRapGPLLicence">Licence</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Community -->
+
+<!-- TOOLBOX -->
+<div class="portal" role="navigation" id="p-tb">
+	<h3>Toolbox</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://reprap.org/wiki/Special:WhatLinksHere/NEMA_17_Stepper_motor" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://reprap.org/wiki/Special:RecentChangesLinked/NEMA_17_Stepper_motor" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="http://reprap.org/wiki/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="http://reprap.org/mediawiki/index.php?title=NEMA_17_Stepper_motor&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="http://reprap.org/mediawiki/index.php?title=NEMA_17_Stepper_motor&amp;oldid=145105" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="http://reprap.org/mediawiki/index.php?title=NEMA_17_Stepper_motor&amp;action=info">Page information</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+
+				<div class="portal" role="navigation" id="adsense">
+				<div class="body">
+				<!-- Google AdSense "skyscaper" block (125x600) -->
+<script type="text/javascript"><!--
+google_ad_client = "pub-7619640428450381";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "F9F9F9";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+//--></script>
+<script type="text/javascript" src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/show_ads.js">
+</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" width="120" frameborder="0" height="600"></iframe></ins></ins>
+				</div>
+				</div>
+			</div>
+			<!-- /panel -->
+		</div>
+		<!-- footer -->
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 24 February 2015, at 06:07.</li>
+											<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://reprap.org/wiki/RepRapWiki:Privacy_policy" title="RepRapWiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://reprap.org/wiki/RepRapWiki:About" title="RepRapWiki:About">About RepRapWiki</a></li>
+											<li id="footer-places-disclaimer"><a href="http://reprap.org/wiki/RepRapWiki:General_disclaimer" title="RepRapWiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://www.gnu.org/copyleft/fdl.html"><img src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.lazyload","skins.vector.js"], null, true);
+}</script>
+<script src="NEMA%2017%20Stepper%20motor%20-%20RepRapWiki_files/load_004.php"></script>
+<!-- Served in 0.120 secs. -->
+	
+
+<div class="suggestions" style="display: none; font-size: 12px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
