@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2015-02-17T23:50:41.840636558</meta:creation-date><dc:date>2015-03-08T19:09:17.129897110</dc:date><meta:editing-duration>PT38M51S</meta:editing-duration><meta:editing-cycles>7</meta:editing-cycles><meta:generator>LibreOffice/4.2.5.2$Linux_x86 LibreOffice_project/420m0$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="3" meta:object-count="0" meta:page-count="5" meta:paragraph-count="67" meta:word-count="292" meta:character-count="2084" meta:non-whitespace-character-count="1844"/></office:meta>
+ <office:meta><meta:creation-date>2015-02-17T23:50:41.840636558</meta:creation-date><dc:date>2015-04-15T17:17:36.150989470</dc:date><meta:editing-duration>PT41M53S</meta:editing-duration><meta:editing-cycles>10</meta:editing-cycles><meta:generator>LibreOffice/4.2.5.2$Linux_x86 LibreOffice_project/420m0$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="3" meta:object-count="0" meta:page-count="5" meta:paragraph-count="75" meta:word-count="345" meta:character-count="2409" meta:non-whitespace-character-count="2123"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="int">0</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="int">104352</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="int">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="int">32757</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="int">21936</config:config-item>
@@ -14,11 +14,11 @@
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
      <config:config-item config:name="ViewLeft" config:type="int">7583</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="int">2925</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="int">125599</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="int">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="int">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="int">104352</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="int">32755</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="int">21934</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="int">126286</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -57,7 +57,7 @@
    <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
    <config:config-item config:name="RsidRoot" config:type="int">502156</config:config-item>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">1051847</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1171206</config:config-item>
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
@@ -279,20 +279,35 @@
   <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="000f6c0f" officeooo:paragraph-rsid="000f6c0f"/>
   </style:style>
-  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
-   <style:text-properties officeooo:rsid="0007f3d2" officeooo:paragraph-rsid="0007f3d2"/>
-  </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="0007f3d2"/>
   </style:style>
-  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="0007a98c" officeooo:paragraph-rsid="0007a98c"/>
   </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:rsid="0007f3d2" officeooo:paragraph-rsid="0007f3d2"/>
   </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:rsid="000e1743" officeooo:paragraph-rsid="000e1743"/>
+  </style:style>
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="0007a98c" officeooo:paragraph-rsid="0007a98c"/>
+  </style:style>
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:rsid="000e1743" officeooo:paragraph-rsid="000e1743"/>
+  </style:style>
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="0007f3d2" officeooo:paragraph-rsid="0007f3d2"/>
+  </style:style>
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="0007f3d2" officeooo:paragraph-rsid="0007f3d2"/>
+  </style:style>
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
+   <style:text-properties officeooo:paragraph-rsid="0007f3d2"/>
+  </style:style>
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="0011df06" officeooo:paragraph-rsid="0011df06"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties officeooo:rsid="0007f3d2"/>
@@ -302,6 +317,9 @@
   </style:style>
   <style:style style:name="T3" style:family="text">
    <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T4" style:family="text">
+   <style:text-properties officeooo:rsid="0011df06"/>
   </style:style>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Graphics">
    <style:graphic-properties style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="center" style:horizontal-rel="paragraph" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
@@ -432,20 +450,20 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
    </text:sequence-decls>
-   <text:h text:style-name="P13" text:outline-level="1">Génération G-Code</text:h>
+   <text:h text:style-name="P12" text:outline-level="1">Génération G-Code</text:h>
    <text:p text:style-name="P1"/>
-   <text:h text:style-name="P14" text:outline-level="2">Avec Inkscape</text:h>
+   <text:h text:style-name="P13" text:outline-level="2">Avec Inkscape</text:h>
    <text:p text:style-name="P2">Il existe un plugin pour Inkscape, appelé Gcode-tools, écrit en Python et qui permet de générer un G-Code à partir d&apos;un dessin vectoriel. </text:p>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Lien utiles :</text:h>
-   <text:list xml:id="list6248193689270911826" text:style-name="L1">
+   <text:list xml:id="list6445240610632233791" text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P11"><text:a xlink:type="simple" xlink:href="http://www.cnc-club.ru/forum/viewtopic.php?f=15&amp;p=101#latest_version" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">http://www.cnc-club.ru/forum/viewtopic.php?f=15&amp;p=101#latest_version</text:a> </text:p>
+     <text:p text:style-name="P18"><text:a xlink:type="simple" xlink:href="http://www.cnc-club.ru/forum/viewtopic.php?f=15&amp;p=101#latest_version" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">http://www.cnc-club.ru/forum/viewtopic.php?f=15&amp;p=101#latest_version</text:a> </text:p>
     </text:list-item>
    </text:list>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">A télécharger ici :</text:h>
-   <text:list xml:id="list5980181663648933518" text:style-name="L2">
+   <text:list xml:id="list8643443747417651011" text:style-name="L2">
     <text:list-item>
-     <text:p text:style-name="P12"><text:a xlink:type="simple" xlink:href="http://www.cnc-club.ru/forum/viewtopic.php?f=15&amp;p=101#latest_version" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T1">http://www.cnc-club.ru/forum/viewtopic.php?f=15&amp;p=101#latest_version</text:span></text:a><text:span text:style-name="T1"> </text:span></text:p>
+     <text:p text:style-name="P19"><text:a xlink:type="simple" xlink:href="http://www.cnc-club.ru/forum/viewtopic.php?f=15&amp;p=101#latest_version" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T1">http://www.cnc-club.ru/forum/viewtopic.php?f=15&amp;p=101#latest_version</text:span></text:a><text:span text:style-name="T1"> </text:span></text:p>
     </text:list-item>
    </text:list>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Installation : </text:h>
@@ -4509,14 +4527,25 @@
      </draw:image>
     </draw:frame></text:p>
    <text:p text:style-name="P8">On obtient une fenêtre de paramétrage et une fenêtre 3D, avec possibilité de simulation !</text:p>
-   <text:h text:style-name="P15" text:outline-level="3">Utilisation </text:h>
+   <text:h text:style-name="P14" text:outline-level="3">Utilisation <text:span text:style-name="T4">avec un SVG</text:span></text:h>
    <text:p text:style-name="P9">Charger un fichier *.svg</text:p>
    <text:p text:style-name="P9">Onglet tools : fixer le bon feedrate</text:p>
    <text:p text:style-name="P9">Onglet Tasks : choisir gravure puis Generate this path</text:p>
    <text:p text:style-name="P9">Onglet Toolpaths : on obtient le Gcode généré : le sélectionner puis simulate ou export visible</text:p>
    <text:p text:style-name="P9"/>
    <text:p text:style-name="P10">Un petit tuto bien fait : <text:a xlink:type="simple" xlink:href="http://technistub.fr/?wiki=pycam-tutoriel" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">http://technistub.fr/?wiki=pycam-tutoriel</text:a></text:p>
-   <text:p text:style-name="P10"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P20"><text:soft-page-break/>Remarque : seul le process gravure est possible avec un SVG</text:p>
+   <text:p text:style-name="P20"/>
+   <text:h text:style-name="Heading_20_3" text:outline-level="3">Utilisation avec un STL</text:h>
+   <text:p text:style-name="P20">Ouvrir le STL</text:p>
+   <text:p text:style-name="P20">Attention : choisir Process contour follow pour les cercles, sinon, trait au lieu courbe. </text:p>
+   <text:p text:style-name="P20">Fixer la profondeur de couche</text:p>
+   <text:p text:style-name="P20"/>
+   <text:p text:style-name="P20">Générer toolpath</text:p>
+   <text:p text:style-name="P20">Exporter STL</text:p>
+   <text:p text:style-name="P20"/>
+   <text:p text:style-name="P20">NOter possibilité activer multicoeur et de faire génération parallèle.. </text:p>
+   <text:p text:style-name="P20"/>
   </office:text>
  </office:body>
 </office:document>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2015-02-17T23:45:26.565611654</meta:creation-date><meta:generator>LibreOffice/4.2.5.2$Linux_x86 LibreOffice_project/420m0$Build-2</meta:generator><dc:date>2015-04-08T12:04:50.074514607</dc:date><meta:editing-duration>PT54M31S</meta:editing-duration><meta:editing-cycles>10</meta:editing-cycles><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="21" meta:word-count="222" meta:character-count="1226" meta:non-whitespace-character-count="1016"/></office:meta>
+ <office:meta><meta:creation-date>2015-02-17T23:45:26.565611654</meta:creation-date><meta:generator>LibreOffice/4.2.5.2$Linux_x86 LibreOffice_project/420m0$Build-2</meta:generator><dc:date>2015-04-14T19:18:48.882828896</dc:date><meta:editing-duration>PT54M31S</meta:editing-duration><meta:editing-cycles>11</meta:editing-cycles><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="22" meta:word-count="230" meta:character-count="1272" meta:non-whitespace-character-count="1055"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="int">2566</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="int">2540</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="int">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="int">32757</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="int">21936</config:config-item>
@@ -13,12 +13,12 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="int">7583</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="int">21745</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="int">12351</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="int">17203</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="int">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="int">2566</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="int">2540</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="int">32755</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="int">24500</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="int">24474</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -57,7 +57,7 @@
    <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
    <config:config-item config:name="RsidRoot" config:type="int">57381</config:config-item>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">463404</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">540690</config:config-item>
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
@@ -250,16 +250,28 @@
   <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="00029989" officeooo:paragraph-rsid="00029989"/>
   </style:style>
-  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="0007122c" officeooo:paragraph-rsid="0007122c"/>
+  </style:style>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:rsid="00029989" officeooo:paragraph-rsid="00029989"/>
   </style:style>
-  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:rsid="0007122c" officeooo:paragraph-rsid="0007122c"/>
   </style:style>
-  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="0007122c" officeooo:paragraph-rsid="0007122c"/>
   </style:style>
-  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="0007122c" officeooo:paragraph-rsid="0007122c"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="00084012" officeooo:paragraph-rsid="00084012"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="0007122c" officeooo:paragraph-rsid="0007122c"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="0007122c" officeooo:paragraph-rsid="0007122c"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
@@ -284,33 +296,34 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
    </text:sequence-decls>
-   <text:h text:style-name="P5" text:outline-level="1">TODO projet CNC</text:h>
-   <text:p text:style-name="P4"/>
+   <text:h text:style-name="P6" text:outline-level="1">TODO projet CNC</text:h>
+   <text:p text:style-name="P3"/>
    <text:h text:style-name="Heading_20_2" text:outline-level="2">Microfirmware décodeur GCode Arduino : </text:h>
-   <text:p text:style-name="P4">&gt; <text:span text:style-name="T1">améliorer réception série : rendre plus fluide pour les ordres multiples</text:span></text:p>
-   <text:p text:style-name="P4">&gt; calage du 0 à l&apos;aide endstops sur les 3 axes </text:p>
-   <text:p text:style-name="P4">&gt; calage de la surface par plaque métallique (0 du Z)</text:p>
-   <text:p text:style-name="P4">&gt; <text:s/>gérer mode absolu / relatif (absolu par défaut, ce qui est le cas du GCode généré)</text:p>
-   <text:p text:style-name="P4">&gt; ajouter G ?? pour home X, Y et Z avec RAZ position interne <text:s/></text:p>
-   <text:p text:style-name="P4">&gt; ajouter G02 support des arcs</text:p>
-   <text:p text:style-name="P4">&gt; ajouter Gxx perso pour Bézier, etc... voire même primitives simples (cercle, carré...) et/ou programmable façon openscad... pour plusieurs passes, etc...</text:p>
-   <text:p text:style-name="P4"/>
+   <text:p text:style-name="P3">&gt; <text:span text:style-name="T1">améliorer réception série : rendre plus fluide pour les ordres multiples</text:span></text:p>
+   <text:p text:style-name="P3">&gt; calage du 0 à l&apos;aide endstops sur les 3 axes </text:p>
+   <text:p text:style-name="P3">&gt; calage de la surface par plaque métallique (0 du Z)</text:p>
+   <text:p text:style-name="P3">&gt; <text:s/>gérer mode absolu / relatif (absolu par défaut, ce qui est le cas du GCode généré)</text:p>
+   <text:p text:style-name="P3">&gt; ajouter G ?? pour home X, Y et Z avec RAZ position interne <text:s/></text:p>
+   <text:p text:style-name="P3">&gt; ajouter G02 support des arcs</text:p>
+   <text:p text:style-name="P3">&gt; ajouter Gxx perso pour Bézier, etc... voire même primitives simples (cercle, carré...) et/ou programmable façon openscad... pour plusieurs passes, etc...</text:p>
+   <text:p text:style-name="P3"/>
    <text:h text:style-name="Heading_20_2" text:outline-level="2">Interface PyQt d&apos;envoi du G-Code </text:h>
-   <text:p text:style-name="P4">&gt; ajouter un bouton « pass » ou « ok » pour valider manuellement la poursuite de l&apos;impression en cas de souci sur réception (variable de classe modifiée par appui bouton, testée dans le while qui permet sortir si True et RAZ false une fois sorti while)</text:p>
-   <text:p text:style-name="P4">&gt; ajouter bouton « STOP » sur le même principe pour stopper et sortir de l&apos;impression en cours </text:p>
-   <text:p text:style-name="P4">&gt; prévoir bouton pour faire home &gt;, home Y et home Z</text:p>
-   <text:p text:style-name="P4">&gt; faire un *.deb une fois fignolé... </text:p>
-   <text:p text:style-name="P4"/>
-   <text:h text:style-name="P6" text:outline-level="2">Génération G-Code</text:h>
-   <text:p text:style-name="P4">&gt; Documenter l&apos;utilisation PyCam</text:p>
-   <text:p text:style-name="P4"/>
-   <text:h text:style-name="P6" text:outline-level="2">Machine CNC « façon reprap »</text:h>
-   <text:p text:style-name="P4">&gt; valider les choix mécaniques</text:p>
-   <text:p text:style-name="P4">&gt; petite fraiseuse ? </text:p>
-   <text:p text:style-name="P4"/>
-   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:soft-page-break/>Machine CNC « façon industriel »</text:h>
-   <text:p text:style-name="P4">&gt; valider choix mécanique + fraiseuse</text:p>
-   <text:p text:style-name="P4"/>
+   <text:p text:style-name="P3">&gt; ajouter un bouton « pass » ou « ok » pour valider manuellement la poursuite de l&apos;impression en cas de souci sur réception (variable de classe modifiée par appui bouton, testée dans le while qui permet sortir si True et RAZ false une fois sorti while)</text:p>
+   <text:p text:style-name="P3">&gt; ajouter bouton « STOP » sur le même principe pour stopper et sortir de l&apos;impression en cours </text:p>
+   <text:p text:style-name="P8">=&gt; ok avec processEvents - essayer avec Thread</text:p>
+   <text:p text:style-name="P3">&gt; prévoir bouton pour faire home &gt;, home Y et home Z</text:p>
+   <text:p text:style-name="P3">&gt; faire un *.deb une fois fignolé... </text:p>
+   <text:p text:style-name="P3"/>
+   <text:h text:style-name="P5" text:outline-level="2">Génération G-Code</text:h>
+   <text:p text:style-name="P3">&gt; Documenter l&apos;utilisation PyCam</text:p>
+   <text:p text:style-name="P3"/>
+   <text:h text:style-name="P5" text:outline-level="2">Machine CNC « façon reprap »</text:h>
+   <text:p text:style-name="P3">&gt; valider les choix mécaniques</text:p>
+   <text:p text:style-name="P3">&gt; petite fraiseuse ? </text:p>
+   <text:p text:style-name="P3"><text:soft-page-break/></text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">Machine CNC « façon industriel »</text:h>
+   <text:p text:style-name="P3">&gt; valider choix mécanique + fraiseuse</text:p>
+   <text:p text:style-name="P3"/>
   </office:text>
  </office:body>
 </office:document>
